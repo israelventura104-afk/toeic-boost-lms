@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "title": "Short demo · Reading & Grammar snapshot",
+  "note": "Short demo · Part 5–7 snapshot · Listening audio demo coming next",
+  "free": true,
+  "timer": false,
+  "items_url": "data/demo-items.json",
+  "composition": {
+    "part5": 3,
+    "part6": 2,
+    "part7": 3,
+    "total": 8
+  }
+}

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Dashboard | TOEIC Boost</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body" data-access-page="dashboard">
+    <header class="topbar" data-site-header></header>
+    <script src="nav.js"></script>
+
+    <main class="dashboard-shell dashboard-home">
+      <header class="dashboard-header" id="overview">
+        <div class="dashboard-welcome">
+          <p class="eyebrow">Student dashboard</p>
+          <h1 data-dash-greeting>Welcome.</h1>
+          <p data-dash-welcome-sub>
+            Your results and study pulse on this device — calm, clear, nothing extra.
+          </p>
+          <p class="access-status" data-access-status></p>
+        </div>
+
+        <div class="dash-name-panel" data-dash-name-panel>
+          <form class="dash-name-form" data-dash-name-form>
+            <label>
+              Your name
+              <input
+                type="text"
+                name="studentName"
+                data-dash-name-input
+                maxlength="40"
+                autocomplete="name"
+                placeholder="e.g. María"
+                required
+              />
+            </label>
+            <button class="button primary" type="submit">Save name</button>
+          </form>
+          <p class="dash-name-hint">Saved only on this browser — no account needed.</p>
+        </div>
+      </header>
+
+      <section class="dash-go" id="practice" aria-labelledby="practice-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Go practice</p>
+          <h2 id="practice-title">Pick a path</h2>
+        </div>
+        <div class="dash-go-grid">
+          <a class="dash-go-card" href="demo-test.html">
+            <strong>Short demo</strong>
+            <span>Free Part 5–7 snapshot · no class code</span>
+          </a>
+          <a class="dash-go-card" href="listening.html" data-requires-access data-access-link>
+            <strong>Listening hub</strong>
+            <span>Parts 1–4 · coming next <em data-lock-label>(needs class code)</em></span>
+          </a>
+          <a class="dash-go-card" href="reading.html">
+            <strong>Reading hub</strong>
+            <span>Part 5 free + guided practice · Parts 6–7 coming next</span>
+          </a>
+          <a class="dash-go-card" href="strategies.html">
+            <strong>Strategies</strong>
+            <span>Free Part 5 study library · workplace patterns · no class code</span>
+          </a>
+        </div>
+        <p class="dash-name-hint" style="margin-top: 0.75rem; color: var(--muted)">
+          New here?
+          <a href="demo-test.html">Take the short demo test</a>
+          first. Class materials open with the code below.
+        </p>
+      </section>
+
+      <section class="dash-focus" id="focus" aria-labelledby="focus-title">
+        <p class="eyebrow">Study next</p>
+        <h2 id="focus-title" data-dash-focus-title>Complete the free demo to see your focus.</h2>
+        <p data-dash-focus-note>
+          When you finish the short demo, your weakest pattern appears here.
+        </p>
+      </section>
+
+      <section class="dash-stats" id="stats" aria-labelledby="stats-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Quick stats</p>
+          <h2 id="stats-title">Your numbers</h2>
+        </div>
+        <div class="stats-row dash-stats-row dash-stats-row-3">
+          <article>
+            <span>Demo avg</span>
+            <strong data-dash-avg-demo>—</strong>
+            <small data-dash-note-demo>No sessions yet</small>
+          </article>
+          <article>
+            <span>Practice streak</span>
+            <strong data-dash-streak>—</strong>
+            <small data-dash-streak-note>Practice today to start</small>
+          </article>
+          <article>
+            <span>Sessions saved</span>
+            <strong data-dash-sessions>0</strong>
+            <small data-dash-sessions-note>Demo and Part 5 sessions on this device</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="dash-skills" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Skill breakdown</p>
+          <h2 id="skills-title">How you are doing</h2>
+        </div>
+        <div class="dash-skills-grid dash-skills-grid-2">
+          <article class="dash-skill-card">
+            <p class="eyebrow">Reading &amp; Grammar</p>
+            <h3>Demo skills</h3>
+            <p class="dash-skill-meta" data-dash-demo-meta>No sessions yet</p>
+            <div data-dash-skills-demo>
+              <p class="dash-empty-note">No demo practice saved yet.</p>
+            </div>
+          </article>
+          <article class="dash-skill-card">
+            <p class="eyebrow">Part 5</p>
+            <h3>Incomplete Sentences</h3>
+            <p class="dash-skill-meta" data-dash-part5-meta>No sessions yet</p>
+            <div data-dash-skills-part5>
+              <p class="dash-empty-note">No Part 5 guided practice saved yet.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="dash-recent" id="recent" aria-labelledby="recent-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Recent results</p>
+          <h2 id="recent-title">Last sessions on this device</h2>
+        </div>
+        <ul class="dash-recent-list" data-dash-recent>
+          <li class="dash-empty-note">Finish the free short demo or a Part 5 session to see results here.</li>
+        </ul>
+      </section>
+
+      <section class="commitment-strip dash-access" id="class-access" aria-labelledby="commitment-title">
+        <div>
+          <p class="eyebrow">Teacher access</p>
+          <h2 id="commitment-title">Class materials</h2>
+          <p>
+            Listening still needs your teacher’s class code.
+            Strategies and Part 5 free practice are open; guided drills use the class code.
+            Progress is saved only on this device.
+          </p>
+          <p class="access-status" data-access-status></p>
+        </div>
+
+        <div data-access-locked-only>
+          <form class="access-form" data-access-form>
+            <label>
+              Class code
+              <input
+                type="text"
+                name="code"
+                data-access-input
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="Code from your teacher"
+                required
+              />
+            </label>
+            <p class="access-message" data-access-message hidden></p>
+            <div class="access-actions">
+              <button class="button primary" type="submit">Open class materials</button>
+            </div>
+          </form>
+        </div>
+
+        <div data-access-open-only hidden>
+          <p class="dash-access-open-note">Class access is active on this device.</p>
+          <div class="access-actions">
+            <button class="button secondary" type="button" data-access-revoke>
+              Remove access on this device
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>TOEIC BOOST</strong>
+      <span>by Teacher Israel Ventura</span>
+    </footer>
+
+    <script src="access.js"></script>
+    <script src="progress.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

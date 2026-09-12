@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reading hub | TOEIC Boost</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <header class="topbar" data-site-header></header>
+    <script src="nav.js"></script>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero">
+        <a class="back-link" href="dashboard.html">Back to dashboard</a>
+        <p class="eyebrow">Reading &amp; Grammar</p>
+        <h1>Train the sentence before you race the clock.</h1>
+        <p>
+          TOEIC Reading starts with Part 5 Incomplete Sentences — one blank,
+          four choices, workplace English. Free practice is open. Class guided
+          drills use your teacher’s code. Parts 6 and 7 open in a later phase.
+        </p>
+        <p class="access-status" data-access-status></p>
+      </header>
+
+      <section class="hub-section" aria-labelledby="part5-title">
+        <div class="section-heading">
+          <p class="eyebrow">Part 5 · Incomplete Sentences</p>
+          <h2 id="part5-title">Grammar and word forms in workplace English.</h2>
+          <p>
+            Look at the blank, name the job it does (verb, adjective, connector),
+            then eliminate. No timer here — this is for method.
+          </p>
+        </div>
+
+        <div class="hub-path-grid">
+          <a class="hub-path-card" href="part5-practice.html">
+            <span class="hub-chip is-free">Free · no code</span>
+            <strong>Free practice</strong>
+            <span>10 fixed questions · same order every time · immediate feedback</span>
+          </a>
+          <a class="hub-path-card" href="part5-guided-practice.html" data-requires-access>
+            <span class="hub-chip is-class">Class · needs code</span>
+            <strong>Guided practice</strong>
+            <span>15 items from the bank · skills balanced · saved to this device <em data-lock-label>(needs class code)</em></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="hub-section" aria-labelledby="later-title">
+        <div class="section-heading">
+          <p class="eyebrow">Coming next</p>
+          <h2 id="later-title">Parts 6 and 7 coming next. Strategies are live.</h2>
+        </div>
+        <div class="hub-later-grid">
+          <article class="hub-later-card">
+            <span class="hub-chip">Part 6</span>
+            <strong>Text Completion</strong>
+            <span>Short workplace emails and notices with several blanks. Coming next.</span>
+          </article>
+          <article class="hub-later-card">
+            <span class="hub-chip">Part 7</span>
+            <strong>Reading Comprehension</strong>
+            <span>Memos, ads, and double passages. Coming next.</span>
+          </article>
+          <a class="hub-later-card" href="strategies.html#part5">
+            <span class="hub-chip is-free">Free</span>
+            <strong>Part 5 strategies</strong>
+            <span>Study library for Incomplete Sentences — open without a class code.</span>
+          </a>
+        </div>
+      </section>
+
+      <div class="practice-actions" style="justify-content:flex-start">
+        <a class="button primary" href="dashboard.html">Back to dashboard</a>
+        <a class="button secondary" href="demo-test.html">Short demo test</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <strong>TOEIC BOOST</strong>
+      <span>by Teacher Israel Ventura</span>
+    </footer>
+    <script src="access.js"></script>
+    <script>
+      (function () {
+        const unlocked = window.ToeicAccess && window.ToeicAccess.isUnlocked();
+        document.querySelectorAll("[data-lock-label]").forEach((el) => {
+          el.hidden = Boolean(unlocked);
+        });
+      })();
+    </script>
+  </body>
+</html>

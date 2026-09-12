@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Part 5 Guided Practice | TOEIC Boost</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <header class="topbar" data-site-header></header>
+    <script src="nav.js"></script>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero guided-hero">
+        <a class="back-link" href="reading.html">Back to Reading hub</a>
+        <p class="eyebrow">Reading · Part 5 · Class practice</p>
+        <h1>Practice 15 questions without a timer.</h1>
+        <p>
+          Each session draws 15 items from the Part 5 bank (the free intro set is
+          excluded) and balances skills when it can. Answer carefully, read the
+          explanation, then use the review to see which grammar patterns to study next.
+        </p>
+        <p class="access-status" data-access-status></p>
+        <p class="practice-status" data-guided-status hidden></p>
+      </header>
+
+      <div data-access-gate></div>
+
+      <div data-access-protected hidden>
+        <section class="guided-practice-panel" aria-labelledby="guided-practice-title">
+          <div class="section-heading">
+            <p class="eyebrow">Class practice</p>
+            <h2 id="guided-practice-title">Today’s Part 5 drill</h2>
+            <p>
+              No timer. When you finish, your score and weak skills save on this
+              device for the dashboard.
+            </p>
+          </div>
+
+          <div class="practice-card guided-card">
+            <div class="practice-topline">
+              <span data-counter>1 / 15</span>
+              <strong data-score>0/0 correct</strong>
+            </div>
+            <div class="practice-session-meta">
+              <span data-session-label>Fresh random set</span>
+              <button class="button secondary compact-button" type="button" data-new-practice>New practice</button>
+            </div>
+            <div class="guided-progress" aria-hidden="true">
+              <span data-progress-bar></span>
+            </div>
+            <p class="question-meta" data-question-meta></p>
+            <h3 data-question></h3>
+            <div class="choice-list" data-options></div>
+            <div class="practice-feedback" data-feedback hidden></div>
+            <div class="practice-actions">
+              <button class="button secondary" type="button" data-prev>Previous</button>
+              <button class="button primary" type="button" data-next>Next</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="results-panel" id="results" aria-labelledby="results-title" data-results hidden>
+          <div class="results-hero">
+            <div>
+              <p class="eyebrow">Session complete</p>
+              <h2 id="results-title">Your score</h2>
+              <p data-result-message hidden></p>
+            </div>
+            <div class="result-score">
+              <span>Score</span>
+              <strong data-final-score>0/15</strong>
+              <small data-final-note></small>
+            </div>
+          </div>
+
+          <div class="result-study" data-study-focus></div>
+          <div class="result-misses-panel" data-mistakes></div>
+
+          <div class="practice-actions results-actions">
+            <button class="button primary" type="button" data-new-practice-result>Practice again</button>
+            <a class="button secondary" href="dashboard.html">Progress</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <strong>TOEIC BOOST</strong>
+      <span>by Teacher Israel Ventura</span>
+    </footer>
+
+    <script src="access.js"></script>
+    <script src="progress.js"></script>
+    <script src="part5-guided-practice.js"></script>
+  </body>
+</html>

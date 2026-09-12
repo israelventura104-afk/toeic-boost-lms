@@ -1,0 +1,402 @@
+{
+  "id": "P5-INTRO",
+  "title": "Part 5 Free Practice Set",
+  "purpose": "free_intro_fixed",
+  "fixed": true,
+  "shuffle": false,
+  "reuse_in_mocks": false,
+  "exclude_from_free_intro": false,
+  "item_count": 10,
+  "items": [
+    {
+      "id": "TQB-P5-0001",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Adjective vs adverb",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Meetings",
+      "question": "The regional director spoke _____ about the new safety procedures during the staff meeting.",
+      "options": [
+        {
+          "key": "A",
+          "text": "brief"
+        },
+        {
+          "key": "B",
+          "text": "briefly"
+        },
+        {
+          "key": "C",
+          "text": "brevity"
+        },
+        {
+          "key": "D",
+          "text": "briefing"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "briefly",
+      "explanation": "An adverb is needed to modify the verb \"spoke.\" \"Briefly\" is the adverb form.",
+      "commonMistake": "Learners often pick \"brief\" (adjective) because it looks similar, but adjectives do not modify verbs.",
+      "learningObjective": "Choose the adverb when a verb is being modified.",
+      "tags": [
+        "word_forms",
+        "adjective_adverb"
+      ]
+    },
+    {
+      "id": "TQB-P5-0002",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Present perfect",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Sales",
+      "question": "Our sales team _____ more than 200 new accounts this fiscal year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "opens"
+        },
+        {
+          "key": "B",
+          "text": "opened"
+        },
+        {
+          "key": "C",
+          "text": "has opened"
+        },
+        {
+          "key": "D",
+          "text": "is opening"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "has opened",
+      "explanation": "\"This fiscal year\" is an unfinished time period, so the present perfect \"has opened\" is required.",
+      "commonMistake": "The simple past \"opened\" is tempting, but no finished past time is given.",
+      "learningObjective": "Use present perfect for actions in a period that is still open.",
+      "tags": [
+        "verb_tenses",
+        "present_perfect"
+      ]
+    },
+    {
+      "id": "TQB-P5-0003",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Fixed phrases",
+      "difficulty": 1,
+      "estimatedTime": 30,
+      "workplaceTopic": "Scheduling",
+      "question": "Candidates should arrive _____ least twenty minutes before their interview slot.",
+      "options": [
+        {
+          "key": "A",
+          "text": "in"
+        },
+        {
+          "key": "B",
+          "text": "at"
+        },
+        {
+          "key": "C",
+          "text": "by"
+        },
+        {
+          "key": "D",
+          "text": "for"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "at",
+      "explanation": "The fixed phrase is \"at least.\" It means \"no fewer than.\"",
+      "commonMistake": "\"By least\" is not English. \"By\" is used with deadlines (\"by Friday\"), not with \"least.\"",
+      "learningObjective": "Memorize common preposition + word chunks such as at least.",
+      "tags": [
+        "prepositions",
+        "fixed_phrases"
+      ]
+    },
+    {
+      "id": "TQB-P5-0004",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Cause and effect",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Finance",
+      "question": "Several invoices were missing signatures; _____, payroll could not process them on time.",
+      "options": [
+        {
+          "key": "A",
+          "text": "however"
+        },
+        {
+          "key": "B",
+          "text": "therefore"
+        },
+        {
+          "key": "C",
+          "text": "although"
+        },
+        {
+          "key": "D",
+          "text": "unless"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "therefore",
+      "explanation": "The second clause is a result of the first. \"Therefore\" signals cause and effect.",
+      "commonMistake": "\"However\" marks contrast, not result. The meaning here is consequence, not opposition.",
+      "learningObjective": "Match the transition to the logical relationship between clauses.",
+      "tags": [
+        "conjunctions",
+        "cause_effect"
+      ]
+    },
+    {
+      "id": "TQB-P5-0005",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Possessive its",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "HR",
+      "question": "The company updated _____ remote-work policy after the spring survey.",
+      "options": [
+        {
+          "key": "A",
+          "text": "their"
+        },
+        {
+          "key": "B",
+          "text": "its"
+        },
+        {
+          "key": "C",
+          "text": "it's"
+        },
+        {
+          "key": "D",
+          "text": "there"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "its",
+      "explanation": "\"Company\" is a singular organization, so the possessive pronoun is \"its.\"",
+      "commonMistake": "\"It's\" means \"it is.\" \"Their\" treats the company as plural, which standard written English avoids.",
+      "learningObjective": "Use its for a singular organization; never confuse it with it's.",
+      "tags": [
+        "pronouns",
+        "possessive"
+      ]
+    },
+    {
+      "id": "TQB-P5-0006",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Subject before of-phrase",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Office",
+      "question": "The list of approved suppliers _____ reviewed each January by the purchasing department.",
+      "options": [
+        {
+          "key": "A",
+          "text": "are"
+        },
+        {
+          "key": "B",
+          "text": "is"
+        },
+        {
+          "key": "C",
+          "text": "have"
+        },
+        {
+          "key": "D",
+          "text": "were"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "is",
+      "explanation": "The subject is \"list\" (singular), not \"suppliers.\" The singular verb is \"is.\"",
+      "commonMistake": "Learners often agree the verb with the nearest noun \"suppliers.\" Ignore the of-phrase.",
+      "learningObjective": "Find the real subject; skip prepositional phrases in between.",
+      "tags": [
+        "subject_verb_agreement",
+        "of_phrase"
+      ]
+    },
+    {
+      "id": "TQB-P5-0007",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "First conditional",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Sales",
+      "question": "If the client _____ the revised quote today, we can ship the order on Thursday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "approves"
+        },
+        {
+          "key": "B",
+          "text": "approved"
+        },
+        {
+          "key": "C",
+          "text": "would approve"
+        },
+        {
+          "key": "D",
+          "text": "approving"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "approves",
+      "explanation": "A real future possibility uses if + present simple, then will/can + base verb.",
+      "commonMistake": "\"Approved\" or \"would approve\" belongs to unreal (second) conditionals, not this likely situation.",
+      "learningObjective": "First conditional: if + present, will/can + verb.",
+      "tags": [
+        "conditionals",
+        "first_conditional"
+      ]
+    },
+    {
+      "id": "TQB-P5-0008",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Past simple passive",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Meetings",
+      "question": "The agenda for Friday's workshop _____ to all participants yesterday afternoon.",
+      "options": [
+        {
+          "key": "A",
+          "text": "sent"
+        },
+        {
+          "key": "B",
+          "text": "was sent"
+        },
+        {
+          "key": "C",
+          "text": "has send"
+        },
+        {
+          "key": "D",
+          "text": "sending"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "was sent",
+      "explanation": "The agenda received the action. Past simple passive is \"was sent\" plus a past time marker.",
+      "commonMistake": "\"Sent\" is active and needs a subject who sent it. \"Has send\" is ungrammatical.",
+      "learningObjective": "Use be + past participle when the subject receives the action.",
+      "tags": [
+        "passive_voice",
+        "past_simple"
+      ]
+    },
+    {
+      "id": "TQB-P5-0009",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "Superlative of three",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "Travel",
+      "question": "Of the three hotels near the convention center, the Harbor Inn is the _____ affordable.",
+      "options": [
+        {
+          "key": "A",
+          "text": "more"
+        },
+        {
+          "key": "B",
+          "text": "most"
+        },
+        {
+          "key": "C",
+          "text": "much"
+        },
+        {
+          "key": "D",
+          "text": "very"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "most",
+      "explanation": "A comparison among three or more things takes the superlative: \"the most affordable.\"",
+      "commonMistake": "\"More\" is for two items only. The phrase \"of the three\" is the clue.",
+      "learningObjective": "Use most after the when three or more options are compared.",
+      "tags": [
+        "comparatives",
+        "superlatives"
+      ]
+    },
+    {
+      "id": "TQB-P5-0010",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Recommend + gerund",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Scheduling",
+      "question": "The facilities team recommended _____ the all-staff meeting until the auditorium is repaired.",
+      "options": [
+        {
+          "key": "A",
+          "text": "delay"
+        },
+        {
+          "key": "B",
+          "text": "to delaying"
+        },
+        {
+          "key": "C",
+          "text": "delaying"
+        },
+        {
+          "key": "D",
+          "text": "delayed"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "delaying",
+      "explanation": "Recommend is followed by a gerund: recommend delaying.",
+      "commonMistake": "Recommend + to-infinitive is a common error. \"To delaying\" mixes the two patterns.",
+      "learningObjective": "After recommend, suggest, and avoid, use verb-ing.",
+      "tags": [
+        "gerunds_infinitives",
+        "recommend"
+      ]
+    }
+  ]
+}

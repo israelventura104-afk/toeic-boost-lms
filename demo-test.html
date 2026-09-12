@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Short Demo Test | TOEIC Boost</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <header class="topbar" data-site-header></header>
+    <script src="nav.js"></script>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero guided-hero">
+        <a class="back-link" href="index.html">Back to home</a>
+        <p class="eyebrow">Free · short snapshot</p>
+        <h1>See what you can do right now</h1>
+        <p>
+          A short Reading &amp; Grammar demo — not the full TOEIC L&amp;R and not your full course.
+          Part 5–7 style items from workplace English. No class code needed. No timer pressure.
+        </p>
+        <p class="practice-status" data-demo-status hidden></p>
+      </header>
+
+      <section class="mock-start-panel" data-demo-start>
+        <div class="section-heading">
+          <p class="eyebrow">What you will try</p>
+          <h2>About 8 quick items</h2>
+        </div>
+        <p class="demo-start-note">
+          Short demo · Part 5–7 snapshot · Listening audio demo coming next
+        </p>
+        <ul class="mock-rules">
+          <li><strong>Part 5</strong> — 3 Incomplete Sentences (grammar &amp; vocabulary)</li>
+          <li><strong>Part 6</strong> — 2 Text Completion blanks in a workplace notice</li>
+          <li><strong>Part 7</strong> — 1 short memo · 3 questions</li>
+          <li>Answer carefully. You will see your snapshot when you finish.</li>
+          <li>Full course practice opens later with your teacher's class code.</li>
+        </ul>
+        <div class="practice-actions">
+          <button class="button primary" type="button" data-demo-begin>Start demo test</button>
+          <a class="button secondary" href="index.html">Back to home</a>
+        </div>
+        <p class="question-meta" style="margin-top: 0.75rem">
+          Click <strong>Start demo test</strong> to open question 1 of 8.
+        </p>
+      </section>
+
+      <section class="guided-practice-panel" data-demo-exam hidden>
+        <div class="mock-exam-bar">
+          <div>
+            <p class="eyebrow">Section</p>
+            <strong data-demo-section>—</strong>
+          </div>
+          <div>
+            <p class="eyebrow">Progress</p>
+            <strong data-demo-progress>— / 8</strong>
+          </div>
+          <div>
+            <p class="eyebrow">Mode</p>
+            <strong>Free demo · no timer</strong>
+          </div>
+        </div>
+
+        <div class="demo-exam-layout" data-demo-layout>
+          <article class="reading-passage" data-demo-passage-wrap hidden>
+            <h3 data-demo-passage-title></h3>
+            <div data-demo-passage-text></div>
+          </article>
+
+          <div class="practice-card guided-card demo-question-card">
+            <div class="practice-topline">
+              <span data-demo-counter>— / 8</span>
+              <span class="question-meta" data-demo-type></span>
+            </div>
+            <p class="question-meta" data-demo-meta></p>
+            <h3 data-demo-question></h3>
+            <div class="choice-list" data-demo-options></div>
+            <div class="practice-actions">
+              <button class="button secondary" type="button" data-demo-prev disabled>Previous</button>
+              <button class="button primary" type="button" data-demo-next disabled>Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="results-panel" data-demo-results hidden>
+        <div class="results-hero">
+          <div>
+            <p class="eyebrow">Demo snapshot</p>
+            <h2>Your score</h2>
+            <p data-demo-result-message></p>
+          </div>
+          <div class="result-score">
+            <span>Total</span>
+            <strong data-demo-total>0/8</strong>
+            <small data-demo-total-note></small>
+          </div>
+        </div>
+
+        <div class="result-study" data-demo-study-focus></div>
+        <div class="result-misses-panel" data-demo-mistakes></div>
+
+        <div class="practice-actions results-actions">
+          <a class="button primary" href="dashboard.html">Go to dashboard</a>
+          <button class="button secondary" type="button" data-demo-retry>Try demo again</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>TOEIC BOOST</strong>
+      <span>by Teacher Israel Ventura</span>
+    </footer>
+
+    <script src="progress.js"></script>
+    <script src="demo-test.js"></script>
+  </body>
+</html>

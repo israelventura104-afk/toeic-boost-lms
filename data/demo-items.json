@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "p5-01",
+      "part": 5,
+      "partLabel": "Part 5 · Incomplete Sentences",
+      "skill": "Verb forms",
+      "prompt": "The sales team _____ the quarterly report before the Friday deadline.",
+      "options": [
+        { "key": "A", "text": "submit" },
+        { "key": "B", "text": "submits" },
+        { "key": "C", "text": "submitted" },
+        { "key": "D", "text": "submitting" }
+      ],
+      "correctKey": "C",
+      "explanation": "The sentence refers to a completed action before a past deadline, so the simple past \"submitted\" is correct."
+    },
+    {
+      "id": "p5-02",
+      "part": 5,
+      "partLabel": "Part 5 · Incomplete Sentences",
+      "skill": "Prepositions",
+      "prompt": "Please send your expense claims _____ the accounting department by the 15th.",
+      "options": [
+        { "key": "A", "text": "at" },
+        { "key": "B", "text": "to" },
+        { "key": "C", "text": "on" },
+        { "key": "D", "text": "for" }
+      ],
+      "correctKey": "B",
+      "explanation": "We \"send something to\" a person or department. \"To\" marks the recipient."
+    },
+    {
+      "id": "p5-03",
+      "part": 5,
+      "partLabel": "Part 5 · Incomplete Sentences",
+      "skill": "Word forms",
+      "prompt": "Ms. Ortega gave a _____ presentation on the new client onboarding process.",
+      "options": [
+        { "key": "A", "text": "persuade" },
+        { "key": "B", "text": "persuasion" },
+        { "key": "C", "text": "persuasive" },
+        { "key": "D", "text": "persuasively" }
+      ],
+      "correctKey": "C",
+      "explanation": "An adjective is needed before the noun \"presentation.\" \"Persuasive\" correctly modifies the noun."
+    },
+    {
+      "id": "p6-01",
+      "part": 6,
+      "partLabel": "Part 6 · Text Completion",
+      "skill": "Connectors",
+      "passageId": "email-office-move",
+      "passageTitle": "Office relocation notice",
+      "passageText": "Dear colleagues,\n\nOur downtown branch will move to 480 Harbor Avenue next month. The new suite offers more meeting rooms and better transit access. _____ packing guidelines will be emailed to each team lead this week.\n\nThank you for your cooperation.\nFacilities Team",
+      "blankIndex": 1,
+      "prompt": "Select the best word or phrase for the blank.",
+      "options": [
+        { "key": "A", "text": "Detailed" },
+        { "key": "B", "text": "Detailing" },
+        { "key": "C", "text": "Details" },
+        { "key": "D", "text": "In detail" }
+      ],
+      "correctKey": "A",
+      "explanation": "\"Detailed\" is an adjective modifying \"packing guidelines.\" The other options do not fit grammatically before the noun."
+    },
+    {
+      "id": "p6-02",
+      "part": 6,
+      "partLabel": "Part 6 · Text Completion",
+      "skill": "Verb tense / agreement",
+      "passageId": "email-office-move",
+      "passageTitle": "Office relocation notice",
+      "passageText": "Dear colleagues,\n\nOur downtown branch will move to 480 Harbor Avenue next month. The new suite offers more meeting rooms and better transit access. Detailed packing guidelines will be emailed to each team lead this week.\n\nStaff _____ expected to label boxes clearly and leave personal items at home on moving day.\n\nThank you for your cooperation.\nFacilities Team",
+      "blankIndex": 2,
+      "prompt": "Select the best word or phrase for the blank.",
+      "options": [
+        { "key": "A", "text": "is" },
+        { "key": "B", "text": "are" },
+        { "key": "C", "text": "be" },
+        { "key": "D", "text": "being" }
+      ],
+      "correctKey": "B",
+      "explanation": "\"Staff\" is treated as a plural group here with \"are expected.\" \"Are\" agrees with the plural sense of the subject."
+    },
+    {
+      "id": "p7-01",
+      "part": 7,
+      "partLabel": "Part 7 · Reading Comprehension",
+      "skill": "Main idea",
+      "passageId": "memo-flex-hours",
+      "passageTitle": "Memo: Flexible hours pilot",
+      "passageText": "TO: All North Region employees\nFROM: Priya Raman, HR Director\nDATE: March 3\nSUBJECT: Flexible hours pilot — April to June\n\nStarting April 1, North Region staff may choose a start time between 7:00 a.m. and 10:00 a.m., provided they complete an eight-hour workday and attend the Tuesday 9:30 a.m. team standup in person or online.\n\nManagers must approve each schedule in the HR portal by March 20. The pilot will be reviewed in early July. Employees who prefer a fixed 9:00–5:00 schedule do not need to take any action.\n\nQuestions may be sent to hr-north@summitline.example.",
+      "prompt": "What is the main purpose of this memo?",
+      "options": [
+        { "key": "A", "text": "To announce a temporary flexible-hours program" },
+        { "key": "B", "text": "To cancel Tuesday team standups" },
+        { "key": "C", "text": "To require all staff to start at 7:00 a.m." },
+        { "key": "D", "text": "To move the company headquarters" }
+      ],
+      "correctKey": "A",
+      "explanation": "The subject and body introduce a flexible-hours pilot from April to June. Other options contradict the memo."
+    },
+    {
+      "id": "p7-02",
+      "part": 7,
+      "partLabel": "Part 7 · Reading Comprehension",
+      "skill": "Detail",
+      "passageId": "memo-flex-hours",
+      "passageTitle": "Memo: Flexible hours pilot",
+      "passageText": "TO: All North Region employees\nFROM: Priya Raman, HR Director\nDATE: March 3\nSUBJECT: Flexible hours pilot — April to June\n\nStarting April 1, North Region staff may choose a start time between 7:00 a.m. and 10:00 a.m., provided they complete an eight-hour workday and attend the Tuesday 9:30 a.m. team standup in person or online.\n\nManagers must approve each schedule in the HR portal by March 20. The pilot will be reviewed in early July. Employees who prefer a fixed 9:00–5:00 schedule do not need to take any action.\n\nQuestions may be sent to hr-north@summitline.example.",
+      "prompt": "By which date must managers approve new schedules?",
+      "options": [
+        { "key": "A", "text": "March 3" },
+        { "key": "B", "text": "March 20" },
+        { "key": "C", "text": "April 1" },
+        { "key": "D", "text": "Early July" }
+      ],
+      "correctKey": "B",
+      "explanation": "The memo states managers must approve each schedule in the HR portal by March 20."
+    },
+    {
+      "id": "p7-03",
+      "part": 7,
+      "partLabel": "Part 7 · Reading Comprehension",
+      "skill": "Inference",
+      "passageId": "memo-flex-hours",
+      "passageTitle": "Memo: Flexible hours pilot",
+      "passageText": "TO: All North Region employees\nFROM: Priya Raman, HR Director\nDATE: March 3\nSUBJECT: Flexible hours pilot — April to June\n\nStarting April 1, North Region staff may choose a start time between 7:00 a.m. and 10:00 a.m., provided they complete an eight-hour workday and attend the Tuesday 9:30 a.m. team standup in person or online.\n\nManagers must approve each schedule in the HR portal by March 20. The pilot will be reviewed in early July. Employees who prefer a fixed 9:00–5:00 schedule do not need to take any action.\n\nQuestions may be sent to hr-north@summitline.example.",
+      "prompt": "What can be inferred about employees who keep a 9:00–5:00 schedule?",
+      "options": [
+        { "key": "A", "text": "They must email HR immediately." },
+        { "key": "B", "text": "They are not allowed to join Tuesday standups." },
+        { "key": "C", "text": "They do not need to change anything for the pilot." },
+        { "key": "D", "text": "They will work only four days a week." }
+      ],
+      "correctKey": "C",
+      "explanation": "The memo says employees who prefer a fixed 9:00–5:00 schedule do not need to take any action."
+    }
+  ]
+}
