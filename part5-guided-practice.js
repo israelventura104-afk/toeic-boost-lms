@@ -186,9 +186,10 @@ function renderQuestion() {
   const answeredCount = guidedState.answers.size;
 
   counterEl.textContent = `${guidedState.index + 1} / ${guidedState.questions.length}`;
-  metaEl.textContent = item.subskill
-    ? `${normalizeSkill(item.skill)} · ${item.subskill}`
-    : normalizeSkill(item.skill);
+  if (metaEl) {
+    metaEl.textContent = "";
+    metaEl.hidden = true;
+  }
   questionEl.textContent = item.question;
   if (progressBarEl) {
     progressBarEl.style.width = `${Math.round(
@@ -368,9 +369,7 @@ function paintResults(correctCount, total, studyRows, misses) {
             <article class="result-miss">
               <div class="result-miss-top">
                 <span class="result-miss-num">${index + 1}</span>
-                <span class="result-miss-tag">${escapeHtml(
-                  [normalizeSkill(item.skill), item.subskill].filter(Boolean).join(" · ")
-                )}</span>
+                <span class="result-miss-tag">Part 5</span>
               </div>
               <p class="result-miss-stem">${escapeHtml(item.question)}</p>
               <p class="result-miss-keys">Yours: <b>${escapeHtml(

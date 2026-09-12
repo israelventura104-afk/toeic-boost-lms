@@ -18,6 +18,12 @@ const questionEl = document.querySelector("[data-question]");
 const metaEl = document.querySelector("[data-question-meta]");
 const optionsEl = document.querySelector("[data-options]");
 const feedbackEl = document.querySelector("[data-feedback]");
+const resultsEl = document.querySelector("[data-results]");
+const mistakesEl = document.querySelector("[data-mistakes]");
+const resultMessageEl = document.querySelector("[data-result-message]");
+const finalScoreEl = document.querySelector("[data-final-score]");
+const finalNoteEl = document.querySelector("[data-final-note]");
+const restartBtn = document.querySelector("[data-restart]");
 const counterEl = document.querySelector("[data-counter]");
 const prevBtn = document.querySelector("[data-prev]");
 const nextBtn = document.querySelector("[data-next]");
@@ -138,9 +144,10 @@ function renderQuestion() {
   const total = quizState.questions.length;
 
   counterEl.textContent = `${quizState.index + 1} / ${total}`;
-  metaEl.textContent = item.subskill
-    ? `${item.skill} · ${item.subskill}`
-    : item.skill;
+  if (metaEl) {
+    metaEl.textContent = "";
+    metaEl.hidden = true;
+  }
   questionEl.textContent = item.question;
 
   optionsEl.innerHTML = "";
@@ -218,6 +225,54 @@ function updateScore() {
   scoreEl.textContent = `${correct}/${answered.length || 0} correct`;
 }
 
+function paintMistakes() {
+  if (!mistakesEl) return;
+  const misses = quizState.questions
+    .map((item) => ({ item, answer: quizState.answers.get(item.id) }))
+    .filter(({ answer }) => answer && !answer.correct);
+
+  if (!misses.length) {
+    mistakesEl.innerHTML = `
+      <div class="result-misses-head">
+        <p class="eyebrow">Mistakes</p>
+        <strong>None — clean run</strong>
+      </div>
+      <div class="empty-review"><p>You answered every item correctly in this set.</p></div>
+    `;
+    return;
+  }
+
+  mistakesEl.innerHTML = `
+    <div class="result-misses-head">
+      <p class="eyebrow">Review mistakes</p>
+      <strong>${misses.length} to review</strong>
+    </div>
+    <div class="result-miss-list">
+      ${misses
+        .map(({ item, answer }, i) => `
+        <article class="result-miss">
+          <div class="result-miss-top">
+            <span class="result-miss-num">${i + 1}</span>
+            <span class="result-miss-tag">Part 5</span>
+          </div>
+          <p class="result-miss-stem">${escapeHtml(item.question)}</p>
+          <p class="result-miss-keys">
+            Yours: <b>${escapeHtml(answer.selectedKey || "—")}</b>
+            · Correct: <b>${escapeHtml(item.correctKey)}. ${escapeHtml(item.correctAnswer)}</b>
+          </p>
+          ${
+            item.explanation
+              ? `<details class="result-miss-why"><summary>Why</summary><p>${escapeHtml(
+                  item.explanation
+                )}</p></details>`
+              : ""
+          }
+        </article>`)
+        .join("")}
+    </div>
+  `;
+}
+
 function showFinished() {
   const total = quizState.questions.length;
   const answered = [...quizState.answers.values()];
@@ -225,26 +280,45 @@ function showFinished() {
   const percent = total ? Math.round((correct / total) * 100) : 0;
 
   quizState.finished = true;
-  setStatus(
-    `Free practice complete · ${correct}/${total} (${percent}%). Tap Restart to try the same 10 again.`
-  );
+  setStatus(`Free practice complete · ${correct}/${total} (${percent}%).`);
   updateNav();
   updateScore();
   counterEl.textContent = `${total} / ${total}`;
+
+  if (practiceCardEl) practiceCardEl.hidden = true;
+  if (resultsEl) {
+    resultsEl.hidden = false;
+    if (resultMessageEl) {
+      resultMessageEl.textContent =
+        percent >= 80
+          ? "Strong start. Review any misses below, then try guided practice when you are ready."
+          : "Good effort. Review each miss below before you try the set again.";
+    }
+    if (finalScoreEl) finalScoreEl.textContent = `${correct}/${total}`;
+    if (finalNoteEl) finalNoteEl.textContent = `${percent}% · same 10 items`;
+    paintMistakes();
+    resultsEl.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function restartPractice() {
+  quizState.index = 0;
+  quizState.answers = new Map();
+  quizState.finished = false;
+  if (resultsEl) resultsEl.hidden = true;
+  if (practiceCardEl) practiceCardEl.hidden = false;
+  setStatus(
+    `Fixed set · ${quizState.questions.length} questions · same order every time · no timer`
+  );
+  renderQuestion();
+  practiceCardEl?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function goNext() {
   if (!quizState.ready || !quizState.questions.length) return;
 
   if (quizState.finished) {
-    quizState.index = 0;
-    quizState.answers = new Map();
-    quizState.finished = false;
-    setStatus(
-      `Fixed set · ${quizState.questions.length} questions · same order every time · no timer`
-    );
-    renderQuestion();
-    practiceCardEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+    restartPractice();
     return;
   }
 
@@ -276,6 +350,7 @@ function goPrev() {
 function bindControls() {
   prevBtn.addEventListener("click", goPrev);
   nextBtn.addEventListener("click", goNext);
+  restartBtn?.addEventListener("click", restartPractice);
 }
 
 async function init() {

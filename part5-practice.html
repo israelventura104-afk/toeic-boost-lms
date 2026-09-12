@@ -41,7 +41,7 @@
             <span data-counter>1 / 10</span>
             <strong data-score>0/0 correct</strong>
           </div>
-          <p class="question-meta" data-question-meta></p>
+          <p class="question-meta" data-question-meta hidden></p>
           <h3 data-question>Loading questions…</h3>
           <div class="choice-list" data-options></div>
           <div class="practice-feedback" data-feedback hidden></div>
@@ -52,12 +52,26 @@
         </div>
       </section>
 
-      <p class="question-meta" style="margin-top:0.25rem">
-        Finished? Try
-        <a href="part5-guided-practice.html">class guided practice</a>
-        (needs your teacher’s code) or return to the
-        <a href="reading.html">Reading hub</a>.
-      </p>
+      <section class="results-panel" data-results hidden>
+        <div class="results-hero">
+          <div>
+            <p class="eyebrow">Free practice snapshot</p>
+            <h2>Your score</h2>
+            <p data-result-message></p>
+          </div>
+          <div class="result-score">
+            <span>Total</span>
+            <strong data-final-score>0/10</strong>
+            <small data-final-note></small>
+          </div>
+        </div>
+        <div class="result-misses-panel" data-mistakes></div>
+        <div class="practice-actions results-actions">
+          <button class="button primary" type="button" data-restart>Try again</button>
+          <a class="button secondary" href="part5-guided-practice.html">Class guided practice</a>
+          <a class="button secondary" href="reading.html">Reading hub</a>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">

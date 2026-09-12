@@ -129,7 +129,10 @@ function renderItem() {
   progressEl.textContent = `${state.index + 1} / ${state.rows.length}`;
   counterEl.textContent = `${state.index + 1} / ${state.rows.length}`;
   typeEl.textContent = row.sectionLabel;
-  metaEl.textContent = row.skill;
+  if (metaEl) {
+    metaEl.textContent = "";
+    metaEl.hidden = true;
+  }
   questionEl.textContent = row.prompt;
 
   const layoutEl = document.querySelector("[data-demo-layout]");
