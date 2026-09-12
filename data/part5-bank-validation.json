@@ -1,0 +1,1002 @@
+{
+  "bank_id": "P5-BANK",
+  "validated_at": "2026-09-12",
+  "rubric_file": "data/part5-validation-rubric.md",
+  "threshold": "average >= 4.0; no dimension < 3",
+  "source_item_count": 90,
+  "validated_item_count": 40,
+  "target_ids": "TQB-P5-0011 … TQB-P5-0050",
+  "counts": {
+    "kept_as_is": 36,
+    "rewritten": 4,
+    "new": 0,
+    "dropped": 50
+  },
+  "skill_histogram": {
+    "Articles/Determiners": 3,
+    "Comparatives/Superlatives": 3,
+    "Conditionals": 3,
+    "Conjunctions/Transitions": 3,
+    "Gerunds/Infinitives": 4,
+    "Modals": 3,
+    "Passive Voice": 3,
+    "Prepositions": 3,
+    "Pronouns": 3,
+    "Subject-Verb Agreement": 4,
+    "Verb Tenses": 4,
+    "Word Forms": 4
+  },
+  "difficulty_histogram": {
+    "2": 13,
+    "3": 19,
+    "4": 8
+  },
+  "mean_dimension_scores": {
+    "format": 5.0,
+    "authenticity": 4.97,
+    "skill_clarity": 4.97,
+    "distractors": 4.8,
+    "explanation": 4.9
+  },
+  "overall_mean": 4.93,
+  "items": [
+    {
+      "id": "TQB-P5-0011",
+      "source_id": "TQB-P5-0011",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Sólido word form noun slot"
+    },
+    {
+      "id": "TQB-P5-0012",
+      "source_id": "TQB-P5-0051",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 4
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Noun after written + of"
+    },
+    {
+      "id": "TQB-P5-0013",
+      "source_id": "TQB-P5-0053",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Adj after linking verb"
+    },
+    {
+      "id": "TQB-P5-0014",
+      "source_id": "TQB-P5-0054",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Adj -ive before noun"
+    },
+    {
+      "id": "TQB-P5-0015",
+      "source_id": "TQB-P5-0017",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Past continuous interrupted"
+    },
+    {
+      "id": "TQB-P5-0016",
+      "source_id": "TQB-P5-0056",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Pres. perf. continuous + since"
+    },
+    {
+      "id": "TQB-P5-0017",
+      "source_id": "TQB-P5-0057",
+      "disposition": "rewritten",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Past perfect auxiliaries clarified"
+    },
+    {
+      "id": "TQB-P5-0018",
+      "source_id": "TQB-P5-0059",
+      "disposition": "rewritten",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 4,
+        "explanation": 4
+      },
+      "average": 4.6,
+      "pass": true,
+      "note": "Going-to future; distractors reforzados"
+    },
+    {
+      "id": "TQB-P5-0019",
+      "source_id": "TQB-P5-0019",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "responsible for"
+    },
+    {
+      "id": "TQB-P5-0020",
+      "source_id": "TQB-P5-0020",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "by + deadline"
+    },
+    {
+      "id": "TQB-P5-0021",
+      "source_id": "TQB-P5-0062",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "in charge of"
+    },
+    {
+      "id": "TQB-P5-0022",
+      "source_id": "TQB-P5-0022",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Although + clause vs Despite"
+    },
+    {
+      "id": "TQB-P5-0023",
+      "source_id": "TQB-P5-0065",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "however contrast"
+    },
+    {
+      "id": "TQB-P5-0024",
+      "source_id": "TQB-P5-0068",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "so that purpose"
+    },
+    {
+      "id": "TQB-P5-0025",
+      "source_id": "TQB-P5-0025",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "who subject relative"
+    },
+    {
+      "id": "TQB-P5-0026",
+      "source_id": "TQB-P5-0069",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "whose possessive"
+    },
+    {
+      "id": "TQB-P5-0027",
+      "source_id": "TQB-P5-0071",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "reflexive himself"
+    },
+    {
+      "id": "TQB-P5-0028",
+      "source_id": "TQB-P5-0028",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "along with interruption"
+    },
+    {
+      "id": "TQB-P5-0029",
+      "source_id": "TQB-P5-0029",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "neither…nor nearest"
+    },
+    {
+      "id": "TQB-P5-0030",
+      "source_id": "TQB-P5-0073",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Each of + singular"
+    },
+    {
+      "id": "TQB-P5-0031",
+      "source_id": "TQB-P5-0075",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "either…or nearest"
+    },
+    {
+      "id": "TQB-P5-0032",
+      "source_id": "TQB-P5-0031",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "2nd conditional if-clause"
+    },
+    {
+      "id": "TQB-P5-0033",
+      "source_id": "TQB-P5-0032",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "3rd conditional result"
+    },
+    {
+      "id": "TQB-P5-0034",
+      "source_id": "TQB-P5-0078",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 4
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "were unreal present"
+    },
+    {
+      "id": "TQB-P5-0035",
+      "source_id": "TQB-P5-0035",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "future passive"
+    },
+    {
+      "id": "TQB-P5-0036",
+      "source_id": "TQB-P5-0036",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "pres. perf. passive"
+    },
+    {
+      "id": "TQB-P5-0037",
+      "source_id": "TQB-P5-0083",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 4,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.6,
+      "pass": true,
+      "note": "are being + pp continuous passive"
+    },
+    {
+      "id": "TQB-P5-0038",
+      "source_id": "TQB-P5-0038",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "as…as equative"
+    },
+    {
+      "id": "TQB-P5-0039",
+      "source_id": "TQB-P5-0039",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "fewer vs less countable"
+    },
+    {
+      "id": "TQB-P5-0040",
+      "source_id": "TQB-P5-0086",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "the most among three"
+    },
+    {
+      "id": "TQB-P5-0041",
+      "source_id": "TQB-P5-0040",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "look forward to + gerund"
+    },
+    {
+      "id": "TQB-P5-0042",
+      "source_id": "TQB-P5-0042",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "avoid + gerund"
+    },
+    {
+      "id": "TQB-P5-0043",
+      "source_id": "TQB-P5-0089",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "suggest + gerund"
+    },
+    {
+      "id": "TQB-P5-0044",
+      "source_id": "TQB-P5-0091",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "be used to + gerund"
+    },
+    {
+      "id": "TQB-P5-0045",
+      "source_id": "TQB-P5-0043",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 4,
+        "explanation": 4
+      },
+      "average": 4.6,
+      "pass": true,
+      "note": "the + specific elevator"
+    },
+    {
+      "id": "TQB-P5-0046",
+      "source_id": "TQB-P5-0095",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "another + one"
+    },
+    {
+      "id": "TQB-P5-0047",
+      "source_id": "TQB-P5-0096",
+      "disposition": "rewritten",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "the + superlative; removed dash option"
+    },
+    {
+      "id": "TQB-P5-0048",
+      "source_id": "TQB-P5-0048",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 4,
+        "skill_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.6,
+      "pass": true,
+      "note": "must not prohibition"
+    },
+    {
+      "id": "TQB-P5-0049",
+      "source_id": "TQB-P5-0097",
+      "disposition": "kept",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "have to + infinitive"
+    },
+    {
+      "id": "TQB-P5-0050",
+      "source_id": "TQB-P5-0099",
+      "disposition": "rewritten",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "should have; difficulty capped at 4"
+    }
+  ],
+  "dropped": [
+    {
+      "id": "TQB-P5-0012",
+      "skill": "Word Forms",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0013",
+      "skill": "Word Forms",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0014",
+      "skill": "Word Forms",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0015",
+      "skill": "Verb Tenses",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0016",
+      "skill": "Verb Tenses",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0018",
+      "skill": "Verb Tenses",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0021",
+      "skill": "Prepositions",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0023",
+      "skill": "Conjunctions/Transitions",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Redundant in-addition pattern; kept stronger transition set"
+    },
+    {
+      "id": "TQB-P5-0024",
+      "skill": "Conjunctions/Transitions",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Unless kept via stronger set elsewhere / skill slot filled"
+    },
+    {
+      "id": "TQB-P5-0026",
+      "skill": "Pronouns",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0027",
+      "skill": "Pronouns",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0030",
+      "skill": "Subject-Verb Agreement",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0033",
+      "skill": "Conditionals",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0034",
+      "skill": "Passive Voice",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0037",
+      "skill": "Comparatives/Superlatives",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0041",
+      "skill": "Gerunds/Infinitives",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0044",
+      "skill": "Articles/Determiners",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0045",
+      "skill": "Articles/Determiners",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0046",
+      "skill": "Articles/Determiners",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Mild a/the ambiguity for receptionist"
+    },
+    {
+      "id": "TQB-P5-0047",
+      "skill": "Modals",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0049",
+      "skill": "Modals",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0050",
+      "skill": "Modals",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Too easy (d=1) for class bank"
+    },
+    {
+      "id": "TQB-P5-0052",
+      "skill": "Word Forms",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0055",
+      "skill": "Word Forms",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0058",
+      "skill": "Verb Tenses",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0060",
+      "skill": "Verb Tenses",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0061",
+      "skill": "Prepositions",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0063",
+      "skill": "Prepositions",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0064",
+      "skill": "Prepositions",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0066",
+      "skill": "Conjunctions/Transitions",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0067",
+      "skill": "Conjunctions/Transitions",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Redundant in-addition pattern; kept stronger transition set"
+    },
+    {
+      "id": "TQB-P5-0070",
+      "skill": "Pronouns",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0072",
+      "skill": "Pronouns",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0074",
+      "skill": "Subject-Verb Agreement",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0076",
+      "skill": "Subject-Verb Agreement",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0077",
+      "skill": "Conditionals",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0079",
+      "skill": "Conditionals",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0080",
+      "skill": "Conditionals",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Skill mismatch (unless labeled Conditionals) + duplicate of unless item"
+    },
+    {
+      "id": "TQB-P5-0081",
+      "skill": "Passive Voice",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0082",
+      "skill": "Passive Voice",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0084",
+      "skill": "Passive Voice",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Wrong subskill label (Get+pp) vs modal passive content; redundant with stronger passives"
+    },
+    {
+      "id": "TQB-P5-0085",
+      "skill": "Comparatives/Superlatives",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0087",
+      "skill": "Comparatives/Superlatives",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Duplicate fewer/less (kept 0039)"
+    },
+    {
+      "id": "TQB-P5-0088",
+      "skill": "Comparatives/Superlatives",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "d=5 correlative; rare for lean class bank"
+    },
+    {
+      "id": "TQB-P5-0090",
+      "skill": "Gerunds/Infinitives",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0092",
+      "skill": "Gerunds/Infinitives",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0093",
+      "skill": "Articles/Determiners",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Zero-article dash option atypical for Part 5"
+    },
+    {
+      "id": "TQB-P5-0094",
+      "skill": "Articles/Determiners",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "some/any ambiguity (both sometimes defendable)"
+    },
+    {
+      "id": "TQB-P5-0098",
+      "skill": "Modals",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    },
+    {
+      "id": "TQB-P5-0100",
+      "skill": "Modals",
+      "pass": false,
+      "disposition": "dropped",
+      "note": "Below class-bank bar or redundant after skill balancing"
+    }
+  ],
+  "mock_design_notes": [
+    "With 40 items and 12 skills (~3–4 each), a 15-item guided set can still skill-balance but will reuse items across sessions faster than the old 90-item bank.",
+    "Difficulty mix is mostly 2–3 with several 4s — suitable for mid-level class mocks; avoid stacking all d=4 in one mock form.",
+    "Intro IDs 0001–0010 remain excluded dynamically by guided practice loader.",
+    "Articles and Modals have 3 each — ensure mock blueprints do not over-sample those skills."
+  ]
+}
