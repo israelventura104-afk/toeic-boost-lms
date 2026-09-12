@@ -4,11 +4,11 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "item_count": 40,
+  "item_count": 80,
   "validation": {
     "rubric": "data/part5-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged."
+    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090 (20 items) toward ~200-item class bank."
   },
   "items": [
     {
@@ -1569,6 +1569,1567 @@
       "tags": [
         "modals",
         "should_have"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "to"
+        },
+        {
+          "key": "B",
+          "text": "with"
+        },
+        {
+          "key": "C",
+          "text": "for"
+        },
+        {
+          "key": "D",
+          "text": "of"
+        }
+      ],
+      "correctAnswer": "with",
+      "id": "TQB-P5-0051",
+      "skill": "Prepositions",
+      "subskill": "Compatible with",
+      "difficulty": 2,
+      "workplaceTopic": "IT",
+      "question": "The new scheduling software is compatible _____ both desktop and mobile devices.",
+      "correctKey": "B",
+      "explanation": "The adjective \"compatible\" takes the preposition \"with.\" The blank needs \"with\" before the devices named.",
+      "commonMistake": "Choosing \"to\" by analogy with \"similar to.\" Compatible pairs with \"with,\" not \"to.\"",
+      "learningObjective": "Memorize adjective + preposition pairs: compatible with.",
+      "tags": [
+        "prepositions",
+        "adjective_prep"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 45,
+      "options": [
+        {
+          "key": "A",
+          "text": "from"
+        },
+        {
+          "key": "B",
+          "text": "of"
+        },
+        {
+          "key": "C",
+          "text": "against"
+        },
+        {
+          "key": "D",
+          "text": "for"
+        }
+      ],
+      "correctAnswer": "from",
+      "id": "TQB-P5-0052",
+      "skill": "Prepositions",
+      "subskill": "Prohibited from + gerund",
+      "difficulty": 3,
+      "workplaceTopic": "Manufacturing",
+      "question": "Employees are prohibited _____ using personal devices inside the clean room.",
+      "correctKey": "A",
+      "explanation": "\"Prohibited from\" is the fixed pattern before a gerund. The blank requires \"from.\"",
+      "commonMistake": "Selecting \"against\" (closer to \"protect against\") or \"for,\" which do not follow \"prohibited.\"",
+      "learningObjective": "After prohibited/prevented/banned, expect from + -ing.",
+      "tags": [
+        "prepositions",
+        "prohibited_from"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "moreover"
+        },
+        {
+          "key": "B",
+          "text": "otherwise"
+        },
+        {
+          "key": "C",
+          "text": "consequently"
+        },
+        {
+          "key": "D",
+          "text": "meanwhile"
+        }
+      ],
+      "correctAnswer": "consequently",
+      "id": "TQB-P5-0053",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Consequently (result)",
+      "difficulty": 2,
+      "workplaceTopic": "Operations",
+      "question": "Production slowed last week; _____, overtime costs rose sharply.",
+      "correctKey": "C",
+      "explanation": "The second clause is a result of the first. \"Consequently\" signals cause → effect between independent clauses.",
+      "commonMistake": "Choosing \"moreover\" (adds information) or \"meanwhile\" (simultaneous time), which do not show result.",
+      "learningObjective": "Match transitions to meaning: result → consequently / therefore / as a result.",
+      "tags": [
+        "conjunctions",
+        "transitions",
+        "result"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 45,
+      "options": [
+        {
+          "key": "A",
+          "text": "Unless"
+        },
+        {
+          "key": "B",
+          "text": "Because"
+        },
+        {
+          "key": "C",
+          "text": "Although"
+        },
+        {
+          "key": "D",
+          "text": "Since"
+        }
+      ],
+      "correctAnswer": "Unless",
+      "id": "TQB-P5-0054",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Unless (condition connector)",
+      "difficulty": 3,
+      "workplaceTopic": "Procurement",
+      "question": "_____ the vendor lowers its unit price, purchasing will seek another supplier.",
+      "correctKey": "A",
+      "explanation": "\"Unless\" means \"if not.\" The company will look elsewhere if the vendor does not lower the price.",
+      "commonMistake": "Choosing \"Although\" (contrast) or \"Because/Since\" (reason), which reverse or change the logic.",
+      "learningObjective": "Treat unless as a connector meaning if not — not as a verb-tense conditional item.",
+      "tags": [
+        "conjunctions",
+        "unless"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "their"
+        },
+        {
+          "key": "B",
+          "text": "theirs"
+        },
+        {
+          "key": "C",
+          "text": "them"
+        },
+        {
+          "key": "D",
+          "text": "themselves"
+        }
+      ],
+      "correctAnswer": "their",
+      "id": "TQB-P5-0055",
+      "skill": "Pronouns",
+      "subskill": "Possessive their",
+      "difficulty": 2,
+      "workplaceTopic": "HR",
+      "question": "The handbook explains how employees can update _____ emergency contacts online.",
+      "correctKey": "A",
+      "explanation": "A possessive determiner is needed before the noun \"emergency contacts.\" \"Their\" fills that slot.",
+      "commonMistake": "Choosing \"theirs\" (standalone possessive) or \"them\" (object pronoun), which cannot modify a noun.",
+      "learningObjective": "Before a noun, use my/your/their — not mine/yours/theirs.",
+      "tags": [
+        "pronouns",
+        "possessive"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 45,
+      "options": [
+        {
+          "key": "A",
+          "text": "who"
+        },
+        {
+          "key": "B",
+          "text": "whom"
+        },
+        {
+          "key": "C",
+          "text": "which"
+        },
+        {
+          "key": "D",
+          "text": "whose"
+        }
+      ],
+      "correctAnswer": "whom",
+      "id": "TQB-P5-0056",
+      "skill": "Pronouns",
+      "subskill": "Whom as object",
+      "difficulty": 3,
+      "workplaceTopic": "Consulting",
+      "question": "The specialist _____ the board hired last month will present the findings on Friday.",
+      "correctKey": "B",
+      "explanation": "The relative pronoun is the object of \"hired\" (the board hired the specialist), so \"whom\" is correct.",
+      "commonMistake": "Defaulting to \"who\" because it appears before the verb \"will present.\" Check the relative clause role first.",
+      "learningObjective": "Who = subject; whom = object; whose = possession; which = things.",
+      "tags": [
+        "pronouns",
+        "whom"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 45,
+      "options": [
+        {
+          "key": "A",
+          "text": "increases"
+        },
+        {
+          "key": "B",
+          "text": "increased"
+        },
+        {
+          "key": "C",
+          "text": "had increased"
+        },
+        {
+          "key": "D",
+          "text": "would increase"
+        }
+      ],
+      "correctAnswer": "increases",
+      "id": "TQB-P5-0057",
+      "skill": "Conditionals",
+      "subskill": "First conditional",
+      "difficulty": 3,
+      "workplaceTopic": "Manufacturing",
+      "question": "If demand _____ next quarter, the plant will add a second shift.",
+      "correctKey": "A",
+      "explanation": "First conditional: If + present simple, will + base verb. \"Increases\" matches the real future plan.",
+      "commonMistake": "Using \"would increase\" or past forms, which belong to unreal (second/third) conditionals.",
+      "learningObjective": "Real future: If + present, will + V.",
+      "tags": [
+        "conditionals",
+        "first_conditional"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 50,
+      "options": [
+        {
+          "key": "A",
+          "text": "gave"
+        },
+        {
+          "key": "B",
+          "text": "had given"
+        },
+        {
+          "key": "C",
+          "text": "gives"
+        },
+        {
+          "key": "D",
+          "text": "would give"
+        }
+      ],
+      "correctAnswer": "had given",
+      "id": "TQB-P5-0058",
+      "skill": "Conditionals",
+      "subskill": "Third conditional",
+      "difficulty": 4,
+      "workplaceTopic": "HR",
+      "question": "If management _____ more notice, staff could have rearranged their schedules.",
+      "correctKey": "B",
+      "explanation": "Third conditional looks back at an unreal past: If + past perfect (\"had given\"), modal perfect in the result (\"could have rearranged\").",
+      "commonMistake": "Choosing simple past \"gave,\" which fits second conditional, not a past counterfactual with \"could have.\"",
+      "learningObjective": "Unreal past: If + had + V3, would/could have + V3.",
+      "tags": [
+        "conditionals",
+        "third_conditional"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "review"
+        },
+        {
+          "key": "B",
+          "text": "are reviewed"
+        },
+        {
+          "key": "C",
+          "text": "reviewing"
+        },
+        {
+          "key": "D",
+          "text": "have reviewed"
+        }
+      ],
+      "correctAnswer": "are reviewed",
+      "id": "TQB-P5-0059",
+      "skill": "Passive Voice",
+      "subskill": "Present simple passive",
+      "difficulty": 2,
+      "workplaceTopic": "Customer service",
+      "question": "All refund requests _____ carefully before a credit is issued.",
+      "correctKey": "B",
+      "explanation": "The requests receive the action; no agent is needed. Present simple passive: are + past participle.",
+      "commonMistake": "Choosing the active \"review,\" which would need a plural human subject performing the action.",
+      "learningObjective": "When the object is the subject, use be + past participle.",
+      "tags": [
+        "passive_voice",
+        "present_simple"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 50,
+      "options": [
+        {
+          "key": "A",
+          "text": "will distribute"
+        },
+        {
+          "key": "B",
+          "text": "will have been distributed"
+        },
+        {
+          "key": "C",
+          "text": "are distributing"
+        },
+        {
+          "key": "D",
+          "text": "have distributing"
+        }
+      ],
+      "correctAnswer": "will have been distributed",
+      "id": "TQB-P5-0060",
+      "skill": "Passive Voice",
+      "subskill": "Future perfect passive",
+      "difficulty": 4,
+      "workplaceTopic": "Finance",
+      "question": "By Friday, the quarterly forecasts _____ to every department head.",
+      "correctKey": "B",
+      "explanation": "\"By Friday\" marks a deadline in the future for a completed action on the forecasts → future perfect passive: will have been + V3.",
+      "commonMistake": "Choosing active \"will distribute,\" which needs a subject who distributes, or mixing progressive forms.",
+      "learningObjective": "By + future time + completed action on object → will have been + past participle.",
+      "tags": [
+        "passive_voice",
+        "future_perfect"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "little"
+        },
+        {
+          "key": "B",
+          "text": "less"
+        },
+        {
+          "key": "C",
+          "text": "least"
+        },
+        {
+          "key": "D",
+          "text": "fewer"
+        }
+      ],
+      "correctAnswer": "less",
+      "id": "TQB-P5-0061",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "Less + adjective",
+      "difficulty": 2,
+      "workplaceTopic": "Training",
+      "question": "Online modules are _____ expensive than sending staff to off-site seminars.",
+      "correctKey": "B",
+      "explanation": "Comparing two options with an adjective uses \"less … than.\" \"Fewer\" is for countable nouns, not adjectives.",
+      "commonMistake": "Selecting \"fewer\" because costs feel countable, or \"least,\" which is a superlative without a comparison group.",
+      "learningObjective": "less + adj/uncountable; fewer + plural countable; least/most for superlatives.",
+      "tags": [
+        "comparatives",
+        "less_than"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 45,
+      "options": [
+        {
+          "key": "A",
+          "text": "short"
+        },
+        {
+          "key": "B",
+          "text": "shorter"
+        },
+        {
+          "key": "C",
+          "text": "shortest"
+        },
+        {
+          "key": "D",
+          "text": "shortly"
+        }
+      ],
+      "correctAnswer": "shortest",
+      "id": "TQB-P5-0062",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "Shortest superlative",
+      "difficulty": 3,
+      "workplaceTopic": "Project management",
+      "question": "Of all the proposals submitted, Nexus offered the _____ delivery timeline.",
+      "correctKey": "C",
+      "explanation": "\"Of all the proposals\" signals a superlative among many. Short → shorter → shortest.",
+      "commonMistake": "Choosing the comparative \"shorter,\" which compares only two things, or the adverb \"shortly.\"",
+      "learningObjective": "Of all / among + group → the + -est / most.",
+      "tags": [
+        "superlatives",
+        "of_all"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "a"
+        },
+        {
+          "key": "B",
+          "text": "an"
+        },
+        {
+          "key": "C",
+          "text": "the"
+        },
+        {
+          "key": "D",
+          "text": "these"
+        }
+      ],
+      "correctAnswer": "an",
+      "id": "TQB-P5-0063",
+      "skill": "Articles/Determiners",
+      "subskill": "An before vowel sound",
+      "difficulty": 2,
+      "workplaceTopic": "HR",
+      "question": "The hiring manager holds _____ MBA from a well-known business school.",
+      "correctKey": "B",
+      "explanation": "\"MBA\" begins with a vowel sound (/em/), so the indefinite article is \"an.\"",
+      "commonMistake": "Choosing \"a\" by looking at the letter M as a consonant letter rather than its spoken sound.",
+      "learningObjective": "Choose a/an by sound, not spelling: an hour, an MBA, a university.",
+      "tags": [
+        "articles",
+        "an_vowel_sound"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 45,
+      "options": [
+        {
+          "key": "A",
+          "text": "few"
+        },
+        {
+          "key": "B",
+          "text": "little"
+        },
+        {
+          "key": "C",
+          "text": "many"
+        },
+        {
+          "key": "D",
+          "text": "several"
+        }
+      ],
+      "correctAnswer": "little",
+      "id": "TQB-P5-0064",
+      "skill": "Articles/Determiners",
+      "subskill": "Little vs few",
+      "difficulty": 3,
+      "workplaceTopic": "Presentations",
+      "question": "There is _____ time left to revise the slides before the client call.",
+      "correctKey": "B",
+      "explanation": "\"Time\" is uncountable, so \"little\" (not \"few/many/several\") is the correct determiner for a small amount.",
+      "commonMistake": "Using \"few\" or \"several,\" which modify plural countable nouns, not uncountable \"time.\"",
+      "learningObjective": "little/much + uncountable; few/many + plural countable.",
+      "tags": [
+        "determiners",
+        "little_few"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "can"
+        },
+        {
+          "key": "B",
+          "text": "might"
+        },
+        {
+          "key": "C",
+          "text": "must"
+        },
+        {
+          "key": "D",
+          "text": "would"
+        }
+      ],
+      "correctAnswer": "must",
+      "id": "TQB-P5-0065",
+      "skill": "Modals",
+      "subskill": "Must (obligation)",
+      "difficulty": 2,
+      "workplaceTopic": "Safety",
+      "question": "Staff _____ wear closed-toe shoes when touring the production floor.",
+      "correctKey": "C",
+      "explanation": "Safety rules express strong obligation. \"Must\" is the fitting modal before the base verb \"wear.\"",
+      "commonMistake": "Choosing \"can\" (ability/permission) or \"might\" (possibility), which weaken a required safety rule.",
+      "learningObjective": "Must = strong obligation; can/might = ability or possibility.",
+      "tags": [
+        "modals",
+        "obligation"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 50,
+      "options": [
+        {
+          "key": "A",
+          "text": "had"
+        },
+        {
+          "key": "B",
+          "text": "would"
+        },
+        {
+          "key": "C",
+          "text": "should"
+        },
+        {
+          "key": "D",
+          "text": "could"
+        }
+      ],
+      "correctAnswer": "had",
+      "id": "TQB-P5-0066",
+      "skill": "Modals",
+      "subskill": "Had better",
+      "difficulty": 4,
+      "workplaceTopic": "Banking",
+      "question": "You _____ better double-check the account numbers before transferring funds.",
+      "correctKey": "A",
+      "explanation": "The fixed advice pattern is \"had better + base verb.\" Here \"had\" completes \"had better double-check.\"",
+      "commonMistake": "Inserting \"should\" or \"would\" before \"better,\" which produces ungrammatical strings in standard workplace English.",
+      "learningObjective": "had better + V = strong advice / warning.",
+      "tags": [
+        "modals",
+        "had_better"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "introduction"
+        },
+        {
+          "key": "B",
+          "text": "introductory"
+        },
+        {
+          "key": "C",
+          "text": "introduce"
+        },
+        {
+          "key": "D",
+          "text": "introducing"
+        }
+      ],
+      "correctAnswer": "introductory",
+      "id": "TQB-P5-0067",
+      "skill": "Word Forms",
+      "subskill": "Adjective before noun",
+      "difficulty": 2,
+      "workplaceTopic": "Corporate events",
+      "question": "The CEO's _____ remarks opened the annual shareholders' meeting.",
+      "correctKey": "B",
+      "explanation": "The blank modifies the noun \"remarks,\" so an adjective is required: \"introductory.\"",
+      "commonMistake": "Choosing the noun \"introduction\" or the verb \"introduce,\" which cannot modify \"remarks\" in this slot.",
+      "learningObjective": "Adjective + noun: look for -ive/-ory/-al forms before the head noun.",
+      "tags": [
+        "word_forms",
+        "adjective"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 45,
+      "options": [
+        {
+          "key": "A",
+          "text": "grow"
+        },
+        {
+          "key": "B",
+          "text": "grown"
+        },
+        {
+          "key": "C",
+          "text": "growth"
+        },
+        {
+          "key": "D",
+          "text": "growing"
+        }
+      ],
+      "correctAnswer": "growth",
+      "id": "TQB-P5-0068",
+      "skill": "Word Forms",
+      "subskill": "Noun after adjective",
+      "difficulty": 3,
+      "workplaceTopic": "Logistics",
+      "question": "Rapid _____ in the logistics sector has created new warehouse jobs.",
+      "correctKey": "C",
+      "explanation": "After the adjective \"Rapid,\" the subject needs a noun: \"growth.\" The verb \"has created\" confirms a noun subject.",
+      "commonMistake": "Selecting \"growing\" (participle/gerund) when a plain noun subject is required after \"Rapid.\"",
+      "learningObjective": "Adj + noun subject: Rapid growth / Strong demand / High turnover.",
+      "tags": [
+        "word_forms",
+        "noun_form"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 40,
+      "options": [
+        {
+          "key": "A",
+          "text": "installs"
+        },
+        {
+          "key": "B",
+          "text": "is installing"
+        },
+        {
+          "key": "C",
+          "text": "installed"
+        },
+        {
+          "key": "D",
+          "text": "has installed"
+        }
+      ],
+      "correctAnswer": "is installing",
+      "id": "TQB-P5-0069",
+      "skill": "Verb Tenses",
+      "subskill": "Present continuous",
+      "difficulty": 2,
+      "workplaceTopic": "IT",
+      "question": "Right now, the IT crew _____ the new printers on the third floor.",
+      "correctKey": "B",
+      "explanation": "\"Right now\" marks an action in progress. Present continuous: is/are + -ing.",
+      "commonMistake": "Choosing present simple \"installs\" (habits) or present perfect (completed result), which ignore \"right now.\"",
+      "learningObjective": "Time markers like right now / currently → present continuous.",
+      "tags": [
+        "verb_tenses",
+        "present_continuous"
+      ]
+    },
+    {
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "estimatedTime": 50,
+      "options": [
+        {
+          "key": "A",
+          "text": "will review"
+        },
+        {
+          "key": "B",
+          "text": "will have reviewed"
+        },
+        {
+          "key": "C",
+          "text": "are reviewing"
+        },
+        {
+          "key": "D",
+          "text": "review"
+        }
+      ],
+      "correctAnswer": "will have reviewed",
+      "id": "TQB-P5-0070",
+      "skill": "Verb Tenses",
+      "subskill": "Future perfect",
+      "difficulty": 4,
+      "workplaceTopic": "Accounting",
+      "question": "By the time the auditor arrives tomorrow, the clerks _____ the ledgers twice.",
+      "correctKey": "B",
+      "explanation": "Future perfect shows an action finished before a future point: will have + past participle before \"the auditor arrives.\"",
+      "commonMistake": "Choosing \"will review,\" which does not guarantee completion before the arrival time marker.",
+      "learningObjective": "By the time + present, will have + V3.",
+      "tags": [
+        "verb_tenses",
+        "future_perfect"
+      ]
+    },
+    {
+      "id": "TQB-P5-0071",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "The number of + singular",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "HR",
+      "question": "The number of remote positions _____ increased significantly since last year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "have"
+        },
+        {
+          "key": "B",
+          "text": "has"
+        },
+        {
+          "key": "C",
+          "text": "are"
+        },
+        {
+          "key": "D",
+          "text": "were"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "has",
+      "explanation": "With \"the number of,\" the head noun is singular \"number,\" so the verb is singular: has.",
+      "commonMistake": "Choosing \"have\" because \"positions\" is plural; agreement follows \"number,\" not the plural noun after of.",
+      "learningObjective": "Use a singular verb after \"the number of + plural noun.\"",
+      "tags": [
+        "subject_verb_agreement",
+        "the_number_of"
+      ]
+    },
+    {
+      "id": "TQB-P5-0072",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Everyone + singular",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "Sales",
+      "question": "Everyone in the sales department _____ required to attend Thursday's product briefing.",
+      "options": [
+        {
+          "key": "A",
+          "text": "are"
+        },
+        {
+          "key": "B",
+          "text": "is"
+        },
+        {
+          "key": "C",
+          "text": "were"
+        },
+        {
+          "key": "D",
+          "text": "have been"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "is",
+      "explanation": "Indefinite pronouns like everyone take a singular verb. \"Is required\" matches the singular subject.",
+      "commonMistake": "Choosing \"are\" because many people are implied; grammatically everyone is singular.",
+      "learningObjective": "Match singular verbs to everyone, everybody, someone, and similar pronouns.",
+      "tags": [
+        "subject_verb_agreement",
+        "everyone"
+      ]
+    },
+    {
+      "id": "TQB-P5-0073",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "One of the + plural + singular verb",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Project management",
+      "question": "One of the proposals _____ a detailed timeline for the warehouse expansion.",
+      "options": [
+        {
+          "key": "A",
+          "text": "include"
+        },
+        {
+          "key": "B",
+          "text": "includes"
+        },
+        {
+          "key": "C",
+          "text": "including"
+        },
+        {
+          "key": "D",
+          "text": "to include"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "includes",
+      "explanation": "In \"one of the + plural noun,\" the subject is singular \"one,\" so the verb is includes.",
+      "commonMistake": "Choosing \"include\" to agree with \"proposals\"; the true subject is \"one.\"",
+      "learningObjective": "After \"one of the + plural noun,\" use a third-person singular verb.",
+      "tags": [
+        "subject_verb_agreement",
+        "one_of_the"
+      ]
+    },
+    {
+      "id": "TQB-P5-0074",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Decide + to-infinitive",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Procurement",
+      "question": "After reviewing the quotes, purchasing decided _____ with a local supplier.",
+      "options": [
+        {
+          "key": "A",
+          "text": "proceed"
+        },
+        {
+          "key": "B",
+          "text": "proceeding"
+        },
+        {
+          "key": "C",
+          "text": "to proceed"
+        },
+        {
+          "key": "D",
+          "text": "proceeded"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "to proceed",
+      "explanation": "Decide is followed by a to-infinitive: decided to proceed.",
+      "commonMistake": "Choosing the bare infinitive \"proceed\" or the gerund \"proceeding,\" which do not follow decide.",
+      "learningObjective": "After decide, use to + base verb.",
+      "tags": [
+        "gerunds_infinitives",
+        "decide_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0075",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Mind + gerund",
+      "difficulty": 3,
+      "estimatedTime": 35,
+      "workplaceTopic": "Meetings",
+      "question": "Would you mind _____ the conference call by fifteen minutes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "reschedule"
+        },
+        {
+          "key": "B",
+          "text": "rescheduling"
+        },
+        {
+          "key": "C",
+          "text": "to reschedule"
+        },
+        {
+          "key": "D",
+          "text": "rescheduled"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "rescheduling",
+      "explanation": "Mind takes a gerund: Would you mind rescheduling…?",
+      "commonMistake": "Choosing \"to reschedule\" because many polite requests use infinitives; mind requires verb-ing.",
+      "learningObjective": "After mind (and would you mind), use a gerund.",
+      "tags": [
+        "gerunds_infinitives",
+        "mind"
+      ]
+    },
+    {
+      "id": "TQB-P5-0076",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Object to + gerund",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "Office",
+      "question": "Several tenants objected to _____ the lobby renovated during business hours.",
+      "options": [
+        {
+          "key": "A",
+          "text": "have"
+        },
+        {
+          "key": "B",
+          "text": "having"
+        },
+        {
+          "key": "C",
+          "text": "had"
+        },
+        {
+          "key": "D",
+          "text": "to have"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "having",
+      "explanation": "In \"object to,\" to is a preposition, so a gerund follows: objected to having…",
+      "commonMistake": "Treating to as an infinitive marker and choosing \"have\" or \"to have.\"",
+      "learningObjective": "After object to (and similar verb + to preposition patterns), use verb-ing.",
+      "tags": [
+        "gerunds_infinitives",
+        "object_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0077",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Adverb modifying verb",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "Logistics",
+      "question": "The courier delivered the contract _____ so that the signing could begin on time.",
+      "options": [
+        {
+          "key": "A",
+          "text": "prompt"
+        },
+        {
+          "key": "B",
+          "text": "promptly"
+        },
+        {
+          "key": "C",
+          "text": "promptness"
+        },
+        {
+          "key": "D",
+          "text": "prompts"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "promptly",
+      "explanation": "The blank modifies the verb delivered, so an adverb is needed: promptly.",
+      "commonMistake": "Choosing the adjective \"prompt,\" which cannot modify a verb.",
+      "learningObjective": "Use an -ly adverb when the blank modifies how an action is done.",
+      "tags": [
+        "word_forms",
+        "adverb"
+      ]
+    },
+    {
+      "id": "TQB-P5-0078",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Noun after adjective",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Manufacturing",
+      "question": "Regular _____ of equipment reduces unexpected downtime on the production line.",
+      "options": [
+        {
+          "key": "A",
+          "text": "maintain"
+        },
+        {
+          "key": "B",
+          "text": "maintenance"
+        },
+        {
+          "key": "C",
+          "text": "maintained"
+        },
+        {
+          "key": "D",
+          "text": "maintaining"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "maintenance",
+      "explanation": "After the adjective Regular, the blank needs a noun subject: maintenance.",
+      "commonMistake": "Choosing the verb \"maintain\" or the participle \"maintaining,\" which cannot fill a noun slot after Regular.",
+      "learningObjective": "After an adjective before of + noun phrase, select the matching noun form.",
+      "tags": [
+        "word_forms",
+        "noun_form"
+      ]
+    },
+    {
+      "id": "TQB-P5-0079",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Simple past with ago",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Operations",
+      "question": "The facilities crew _____ the air filters in every conference room two weeks ago.",
+      "options": [
+        {
+          "key": "A",
+          "text": "replace"
+        },
+        {
+          "key": "B",
+          "text": "replaced"
+        },
+        {
+          "key": "C",
+          "text": "have replaced"
+        },
+        {
+          "key": "D",
+          "text": "are replacing"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "replaced",
+      "explanation": "\"Two weeks ago\" marks a finished past time, so simple past replaced is required.",
+      "commonMistake": "Choosing present perfect \"have replaced,\" which does not pair with ago + specific past time.",
+      "learningObjective": "Use simple past with finished-time markers such as ago, yesterday, and last week.",
+      "tags": [
+        "verb_tenses",
+        "simple_past"
+      ]
+    },
+    {
+      "id": "TQB-P5-0080",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Future continuous",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "Safety",
+      "question": "At this time tomorrow, the inspectors _____ the loading docks.",
+      "options": [
+        {
+          "key": "A",
+          "text": "visit"
+        },
+        {
+          "key": "B",
+          "text": "will be visiting"
+        },
+        {
+          "key": "C",
+          "text": "have visited"
+        },
+        {
+          "key": "D",
+          "text": "are visited"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "will be visiting",
+      "explanation": "\"At this time tomorrow\" points to an action in progress in the future: will be visiting.",
+      "commonMistake": "Choosing simple \"visit\" or present perfect; the time phrase needs future continuous.",
+      "learningObjective": "Use will be + -ing for actions in progress at a future moment.",
+      "tags": [
+        "verb_tenses",
+        "future_continuous"
+      ]
+    },
+    {
+      "id": "TQB-P5-0081",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Aware of",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "Customer service",
+      "question": "Managers should be aware _____ seasonal spikes in customer complaints.",
+      "options": [
+        {
+          "key": "A",
+          "text": "of"
+        },
+        {
+          "key": "B",
+          "text": "for"
+        },
+        {
+          "key": "C",
+          "text": "to"
+        },
+        {
+          "key": "D",
+          "text": "with"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "of",
+      "explanation": "The adjective aware is paired with of: aware of seasonal spikes.",
+      "commonMistake": "Choosing \"to\" or \"for,\" which fit other adjectives (accustomed to, responsible for) but not aware.",
+      "learningObjective": "Memorize adjective + preposition pairs such as aware of.",
+      "tags": [
+        "prepositions",
+        "aware_of"
+      ]
+    },
+    {
+      "id": "TQB-P5-0082",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Capable of + gerund",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "IT",
+      "question": "The upgraded scanner is capable _____ processing double-sided forms automatically.",
+      "options": [
+        {
+          "key": "A",
+          "text": "to"
+        },
+        {
+          "key": "B",
+          "text": "of"
+        },
+        {
+          "key": "C",
+          "text": "for"
+        },
+        {
+          "key": "D",
+          "text": "with"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "of",
+      "explanation": "Capable takes of + gerund: capable of processing…",
+      "commonMistake": "Choosing \"to\" by analogy with able to; capable uses of, not to.",
+      "learningObjective": "Use capable of + verb-ing (contrast with able to + base verb).",
+      "tags": [
+        "prepositions",
+        "capable_of"
+      ]
+    },
+    {
+      "id": "TQB-P5-0083",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Moreover addition",
+      "difficulty": 3,
+      "estimatedTime": 35,
+      "workplaceTopic": "Corporate events",
+      "question": "The venue is centrally located; _____, it offers complimentary parking for guests.",
+      "options": [
+        {
+          "key": "A",
+          "text": "moreover"
+        },
+        {
+          "key": "B",
+          "text": "because"
+        },
+        {
+          "key": "C",
+          "text": "although"
+        },
+        {
+          "key": "D",
+          "text": "despite"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "moreover",
+      "explanation": "Moreover adds a second advantage after a semicolon: it is an additive transition adverb.",
+      "commonMistake": "Choosing \"although\" or \"despite,\" which signal contrast, or \"because,\" which needs a reason clause.",
+      "learningObjective": "Use moreover / furthermore to add supporting information between clauses.",
+      "tags": [
+        "conjunctions",
+        "moreover"
+      ]
+    },
+    {
+      "id": "TQB-P5-0084",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Which relative for things",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Finance",
+      "question": "Please open the spreadsheet _____ contains last quarter's shipping totals.",
+      "options": [
+        {
+          "key": "A",
+          "text": "who"
+        },
+        {
+          "key": "B",
+          "text": "whom"
+        },
+        {
+          "key": "C",
+          "text": "which"
+        },
+        {
+          "key": "D",
+          "text": "whose"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "which",
+      "explanation": "Which refers to things (the spreadsheet) and acts as the subject of contains.",
+      "commonMistake": "Choosing \"who\" (people) or \"whose\" (possession) instead of which for a thing subject.",
+      "learningObjective": "Use which (or that) for non-human antecedents in relative clauses.",
+      "tags": [
+        "pronouns",
+        "which"
+      ]
+    },
+    {
+      "id": "TQB-P5-0085",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "Zero conditional",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Manufacturing",
+      "question": "If the temperature _____ above 30°C, the cooling system activates automatically.",
+      "options": [
+        {
+          "key": "A",
+          "text": "rise"
+        },
+        {
+          "key": "B",
+          "text": "rises"
+        },
+        {
+          "key": "C",
+          "text": "rose"
+        },
+        {
+          "key": "D",
+          "text": "will rise"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "rises",
+      "explanation": "Zero conditionals use present simple in both clauses for general truths: If … rises, … activates.",
+      "commonMistake": "Choosing \"will rise\" as if it were a first conditional; the result clause is also present simple.",
+      "learningObjective": "For routines and automatic results, use present simple in the if-clause (zero conditional).",
+      "tags": [
+        "conditionals",
+        "zero_conditional"
+      ]
+    },
+    {
+      "id": "TQB-P5-0086",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Past simple passive",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "Safety",
+      "question": "The updated safety manual _____ to every shift supervisor last Monday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "distributed"
+        },
+        {
+          "key": "B",
+          "text": "was distributed"
+        },
+        {
+          "key": "C",
+          "text": "is distributing"
+        },
+        {
+          "key": "D",
+          "text": "has distributing"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "was distributed",
+      "explanation": "The manual received the action in the past: was distributed (past simple passive).",
+      "commonMistake": "Choosing active \"distributed\" without an agent subject, or malformed \"has distributing.\"",
+      "learningObjective": "Form past simple passive with was/were + past participle.",
+      "tags": [
+        "passive_voice",
+        "past_simple"
+      ]
+    },
+    {
+      "id": "TQB-P5-0087",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "More + adverb",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Accounting",
+      "question": "Please review the invoice _____ carefully than you did last time.",
+      "options": [
+        {
+          "key": "A",
+          "text": "more"
+        },
+        {
+          "key": "B",
+          "text": "most"
+        },
+        {
+          "key": "C",
+          "text": "much"
+        },
+        {
+          "key": "D",
+          "text": "many"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "more",
+      "explanation": "The comparison marker than requires comparative more carefully (not most).",
+      "commonMistake": "Choosing \"most\" (superlative) or \"much,\" which does not form the comparative with carefully + than.",
+      "learningObjective": "Use more + adverb + than for adverb comparatives.",
+      "tags": [
+        "comparatives",
+        "more_adverb"
+      ]
+    },
+    {
+      "id": "TQB-P5-0088",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "The other (specific alternative)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Office",
+      "question": "Please use _____ other entrance while the main lobby is being painted.",
+      "options": [
+        {
+          "key": "A",
+          "text": "an"
+        },
+        {
+          "key": "B",
+          "text": "the"
+        },
+        {
+          "key": "C",
+          "text": "a"
+        },
+        {
+          "key": "D",
+          "text": "any"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "the",
+      "explanation": "\"The other\" points to a specific remaining alternative among known options.",
+      "commonMistake": "Choosing \"a\"/\"an\" (another pattern) or \"any\"; here the alternative entrance is definite.",
+      "learningObjective": "Use the other for a definite remaining option; contrast with another.",
+      "tags": [
+        "articles",
+        "the_other"
+      ]
+    },
+    {
+      "id": "TQB-P5-0089",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Might possibility",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Logistics",
+      "question": "Shipping _____ be delayed if the storm reaches the coastal ports tonight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "might"
+        },
+        {
+          "key": "B",
+          "text": "must not"
+        },
+        {
+          "key": "C",
+          "text": "would rather"
+        },
+        {
+          "key": "D",
+          "text": "had better"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "might",
+      "explanation": "Might expresses possibility: shipping might be delayed.",
+      "commonMistake": "Choosing \"had better\" or \"must not,\" which express advice or prohibition, not possibility.",
+      "learningObjective": "Use might/may for uncertain future outcomes.",
+      "tags": [
+        "modals",
+        "might"
+      ]
+    },
+    {
+      "id": "TQB-P5-0090",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Could have + past participle",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "Project management",
+      "question": "With clearer instructions, the contractors _____ the wiring sooner.",
+      "options": [
+        {
+          "key": "A",
+          "text": "can finish"
+        },
+        {
+          "key": "B",
+          "text": "could have finished"
+        },
+        {
+          "key": "C",
+          "text": "must finish"
+        },
+        {
+          "key": "D",
+          "text": "will finish"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "could have finished",
+      "explanation": "Could have + past participle expresses an unreal past ability/opportunity: they could have finished sooner (but did not).",
+      "commonMistake": "Choosing present/future modals (can/must/will finish) that ignore the unreal past meaning.",
+      "learningObjective": "Use could have + past participle for missed past possibilities.",
+      "tags": [
+        "modals",
+        "could_have"
       ]
     }
   ]
