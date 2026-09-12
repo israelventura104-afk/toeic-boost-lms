@@ -4,7 +4,7 @@ Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to
 
 **Paso 1:** Landing page (marketing).  
 **Paso 2:** Class-code access, student dashboard, free Reading & Grammar short demo (Part 5–7 style).  
-**Paso 3:** Original Part 5 Incomplete Sentences bank (90 items total = 10 intro + 80 class-validated), free fixed practice (10), class guided practice (15), a real Reading hub, and a free Part 5 Strategies library.
+**Paso 3:** Original Part 5 Incomplete Sentences bank (110 items total = 10 intro + 100 class-validated), free fixed practice (10), class guided practice (15), a real Reading hub, and a free Part 5 Strategies library.
 
 ## Preview locally
 
@@ -34,35 +34,35 @@ Open <http://localhost:8765/>.
 | `reading.html` | No | Reading hub: Part 5 links + Parts 6/7 coming-next notes |
 | `strategies.html` | **No** | Free Part 5 study library (12 skills + exam habits) · `#part5` anchor |
 | `part5-practice.html` | **No** | Fixed 10-item intro (`TQB-P5-0001`–`0010`), immediate feedback, restart |
-| `part5-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 15 items from the 80-item class bank, balanced by skill, session saved |
+| `part5-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 15 items from the 100-item class bank, balanced by skill, session saved |
 | `demo-test.html` | No | Short Part 5–7 snapshot (unchanged from Paso 2) |
 
 Guided practice shows an inline class-code gate if the device is locked. The 10 free items are never reused in guided sets.
 
 ## Part 5 item bank (original workplace English)
 
-All 90 items are invented for this course and the class bank is **rubric-validated**. They are **not** copied from ETS, official TOEIC, or the TOEFL ITP bank.
+All 110 items are invented for this course and the class bank is **rubric-validated**. They are **not** copied from ETS, official TOEIC, or the TOEFL ITP bank.
 
 - Intro (free, fixed, `shuffle: false`, `reuse_in_mocks: false`): `data/part5-intro.json` — 10 items, IDs `TQB-P5-0001` … `TQB-P5-0010`
-- Bank (guided + later mocks, class-validated, `exclude_from_free_intro: true`): `data/part5-bank.json` — **80** items, IDs `TQB-P5-0011` … `TQB-P5-0090` (target ~200 via lotes of 20)
+- Bank (guided + later mocks, class-validated, `exclude_from_free_intro: true`): `data/part5-bank.json` — **100** items, IDs `TQB-P5-0011` … `TQB-P5-0110` (target ~200 via lotes of 20)
 - Validation: `data/part5-validation-rubric.md` + `data/part5-bank-validation.json`
 
-Skill balance (90 total = 10 intro + 80 validated bank; blueprint → ~200 class):
+Skill balance (110 total = 10 intro + 100 validated bank; blueprint → ~200 class):
 
 | Skill | Intro | Bank (validated) | Total |
 |-------|------:|-----------------:|------:|
 | Word Forms | 1 | 8 | 9 |
 | Verb Tenses | 1 | 8 | 9 |
-| Prepositions | 1 | 7 | 8 |
-| Conjunctions/Transitions | 1 | 6 | 7 |
-| Pronouns | 1 | 6 | 7 |
+| Prepositions | 1 | 8 | 9 |
+| Conjunctions/Transitions | 1 | 9 | 10 |
+| Pronouns | 1 | 9 | 10 |
 | Subject-Verb Agreement | 1 | 7 | 8 |
-| Conditionals | 1 | 6 | 7 |
-| Passive Voice | 1 | 6 | 7 |
-| Comparatives/Superlatives | 1 | 6 | 7 |
+| Conditionals | 1 | 9 | 10 |
+| Passive Voice | 1 | 9 | 10 |
+| Comparatives/Superlatives | 1 | 9 | 10 |
 | Gerunds/Infinitives | 1 | 7 | 8 |
-| Articles/Determiners | 0 | 6 | 6 |
-| Modals | 0 | 7 | 7 |
+| Articles/Determiners | 0 | 9 | 9 |
+| Modals | 0 | 8 | 8 |
 
 Each item: one blank, four options (A–D), one `correctKey` that matches `correctAnswer` text, plus explanation and common-mistake note.
 
@@ -88,7 +88,7 @@ Each item: one blank, four options (A–D), one `correctKey` that matches `corre
 | `part5-practice.html` / `part5-practice.js` | Free 10-item Part 5 set |
 | `part5-guided-practice.html` / `part5-guided-practice.js` | Class 15-item Part 5 drill |
 | `data/part5-intro.json` | Fixed free intro (10) |
-| `data/part5-bank.json` | Guided/mock class bank (80 validated; target ~200) |
+| `data/part5-bank.json` | Guided/mock class bank (100 validated; target ~200) |
 | `data/part5-validation-rubric.md` | Teacher rubric (ES) for Part 5 class items |
 | `data/part5-bank-validation.json` | Validation summary (kept/rewritten/dropped) + lote batches |
 | `data/part5-blueprint.md` | ~200-item skill targets and lote progress |

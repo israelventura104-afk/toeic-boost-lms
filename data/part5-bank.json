@@ -4,11 +4,11 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "item_count": 80,
+  "item_count": 100,
   "validation": {
     "rubric": "data/part5-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090 (20 items) toward ~200-item class bank."
+    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110 (20 items) toward ~200-item class bank."
   },
   "items": [
     {
@@ -3130,6 +3130,788 @@
       "tags": [
         "modals",
         "could_have"
+      ]
+    },
+    {
+      "id": "TQB-P5-0091",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Nevertheless contrast",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Sales",
+      "question": "Retail sales fell slightly in May; _____, online orders continued to climb.",
+      "options": [
+        {
+          "key": "A",
+          "text": "nevertheless"
+        },
+        {
+          "key": "B",
+          "text": "because"
+        },
+        {
+          "key": "C",
+          "text": "so that"
+        },
+        {
+          "key": "D",
+          "text": "unless"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "nevertheless",
+      "explanation": "Nevertheless signals contrast between two independent clauses joined by a semicolon: sales fell, but online orders rose.",
+      "commonMistake": "Choosing because or so that, which express cause or purpose rather than contrast.",
+      "learningObjective": "Use nevertheless for contrast after a semicolon.",
+      "tags": [
+        "conjunctions",
+        "nevertheless"
+      ]
+    },
+    {
+      "id": "TQB-P5-0092",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Whereas contrast",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Human resources",
+      "question": "Full-time staff receive stock options, _____ temporary contractors do not.",
+      "options": [
+        {
+          "key": "A",
+          "text": "whereas"
+        },
+        {
+          "key": "B",
+          "text": "therefore"
+        },
+        {
+          "key": "C",
+          "text": "meanwhile"
+        },
+        {
+          "key": "D",
+          "text": "furthermore"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "whereas",
+      "explanation": "Whereas contrasts two clauses: full-time employees get options, but contractors do not.",
+      "commonMistake": "Choosing therefore (result) or furthermore (addition) instead of a contrast connector.",
+      "learningObjective": "Use whereas to contrast two clauses in workplace comparisons.",
+      "tags": [
+        "conjunctions",
+        "whereas"
+      ]
+    },
+    {
+      "id": "TQB-P5-0093",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Otherwise consequence",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "IT / Security",
+      "question": "Please renew your password before Friday; _____, your account will be locked.",
+      "options": [
+        {
+          "key": "A",
+          "text": "otherwise"
+        },
+        {
+          "key": "B",
+          "text": "although"
+        },
+        {
+          "key": "C",
+          "text": "likewise"
+        },
+        {
+          "key": "D",
+          "text": "besides"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "otherwise",
+      "explanation": "Otherwise means 'if not': renew the password, or your account will be locked.",
+      "commonMistake": "Selecting although (concession) or likewise (similarity), which do not signal a negative consequence.",
+      "learningObjective": "Use otherwise to show what happens if the first action is not taken.",
+      "tags": [
+        "conjunctions",
+        "otherwise"
+      ]
+    },
+    {
+      "id": "TQB-P5-0094",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Reflexive itself",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Corporate communications",
+      "question": "The company prides _____ on responding to customer complaints within 24 hours.",
+      "options": [
+        {
+          "key": "A",
+          "text": "itself"
+        },
+        {
+          "key": "B",
+          "text": "it"
+        },
+        {
+          "key": "C",
+          "text": "its"
+        },
+        {
+          "key": "D",
+          "text": "them"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "itself",
+      "explanation": "Pride oneself on requires a reflexive: the company (singular inanimate) → itself.",
+      "commonMistake": "Using it or its after pride, which need a reflexive object matching the subject.",
+      "learningObjective": "Match reflexive pronouns to singular company/organization subjects.",
+      "tags": [
+        "pronouns",
+        "reflexive"
+      ]
+    },
+    {
+      "id": "TQB-P5-0095",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Reflexive themselves",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Training",
+      "question": "New hires should introduce _____ to their mentors during the first week.",
+      "options": [
+        {
+          "key": "A",
+          "text": "themselves"
+        },
+        {
+          "key": "B",
+          "text": "them"
+        },
+        {
+          "key": "C",
+          "text": "their"
+        },
+        {
+          "key": "D",
+          "text": "they"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "themselves",
+      "explanation": "Introduce requires a reflexive when the subject and object are the same people: new hires → themselves.",
+      "commonMistake": "Choosing them (object pronoun) instead of the reflexive themselves.",
+      "learningObjective": "Use themselves when plural subjects act on themselves.",
+      "tags": [
+        "pronouns",
+        "reflexive_plural"
+      ]
+    },
+    {
+      "id": "TQB-P5-0096",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Whom after preposition",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "Client relations",
+      "question": "Please forward any billing questions to the accountant _____ invoices are routinely sent.",
+      "options": [
+        {
+          "key": "A",
+          "text": "to whom"
+        },
+        {
+          "key": "B",
+          "text": "who"
+        },
+        {
+          "key": "C",
+          "text": "which"
+        },
+        {
+          "key": "D",
+          "text": "whose"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "to whom",
+      "explanation": "The relative pronoun is the object of the preposition to (invoices are sent to someone) → to whom.",
+      "commonMistake": "Choosing who (subject form) or whose (possessive) when the blank needs a preposition + object relative.",
+      "learningObjective": "Use to whom when the relative is the object of a stranded/fronted preposition.",
+      "tags": [
+        "pronouns",
+        "whom",
+        "preposition"
+      ]
+    },
+    {
+      "id": "TQB-P5-0097",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "First conditional result",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Facilities",
+      "question": "If the building inspection passes tomorrow, renovations _____ the following week.",
+      "options": [
+        {
+          "key": "A",
+          "text": "will begin"
+        },
+        {
+          "key": "B",
+          "text": "began"
+        },
+        {
+          "key": "C",
+          "text": "would have begun"
+        },
+        {
+          "key": "D",
+          "text": "beginning"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "will begin",
+      "explanation": "First conditional: present in the if-clause (passes) + will + base verb in the result clause.",
+      "commonMistake": "Using would have begun (third conditional) or began (past) for a real future result.",
+      "learningObjective": "Pair a present if-clause with will + base verb for likely future results.",
+      "tags": [
+        "conditionals",
+        "first"
+      ]
+    },
+    {
+      "id": "TQB-P5-0098",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "Second conditional result",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Operations",
+      "question": "If the plant operated around the clock, overtime costs _____ significantly.",
+      "options": [
+        {
+          "key": "A",
+          "text": "would rise"
+        },
+        {
+          "key": "B",
+          "text": "will rise"
+        },
+        {
+          "key": "C",
+          "text": "rose"
+        },
+        {
+          "key": "D",
+          "text": "rises"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "would rise",
+      "explanation": "Second conditional (unreal present): past-form if-clause (operated) + would + base verb in the result.",
+      "commonMistake": "Choosing will rise, which belongs in a first-conditional (real future) result clause.",
+      "learningObjective": "Use would + base verb after an unreal present if-clause.",
+      "tags": [
+        "conditionals",
+        "second"
+      ]
+    },
+    {
+      "id": "TQB-P5-0099",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "Inverted third conditional",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "Auditing",
+      "question": "_____ the auditor arrived earlier, the duplicate payment would have been caught.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Had"
+        },
+        {
+          "key": "B",
+          "text": "If"
+        },
+        {
+          "key": "C",
+          "text": "Were"
+        },
+        {
+          "key": "D",
+          "text": "Should"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Had",
+      "explanation": "Inverted third conditional omits if: Had + subject + past participle (= If the auditor had arrived). The result uses would have + pp.",
+      "commonMistake": "Putting If alone without had, or Were/Should which invert different conditional types.",
+      "learningObjective": "Recognize Had + subject + pp as an inverted third-conditional if-clause.",
+      "tags": [
+        "conditionals",
+        "inversion",
+        "third"
+      ]
+    },
+    {
+      "id": "TQB-P5-0100",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Modal passive",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Compliance",
+      "question": "All expense claims _____ by a department manager before reimbursement.",
+      "options": [
+        {
+          "key": "A",
+          "text": "must be approved"
+        },
+        {
+          "key": "B",
+          "text": "must approve"
+        },
+        {
+          "key": "C",
+          "text": "must approving"
+        },
+        {
+          "key": "D",
+          "text": "must been approved"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "must be approved",
+      "explanation": "Modal passive: modal + be + past participle. Claims are the object of approve, so they must be approved.",
+      "commonMistake": "Using must approve (active) when the subject (claims) does not perform the action.",
+      "learningObjective": "Form modal passives with modal + be + past participle.",
+      "tags": [
+        "passive",
+        "modal_passive"
+      ]
+    },
+    {
+      "id": "TQB-P5-0101",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Past perfect passive",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "Logistics",
+      "question": "By the time the warehouse opened, the damaged crates _____ to the supplier.",
+      "options": [
+        {
+          "key": "A",
+          "text": "had been returned"
+        },
+        {
+          "key": "B",
+          "text": "have returned"
+        },
+        {
+          "key": "C",
+          "text": "were returning"
+        },
+        {
+          "key": "D",
+          "text": "will be returned"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "had been returned",
+      "explanation": "Past perfect passive (had been + pp) shows an action completed before another past event (warehouse opened).",
+      "commonMistake": "Choosing have returned (active present perfect) or will be returned (future) with a past time anchor.",
+      "learningObjective": "Use had been + past participle for passive actions before a past reference point.",
+      "tags": [
+        "passive",
+        "past_perfect"
+      ]
+    },
+    {
+      "id": "TQB-P5-0102",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Past continuous passive",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Facilities",
+      "question": "The lobby elevators _____ serviced when visitors arrived for the open house.",
+      "options": [
+        {
+          "key": "A",
+          "text": "were being"
+        },
+        {
+          "key": "B",
+          "text": "are being"
+        },
+        {
+          "key": "C",
+          "text": "have been"
+        },
+        {
+          "key": "D",
+          "text": "had"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "were being",
+      "explanation": "Past continuous passive: were being + past participle (serviced) for an action in progress at a past moment.",
+      "commonMistake": "Choosing are being (present) or have been (present perfect) when the when-clause is past narrative.",
+      "learningObjective": "Form past continuous passives with was/were being + past participle.",
+      "tags": [
+        "passive",
+        "past_continuous"
+      ]
+    },
+    {
+      "id": "TQB-P5-0103",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "Better than",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Product quality",
+      "question": "Independent tests show that Model B performs _____ than Model A in humid climates.",
+      "options": [
+        {
+          "key": "A",
+          "text": "better"
+        },
+        {
+          "key": "B",
+          "text": "best"
+        },
+        {
+          "key": "C",
+          "text": "good"
+        },
+        {
+          "key": "D",
+          "text": "well"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "better",
+      "explanation": "Comparative better + than compares two models. Best is superlative; good/well lack the comparative form needed with than.",
+      "commonMistake": "Choosing best (superlative) when only two things are compared with than.",
+      "learningObjective": "Use better than for two-item comparisons of performance.",
+      "tags": [
+        "comparatives",
+        "better"
+      ]
+    },
+    {
+      "id": "TQB-P5-0104",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "The least + adjective",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Procurement",
+      "question": "Among the four shipping options, ground freight is the _____ expensive for bulk orders.",
+      "options": [
+        {
+          "key": "A",
+          "text": "least"
+        },
+        {
+          "key": "B",
+          "text": "less"
+        },
+        {
+          "key": "C",
+          "text": "little"
+        },
+        {
+          "key": "D",
+          "text": "fewer"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "least",
+      "explanation": "With among + a group of more than two, use the least + adjective for the lowest degree.",
+      "commonMistake": "Using less (comparative for two) when the stem compares among four options.",
+      "learningObjective": "Use the least + adjective for superlative low degree among three or more.",
+      "tags": [
+        "superlatives",
+        "least"
+      ]
+    },
+    {
+      "id": "TQB-P5-0105",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "Higher than",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Finance",
+      "question": "Interest rates this quarter are _____ than they were at the start of the year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "higher"
+        },
+        {
+          "key": "B",
+          "text": "highest"
+        },
+        {
+          "key": "C",
+          "text": "highly"
+        },
+        {
+          "key": "D",
+          "text": "high"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "higher",
+      "explanation": "Comparative higher + than compares two time points. Highest needs the + among a group; high/highly are not comparative.",
+      "commonMistake": "Selecting highest without the and a multi-item group, or highly (adverb) before than.",
+      "learningObjective": "Use -er comparatives with than for two-point comparisons.",
+      "tags": [
+        "comparatives",
+        "higher"
+      ]
+    },
+    {
+      "id": "TQB-P5-0106",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "A few + countable",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Meetings",
+      "question": "_____ few seats remain in the front row for tomorrow's shareholder briefing.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "An"
+        },
+        {
+          "key": "C",
+          "text": "The"
+        },
+        {
+          "key": "D",
+          "text": "Much"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "A",
+      "explanation": "A few + plural countable noun means a small positive number. An does not fit before few; much is for uncountables.",
+      "commonMistake": "Confusing a few (some) with few alone (almost none), or choosing much with a countable plural.",
+      "learningObjective": "Use a few before plural countables to mean a small number.",
+      "tags": [
+        "determiners",
+        "a_few"
+      ]
+    },
+    {
+      "id": "TQB-P5-0107",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "Each + singular",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Payroll",
+      "question": "_____ employee must submit a timesheet by 5:00 p.m. on Friday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Each"
+        },
+        {
+          "key": "B",
+          "text": "All"
+        },
+        {
+          "key": "C",
+          "text": "Many"
+        },
+        {
+          "key": "D",
+          "text": "Both"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Each",
+      "explanation": "Each takes a singular countable noun (employee) and a singular verb (must). All/Many need plurals; Both needs exactly two.",
+      "commonMistake": "Choosing All with a singular noun instead of All employees.",
+      "learningObjective": "Use each before a singular noun when referring to every individual in a group.",
+      "tags": [
+        "determiners",
+        "each"
+      ]
+    },
+    {
+      "id": "TQB-P5-0108",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "Such a + singular noun",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Customer service",
+      "question": "It was _____ a long delay that several passengers requested meal vouchers.",
+      "options": [
+        {
+          "key": "A",
+          "text": "such"
+        },
+        {
+          "key": "B",
+          "text": "so"
+        },
+        {
+          "key": "C",
+          "text": "too"
+        },
+        {
+          "key": "D",
+          "text": "very"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "such",
+      "explanation": "Such a + adjective + singular noun + that expresses degree: such a long delay that… So would need so long a delay / so long that.",
+      "commonMistake": "Choosing so, which patterns as so + adjective (+ that), not so a + noun.",
+      "learningObjective": "Use such a/an before adjective + singular noun in degree clauses.",
+      "tags": [
+        "determiners",
+        "such_a"
+      ]
+    },
+    {
+      "id": "TQB-P5-0109",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Interested in",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Recruiting",
+      "question": "Several applicants were interested _____ relocating to the regional office.",
+      "options": [
+        {
+          "key": "A",
+          "text": "in"
+        },
+        {
+          "key": "B",
+          "text": "on"
+        },
+        {
+          "key": "C",
+          "text": "at"
+        },
+        {
+          "key": "D",
+          "text": "for"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "in",
+      "explanation": "The adjective interested is followed by in (+ noun/gerund): interested in relocating.",
+      "commonMistake": "Using interested on/at/for, which are not standard collocations with interested.",
+      "learningObjective": "Remember the fixed collocation interested in.",
+      "tags": [
+        "prepositions",
+        "interested_in"
+      ]
+    },
+    {
+      "id": "TQB-P5-0110",
+      "part": 5,
+      "section": "Reading",
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Ought to have + past participle",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "Event planning",
+      "question": "The organizers _____ to have reserved a larger hall for the annual awards dinner.",
+      "options": [
+        {
+          "key": "A",
+          "text": "ought"
+        },
+        {
+          "key": "B",
+          "text": "must"
+        },
+        {
+          "key": "C",
+          "text": "can"
+        },
+        {
+          "key": "D",
+          "text": "may"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "ought",
+      "explanation": "Ought to have + past participle criticizes a past action not taken. The stem already includes to have reserved, so only ought fits.",
+      "commonMistake": "Choosing must/can/may, which do not form must to have / can to have in this advice pattern.",
+      "learningObjective": "Use ought to have + pp for past advice or mild criticism.",
+      "tags": [
+        "modals",
+        "ought_to_have"
       ]
     }
   ]

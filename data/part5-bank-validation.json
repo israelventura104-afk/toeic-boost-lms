@@ -3,42 +3,42 @@
   "validated_at": "2026-09-12",
   "rubric_file": "data/part5-validation-rubric.md",
   "threshold": "average >= 4.0; no dimension < 3",
-  "source_item_count": 90,
-  "validated_item_count": 80,
-  "target_ids": "TQB-P5-0011 … TQB-P5-0090",
+  "source_item_count": 110,
+  "validated_item_count": 100,
+  "target_ids": "TQB-P5-0011 … TQB-P5-0110",
   "counts": {
     "kept_as_is": 36,
     "rewritten": 4,
-    "new": 40,
+    "new": 60,
     "dropped": 50
   },
   "skill_histogram": {
-    "Articles/Determiners": 6,
-    "Comparatives/Superlatives": 6,
-    "Conditionals": 6,
-    "Conjunctions/Transitions": 6,
+    "Articles/Determiners": 9,
+    "Comparatives/Superlatives": 9,
+    "Conditionals": 9,
+    "Conjunctions/Transitions": 9,
     "Gerunds/Infinitives": 7,
-    "Modals": 7,
-    "Passive Voice": 6,
-    "Prepositions": 7,
-    "Pronouns": 6,
+    "Modals": 8,
+    "Passive Voice": 9,
+    "Prepositions": 8,
+    "Pronouns": 9,
     "Subject-Verb Agreement": 7,
     "Verb Tenses": 8,
     "Word Forms": 8
   },
   "difficulty_histogram": {
-    "2": 31,
-    "3": 33,
-    "4": 16
+    "2": 39,
+    "3": 41,
+    "4": 20
   },
   "mean_dimension_scores": {
     "format": 5.0,
     "authenticity": 4.99,
     "skill_clarity": 4.99,
-    "distractors": 4.83,
-    "explanation": 4.95
+    "distractors": 4.86,
+    "explanation": 4.96
   },
-  "overall_mean": 4.95,
+  "overall_mean": 4.96,
   "items": [
     {
       "id": "TQB-P5-0011",
@@ -1279,6 +1279,326 @@
       "average": 5.0,
       "pass": true,
       "note": "could have finished unreal past"
+    },
+    {
+      "id": "TQB-P5-0091",
+      "source_id": "TQB-P5-0091",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Nevertheless contrast"
+    },
+    {
+      "id": "TQB-P5-0092",
+      "source_id": "TQB-P5-0092",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Whereas contrast"
+    },
+    {
+      "id": "TQB-P5-0093",
+      "source_id": "TQB-P5-0093",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Otherwise consequence"
+    },
+    {
+      "id": "TQB-P5-0094",
+      "source_id": "TQB-P5-0094",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Reflexive itself"
+    },
+    {
+      "id": "TQB-P5-0095",
+      "source_id": "TQB-P5-0095",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Reflexive themselves"
+    },
+    {
+      "id": "TQB-P5-0096",
+      "source_id": "TQB-P5-0096",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Whom after preposition"
+    },
+    {
+      "id": "TQB-P5-0097",
+      "source_id": "TQB-P5-0097",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "First conditional result"
+    },
+    {
+      "id": "TQB-P5-0098",
+      "source_id": "TQB-P5-0098",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Second conditional result"
+    },
+    {
+      "id": "TQB-P5-0099",
+      "source_id": "TQB-P5-0099",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Inverted third conditional"
+    },
+    {
+      "id": "TQB-P5-0100",
+      "source_id": "TQB-P5-0100",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Modal passive"
+    },
+    {
+      "id": "TQB-P5-0101",
+      "source_id": "TQB-P5-0101",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Past perfect passive"
+    },
+    {
+      "id": "TQB-P5-0102",
+      "source_id": "TQB-P5-0102",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "were being + pp past continuous passive"
+    },
+    {
+      "id": "TQB-P5-0103",
+      "source_id": "TQB-P5-0103",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Better than"
+    },
+    {
+      "id": "TQB-P5-0104",
+      "source_id": "TQB-P5-0104",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "The least + adjective"
+    },
+    {
+      "id": "TQB-P5-0105",
+      "source_id": "TQB-P5-0105",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Higher than"
+    },
+    {
+      "id": "TQB-P5-0106",
+      "source_id": "TQB-P5-0106",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "A few + countable"
+    },
+    {
+      "id": "TQB-P5-0107",
+      "source_id": "TQB-P5-0107",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Each + singular"
+    },
+    {
+      "id": "TQB-P5-0108",
+      "source_id": "TQB-P5-0108",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Such a + singular noun"
+    },
+    {
+      "id": "TQB-P5-0109",
+      "source_id": "TQB-P5-0109",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Interested in"
+    },
+    {
+      "id": "TQB-P5-0110",
+      "source_id": "TQB-P5-0110",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "skill_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Ought to have + past participle"
     }
   ],
   "dropped": [
@@ -1634,10 +1954,10 @@
     }
   ],
   "mock_design_notes": [
-    "With 80 class items and 12 skills (~6–8 each), guided 15-item sets can skill-balance with less session reuse than at 40/60.",
+    "With 100 class items and 12 skills (~7–9 each), guided 15-item sets can skill-balance with low session reuse.",
     "Difficulty mix remains mostly 2–3 with several 4s — suitable for mid-level class mocks; avoid stacking all d=4 in one mock form.",
     "Intro IDs 0001–0010 remain excluded dynamically by guided practice loader.",
-    "SVA and Gerunds/Infinitives are now at 7 each after Lote 2; continue evening remaining skills toward ~16–17 in later lotes."
+    "Lote 3 raised Conjunctions/Transitions, Pronouns, Conditionals, Passive Voice, Comparatives/Superlatives, and Articles/Determiners from 6→9 each; Prepositions 7→8; Modals 7→8. Next lote can evening Word Forms / Verb Tenses (still 8) and remaining gaps toward ~16–17."
   ],
   "batches": [
     {
@@ -1737,6 +2057,52 @@
       "rewritten_during_authoring": 0,
       "dropped_during_authoring": 0,
       "notes": "Batch 2 toward ~200 class items. Prioritized Subject-Verb Agreement (3) and Gerunds/Infinitives (3) which were still at 4 after Lote 1; plus Word Forms 2, Verb Tenses 2, Prepositions 2, Modals 2, and 1 each of Conjunctions/Transitions, Pronouns, Conditionals, Passive Voice, Comparatives/Superlatives, Articles/Determiners. Difficulty mix 9×d2, 7×d3, 4×d4. All 20 passed rubric on first self-score (avg>=4.0, no dim<3). No near-duplicates vs intro or bank stems."
+    },
+    {
+      "lote": "lote3",
+      "created_at": "2026-09-12",
+      "ids": [
+        "TQB-P5-0091",
+        "TQB-P5-0092",
+        "TQB-P5-0093",
+        "TQB-P5-0094",
+        "TQB-P5-0095",
+        "TQB-P5-0096",
+        "TQB-P5-0097",
+        "TQB-P5-0098",
+        "TQB-P5-0099",
+        "TQB-P5-0100",
+        "TQB-P5-0101",
+        "TQB-P5-0102",
+        "TQB-P5-0103",
+        "TQB-P5-0104",
+        "TQB-P5-0105",
+        "TQB-P5-0106",
+        "TQB-P5-0107",
+        "TQB-P5-0108",
+        "TQB-P5-0109",
+        "TQB-P5-0110"
+      ],
+      "item_count": 20,
+      "skill_counts": {
+        "Conjunctions/Transitions": 3,
+        "Pronouns": 3,
+        "Conditionals": 3,
+        "Passive Voice": 3,
+        "Comparatives/Superlatives": 3,
+        "Articles/Determiners": 3,
+        "Prepositions": 1,
+        "Modals": 1
+      },
+      "difficulty_counts": {
+        "2": 8,
+        "3": 8,
+        "4": 4
+      },
+      "kept": 20,
+      "rewritten_during_authoring": 1,
+      "dropped_during_authoring": 0,
+      "notes": "Batch 3 toward ~200 class items. Prioritized bank80 lows (all at 6): Conjunctions/Transitions 3, Pronouns 3, Conditionals 3, Passive Voice 3, Comparatives/Superlatives 3, Articles/Determiners 3, plus Prepositions 1 and Modals 1. Difficulty mix 8×d2, 8×d3, 4×d4. One rewrite during authoring (0102 distractors: removed bare 'were' which formed a second valid past passive with 'serviced'). All 20 passed rubric (avg>=4.0, no dim<3). No near-duplicates vs intro or bank stems."
     }
   ]
 }
