@@ -28,13 +28,13 @@ Genre rotation across 20 passages: aim for a spread of email / letter / memo / n
 | Milestone | Class bank IDs | Passages | Questions | Status |
 |-----------|----------------|---------:|----------:|--------|
 | **Lote 1** | TQB-P6-0001 … 0004 | 4 | 16 | **Done — 16 / 80** |
-| Lote 2 | TQB-P6-0005 … 0008 | +4 | +16 | Planned — 32 / 80 |
+| **Lote 2** | TQB-P6-0005 … 0008 | +4 | +16 | **Done — 32 / 80** |
 | Lote 3 | TQB-P6-0009 … 0012 | +4 | +16 | Planned — 48 / 80 |
 | Lote 4 | TQB-P6-0013 … 0016 | +4 | +16 | Planned — 64 / 80 |
 | Lote 5 (final) | TQB-P6-0017 … 0020 | +4 | +16 | Planned — **80 / 80** |
 | Target | … → TQB-P6-0020 | **20** | **80** | In progress |
 
-**After Lote 1:** **16 / 80** class questions (20%). With free intro: **20** Part 6 questions on site (1 intro passage + 4 class passages).
+**After Lote 2:** **32 / 80** class questions (40%). With free intro: **36** Part 6 questions on site (1 intro passage + 8 class passages).
 
 ### Lote 1 snapshot
 
@@ -46,6 +46,18 @@ Genre rotation across 20 passages: aim for a spread of email / letter / memo / n
 | TQB-P6-0004 | letter | HR / internship offer | word_form, connector, vocabulary, sentence_insertion |
 
 Blank-type counts (lote 1): word_form 4 · vocabulary 4 · connector 4 · sentence_insertion 4.
+
+### Lote 2 snapshot
+
+| Passage | Genre | Topic | Blank types |
+|---------|-------|-------|-------------|
+| TQB-P6-0005 | ad | Marketing / ErgoLift standing desk promo | word_form, connector, vocabulary, sentence_insertion |
+| TQB-P6-0006 | article | Sustainability / packaging waste reduction | vocabulary, connector, word_form, sentence_insertion |
+| TQB-P6-0007 | email | Customer Service / delayed shipment | connector, vocabulary, word_form, sentence_insertion |
+| TQB-P6-0008 | memo | Finance / travel expense policy | vocabulary, connector, word_form, sentence_insertion |
+
+Blank-type counts (lote 2): word_form 4 · vocabulary 4 · connector 4 · sentence_insertion 4.  
+Bank totals after Lote 2: word_form 8 · vocabulary 8 · connector 8 · sentence_insertion 8.
 
 ## Batch rules
 

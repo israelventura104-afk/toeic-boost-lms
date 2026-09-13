@@ -3,43 +3,45 @@
   "validated_at": "2026-09-13",
   "rubric_file": "data/part6-validation-rubric.md",
   "threshold": "average >= 4.0; no dimension < 3",
-  "lote": "lote1",
-  "passage_count": 4,
-  "question_count": 16,
-  "item_count": 16,
-  "validated_item_count": 16,
-  "target_ids": "TQB-P6-0001 … TQB-P6-0004 (Q01–Q04 each)",
+  "lote": "lote1+lote2",
+  "passage_count": 8,
+  "question_count": 32,
+  "item_count": 32,
+  "validated_item_count": 32,
+  "target_ids": "TQB-P6-0001 … TQB-P6-0008 (Q01–Q04 each)",
   "counts": {
-    "kept_as_is": 0,
+    "kept_as_is": 16,
     "rewritten": 0,
     "new": 16,
     "dropped": 0
   },
   "blank_type_histogram": {
-    "word_form": 4,
-    "vocabulary": 4,
-    "connector": 4,
-    "sentence_insertion": 4
+    "word_form": 8,
+    "connector": 8,
+    "sentence_insertion": 8,
+    "vocabulary": 8
   },
   "genre_histogram": {
-    "email": 1,
-    "memo": 1,
+    "email": 2,
+    "memo": 2,
     "notice": 1,
-    "letter": 1
+    "letter": 1,
+    "ad": 1,
+    "article": 1
   },
   "difficulty_histogram": {
-    "2": 4,
-    "3": 8,
-    "4": 4
+    "3": 16,
+    "2": 8,
+    "4": 8
   },
   "mean_dimension_scores": {
-    "format": 5.0,
-    "authenticity": 5.0,
-    "blank_type_clarity": 5.0,
+    "format": 5,
+    "authenticity": 5,
+    "blank_type_clarity": 5,
     "distractors": 4.88,
-    "explanation": 5.0
+    "explanation": 5
   },
-  "overall_mean": 4.98,
+  "overall_mean": 4.97,
   "items": [
     {
       "id": "TQB-P6-0001-Q01",
@@ -312,6 +314,278 @@
       "average": 5.0,
       "pass": true,
       "note": "sentence insertion orientation next step"
+    },
+    {
+      "id": "TQB-P6-0005-Q01",
+      "passage_id": "TQB-P6-0005",
+      "blankType": "word_form",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "easily adverb after switch"
+    },
+    {
+      "id": "TQB-P6-0005-Q02",
+      "passage_id": "TQB-P6-0005",
+      "blankType": "connector",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "In addition free delivery perk"
+    },
+    {
+      "id": "TQB-P6-0005-Q03",
+      "passage_id": "TQB-P6-0005",
+      "blankType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "customized quote vocabulary"
+    },
+    {
+      "id": "TQB-P6-0005-Q04",
+      "passage_id": "TQB-P6-0005",
+      "blankType": "sentence_insertion",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "sentence insertion showroom demo"
+    },
+    {
+      "id": "TQB-P6-0006-Q01",
+      "passage_id": "TQB-P6-0006",
+      "blankType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "encouraging positive results sense"
+    },
+    {
+      "id": "TQB-P6-0006-Q02",
+      "passage_id": "TQB-P6-0006",
+      "blankType": "connector",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Moreover additive driver feedback"
+    },
+    {
+      "id": "TQB-P6-0006-Q03",
+      "passage_id": "TQB-P6-0006",
+      "blankType": "word_form",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "gradual adjective before rollout"
+    },
+    {
+      "id": "TQB-P6-0006-Q04",
+      "passage_id": "TQB-P6-0006",
+      "blankType": "sentence_insertion",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "sentence insertion training before rollout"
+    },
+    {
+      "id": "TQB-P6-0007-Q01",
+      "passage_id": "TQB-P6-0007",
+      "blankType": "connector",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Unfortunately adverse carrier backlog"
+    },
+    {
+      "id": "TQB-P6-0007-Q02",
+      "passage_id": "TQB-P6-0007",
+      "blankType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "credit account vocabulary"
+    },
+    {
+      "id": "TQB-P6-0007-Q03",
+      "passage_id": "TQB-P6-0007",
+      "blankType": "word_form",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "apology noun after our"
+    },
+    {
+      "id": "TQB-P6-0007-Q04",
+      "passage_id": "TQB-P6-0007",
+      "blankType": "sentence_insertion",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "sentence insertion tracer contingency"
+    },
+    {
+      "id": "TQB-P6-0008-Q01",
+      "passage_id": "TQB-P6-0008",
+      "blankType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "approval director-level vocabulary"
+    },
+    {
+      "id": "TQB-P6-0008-Q02",
+      "passage_id": "TQB-P6-0008",
+      "blankType": "connector",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Furthermore mileage rule"
+    },
+    {
+      "id": "TQB-P6-0008-Q03",
+      "passage_id": "TQB-P6-0008",
+      "blankType": "word_form",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "ensure parallel imperative"
+    },
+    {
+      "id": "TQB-P6-0008-Q04",
+      "passage_id": "TQB-P6-0008",
+      "blankType": "sentence_insertion",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "sentence insertion checklist attachment"
     }
   ],
   "batches": [
@@ -349,11 +623,53 @@
       "rewritten_during_authoring": 0,
       "dropped_during_authoring": 0,
       "notes": "First class lote toward ~80 Q / 20 passages. One of each blankType per passage (4 sentence_insertion). All 16 passed rubric on first self-score. Original workplace English; no ETS wording."
+    },
+    {
+      "lote": "lote2",
+      "created_at": "2026-09-13",
+      "passage_ids": [
+        "TQB-P6-0005",
+        "TQB-P6-0006",
+        "TQB-P6-0007",
+        "TQB-P6-0008"
+      ],
+      "passage_count": 4,
+      "question_count": 16,
+      "item_count": 16,
+      "genres": [
+        "ad",
+        "article",
+        "email",
+        "memo"
+      ],
+      "topics": [
+        "Marketing / Office products",
+        "Sustainability / Operations",
+        "Customer Service",
+        "Finance / Policy"
+      ],
+      "blank_type_counts": {
+        "word_form": 4,
+        "vocabulary": 4,
+        "connector": 4,
+        "sentence_insertion": 4
+      },
+      "difficulty_by_passage": {
+        "TQB-P6-0005": 2,
+        "TQB-P6-0006": 3,
+        "TQB-P6-0007": 3,
+        "TQB-P6-0008": 4
+      },
+      "kept": 16,
+      "rewritten_during_authoring": 1,
+      "dropped_during_authoring": 0,
+      "notes": "Second class lote toward ~80 Q / 20 passages. Prioritized missing genres ad + article; rotated email (Customer Service) and memo (Finance/policy) away from lote1 scenarios. One of each blankType per passage (4 sentence_insertion). Rewrote 0006-Q01 distractors during authoring for clearer vocabulary (not word_form) contrast. All 16 passed rubric. Original workplace English; no ETS wording."
     }
   ],
   "mock_design_notes": [
     "A full Part 6 mock later uses 4 passages × 4 blanks = 16 questions from the class bank.",
-    "After Lote 1 there are 16 class Q (enough for one mock set) plus a separate free intro passage.",
-    "Blueprint progress: 16/80 (20%)."
+    "After Lote 2 there are 32 class Q (enough for two mock sets) plus a separate free intro passage.",
+    "Genre coverage now includes email, memo, notice, letter, ad, article.",
+    "Blueprint progress: 32/80 (40%)."
   ]
 }

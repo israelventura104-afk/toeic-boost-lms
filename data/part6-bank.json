@@ -4,25 +4,27 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "passage_count": 4,
-  "question_count": 16,
-  "item_count": 16,
+  "passage_count": 8,
+  "question_count": 32,
+  "item_count": 32,
   "validation": {
     "rubric": "data/part6-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Lote 1 curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material)."
+    "notes": "Lotes 1–2 curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Lote 2 added ad + article genres."
   },
   "blank_type_counts": {
-    "word_form": 4,
-    "vocabulary": 4,
-    "connector": 4,
-    "sentence_insertion": 4
+    "word_form": 8,
+    "vocabulary": 8,
+    "connector": 8,
+    "sentence_insertion": 8
   },
   "genre_counts": {
-    "email": 1,
-    "memo": 1,
+    "email": 2,
+    "memo": 2,
     "notice": 1,
-    "letter": 1
+    "letter": 1,
+    "ad": 1,
+    "article": 1
   },
   "passages": [
     {
@@ -610,6 +612,594 @@
           "correctAnswer": "A member of our recruiting team will then email you orientation details.",
           "explanation": "After asking the candidate to return the agreement, A describes the logical next step (orientation info).",
           "commonMistake": "Inserting an internal office sentence that does not belong in an offer letter."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0005",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "ad",
+      "title": "ErgoLift standing desk promotion",
+      "difficulty": 2,
+      "workplaceTopic": "Marketing / Office products",
+      "lote": "lote2",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "ADVERTISEMENT\n\nUpgrade Your Workspace with ErgoLift Pro"
+        },
+        {
+          "paragraph": 2,
+          "content": "ErgoLift Pro is a height-adjustable desk designed for busy professionals. With a quiet motor and three memory presets, you can switch between sitting and standing [[147]]."
+        },
+        {
+          "paragraph": 3,
+          "content": "Through September 30, corporate buyers receive 15% off orders of five or more units. [[148]], free delivery is included for offices within 50 miles of our warehouse."
+        },
+        {
+          "paragraph": 4,
+          "content": "Visit www.ergolift-pro.example to request a [[149]] quote for your team. [[150]]\n\nErgoLift — furniture that works as hard as you do."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0005-Q01",
+          "blankLabel": "147",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "easy"
+            },
+            {
+              "key": "B",
+              "text": "easily"
+            },
+            {
+              "key": "C",
+              "text": "easier"
+            },
+            {
+              "key": "D",
+              "text": "ease"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "easily",
+          "explanation": "An adverb is needed to modify the verb phrase \"switch between sitting and standing.\" \"Easily\" is the adverb form.",
+          "commonMistake": "Choosing the adjective \"easy\" to modify a verb."
+        },
+        {
+          "id": "TQB-P6-0005-Q02",
+          "blankLabel": "148",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "In addition"
+            },
+            {
+              "key": "B",
+              "text": "Nevertheless"
+            },
+            {
+              "key": "C",
+              "text": "On the contrary"
+            },
+            {
+              "key": "D",
+              "text": "Meanwhile"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "In addition",
+          "explanation": "Free delivery is another benefit stacked on the discount. \"In addition\" marks that additive relationship.",
+          "commonMistake": "Using a contrast connector (Nevertheless / On the contrary) when the ad is listing extra perks."
+        },
+        {
+          "id": "TQB-P6-0005-Q03",
+          "blankLabel": "149",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "customized"
+            },
+            {
+              "key": "B",
+              "text": "customary"
+            },
+            {
+              "key": "C",
+              "text": "curious"
+            },
+            {
+              "key": "D",
+              "text": "cautious"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "customized",
+          "explanation": "A quote tailored to a team's size and options is \"customized\" — made for a specific buyer.",
+          "commonMistake": "Selecting a look-alike adjective (customary / curious) that does not mean tailored pricing."
+        },
+        {
+          "id": "TQB-P6-0005-Q04",
+          "blankLabel": "150",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Our sales specialists can also arrange a showroom demonstration."
+            },
+            {
+              "key": "B",
+              "text": "The cafeteria will close early during the holiday week."
+            },
+            {
+              "key": "C",
+              "text": "Please submit timesheets by noon every Friday."
+            },
+            {
+              "key": "D",
+              "text": "All interns must complete the safety quiz online."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Our sales specialists can also arrange a showroom demonstration.",
+          "explanation": "After inviting buyers to request a quote, A adds another sales next step (demo) that fits a product ad closing.",
+          "commonMistake": "Inserting an internal HR or facilities sentence that does not belong in a product advertisement."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0006",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "article",
+      "title": "Company magazine: packaging waste reduction",
+      "difficulty": 3,
+      "workplaceTopic": "Sustainability / Operations",
+      "lote": "lote2",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "NORTHBRIDGE TODAY — Staff Magazine\n\nCutting Packaging Waste at the Distribution Center"
+        },
+        {
+          "paragraph": 2,
+          "content": "Last quarter, Northbridge Logistics launched a pilot program to reduce cardboard waste at its Riverside distribution center. Teams replaced oversized boxes with right-sized packaging and introduced reusable plastic totes for local deliveries."
+        },
+        {
+          "paragraph": 3,
+          "content": "Early results have been [[151]]. Material costs fell by nearly 12%, and fewer damaged shipments were reported. [[152]], drivers noted that the lighter totes were easier to load."
+        },
+        {
+          "paragraph": 4,
+          "content": "Managers plan a [[153]] rollout to two additional centers in January. [[154]]\n\nEmployees with suggestions may email greenops@northbridge.example."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0006-Q01",
+          "blankLabel": "151",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "encouraging"
+            },
+            {
+              "key": "B",
+              "text": "demanding"
+            },
+            {
+              "key": "C",
+              "text": "confusing"
+            },
+            {
+              "key": "D",
+              "text": "discouraging"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "encouraging",
+          "explanation": "Context (cost savings and fewer damaged shipments) shows positive results. \"Encouraging\" means promising or favorable.",
+          "commonMistake": "Choosing \"discouraging,\" the opposite sense, or another adjective that does not fit the positive data."
+        },
+        {
+          "id": "TQB-P6-0006-Q02",
+          "blankLabel": "152",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Moreover"
+            },
+            {
+              "key": "B",
+              "text": "Otherwise"
+            },
+            {
+              "key": "C",
+              "text": "In contrast"
+            },
+            {
+              "key": "D",
+              "text": "Initially"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Moreover",
+          "explanation": "The drivers' comment adds another positive outcome. \"Moreover\" is the additive discourse marker.",
+          "commonMistake": "Using \"In contrast\" when the sentence continues the good-news pattern rather than opposing it."
+        },
+        {
+          "id": "TQB-P6-0006-Q03",
+          "blankLabel": "153",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "gradual"
+            },
+            {
+              "key": "B",
+              "text": "gradually"
+            },
+            {
+              "key": "C",
+              "text": "graduate"
+            },
+            {
+              "key": "D",
+              "text": "graduation"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "gradual",
+          "explanation": "An adjective is needed before the noun \"rollout.\" \"Gradual\" correctly modifies \"rollout.\"",
+          "commonMistake": "Choosing the adverb \"gradually\" where an adjective slot before a noun is required."
+        },
+        {
+          "id": "TQB-P6-0006-Q04",
+          "blankLabel": "154",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Training sessions for packing staff at those sites will begin in December."
+            },
+            {
+              "key": "B",
+              "text": "The lobby elevator will be out of service this weekend."
+            },
+            {
+              "key": "C",
+              "text": "Please update your password before the next login."
+            },
+            {
+              "key": "D",
+              "text": "The annual awards banquet will feature a guest speaker."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Training sessions for packing staff at those sites will begin in December.",
+          "explanation": "A bridges the planned January rollout with a concrete preparation step (training), then the email invitation for suggestions.",
+          "commonMistake": "Selecting an unrelated workplace sentence that does not connect to the packaging pilot expansion."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0007",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "email",
+      "title": "Customer Service: delayed shipment apology",
+      "difficulty": 3,
+      "workplaceTopic": "Customer Service",
+      "lote": "lote2",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "Dear Mr. Okonkwo,\n\nThank you for contacting Apex Home Goods about order #AH-44921. We apologize for the delay in delivering your kitchen appliance set."
+        },
+        {
+          "paragraph": 2,
+          "content": "Our records show that the package left the warehouse on time. [[155]], a regional carrier backlog held the shipment at a sorting facility for three extra days."
+        },
+        {
+          "paragraph": 3,
+          "content": "The items are now out for delivery and should arrive by tomorrow evening. As a courtesy, we have applied a 10% [[156]] to your account for use on a future purchase."
+        },
+        {
+          "paragraph": 4,
+          "content": "Please accept our [[157]] for the inconvenience. [[158]]\n\nSincerely,\nPriya Nair\nCustomer Care Specialist\nApex Home Goods"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0007-Q01",
+          "blankLabel": "155",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Unfortunately"
+            },
+            {
+              "key": "B",
+              "text": "Similarly"
+            },
+            {
+              "key": "C",
+              "text": "For instance"
+            },
+            {
+              "key": "D",
+              "text": "In the meantime"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Unfortunately",
+          "explanation": "The carrier backlog is bad news after saying the package left on time. \"Unfortunately\" signals that disappointing turn.",
+          "commonMistake": "Choosing \"Similarly\" or \"For instance,\" which do not mark an adverse development."
+        },
+        {
+          "id": "TQB-P6-0007-Q02",
+          "blankLabel": "156",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "credit"
+            },
+            {
+              "key": "B",
+              "text": "credential"
+            },
+            {
+              "key": "C",
+              "text": "critique"
+            },
+            {
+              "key": "D",
+              "text": "creed"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "credit",
+          "explanation": "In customer service, a store \"credit\" is money or value applied to an account for a future purchase.",
+          "commonMistake": "Picking a similar-looking noun (credential / critique) that does not mean account credit."
+        },
+        {
+          "id": "TQB-P6-0007-Q03",
+          "blankLabel": "157",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "apologize"
+            },
+            {
+              "key": "B",
+              "text": "apology"
+            },
+            {
+              "key": "C",
+              "text": "apologetic"
+            },
+            {
+              "key": "D",
+              "text": "apologetically"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "apology",
+          "explanation": "After the possessive \"our,\" a noun is required. \"Apology\" is the noun form in \"accept our apology.\"",
+          "commonMistake": "Using the verb \"apologize\" after \"our,\" where a noun is needed."
+        },
+        {
+          "id": "TQB-P6-0007-Q04",
+          "blankLabel": "158",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "If the package does not arrive by tomorrow, reply to this email and we will open a tracer."
+            },
+            {
+              "key": "B",
+              "text": "The finance team will publish next year's budget guidelines soon."
+            },
+            {
+              "key": "C",
+              "text": "All visitors must sign in at the front desk."
+            },
+            {
+              "key": "D",
+              "text": "Our cafeteria now offers gluten-free options on Fridays."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "If the package does not arrive by tomorrow, reply to this email and we will open a tracer.",
+          "explanation": "A gives a clear contingency after the promised delivery date, fitting a customer-care closing before the signature.",
+          "commonMistake": "Inserting an internal company announcement that does not help the customer with the delayed order."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0008",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "memo",
+      "title": "Finance: revised travel expense policy",
+      "difficulty": 4,
+      "workplaceTopic": "Finance / Policy",
+      "lote": "lote2",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "MEMORANDUM\n\nTo: All department managers\nFrom: Finance Department\nDate: September 8\nSubject: Revised policy for travel expense reimbursement"
+        },
+        {
+          "paragraph": 2,
+          "content": "Effective October 1, employees must submit travel expense reports within ten business days of returning from a trip. Reports filed after that window will require director-level [[159]] before payment can be processed."
+        },
+        {
+          "paragraph": 3,
+          "content": "Itemized receipts remain mandatory for lodging, airfare, and meals above $25. [[160]], mileage claims must use the rate published on the intranet; handwritten estimates will no longer be accepted."
+        },
+        {
+          "paragraph": 4,
+          "content": "Please share this update with your teams and [[161]] that staff complete the short policy quiz by September 25. [[162]]\n\nQuestions may be directed to finance-help@firm.example.\n— Controllers Office"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0008-Q01",
+          "blankLabel": "159",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "approval"
+            },
+            {
+              "key": "B",
+              "text": "approach"
+            },
+            {
+              "key": "C",
+              "text": "appliance"
+            },
+            {
+              "key": "D",
+              "text": "appearance"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "approval",
+          "explanation": "Late reports need director-level \"approval\" (authorization) before Finance pays them.",
+          "commonMistake": "Confusing similar nouns (approach / appearance) that do not mean authorization to pay."
+        },
+        {
+          "id": "TQB-P6-0008-Q02",
+          "blankLabel": "160",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Furthermore"
+            },
+            {
+              "key": "B",
+              "text": "Conversely"
+            },
+            {
+              "key": "C",
+              "text": "Rather"
+            },
+            {
+              "key": "D",
+              "text": "Previously"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Furthermore",
+          "explanation": "The mileage rule is an additional requirement alongside itemized receipts. \"Furthermore\" adds that policy point.",
+          "commonMistake": "Choosing \"Conversely,\" which would introduce an opposite idea rather than another rule."
+        },
+        {
+          "id": "TQB-P6-0008-Q03",
+          "blankLabel": "161",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "ensure"
+            },
+            {
+              "key": "B",
+              "text": "ensuring"
+            },
+            {
+              "key": "C",
+              "text": "ensured"
+            },
+            {
+              "key": "D",
+              "text": "ensurance"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "ensure",
+          "explanation": "Parallel to \"share,\" the base-form verb \"ensure\" is needed after \"Please … and.\"",
+          "commonMistake": "Using \"ensuring\" (gerund/participle) where a parallel imperative verb is required."
+        },
+        {
+          "id": "TQB-P6-0008-Q04",
+          "blankLabel": "162",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "A printable checklist of acceptable documentation is attached to this memo."
+            },
+            {
+              "key": "B",
+              "text": "The marketing team will redesign the product brochure next spring."
+            },
+            {
+              "key": "C",
+              "text": "Please reserve parking spaces for the visiting auditors."
+            },
+            {
+              "key": "D",
+              "text": "The fitness center will extend evening hours in November."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "A printable checklist of acceptable documentation is attached to this memo.",
+          "explanation": "A supplies a practical attachment related to expense documentation before the contact line — coherent for a finance policy memo.",
+          "commonMistake": "Inserting an unrelated departmental announcement that does not support the reimbursement policy."
         }
       ]
     }

@@ -5,7 +5,7 @@ Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to
 **Paso 1:** Landing page (marketing).  
 **Paso 2:** Class-code access, student dashboard, free Reading & Grammar short demo (Part 5–7 style).  
 **Paso 3:** Original Part 5 Incomplete Sentences bank (210 items = 10 intro + 200 class-validated), free/guided/mock flows, Reading hub, and Part 5 Strategies.
-**Paso 3b (Part 6 start):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank Lote 1 (4 passages × 4 = 16 validated Q toward ~80), free practice UI; guided/mock/strategies for Part 6 come next.
+**Paso 3b (Part 6 start):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank Lotes 1–2 (8 passages × 4 = 32 validated Q toward ~80), free practice UI; guided/mock/strategies for Part 6 come next.
 
 ## Preview locally
 
@@ -83,11 +83,13 @@ Each item: one blank, four options (A–D), one `correctKey` that matches `corre
 Part 6 = **Text Completion**: short workplace texts with **4 blanks** each (word/phrase, connector, **sentence insertion**). Class bank target: **~80 questions** (20 passages × 4).
 
 - Intro (free, fixed, `purpose: free_intro_fixed`): `data/part6-intro.json` — **1** passage × **4** Q, IDs `TQB-P6-INTRO-001` + `Q01`–`Q04`
-- Bank (guided + later mocks, class-validated): `data/part6-bank.json` — **Lote 1:** 4 passages × 4 = **16** Q, IDs `TQB-P6-0001` … `0004` (**16 / 80**)
+- Bank (guided + later mocks, class-validated): `data/part6-bank.json` — **Lotes 1–2:** 8 passages × 4 = **32** Q, IDs `TQB-P6-0001` … `0008` (**32 / 80**)
 - Validation: `data/part6-validation-rubric.md` + `data/part6-bank-validation.json`
 - Blueprint: `data/part6-blueprint.md`
 
-Lote 1 genres: **email**, **memo**, **notice**, **letter**. Blank types (16): word_form 4 · vocabulary 4 · connector 4 · sentence_insertion 4.
+Genres so far: **email**, **memo**, **notice**, **letter**, **ad**, **article**. Blank types (32): word_form 8 · vocabulary 8 · connector 8 · sentence_insertion 8.
+
+Lote 2 added: ad (office products), article (sustainability), email (Customer Service), memo (Finance/policy).
 
 Blank markers in passage text use `[[131]]` style for UI highlight.
 
