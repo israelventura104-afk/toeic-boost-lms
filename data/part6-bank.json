@@ -4,26 +4,26 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "passage_count": 8,
-  "question_count": 32,
-  "item_count": 32,
+  "passage_count": 12,
+  "question_count": 48,
+  "item_count": 48,
   "validation": {
     "rubric": "data/part6-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Lotes 1–2 curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Lote 2 added ad + article genres."
+    "notes": "Lotes 1–3 curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Lote 3 added notice (product recall), letter (vendor/purchasing), ad (conference hotel), and email (benefits enrollment)."
   },
   "blank_type_counts": {
-    "word_form": 8,
-    "vocabulary": 8,
-    "connector": 8,
-    "sentence_insertion": 8
+    "word_form": 12,
+    "vocabulary": 12,
+    "connector": 12,
+    "sentence_insertion": 12
   },
   "genre_counts": {
-    "email": 2,
+    "email": 3,
     "memo": 2,
-    "notice": 1,
-    "letter": 1,
-    "ad": 1,
+    "notice": 2,
+    "letter": 2,
+    "ad": 2,
     "article": 1
   },
   "passages": [
@@ -1200,6 +1200,594 @@
           "correctAnswer": "A printable checklist of acceptable documentation is attached to this memo.",
           "explanation": "A supplies a practical attachment related to expense documentation before the contact line — coherent for a finance policy memo.",
           "commonMistake": "Inserting an unrelated departmental announcement that does not support the reimbursement policy."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0009",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "notice",
+      "title": "Voluntary recall of AquaPure pitcher filters",
+      "difficulty": 3,
+      "workplaceTopic": "Quality / Product safety",
+      "lote": "lote3",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "NOTICE\n\nVoluntary Product Recall — AquaPure Pitcher Filters (Lot AP-228)"
+        },
+        {
+          "paragraph": 2,
+          "content": "The Quality Assurance team has confirmed a sealing defect in AquaPure pitcher filters from lot AP-228. Units from this lot were shipped to retailers between June 3 and June 20. The affected cartridges may [[163]] to reduce chlorine to the level stated on the label."
+        },
+        {
+          "paragraph": 3,
+          "content": "Customers who purchased lot AP-228 should discontinue use at once. [[164]], unused cartridges may be returned to any participating store for a full refund or a replacement from a later lot."
+        },
+        {
+          "paragraph": 4,
+          "content": "Replacement inventory is [[165]] to reach retail shelves by July 8. [[166]]\n\nQuestions about store credit or shipping labels may be sent to recall@aquapure.example.\n— Product Safety Office"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0009-Q01",
+          "blankLabel": "163",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "fail"
+            },
+            {
+              "key": "B",
+              "text": "failure"
+            },
+            {
+              "key": "C",
+              "text": "failed"
+            },
+            {
+              "key": "D",
+              "text": "failing"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "fail",
+          "explanation": "After the modal \"may,\" the base-form verb is required. \"Fail to reduce\" is the correct verb phrase.",
+          "commonMistake": "Choosing the noun \"failure\" or the participle \"failing\" after a modal verb."
+        },
+        {
+          "id": "TQB-P6-0009-Q02",
+          "blankLabel": "164",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Therefore"
+            },
+            {
+              "key": "B",
+              "text": "Meanwhile"
+            },
+            {
+              "key": "C",
+              "text": "In contrast"
+            },
+            {
+              "key": "D",
+              "text": "For example"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Therefore",
+          "explanation": "The return-and-refund option is the logical result of the defect and the order to stop using the filters. \"Therefore\" marks that consequence.",
+          "commonMistake": "Using \"In contrast\" when the notice is stating a result, not an opposing idea."
+        },
+        {
+          "id": "TQB-P6-0009-Q03",
+          "blankLabel": "165",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "expected"
+            },
+            {
+              "key": "B",
+              "text": "excepted"
+            },
+            {
+              "key": "C",
+              "text": "extracted"
+            },
+            {
+              "key": "D",
+              "text": "expired"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "expected",
+          "explanation": "\"Are expected to reach\" means the replacements are scheduled or anticipated to arrive by July 8.",
+          "commonMistake": "Selecting a look-alike verb (excepted / extracted / expired) that does not mean \"scheduled to arrive.\""
+        },
+        {
+          "id": "TQB-P6-0009-Q04",
+          "blankLabel": "166",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Keep your original receipt; participating stores will process refunds more quickly with proof of purchase."
+            },
+            {
+              "key": "B",
+              "text": "The annual picnic will be held at Riverside Park."
+            },
+            {
+              "key": "C",
+              "text": "New business cards can be ordered through the supply portal."
+            },
+            {
+              "key": "D",
+              "text": "Please remember to recycle paper in the blue bins."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Keep your original receipt; participating stores will process refunds more quickly with proof of purchase.",
+          "explanation": "A gives a practical refund step that sits between the replacement-date line and the contact address — coherent for a recall notice.",
+          "commonMistake": "Inserting an unrelated workplace announcement that does not help customers complete the recall."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0010",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "letter",
+      "title": "Vendor letter confirming paper-supply contract",
+      "difficulty": 4,
+      "workplaceTopic": "Purchasing / Vendor management",
+      "lote": "lote3",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "Dear Ms. Okada,\n\nThank you for meeting with our purchasing team last Thursday to review next year’s supply of recycled copier paper. We were glad to confirm that Linden Paper will remain our primary vendor."
+        },
+        {
+          "paragraph": 2,
+          "content": "As agreed, Linden will deliver 200 cases to our Riverdale warehouse each month, beginning January 6. Pricing in the attached schedule will remain [[167]] for the full calendar year unless both parties sign a written amendment."
+        },
+        {
+          "paragraph": 3,
+          "content": "Standard terms require payment within 30 days of invoice. [[168]], accounts that settle within ten days will receive a 1.5% prompt-payment discount."
+        },
+        {
+          "paragraph": 4,
+          "content": "Please sign and return the enclosed agreement by October 15 so that we can [[169]] the contract before the budget closes. [[170]]\n\nWe look forward to another year of reliable service.\n\nSincerely,\nHector Ruiz\nPurchasing Manager\nOak & Pine Furnishings"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0010-Q01",
+          "blankLabel": "167",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "valid"
+            },
+            {
+              "key": "B",
+              "text": "vacant"
+            },
+            {
+              "key": "C",
+              "text": "vague"
+            },
+            {
+              "key": "D",
+              "text": "vain"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "valid",
+          "explanation": "Prices that stay in effect for the year \"remain valid\" unless a written amendment changes them.",
+          "commonMistake": "Choosing a similar-looking adjective (vacant / vague / vain) that does not mean \"still in force.\""
+        },
+        {
+          "id": "TQB-P6-0010-Q02",
+          "blankLabel": "168",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "However"
+            },
+            {
+              "key": "B",
+              "text": "Similarly"
+            },
+            {
+              "key": "C",
+              "text": "Previously"
+            },
+            {
+              "key": "D",
+              "text": "For example"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "However",
+          "explanation": "The ten-day discount is an exception to the standard 30-day payment rule. \"However\" signals that contrast.",
+          "commonMistake": "Using \"Similarly\" or \"For example\" when the sentence introduces a special exception, not a parallel or sample case."
+        },
+        {
+          "id": "TQB-P6-0010-Q03",
+          "blankLabel": "169",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "finalize"
+            },
+            {
+              "key": "B",
+              "text": "final"
+            },
+            {
+              "key": "C",
+              "text": "finally"
+            },
+            {
+              "key": "D",
+              "text": "finality"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "finalize",
+          "explanation": "After \"we can,\" a base-form verb is required. \"Finalize the contract\" means complete it officially.",
+          "commonMistake": "Choosing the adjective \"final\" or the adverb \"finally\" where a verb slot is needed."
+        },
+        {
+          "id": "TQB-P6-0010-Q04",
+          "blankLabel": "170",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Once we receive the signed copy, purchasing will issue the January standing order."
+            },
+            {
+              "key": "B",
+              "text": "The marketing team will redesign the product brochure next spring."
+            },
+            {
+              "key": "C",
+              "text": "Please reserve parking spaces for the visiting auditors."
+            },
+            {
+              "key": "D",
+              "text": "The fitness center will extend evening hours in November."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Once we receive the signed copy, purchasing will issue the January standing order.",
+          "explanation": "After asking the vendor to return the agreement, A states the operational next step (the January order) before the closing courtesy line.",
+          "commonMistake": "Inserting an internal announcement that does not belong in a vendor contract letter."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0011",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "ad",
+      "title": "Harborview Suites conference-package promotion",
+      "difficulty": 2,
+      "workplaceTopic": "Hospitality / Corporate events",
+      "lote": "lote3",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "ADVERTISEMENT\n\nHost Your Next Off-Site at Harborview Suites"
+        },
+        {
+          "paragraph": 2,
+          "content": "Harborview Suites offers meeting rooms and overnight accommodations for teams of 15 to 200. Each conference package includes a dedicated event coordinator, high-speed Wi-Fi, and a [[171]] catering menu that can be adjusted for dietary needs."
+        },
+        {
+          "paragraph": 3,
+          "content": "Book a two-night weekday stay by December 1 and receive 10% off that first room block. [[172]], standard seasonal rates apply to any additional events you hold later in the same year."
+        },
+        {
+          "paragraph": 4,
+          "content": "Call 555-0140 or visit www.harborview-suites.example to request a [[173]] proposal for your event. [[174]]\n\nHarborview Suites — where business travel feels like a retreat."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0011-Q01",
+          "blankLabel": "171",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "flexible"
+            },
+            {
+              "key": "B",
+              "text": "flexibly"
+            },
+            {
+              "key": "C",
+              "text": "flexibility"
+            },
+            {
+              "key": "D",
+              "text": "flex"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "flexible",
+          "explanation": "An adjective is needed before the noun phrase \"catering menu.\" \"Flexible\" correctly modifies \"menu.\"",
+          "commonMistake": "Choosing the adverb \"flexibly\" or the noun \"flexibility\" where an adjective slot is required."
+        },
+        {
+          "id": "TQB-P6-0011-Q02",
+          "blankLabel": "172",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Thereafter"
+            },
+            {
+              "key": "B",
+              "text": "Otherwise"
+            },
+            {
+              "key": "C",
+              "text": "Conversely"
+            },
+            {
+              "key": "D",
+              "text": "Likewise"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Thereafter",
+          "explanation": "The next sentence describes the rate that applies after the first discounted booking. \"Thereafter\" marks that later time.",
+          "commonMistake": "Choosing \"Otherwise,\" which would signal an alternative if the December 1 deadline is missed, not a later additional event."
+        },
+        {
+          "id": "TQB-P6-0011-Q03",
+          "blankLabel": "173",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "comprehensive"
+            },
+            {
+              "key": "B",
+              "text": "comprehensible"
+            },
+            {
+              "key": "C",
+              "text": "compulsory"
+            },
+            {
+              "key": "D",
+              "text": "comparative"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "comprehensive",
+          "explanation": "A proposal that covers rooms, catering, and services in full is \"comprehensive\" — complete and thorough.",
+          "commonMistake": "Confusing \"comprehensive\" (complete) with \"comprehensible\" (easy to understand) or \"compulsory\" (required)."
+        },
+        {
+          "id": "TQB-P6-0011-Q04",
+          "blankLabel": "174",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Sample floor plans and catering menus can be downloaded from the same page."
+            },
+            {
+              "key": "B",
+              "text": "The cafeteria will close early during the holiday week."
+            },
+            {
+              "key": "C",
+              "text": "Please submit timesheets by noon every Friday."
+            },
+            {
+              "key": "D",
+              "text": "All interns must complete the safety quiz online."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Sample floor plans and catering menus can be downloaded from the same page.",
+          "explanation": "After pointing buyers to the website for a proposal, A adds another useful resource on that page — a natural ad close before the tagline.",
+          "commonMistake": "Inserting an internal HR or facilities sentence that does not belong in a hotel advertisement."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0012",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "email",
+      "title": "HR: open enrollment for health benefits",
+      "difficulty": 3,
+      "workplaceTopic": "HR / Benefits",
+      "lote": "lote3",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "Dear colleagues,\n\nOpen enrollment for next year’s health and dental plans will run from October 6 through October 24. All eligible employees must complete their selections in the benefits portal during this window."
+        },
+        {
+          "paragraph": 2,
+          "content": "Last year’s elections will roll forward automatically if you take no action. [[175]], dependents who aged out of coverage must be removed even if you keep the same medical plan."
+        },
+        {
+          "paragraph": 3,
+          "content": "Employees who miss the deadline will [[176]] last year’s plan by default and may not change coverage until the next qualifying life event."
+        },
+        {
+          "paragraph": 4,
+          "content": "Please complete your [[177]] by October 24 so that payroll deductions can be updated in November. [[178]]\n\nQuestions may be sent to benefits@pinnacle-retail.example.\nElena Vasquez\nBenefits Administrator\nPinnacle Retail Group"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0012-Q01",
+          "blankLabel": "175",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nevertheless"
+            },
+            {
+              "key": "B",
+              "text": "Similarly"
+            },
+            {
+              "key": "C",
+              "text": "For instance"
+            },
+            {
+              "key": "D",
+              "text": "In the meantime"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Nevertheless",
+          "explanation": "Automatic rollover is the default, but aged-out dependents still have to be removed. \"Nevertheless\" marks that exception.",
+          "commonMistake": "Choosing \"Similarly\" or \"For instance,\" which do not signal a required exception to the rollover rule."
+        },
+        {
+          "id": "TQB-P6-0012-Q02",
+          "blankLabel": "176",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "retain"
+            },
+            {
+              "key": "B",
+              "text": "remain"
+            },
+            {
+              "key": "C",
+              "text": "restrain"
+            },
+            {
+              "key": "D",
+              "text": "refrain"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "retain",
+          "explanation": "To \"retain last year’s plan\" means to keep it. The sentence needs a transitive verb with \"plan\" as the object.",
+          "commonMistake": "Choosing \"remain,\" which cannot take a direct object, or a look-alike (restrain / refrain) that does not mean \"keep.\""
+        },
+        {
+          "id": "TQB-P6-0012-Q03",
+          "blankLabel": "177",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "enrollment"
+            },
+            {
+              "key": "B",
+              "text": "enroll"
+            },
+            {
+              "key": "C",
+              "text": "enrolled"
+            },
+            {
+              "key": "D",
+              "text": "enrolling"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "enrollment",
+          "explanation": "After the possessive \"your,\" a noun is required. \"Enrollment\" is the noun in \"complete your enrollment.\"",
+          "commonMistake": "Using the verb \"enroll\" after \"your,\" where a noun slot is needed."
+        },
+        {
+          "id": "TQB-P6-0012-Q04",
+          "blankLabel": "178",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "After you submit, you will receive a confirmation email that you should save for your records."
+            },
+            {
+              "key": "B",
+              "text": "The finance team will publish next year's budget guidelines soon."
+            },
+            {
+              "key": "C",
+              "text": "All visitors must sign in at the front desk."
+            },
+            {
+              "key": "D",
+              "text": "Our cafeteria now offers gluten-free options on Fridays."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "After you submit, you will receive a confirmation email that you should save for your records.",
+          "explanation": "A describes the confirmation step that follows submitting enrollment, fitting the close before the contact line.",
+          "commonMistake": "Inserting an unrelated company announcement that does not help employees finish open enrollment."
         }
       ]
     }

@@ -3,45 +3,45 @@
   "validated_at": "2026-09-13",
   "rubric_file": "data/part6-validation-rubric.md",
   "threshold": "average >= 4.0; no dimension < 3",
-  "lote": "lote1+lote2",
-  "passage_count": 8,
-  "question_count": 32,
-  "item_count": 32,
-  "validated_item_count": 32,
-  "target_ids": "TQB-P6-0001 … TQB-P6-0008 (Q01–Q04 each)",
+  "lote": "lote1+lote2+lote3",
+  "passage_count": 12,
+  "question_count": 48,
+  "item_count": 48,
+  "validated_item_count": 48,
+  "target_ids": "TQB-P6-0001 … TQB-P6-0012 (Q01–Q04 each)",
   "counts": {
-    "kept_as_is": 16,
+    "kept_as_is": 32,
     "rewritten": 0,
     "new": 16,
     "dropped": 0
   },
   "blank_type_histogram": {
-    "word_form": 8,
-    "connector": 8,
-    "sentence_insertion": 8,
-    "vocabulary": 8
+    "word_form": 12,
+    "connector": 12,
+    "sentence_insertion": 12,
+    "vocabulary": 12
   },
   "genre_histogram": {
-    "email": 2,
+    "email": 3,
     "memo": 2,
-    "notice": 1,
-    "letter": 1,
-    "ad": 1,
+    "notice": 2,
+    "letter": 2,
+    "ad": 2,
     "article": 1
   },
   "difficulty_histogram": {
-    "3": 16,
-    "2": 8,
-    "4": 8
+    "3": 24,
+    "2": 12,
+    "4": 12
   },
   "mean_dimension_scores": {
-    "format": 5,
-    "authenticity": 5,
-    "blank_type_clarity": 5,
+    "format": 5.0,
+    "authenticity": 5.0,
+    "blank_type_clarity": 5.0,
     "distractors": 4.88,
-    "explanation": 5
+    "explanation": 5.0
   },
-  "overall_mean": 4.97,
+  "overall_mean": 4.98,
   "items": [
     {
       "id": "TQB-P6-0001-Q01",
@@ -586,6 +586,278 @@
       "average": 5.0,
       "pass": true,
       "note": "sentence insertion checklist attachment"
+    },
+    {
+      "id": "TQB-P6-0009-Q01",
+      "passage_id": "TQB-P6-0009",
+      "blankType": "word_form",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "fail base verb after modal may"
+    },
+    {
+      "id": "TQB-P6-0009-Q02",
+      "passage_id": "TQB-P6-0009",
+      "blankType": "connector",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Therefore consequence for recall return"
+    },
+    {
+      "id": "TQB-P6-0009-Q03",
+      "passage_id": "TQB-P6-0009",
+      "blankType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "expected arrival lookalike verbs"
+    },
+    {
+      "id": "TQB-P6-0009-Q04",
+      "passage_id": "TQB-P6-0009",
+      "blankType": "sentence_insertion",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "sentence insertion receipt for refund"
+    },
+    {
+      "id": "TQB-P6-0010-Q01",
+      "passage_id": "TQB-P6-0010",
+      "blankType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "valid pricing remains in force"
+    },
+    {
+      "id": "TQB-P6-0010-Q02",
+      "passage_id": "TQB-P6-0010",
+      "blankType": "connector",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "However exception to 30-day terms"
+    },
+    {
+      "id": "TQB-P6-0010-Q03",
+      "passage_id": "TQB-P6-0010",
+      "blankType": "word_form",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "finalize verb after we can"
+    },
+    {
+      "id": "TQB-P6-0010-Q04",
+      "passage_id": "TQB-P6-0010",
+      "blankType": "sentence_insertion",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "sentence insertion January standing order"
+    },
+    {
+      "id": "TQB-P6-0011-Q01",
+      "passage_id": "TQB-P6-0011",
+      "blankType": "word_form",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "flexible adjective before catering menu"
+    },
+    {
+      "id": "TQB-P6-0011-Q02",
+      "passage_id": "TQB-P6-0011",
+      "blankType": "connector",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Thereafter later events at standard rates"
+    },
+    {
+      "id": "TQB-P6-0011-Q03",
+      "passage_id": "TQB-P6-0011",
+      "blankType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "comprehensive vs comprehensible proposal"
+    },
+    {
+      "id": "TQB-P6-0011-Q04",
+      "passage_id": "TQB-P6-0011",
+      "blankType": "sentence_insertion",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "sentence insertion floor plans download"
+    },
+    {
+      "id": "TQB-P6-0012-Q01",
+      "passage_id": "TQB-P6-0012",
+      "blankType": "connector",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Nevertheless exception for aged-out dependents"
+    },
+    {
+      "id": "TQB-P6-0012-Q02",
+      "passage_id": "TQB-P6-0012",
+      "blankType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "retain plan transitive vs remain"
+    },
+    {
+      "id": "TQB-P6-0012-Q03",
+      "passage_id": "TQB-P6-0012",
+      "blankType": "word_form",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "enrollment noun after your"
+    },
+    {
+      "id": "TQB-P6-0012-Q04",
+      "passage_id": "TQB-P6-0012",
+      "blankType": "sentence_insertion",
+      "disposition": "new",
+      "lote": "lote3",
+      "scores": {
+        "format": 5,
+        "authenticity": 5,
+        "blank_type_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "sentence insertion confirmation email"
     }
   ],
   "batches": [
@@ -664,12 +936,53 @@
       "rewritten_during_authoring": 1,
       "dropped_during_authoring": 0,
       "notes": "Second class lote toward ~80 Q / 20 passages. Prioritized missing genres ad + article; rotated email (Customer Service) and memo (Finance/policy) away from lote1 scenarios. One of each blankType per passage (4 sentence_insertion). Rewrote 0006-Q01 distractors during authoring for clearer vocabulary (not word_form) contrast. All 16 passed rubric. Original workplace English; no ETS wording."
+    },
+    {
+      "lote": "lote3",
+      "created_at": "2026-09-13",
+      "passage_ids": [
+        "TQB-P6-0009",
+        "TQB-P6-0010",
+        "TQB-P6-0011",
+        "TQB-P6-0012"
+      ],
+      "passage_count": 4,
+      "question_count": 16,
+      "item_count": 16,
+      "genres": [
+        "notice",
+        "letter",
+        "ad",
+        "email"
+      ],
+      "topics": [
+        "Quality / Product safety",
+        "Purchasing / Vendor management",
+        "Hospitality / Corporate events",
+        "HR / Benefits"
+      ],
+      "blank_type_counts": {
+        "word_form": 4,
+        "vocabulary": 4,
+        "connector": 4,
+        "sentence_insertion": 4
+      },
+      "difficulty_by_passage": {
+        "TQB-P6-0009": 3,
+        "TQB-P6-0010": 4,
+        "TQB-P6-0011": 2,
+        "TQB-P6-0012": 3
+      },
+      "kept": 16,
+      "rewritten_during_authoring": 1,
+      "dropped_during_authoring": 0,
+      "notes": "Third class lote toward ~80 Q / 20 passages. Prioritized underused genres notice + letter; rotated ad (conference hotel, not ErgoLift) and email (benefits enrollment) away from lote1–2 scenarios. One of each blankType per passage (4 sentence_insertion). Rewrote 0011-Q02 during authoring from additive Moreover to Thereafter so the second sentence clearly marks a later-time rate, avoiding an Otherwise double-key. All 16 passed rubric. Original workplace English; no ETS wording."
     }
   ],
   "mock_design_notes": [
     "A full Part 6 mock later uses 4 passages × 4 blanks = 16 questions from the class bank.",
-    "After Lote 2 there are 32 class Q (enough for two mock sets) plus a separate free intro passage.",
-    "Genre coverage now includes email, memo, notice, letter, ad, article.",
-    "Blueprint progress: 32/80 (40%)."
+    "After Lote 3 there are 48 class Q (enough for three mock sets) plus a separate free intro passage.",
+    "Genre coverage now includes email, memo, notice, letter, ad, article (article still the lightest at 1).",
+    "Blueprint progress: 48/80 (60%)."
   ]
 }
