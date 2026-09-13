@@ -4,11 +4,11 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "item_count": 120,
+  "item_count": 140,
   "validation": {
     "rubric": "data/part5-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110; Lote 4 added TQB-P5-0111–0130 (20 items) toward ~200-item class bank."
+    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110; Lote 4 added TQB-P5-0111–0130; Lote 5 added TQB-P5-0131–0150 (20 items) toward ~200-item class bank."
   },
   "items": [
     {
@@ -4692,6 +4692,786 @@
       "tags": [
         "passive_voice",
         "going_to_passive"
+      ]
+    },
+    {
+      "id": "TQB-P5-0131",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "Worse than",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Customer service",
+      "question": "Customer ratings for the old checkout screen were _____ than those for the redesigned version.",
+      "options": [
+        {
+          "key": "A",
+          "text": "bad"
+        },
+        {
+          "key": "B",
+          "text": "worse"
+        },
+        {
+          "key": "C",
+          "text": "worst"
+        },
+        {
+          "key": "D",
+          "text": "badly"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "worse",
+      "explanation": "When comparing two things with \"than,\" use the comparative \"worse,\" not the superlative \"worst.\"",
+      "commonMistake": "Choosing \"worst,\" which is only correct when ranking three or more options without \"than.\"",
+      "learningObjective": "Use worse + than for a two-item negative comparison.",
+      "tags": [
+        "comparatives",
+        "worse_than"
+      ]
+    },
+    {
+      "id": "TQB-P5-0132",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "As many as",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Logistics",
+      "question": "The warehouse processed _____ many returns this December as it did during last year's holiday peak.",
+      "options": [
+        {
+          "key": "A",
+          "text": "so"
+        },
+        {
+          "key": "B",
+          "text": "as"
+        },
+        {
+          "key": "C",
+          "text": "too"
+        },
+        {
+          "key": "D",
+          "text": "more"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "as",
+      "explanation": "The correlative structure is \"as many … as.\" The blank needs \"as\" before \"many.\"",
+      "commonMistake": "Choosing \"so\" (so many … that) or \"more\" (more … than), which break the as…as pattern.",
+      "learningObjective": "Recognize as many + noun + as for equal countable quantity.",
+      "tags": [
+        "comparatives",
+        "as_many_as"
+      ]
+    },
+    {
+      "id": "TQB-P5-0133",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "Larger than",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Facilities",
+      "question": "The new distribution center is _____ than the old facility by nearly 20,000 square feet.",
+      "options": [
+        {
+          "key": "A",
+          "text": "large"
+        },
+        {
+          "key": "B",
+          "text": "larger"
+        },
+        {
+          "key": "C",
+          "text": "largest"
+        },
+        {
+          "key": "D",
+          "text": "largely"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "larger",
+      "explanation": "\"Than\" signals a comparative. \"Larger\" is the correct comparative form of \"large.\"",
+      "commonMistake": "Selecting the base adjective \"large\" or the superlative \"largest\" when \"than\" requires a comparative.",
+      "learningObjective": "Use short-adjective -er form with than for size comparisons.",
+      "tags": [
+        "comparatives",
+        "er_than"
+      ]
+    },
+    {
+      "id": "TQB-P5-0134",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "One of the most",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Procurement",
+      "question": "Oakdale Freight is one of the _____ dependable carriers the purchasing team has used this year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "more"
+        },
+        {
+          "key": "B",
+          "text": "most"
+        },
+        {
+          "key": "C",
+          "text": "much"
+        },
+        {
+          "key": "D",
+          "text": "many"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "most",
+      "explanation": "After \"one of the,\" use a superlative: \"one of the most + adjective.\"",
+      "commonMistake": "Choosing \"more,\" which fits two-item comparisons with \"than,\" not the \"one of the …\" pattern.",
+      "learningObjective": "Use most (not more) after one of the + adjective.",
+      "tags": [
+        "superlatives",
+        "one_of_the_most"
+      ]
+    },
+    {
+      "id": "TQB-P5-0135",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "A before /wʌn/ sound",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Legal",
+      "question": "The contractor signed _____ one-year maintenance agreement with the facilities department.",
+      "options": [
+        {
+          "key": "A",
+          "text": "a"
+        },
+        {
+          "key": "B",
+          "text": "an"
+        },
+        {
+          "key": "C",
+          "text": "the"
+        },
+        {
+          "key": "D",
+          "text": "any"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "a",
+      "explanation": "\"One\" begins with a /w/ consonant sound, so the indefinite article is \"a,\" not \"an.\"",
+      "commonMistake": "Choosing \"an\" by looking at the vowel letter o instead of the spoken consonant sound.",
+      "learningObjective": "Choose a/an by sound: a one-year… because one starts with /w/.",
+      "tags": [
+        "articles",
+        "a_an_sound"
+      ]
+    },
+    {
+      "id": "TQB-P5-0136",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "A few (time expression)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Meetings",
+      "question": "The steering committee will reconvene in _____ few weeks to finalize the vendor shortlist.",
+      "options": [
+        {
+          "key": "A",
+          "text": "a"
+        },
+        {
+          "key": "B",
+          "text": "an"
+        },
+        {
+          "key": "C",
+          "text": "the"
+        },
+        {
+          "key": "D",
+          "text": "this"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "a",
+      "explanation": "The fixed expression is \"in a few weeks.\" \"A few\" means some (countable).",
+      "commonMistake": "Omitting \"a\" or choosing \"the few,\" which would imply a specific small group already identified.",
+      "learningObjective": "Use a few for an indefinite small countable amount of time.",
+      "tags": [
+        "determiners",
+        "a_few"
+      ]
+    },
+    {
+      "id": "TQB-P5-0137",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "Either of two",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Facilities",
+      "question": "Staff may enter through _____ side door if the main lobby entrance is locked after 7:00 p.m.",
+      "options": [
+        {
+          "key": "A",
+          "text": "either"
+        },
+        {
+          "key": "B",
+          "text": "neither"
+        },
+        {
+          "key": "C",
+          "text": "both"
+        },
+        {
+          "key": "D",
+          "text": "every"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "either",
+      "explanation": "\"Either\" means one or the other of two options and fits a singular noun (\"side door\").",
+      "commonMistake": "Choosing \"both\" (needs plural) or \"neither\" (negative), which do not fit the permission context.",
+      "learningObjective": "Use either + singular noun for one of two alternatives.",
+      "tags": [
+        "determiners",
+        "either"
+      ]
+    },
+    {
+      "id": "TQB-P5-0138",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "Few vs a few (negative)",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Training",
+      "question": "_____ employees attended the optional Saturday workshop, so the training room looked nearly empty.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Few"
+        },
+        {
+          "key": "B",
+          "text": "A few"
+        },
+        {
+          "key": "C",
+          "text": "Little"
+        },
+        {
+          "key": "D",
+          "text": "Much"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Few",
+      "explanation": "\"Few\" without \"a\" emphasizes a surprisingly small number (almost none). That matches \"nearly empty.\"",
+      "commonMistake": "Choosing \"A few,\" which suggests a small but positive attendance, conflicting with \"nearly empty.\"",
+      "learningObjective": "Distinguish few (negative scarcity) from a few (some, positive).",
+      "tags": [
+        "determiners",
+        "few_vs_a_few"
+      ]
+    },
+    {
+      "id": "TQB-P5-0139",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Adjective before noun",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Finance",
+      "question": "The finance team prepared a _____ overview of quarterly operating expenses for the board.",
+      "options": [
+        {
+          "key": "A",
+          "text": "detail"
+        },
+        {
+          "key": "B",
+          "text": "detailed"
+        },
+        {
+          "key": "C",
+          "text": "detailing"
+        },
+        {
+          "key": "D",
+          "text": "details"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "detailed",
+      "explanation": "Before the noun \"overview,\" the blank needs an adjective. \"Detailed\" modifies the noun.",
+      "commonMistake": "Choosing the noun \"detail/details\" or the verb form \"detailing\" where an adjective is required.",
+      "learningObjective": "Place an adjective immediately before the noun it modifies.",
+      "tags": [
+        "word_forms",
+        "adjective_before_noun"
+      ]
+    },
+    {
+      "id": "TQB-P5-0140",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Noun after possessive",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Sales",
+      "question": "Leadership praised her _____ during the difficult contract renegotiation with the retailer.",
+      "options": [
+        {
+          "key": "A",
+          "text": "persist"
+        },
+        {
+          "key": "B",
+          "text": "persistent"
+        },
+        {
+          "key": "C",
+          "text": "persistence"
+        },
+        {
+          "key": "D",
+          "text": "persistently"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "persistence",
+      "explanation": "After the possessive \"her,\" the blank needs a noun. \"Persistence\" names the quality.",
+      "commonMistake": "Selecting the adjective \"persistent\" or adverb \"persistently\" after a possessive determiner.",
+      "learningObjective": "After possessive adjectives (her/his/their), use a noun.",
+      "tags": [
+        "word_forms",
+        "noun_after_possessive"
+      ]
+    },
+    {
+      "id": "TQB-P5-0141",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Simple present schedule",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Travel",
+      "question": "The shuttle to the airport _____ every hour from the main lobby between 6:00 a.m. and 9:00 p.m.",
+      "options": [
+        {
+          "key": "A",
+          "text": "departs"
+        },
+        {
+          "key": "B",
+          "text": "departed"
+        },
+        {
+          "key": "C",
+          "text": "has departed"
+        },
+        {
+          "key": "D",
+          "text": "departing"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "departs",
+      "explanation": "Timetables and regular schedules use the simple present: \"departs every hour.\"",
+      "commonMistake": "Choosing past or perfect forms when a repeated schedule (every hour) requires simple present.",
+      "learningObjective": "Use simple present for fixed schedules and timetables.",
+      "tags": [
+        "verb_tenses",
+        "simple_present_schedule"
+      ]
+    },
+    {
+      "id": "TQB-P5-0142",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Future perfect continuous",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "HR",
+      "question": "By next June, Ms. Ortega _____ for the company for twenty years.",
+      "options": [
+        {
+          "key": "A",
+          "text": "will work"
+        },
+        {
+          "key": "B",
+          "text": "will have been working"
+        },
+        {
+          "key": "C",
+          "text": "works"
+        },
+        {
+          "key": "D",
+          "text": "has worked"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "will have been working",
+      "explanation": "\"By next June\" + duration \"for twenty years\" calls for future perfect continuous: will have been working.",
+      "commonMistake": "Choosing present perfect \"has worked\" (no future anchor) or simple future \"will work\" (no duration emphasis).",
+      "learningObjective": "Use will have been + -ing for duration up to a future point.",
+      "tags": [
+        "verb_tenses",
+        "future_perfect_continuous"
+      ]
+    },
+    {
+      "id": "TQB-P5-0143",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Focus on",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Sustainability",
+      "question": "Tomorrow's webinar will focus _____ reducing energy costs across the retail store network.",
+      "options": [
+        {
+          "key": "A",
+          "text": "in"
+        },
+        {
+          "key": "B",
+          "text": "on"
+        },
+        {
+          "key": "C",
+          "text": "at"
+        },
+        {
+          "key": "D",
+          "text": "to"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "on",
+      "explanation": "The collocation is \"focus on\" + noun/gerund.",
+      "commonMistake": "Choosing \"in,\" \"at,\" or \"to,\" which are common but incorrect with \"focus.\"",
+      "learningObjective": "Memorize focus on as a fixed verb + preposition pair.",
+      "tags": [
+        "prepositions",
+        "focus_on"
+      ]
+    },
+    {
+      "id": "TQB-P5-0144",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Succeed in + gerund",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Sales",
+      "question": "The regional team succeeded _____ closing three major accounts before the quarter ended.",
+      "options": [
+        {
+          "key": "A",
+          "text": "in"
+        },
+        {
+          "key": "B",
+          "text": "at"
+        },
+        {
+          "key": "C",
+          "text": "on"
+        },
+        {
+          "key": "D",
+          "text": "for"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "in",
+      "explanation": "\"Succeed in\" is followed by a gerund or noun: succeeded in closing…",
+      "commonMistake": "Choosing \"at\" (good at) or \"on,\" which do not collocate with \"succeed.\"",
+      "learningObjective": "Use succeed in + gerund for successful completion of an action.",
+      "tags": [
+        "prepositions",
+        "succeed_in"
+      ]
+    },
+    {
+      "id": "TQB-P5-0145",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Despite + noun phrase",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Logistics",
+      "question": "_____ heavy traffic on the expressway, the courier reached the store before closing time.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Although"
+        },
+        {
+          "key": "B",
+          "text": "Despite"
+        },
+        {
+          "key": "C",
+          "text": "However"
+        },
+        {
+          "key": "D",
+          "text": "Because"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "Despite",
+      "explanation": "\"Despite\" is followed by a noun phrase (\"heavy traffic…\"). \"Although\" would need a full clause.",
+      "commonMistake": "Choosing \"Although,\" which requires a subject + verb (Although traffic was heavy…), not a bare noun phrase.",
+      "learningObjective": "Use despite + noun/gerund; use although + clause.",
+      "tags": [
+        "conjunctions",
+        "despite"
+      ]
+    },
+    {
+      "id": "TQB-P5-0146",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Whose possessive relative",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Marketing",
+      "question": "Investors praised the firm _____ packaging redesign cut shipping damage by 18 percent.",
+      "options": [
+        {
+          "key": "A",
+          "text": "who"
+        },
+        {
+          "key": "B",
+          "text": "whom"
+        },
+        {
+          "key": "C",
+          "text": "which"
+        },
+        {
+          "key": "D",
+          "text": "whose"
+        }
+      ],
+      "correctKey": "D",
+      "correctAnswer": "whose",
+      "explanation": "\"Whose\" links a noun to something it possesses: the firm whose packaging redesign…",
+      "commonMistake": "Choosing \"which\" (no possessive) or \"who\" (people subject), neither of which shows ownership of \"packaging redesign.\"",
+      "learningObjective": "Use whose for possessive relative clauses with people or organizations.",
+      "tags": [
+        "pronouns",
+        "whose"
+      ]
+    },
+    {
+      "id": "TQB-P5-0147",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "Should inverted first conditional",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Security",
+      "question": "_____ you need additional visitor badges, please notify the security desk before Friday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Should"
+        },
+        {
+          "key": "B",
+          "text": "Would"
+        },
+        {
+          "key": "C",
+          "text": "Had"
+        },
+        {
+          "key": "D",
+          "text": "Were"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Should",
+      "explanation": "Inverted first conditional: \"Should you need…\" = \"If you need….\" It expresses a possible future need.",
+      "commonMistake": "Choosing \"Had\" (third conditional) or \"Were\" (second), which do not match a real future request.",
+      "learningObjective": "Recognize Should + subject as an inverted first-conditional if-clause.",
+      "tags": [
+        "conditionals",
+        "should_inversion"
+      ]
+    },
+    {
+      "id": "TQB-P5-0148",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Present simple passive",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Customer service",
+      "question": "Customer satisfaction surveys _____ by an independent research firm every spring.",
+      "options": [
+        {
+          "key": "A",
+          "text": "conduct"
+        },
+        {
+          "key": "B",
+          "text": "are conducted"
+        },
+        {
+          "key": "C",
+          "text": "are conducting"
+        },
+        {
+          "key": "D",
+          "text": "have conducting"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "are conducted",
+      "explanation": "The surveys receive the action, so use present simple passive: are conducted (+ by-agent).",
+      "commonMistake": "Choosing active \"conduct\" or progressive \"are conducting,\" which would need the research firm as subject.",
+      "learningObjective": "Use am/is/are + past participle for present simple passive with habitual by-agents.",
+      "tags": [
+        "passive_voice",
+        "present_simple_passive"
+      ]
+    },
+    {
+      "id": "TQB-P5-0149",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Would rather",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Operations",
+      "question": "Most clerks _____ rather finish the inventory count tonight than return on Saturday morning.",
+      "options": [
+        {
+          "key": "A",
+          "text": "would"
+        },
+        {
+          "key": "B",
+          "text": "should"
+        },
+        {
+          "key": "C",
+          "text": "must"
+        },
+        {
+          "key": "D",
+          "text": "might"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "would",
+      "explanation": "The preference idiom is \"would rather + base verb (+ than…).\"",
+      "commonMistake": "Choosing \"should\" or \"must,\" which express advice/obligation rather than preference.",
+      "learningObjective": "Use would rather + base verb to express preference.",
+      "tags": [
+        "modals",
+        "would_rather"
+      ]
+    },
+    {
+      "id": "TQB-P5-0150",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Neither of + singular verb",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Recruiting",
+      "question": "Neither of the finalists _____ experience managing a multilingual support center.",
+      "options": [
+        {
+          "key": "A",
+          "text": "have"
+        },
+        {
+          "key": "B",
+          "text": "has"
+        },
+        {
+          "key": "C",
+          "text": "having"
+        },
+        {
+          "key": "D",
+          "text": "are having"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "has",
+      "explanation": "\"Neither of + plural noun\" takes a singular verb in formal workplace English: neither… has.",
+      "commonMistake": "Agreeing with the plural \"finalists\" and choosing \"have,\" which is common in casual speech but not preferred on TOEIC.",
+      "learningObjective": "Treat neither of as singular for verb agreement in exam English.",
+      "tags": [
+        "subject_verb_agreement",
+        "neither_of"
       ]
     }
   ]

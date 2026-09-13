@@ -32,31 +32,32 @@ Rough per-skill band: **16–17** (12 × 16 = 192; remainder distributed).
 | Lote 1 | TQB-P5-0051 … 0070 | +20 | Done — 60 / 200 |
 | Lote 2 | TQB-P5-0071 … 0090 | +20 | Done — 80 / 200 |
 | Lote 3 | TQB-P5-0091 … 0110 | +20 | Done — 100 / 200 |
-| **Lote 4** | TQB-P5-0111 … 0130 | +20 | **Done — 120 / 200** |
-| Lote 5 | TQB-P5-0131 … 0150 | +20 | Planned |
+| Lote 4 | TQB-P5-0111 … 0130 | +20 | Done — 120 / 200 |
+| **Lote 5** | TQB-P5-0131 … 0150 | +20 | **Done — 140 / 200** |
+| Lote 6 | TQB-P5-0151 … 0170 | +20 | Planned |
 | … | … | … | … |
 | Target | … → ~TQB-P5-0210 | ~200 | — |
 
-**After Lote 4:** **120 / 200** class items (60%). With free intro: **130** Part 5 items on site.
+**After Lote 5:** **140 / 200** class items (70%). With free intro: **150** Part 5 items on site.
 
-### Skill counts after Lote 4 (class bank only)
+### Skill counts after Lote 5 (class bank only)
 
 | Skill | Count | Gap to ~17 |
 |-------|------:|----------:|
-| Word Forms | 10 | ~7 |
-| Verb Tenses | 10 | ~7 |
-| Prepositions | 10 | ~7 |
-| Conjunctions/Transitions | 10 | ~7 |
-| Pronouns | 10 | ~7 |
-| Subject-Verb Agreement | 11 | ~6 |
-| Conditionals | 10 | ~7 |
-| Passive Voice | 10 | ~7 |
-| Comparatives/Superlatives | 9 | ~8 |
+| Word Forms | 12 | ~5 |
+| Verb Tenses | 12 | ~5 |
+| Prepositions | 12 | ~5 |
+| Conjunctions/Transitions | 11 | ~6 |
+| Pronouns | 11 | ~6 |
+| Subject-Verb Agreement | 12 | ~5 |
+| Conditionals | 11 | ~6 |
+| Passive Voice | 11 | ~6 |
+| Comparatives/Superlatives | 13 | ~4 |
 | Gerunds/Infinitives | 11 | ~6 |
-| Articles/Determiners | 9 | ~8 |
-| Modals | 10 | ~7 |
+| Articles/Determiners | 13 | ~4 |
+| Modals | 11 | ~6 |
 
-Lote 4 lifted bank100 lows: **Subject-Verb Agreement** and **Gerunds/Infinitives** from **7→11**, and Word Forms / Verb Tenses / Prepositions / Modals from **8→10**. Lowest for Lote 5 priority: **Comparatives/Superlatives** and **Articles/Determiners** (both at 9); all others sit at 10–11.
+Lote 5 lifted bank120 lows: **Comparatives/Superlatives** and **Articles/Determiners** from **9→13**. Other skills now sit at 11–12. Lowest for Lote 6 priority: **Conjunctions/Transitions, Pronouns, Conditionals, Passive Voice, Gerunds/Infinitives, Modals** (all at 11).
 
 ## Batch rules
 
