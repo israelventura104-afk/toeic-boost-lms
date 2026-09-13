@@ -1,0 +1,155 @@
+{
+  "id": "P6-INTRO",
+  "title": "Part 6 Free Practice Set",
+  "purpose": "free_intro_fixed",
+  "fixed": true,
+  "shuffle": false,
+  "reuse_in_mocks": false,
+  "exclude_from_free_intro": false,
+  "passage_count": 1,
+  "question_count": 4,
+  "item_count": 4,
+  "passages": [
+    {
+      "id": "TQB-P6-INTRO-001",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "email",
+      "title": "Staff workshop reminder",
+      "difficulty": 2,
+      "workplaceTopic": "HR / Training",
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "Dear team,\n\nThis is a reminder that the customer-service workshop will take place next Thursday from 9:00 a.m. to noon in Conference Room B. Please arrive [[131]] so that we can begin on time."
+        },
+        {
+          "paragraph": 2,
+          "content": "The session will cover complaint handling, tone of voice, and follow-up emails. [[132]], each participant will practice a short role-play with a partner."
+        },
+        {
+          "paragraph": 3,
+          "content": "If you cannot [[133]] the workshop, notify your supervisor by Monday so that your seat can be offered to someone on the waiting list.\n\n[[134]]\n\nThank you for your cooperation.\nLina Ortega\nLearning & Development"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-INTRO-001-Q01",
+          "blankLabel": "131",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "prompt"
+            },
+            {
+              "key": "B",
+              "text": "promptly"
+            },
+            {
+              "key": "C",
+              "text": "promptness"
+            },
+            {
+              "key": "D",
+              "text": "prompting"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "promptly",
+          "explanation": "An adverb is needed to modify the verb \"arrive.\" \"Promptly\" means on time / without delay.",
+          "commonMistake": "Choosing \"prompt\" (adjective) because it looks similar; adjectives do not modify verbs."
+        },
+        {
+          "id": "TQB-P6-INTRO-001-Q02",
+          "blankLabel": "132",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "In addition"
+            },
+            {
+              "key": "B",
+              "text": "Otherwise"
+            },
+            {
+              "key": "C",
+              "text": "On the contrary"
+            },
+            {
+              "key": "D",
+              "text": "Nevertheless"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "In addition",
+          "explanation": "The next sentence adds another workshop activity. \"In addition\" signals an additive relationship.",
+          "commonMistake": "Picking a contrast connector (Nevertheless / On the contrary) when no contrast is present."
+        },
+        {
+          "id": "TQB-P6-INTRO-001-Q03",
+          "blankLabel": "133",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "attend"
+            },
+            {
+              "key": "B",
+              "text": "assist"
+            },
+            {
+              "key": "C",
+              "text": "apply"
+            },
+            {
+              "key": "D",
+              "text": "assume"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "attend",
+          "explanation": "\"Attend\" means to be present at an event. The sentence is about not being able to go to the workshop.",
+          "commonMistake": "Confusing \"attend\" with \"assist\" (help) — a common false friend for Spanish speakers."
+        },
+        {
+          "id": "TQB-P6-INTRO-001-Q04",
+          "blankLabel": "134",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Printed materials will be available at the registration desk."
+            },
+            {
+              "key": "B",
+              "text": "The cafeteria menu will change again next month."
+            },
+            {
+              "key": "C",
+              "text": "Please submit your expense reports before Friday."
+            },
+            {
+              "key": "D",
+              "text": "Our downtown branch is relocating in October."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Printed materials will be available at the registration desk.",
+          "explanation": "Only A continues the workshop logistics (materials for participants). The other options introduce unrelated office topics.",
+          "commonMistake": "Choosing a grammatical sentence that does not fit the email’s topic (workshop logistics)."
+        }
+      ]
+    }
+  ]
+}

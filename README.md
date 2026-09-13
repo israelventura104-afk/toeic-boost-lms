@@ -1,10 +1,11 @@
-# TOEIC Boost (Paso 3+ — Part 5 Incomplete Sentences + timed mock)
+# TOEIC Boost (Paso 3+ — Part 5 + Part 6 Text Completion)
 
 Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to TOEFL ITP Boost.
 
 **Paso 1:** Landing page (marketing).  
 **Paso 2:** Class-code access, student dashboard, free Reading & Grammar short demo (Part 5–7 style).  
-**Paso 3:** Original Part 5 Incomplete Sentences bank (210 items total = 10 intro + 200 class-validated), free fixed practice (10), class guided practice (15), timed Part 5 mock (30Q / 20 min), a real Reading hub, and a free Part 5 Strategies library.
+**Paso 3:** Original Part 5 Incomplete Sentences bank (210 items = 10 intro + 200 class-validated), free/guided/mock flows, Reading hub, and Part 5 Strategies.
+**Paso 3b (Part 6 start):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank Lote 1 (4 passages × 4 = 16 validated Q toward ~80), free practice UI; guided/mock/strategies for Part 6 come next.
 
 ## Preview locally
 
@@ -31,7 +32,8 @@ Open <http://localhost:8765/>.
 
 | Path | Needs code? | What you get |
 |------|-------------|--------------|
-| `reading.html` | No | Reading hub: Part 5 free / guided / mock + Parts 6/7 coming-next notes |
+| `reading.html` | No | Reading hub: Part 5 free / guided / mock + Part 6 free practice (guided/mock coming next) + Part 7 coming-next |
+| `part6-practice.html` | **No** | Fixed 1-passage Part 6 intro (`TQB-P6-INTRO-001`, Q01–Q04), immediate feedback |
 | `strategies.html` | **No** | Free Part 5 study library (12 skills + exam habits) · `#part5` anchor |
 | `part5-practice.html` | **No** | Fixed 10-item intro (`TQB-P5-0001`–`0010`), immediate feedback, restart |
 | `part5-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 15 items from the 200-item class bank, balanced by skill, session saved |
@@ -75,7 +77,22 @@ Skill balance (210 total = 10 intro + 200 validated bank; blueprint **200/200 CO
 
 Each item: one blank, four options (A–D), one `correctKey` that matches `correctAnswer` text, plus explanation and common-mistake note.
 
+
+## Part 6 item bank (original workplace English)
+
+Part 6 = **Text Completion**: short workplace texts with **4 blanks** each (word/phrase, connector, **sentence insertion**). Class bank target: **~80 questions** (20 passages × 4).
+
+- Intro (free, fixed, `purpose: free_intro_fixed`): `data/part6-intro.json` — **1** passage × **4** Q, IDs `TQB-P6-INTRO-001` + `Q01`–`Q04`
+- Bank (guided + later mocks, class-validated): `data/part6-bank.json` — **Lote 1:** 4 passages × 4 = **16** Q, IDs `TQB-P6-0001` … `0004` (**16 / 80**)
+- Validation: `data/part6-validation-rubric.md` + `data/part6-bank-validation.json`
+- Blueprint: `data/part6-blueprint.md`
+
+Lote 1 genres: **email**, **memo**, **notice**, **letter**. Blank types (16): word_form 4 · vocabulary 4 · connector 4 · sentence_insertion 4.
+
+Blank markers in passage text use `[[131]]` style for UI highlight.
+
 ## Short demo (free, Paso 2)
+
 
 - Path: `demo-test.html`
 - Composition: **3× Part 5** · **2× Part 6** · **1× Part 7** memo with **3** questions (**8** total)
@@ -86,14 +103,14 @@ Each item: one blank, four options (A–D), one `correctKey` that matches `corre
 | Path | Purpose |
 |------|---------|
 | `index.html` | Landing |
-| `styles.css` | Landing + dashboard + demo + Part 5 / Reading hub + strategy library |
+| `styles.css` | Landing + dashboard + demo + Part 5/6 / Reading hub + strategy library |
 | `nav.js` | Landing toggle + shared app header |
 | `access.js` / `data/access.json` | Teacher class-code unlock |
 | `progress.js` | Demo + Part 5 guided/mock session storage |
 | `dashboard.html` / `dashboard.js` | Progress dashboard + class access panel |
 | `demo-test.html` / `demo-test.js` | Free Part 5–7 demo flow |
 | `data/demo-test.json` / `data/demo-items.json` | Demo config + original items |
-| `reading.html` | Reading hub (Part 5 live; 6/7 coming next) |
+| `reading.html` | Reading hub (Part 5 live; Part 6 free live; guided/mock & Part 7 coming next) |
 | `part5-practice.html` / `part5-practice.js` | Free 10-item Part 5 set |
 | `part5-guided-practice.html` / `part5-guided-practice.js` | Class 15-item Part 5 drill |
 | `part5-mock.html` / `part5-mock.js` | Class timed Part 5 mock (30Q / 20 min) |
