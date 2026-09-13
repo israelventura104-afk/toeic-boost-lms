@@ -4,11 +4,11 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "item_count": 160,
+  "item_count": 180,
   "validation": {
     "rubric": "data/part5-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110; Lote 4 added TQB-P5-0111–0130; Lote 5 added TQB-P5-0131–0150; Lote 6 added TQB-P5-0151–0170 (20 items) toward ~200-item class bank."
+    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110; Lote 4 added TQB-P5-0111–0130; Lote 5 added TQB-P5-0131–0150; Lote 6 added TQB-P5-0151–0170; Lote 7 added TQB-P5-0171–0190 (20 items) toward ~200-item class bank."
   },
   "items": [
     {
@@ -6258,6 +6258,786 @@
       "tags": [
         "subject_verb_agreement",
         "majority_of"
+      ]
+    },
+    {
+      "id": "TQB-P5-0171",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Adverb modifying verb",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "IT",
+      "question": "The technicians completed the network upgrade _____ ahead of the announced deadline.",
+      "options": [
+        {
+          "key": "A",
+          "text": "success"
+        },
+        {
+          "key": "B",
+          "text": "successful"
+        },
+        {
+          "key": "C",
+          "text": "successfully"
+        },
+        {
+          "key": "D",
+          "text": "succeed"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "successfully",
+      "explanation": "The blank modifies the verb phrase \"completed,\" so an adverb is required. \"Successfully\" is the adverb form.",
+      "commonMistake": "Choosing \"successful,\" an adjective that cannot modify a verb.",
+      "learningObjective": "Use an adverb when the blank modifies how an action was done.",
+      "tags": [
+        "word_forms",
+        "adverb_form"
+      ]
+    },
+    {
+      "id": "TQB-P5-0172",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Noun after the",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Finance",
+      "question": "Investors questioned the _____ of expanding into three new markets at once.",
+      "options": [
+        {
+          "key": "A",
+          "text": "wise"
+        },
+        {
+          "key": "B",
+          "text": "wisely"
+        },
+        {
+          "key": "C",
+          "text": "wisdom"
+        },
+        {
+          "key": "D",
+          "text": "wiser"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "wisdom",
+      "explanation": "After \"the\" and before \"of,\" the blank needs a noun. \"Wisdom\" is the noun naming the quality being questioned.",
+      "commonMistake": "Selecting \"wise\" or \"wisely,\" which are adjective and adverb forms, not nouns.",
+      "learningObjective": "After the + of, choose the noun form of the word family.",
+      "tags": [
+        "word_forms",
+        "noun_form"
+      ]
+    },
+    {
+      "id": "TQB-P5-0173",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Adjective before noun",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Consulting",
+      "question": "The consultant offered _____ advice on reducing warehouse overtime costs.",
+      "options": [
+        {
+          "key": "A",
+          "text": "practice"
+        },
+        {
+          "key": "B",
+          "text": "practical"
+        },
+        {
+          "key": "C",
+          "text": "practically"
+        },
+        {
+          "key": "D",
+          "text": "practitioner"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "practical",
+      "explanation": "The blank modifies the noun \"advice,\" so an adjective is needed. \"Practical\" correctly describes the advice.",
+      "commonMistake": "Choosing \"practically,\" an adverb, or \"practice,\" a noun, before another noun.",
+      "learningObjective": "Place an adjective immediately before the noun it describes.",
+      "tags": [
+        "word_forms",
+        "adjective_form"
+      ]
+    },
+    {
+      "id": "TQB-P5-0174",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Past participle as adjective",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Compliance",
+      "question": "Only _____ documents should be uploaded to the shared compliance folder.",
+      "options": [
+        {
+          "key": "A",
+          "text": "authorize"
+        },
+        {
+          "key": "B",
+          "text": "authorization"
+        },
+        {
+          "key": "C",
+          "text": "authorized"
+        },
+        {
+          "key": "D",
+          "text": "authorizing"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "authorized",
+      "explanation": "The blank needs an adjective before \"documents.\" The past participle \"authorized\" functions as an adjective meaning \"officially approved.\"",
+      "commonMistake": "Choosing \"authorization\" (noun) or \"authorizing\" (present participle) when a passive-sense adjective is required.",
+      "learningObjective": "Recognize past participles used as adjectives before nouns.",
+      "tags": [
+        "word_forms",
+        "participle_adjective"
+      ]
+    },
+    {
+      "id": "TQB-P5-0175",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Simple past with finished time",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Procurement",
+      "question": "The purchasing manager _____ the supplier contracts yesterday afternoon.",
+      "options": [
+        {
+          "key": "A",
+          "text": "reviews"
+        },
+        {
+          "key": "B",
+          "text": "has reviewed"
+        },
+        {
+          "key": "C",
+          "text": "reviewed"
+        },
+        {
+          "key": "D",
+          "text": "reviewing"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "reviewed",
+      "explanation": "\"Yesterday afternoon\" is a finished past time marker, so the simple past \"reviewed\" is required.",
+      "commonMistake": "Choosing present perfect \"has reviewed,\" which does not pair with a finished past time expression like yesterday.",
+      "learningObjective": "Use simple past with finished time markers such as yesterday or last week.",
+      "tags": [
+        "verb_tenses",
+        "simple_past"
+      ]
+    },
+    {
+      "id": "TQB-P5-0176",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Present perfect with for",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "HR",
+      "question": "Ms. Kim _____ in the Seoul office for nearly eight years.",
+      "options": [
+        {
+          "key": "A",
+          "text": "works"
+        },
+        {
+          "key": "B",
+          "text": "worked"
+        },
+        {
+          "key": "C",
+          "text": "has worked"
+        },
+        {
+          "key": "D",
+          "text": "is working"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "has worked",
+      "explanation": "\"For nearly eight years\" describes a duration that continues to the present, so present perfect \"has worked\" is correct.",
+      "commonMistake": "Using simple past \"worked,\" which suggests the employment has already ended.",
+      "learningObjective": "Use present perfect with for + duration when the situation still continues.",
+      "tags": [
+        "verb_tenses",
+        "present_perfect"
+      ]
+    },
+    {
+      "id": "TQB-P5-0177",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Present continuous for future arrangement",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Facilities",
+      "question": "Next Monday the facilities team _____ the lobby flooring, so please use the side entrance.",
+      "options": [
+        {
+          "key": "A",
+          "text": "replaces"
+        },
+        {
+          "key": "B",
+          "text": "replaced"
+        },
+        {
+          "key": "C",
+          "text": "is replacing"
+        },
+        {
+          "key": "D",
+          "text": "has replaced"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "is replacing",
+      "explanation": "Present continuous can express a fixed near-future arrangement: \"is replacing\" next Monday.",
+      "commonMistake": "Choosing simple present \"replaces,\" which fits schedules of transport more than planned work actions here.",
+      "learningObjective": "Use present continuous for personal/team arrangements already decided for the near future.",
+      "tags": [
+        "verb_tenses",
+        "present_continuous_future"
+      ]
+    },
+    {
+      "id": "TQB-P5-0178",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Past perfect with before",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Legal",
+      "question": "Before the merger was announced, the legal team _____ the confidentiality agreements.",
+      "options": [
+        {
+          "key": "A",
+          "text": "finalizes"
+        },
+        {
+          "key": "B",
+          "text": "has finalized"
+        },
+        {
+          "key": "C",
+          "text": "had finalized"
+        },
+        {
+          "key": "D",
+          "text": "was finalizing"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "had finalized",
+      "explanation": "Past perfect \"had finalized\" shows the agreements were completed before another past event (the announcement).",
+      "commonMistake": "Choosing present perfect \"has finalized,\" which links to the present rather than to an earlier past.",
+      "learningObjective": "Use past perfect for the earlier of two past actions when before/by the time signals sequence.",
+      "tags": [
+        "verb_tenses",
+        "past_perfect"
+      ]
+    },
+    {
+      "id": "TQB-P5-0179",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Comply with",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Safety",
+      "question": "All contractors must comply _____ the updated site-safety regulations.",
+      "options": [
+        {
+          "key": "A",
+          "text": "to"
+        },
+        {
+          "key": "B",
+          "text": "with"
+        },
+        {
+          "key": "C",
+          "text": "for"
+        },
+        {
+          "key": "D",
+          "text": "on"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "with",
+      "explanation": "The fixed collocation is \"comply with\" rules or regulations.",
+      "commonMistake": "Choosing \"comply to,\" a common L1 interference error; English requires \"with.\"",
+      "learningObjective": "Memorize comply with as the standard preposition pairing.",
+      "tags": [
+        "prepositions",
+        "collocations"
+      ]
+    },
+    {
+      "id": "TQB-P5-0180",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Benefit from",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Sales",
+      "question": "Small retailers often benefit _____ bulk purchasing agreements with regional distributors.",
+      "options": [
+        {
+          "key": "A",
+          "text": "of"
+        },
+        {
+          "key": "B",
+          "text": "from"
+        },
+        {
+          "key": "C",
+          "text": "by"
+        },
+        {
+          "key": "D",
+          "text": "with"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "from",
+      "explanation": "The verb \"benefit\" takes the preposition \"from\" when naming the source of advantage.",
+      "commonMistake": "Selecting \"benefit of,\" which fits the noun phrase \"the benefit of\" but not the verb pattern.",
+      "learningObjective": "Use benefit from after the verb when stating what helps someone.",
+      "tags": [
+        "prepositions",
+        "collocations"
+      ]
+    },
+    {
+      "id": "TQB-P5-0181",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Accustomed to",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "HR",
+      "question": "New hires quickly become accustomed _____ the company's flexible remote-work policy.",
+      "options": [
+        {
+          "key": "A",
+          "text": "with"
+        },
+        {
+          "key": "B",
+          "text": "for"
+        },
+        {
+          "key": "C",
+          "text": "to"
+        },
+        {
+          "key": "D",
+          "text": "on"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "to",
+      "explanation": "\"Accustomed to\" is the fixed adjective + preposition pattern meaning \"used to.\"",
+      "commonMistake": "Choosing \"accustomed with,\" confusing it with \"familiar with.\"",
+      "learningObjective": "Pair accustomed with to, not with or for.",
+      "tags": [
+        "prepositions",
+        "collocations"
+      ]
+    },
+    {
+      "id": "TQB-P5-0182",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Indefinite pronoun something",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Accounting",
+      "question": "Something about the invoice totals _____ incorrect to the accounts payable clerk.",
+      "options": [
+        {
+          "key": "A",
+          "text": "seem"
+        },
+        {
+          "key": "B",
+          "text": "seems"
+        },
+        {
+          "key": "C",
+          "text": "seeming"
+        },
+        {
+          "key": "D",
+          "text": "have seemed"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "seems",
+      "explanation": "Indefinite pronouns like \"something\" are singular and take a singular verb: \"seems.\"",
+      "commonMistake": "Agreeing with plural \"totals\" in the of-phrase and choosing \"seem.\"",
+      "learningObjective": "Treat something/anything/everything/nothing as singular subjects.",
+      "tags": [
+        "subject_verb_agreement",
+        "indefinite_pronoun"
+      ]
+    },
+    {
+      "id": "TQB-P5-0183",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Together with interruption",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Sales",
+      "question": "The sales director, together with her assistants, _____ the client dinner tonight.",
+      "options": [
+        {
+          "key": "A",
+          "text": "are attending"
+        },
+        {
+          "key": "B",
+          "text": "attend"
+        },
+        {
+          "key": "C",
+          "text": "is attending"
+        },
+        {
+          "key": "D",
+          "text": "have attended"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "is attending",
+      "explanation": "Phrases with \"together with\" do not change the number of the main subject. \"The sales director\" is singular, so \"is attending.\"",
+      "commonMistake": "Making the verb plural because \"assistants\" appears closer to the blank.",
+      "learningObjective": "Ignore together with / along with interruptions when choosing singular or plural verbs.",
+      "tags": [
+        "subject_verb_agreement",
+        "interruption"
+      ]
+    },
+    {
+      "id": "TQB-P5-0184",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "All of the + uncountable",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Manufacturing",
+      "question": "All of the equipment _____ been inspected before the plant reopened.",
+      "options": [
+        {
+          "key": "A",
+          "text": "have"
+        },
+        {
+          "key": "B",
+          "text": "has"
+        },
+        {
+          "key": "C",
+          "text": "are"
+        },
+        {
+          "key": "D",
+          "text": "were"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "has",
+      "explanation": "\"Equipment\" is uncountable and singular, so \"all of the equipment has been inspected.\"",
+      "commonMistake": "Treating \"equipment\" as plural and choosing \"have,\" a frequent error with -ment nouns.",
+      "learningObjective": "All of the + uncountable noun takes a singular verb.",
+      "tags": [
+        "subject_verb_agreement",
+        "uncountable"
+      ]
+    },
+    {
+      "id": "TQB-P5-0185",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "Much + comparative adverb",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "IT",
+      "question": "The redesigned app loads _____ faster than the previous version.",
+      "options": [
+        {
+          "key": "A",
+          "text": "more"
+        },
+        {
+          "key": "B",
+          "text": "much"
+        },
+        {
+          "key": "C",
+          "text": "most"
+        },
+        {
+          "key": "D",
+          "text": "very"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "much",
+      "explanation": "\"Faster\" is already a comparative; intensify it with \"much\" (or far), not \"more\" or \"very.\"",
+      "commonMistake": "Choosing \"more faster,\" a double comparative, or \"very faster,\" which is ungrammatical.",
+      "learningObjective": "Use much/far before comparative adjectives and adverbs.",
+      "tags": [
+        "comparatives",
+        "intensifier"
+      ]
+    },
+    {
+      "id": "TQB-P5-0186",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "Twice as many as",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Logistics",
+      "question": "The night shift processed _____ as many orders as the morning crew last Friday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "twice"
+        },
+        {
+          "key": "B",
+          "text": "two"
+        },
+        {
+          "key": "C",
+          "text": "double"
+        },
+        {
+          "key": "D",
+          "text": "second"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "twice",
+      "explanation": "The pattern is \"twice as many … as.\" \"Twice\" correctly fills the intensifier slot before \"as many.\"",
+      "commonMistake": "Choosing \"double,\" which needs a different structure (double the number of), not \"double as many.\"",
+      "learningObjective": "Use twice/three times before as … as for multiplication comparisons.",
+      "tags": [
+        "comparatives",
+        "as_as"
+      ]
+    },
+    {
+      "id": "TQB-P5-0187",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Comparatives/Superlatives",
+      "subskill": "The more … the fewer",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Training",
+      "question": "_____ more training staff receive, the fewer safety incidents the plant reports.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "The"
+        },
+        {
+          "key": "C",
+          "text": "Some"
+        },
+        {
+          "key": "D",
+          "text": "Much"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "The",
+      "explanation": "Correlative comparative clauses begin with \"The + comparative …, the + comparative …\": \"The more …, the fewer ….\"",
+      "commonMistake": "Omitting \"The\" or choosing \"A more,\" which breaks the fixed the … the … pattern.",
+      "learningObjective": "Start paired comparative clauses with The + comparative.",
+      "tags": [
+        "comparatives",
+        "correlative"
+      ]
+    },
+    {
+      "id": "TQB-P5-0188",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "An before vowel sound",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Safety",
+      "question": "Please allow _____ hour for the security briefing before you enter the manufacturing floor.",
+      "options": [
+        {
+          "key": "A",
+          "text": "a"
+        },
+        {
+          "key": "B",
+          "text": "an"
+        },
+        {
+          "key": "C",
+          "text": "the"
+        },
+        {
+          "key": "D",
+          "text": "these"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "an",
+      "explanation": "\"Hour\" begins with a vowel sound /aʊər/, so the indefinite article \"an\" is required.",
+      "commonMistake": "Choosing \"a hour\" because the word starts with the consonant letter h; article choice follows sound, not spelling.",
+      "learningObjective": "Use an before words that begin with a vowel sound, including silent-h hour.",
+      "tags": [
+        "articles",
+        "indefinite"
+      ]
+    },
+    {
+      "id": "TQB-P5-0189",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "Both + plural noun",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Product development",
+      "question": "_____ candidates will present their prototypes to the product committee on Thursday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both"
+        },
+        {
+          "key": "B",
+          "text": "Both of"
+        },
+        {
+          "key": "C",
+          "text": "The both"
+        },
+        {
+          "key": "D",
+          "text": "Either"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Both",
+      "explanation": "\"Both\" directly before a plural noun needs no \"of\" or \"the\": \"Both candidates.\"",
+      "commonMistake": "Choosing \"Both of candidates\" (missing the) or \"The both,\" which is ungrammatical.",
+      "learningObjective": "Use both + plural noun; reserve both of for both of the/these/them.",
+      "tags": [
+        "articles",
+        "determiners"
+      ]
+    },
+    {
+      "id": "TQB-P5-0190",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Articles/Determiners",
+      "subskill": "Most of the + plural",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Recruiting",
+      "question": "_____ of the applicants who reached the final interview stage hold advanced certifications.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Most"
+        },
+        {
+          "key": "B",
+          "text": "Almost"
+        },
+        {
+          "key": "C",
+          "text": "Much"
+        },
+        {
+          "key": "D",
+          "text": "Every"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Most",
+      "explanation": "\"Most of the + plural noun\" is the correct quantifier pattern. \"Most\" fits before \"of the applicants.\"",
+      "commonMistake": "Choosing \"Almost of the,\" which needs \"almost all of the,\" or \"Much of the\" with uncountable nouns only.",
+      "learningObjective": "Use most of the with plural countable nouns for majority meaning.",
+      "tags": [
+        "articles",
+        "determiners"
       ]
     }
   ]
