@@ -4,11 +4,11 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "item_count": 140,
+  "item_count": 160,
   "validation": {
     "rubric": "data/part5-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110; Lote 4 added TQB-P5-0111–0130; Lote 5 added TQB-P5-0131–0150 (20 items) toward ~200-item class bank."
+    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110; Lote 4 added TQB-P5-0111–0130; Lote 5 added TQB-P5-0131–0150; Lote 6 added TQB-P5-0151–0170 (20 items) toward ~200-item class bank."
   },
   "items": [
     {
@@ -5472,6 +5472,792 @@
       "tags": [
         "subject_verb_agreement",
         "neither_of"
+      ]
+    },
+    {
+      "id": "TQB-P5-0151",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Meanwhile (simultaneous)",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Operations",
+      "question": "The maintenance crew repaired the loading dock; _____, clerks continued processing online orders upstairs.",
+      "options": [
+        {
+          "key": "A",
+          "text": "meanwhile"
+        },
+        {
+          "key": "B",
+          "text": "because"
+        },
+        {
+          "key": "C",
+          "text": "unless"
+        },
+        {
+          "key": "D",
+          "text": "despite"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "meanwhile",
+      "explanation": "\"Meanwhile\" links two actions happening at the same time in separate clauses.",
+      "commonMistake": "Choosing \"despite,\" which needs a noun phrase, not a full clause with a finite verb.",
+      "learningObjective": "Use meanwhile to show simultaneous workplace actions across clauses.",
+      "tags": [
+        "conjunctions",
+        "meanwhile",
+        "transitions"
+      ]
+    },
+    {
+      "id": "TQB-P5-0152",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Provided that (condition connector)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Travel policy",
+      "question": "Staff may book business-class seats _____ that the flight lasts longer than six hours.",
+      "options": [
+        {
+          "key": "A",
+          "text": "provided"
+        },
+        {
+          "key": "B",
+          "text": "providing"
+        },
+        {
+          "key": "C",
+          "text": "provide"
+        },
+        {
+          "key": "D",
+          "text": "provision"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "provided",
+      "explanation": "\"Provided that\" is a formal connector meaning \"only if.\" Here \"provided\" fits before \"that.\"",
+      "commonMistake": "Selecting \"providing,\" which is less formal and awkward before \"that\" in exam English.",
+      "learningObjective": "Recognize provided that as a workplace condition connector (not a conditional verb pattern).",
+      "tags": [
+        "conjunctions",
+        "provided_that",
+        "transitions"
+      ]
+    },
+    {
+      "id": "TQB-P5-0153",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "In contrast",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Sales channels",
+      "question": "Walk-in traffic declined after the mall renovation; _____, catalog orders rose by nearly 12 percent.",
+      "options": [
+        {
+          "key": "A",
+          "text": "in contrast"
+        },
+        {
+          "key": "B",
+          "text": "in addition"
+        },
+        {
+          "key": "C",
+          "text": "for instance"
+        },
+        {
+          "key": "D",
+          "text": "as a result"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "in contrast",
+      "explanation": "The second clause shows an opposite trend, so the contrast transition \"in contrast\" is required.",
+      "commonMistake": "Choosing \"as a result,\" which signals cause-effect rather than opposite outcomes.",
+      "learningObjective": "Pick contrast transitions when two workplace trends move in opposite directions.",
+      "tags": [
+        "conjunctions",
+        "in_contrast",
+        "transitions"
+      ]
+    },
+    {
+      "id": "TQB-P5-0154",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "That relative restrictive",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "IT support",
+      "question": "Please replace any cable _____ shows signs of fraying before the next safety inspection.",
+      "options": [
+        {
+          "key": "A",
+          "text": "that"
+        },
+        {
+          "key": "B",
+          "text": "who"
+        },
+        {
+          "key": "C",
+          "text": "whom"
+        },
+        {
+          "key": "D",
+          "text": "whose"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "that",
+      "explanation": "\"That\" introduces a restrictive relative clause referring to the thing \"cable.\"",
+      "commonMistake": "Using \"who,\" which refers to people, not equipment or objects.",
+      "learningObjective": "Use that (or which) for restrictive relatives about things in workplace instructions.",
+      "tags": [
+        "pronouns",
+        "relative_that"
+      ]
+    },
+    {
+      "id": "TQB-P5-0155",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Whoever (subject)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Front desk",
+      "question": "_____ answers the main switchboard after 6 p.m. should transfer urgent calls to the on-duty manager.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Whoever"
+        },
+        {
+          "key": "B",
+          "text": "Whomever"
+        },
+        {
+          "key": "C",
+          "text": "Whatever"
+        },
+        {
+          "key": "D",
+          "text": "Whichever"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Whoever",
+      "explanation": "\"Whoever\" is the subject of \"answers,\" so the subject form is required.",
+      "commonMistake": "Choosing \"whomever,\" which is an object form and does not fit before \"answers.\"",
+      "learningObjective": "Use whoever as subject of a clause naming an unspecified person.",
+      "tags": [
+        "pronouns",
+        "whoever"
+      ]
+    },
+    {
+      "id": "TQB-P5-0156",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Possessive pronoun hers",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Office equipment",
+      "question": "The spare projector on the shelf is _____; please do not take it to the training room.",
+      "options": [
+        {
+          "key": "A",
+          "text": "hers"
+        },
+        {
+          "key": "B",
+          "text": "her"
+        },
+        {
+          "key": "C",
+          "text": "herself"
+        },
+        {
+          "key": "D",
+          "text": "she"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "hers",
+      "explanation": "After \"is,\" a possessive pronoun standing alone is needed: \"hers\" replaces \"her projector.\"",
+      "commonMistake": "Choosing \"her,\" which must modify a noun (her projector) and cannot stand alone after \"is.\"",
+      "learningObjective": "Use hers as a stand-alone possessive pronoun after linking verbs.",
+      "tags": [
+        "pronouns",
+        "hers"
+      ]
+    },
+    {
+      "id": "TQB-P5-0157",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "Third conditional if-clause",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Logistics",
+      "question": "If the courier _____ the package before noon, the client would have signed for it the same day.",
+      "options": [
+        {
+          "key": "A",
+          "text": "had delivered"
+        },
+        {
+          "key": "B",
+          "text": "delivered"
+        },
+        {
+          "key": "C",
+          "text": "delivers"
+        },
+        {
+          "key": "D",
+          "text": "has delivered"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "had delivered",
+      "explanation": "Third conditional: unreal past in the if-clause uses past perfect (had delivered) with would have in the result.",
+      "commonMistake": "Using simple past \"delivered,\" which fits second conditional, not a would-have result.",
+      "learningObjective": "Match past perfect in the if-clause with would have in third-conditional results.",
+      "tags": [
+        "conditionals",
+        "third_conditional"
+      ]
+    },
+    {
+      "id": "TQB-P5-0158",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "Were inverted second conditional",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Facilities",
+      "question": "_____ the backup generator available, the office could continue operating during the outage.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Were"
+        },
+        {
+          "key": "B",
+          "text": "Was"
+        },
+        {
+          "key": "C",
+          "text": "Is"
+        },
+        {
+          "key": "D",
+          "text": "Had"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Were",
+      "explanation": "Inverted second conditional uses \"Were + subject + complement\" without if: Were the backup generator available…",
+      "commonMistake": "Choosing \"Was,\" which is wrong for this formal inversion (and would still need if).",
+      "learningObjective": "Recognize Were + subject inversion as a formal second-conditional pattern.",
+      "tags": [
+        "conditionals",
+        "inversion",
+        "were"
+      ]
+    },
+    {
+      "id": "TQB-P5-0159",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "First conditional with present perfect",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Quality control",
+      "question": "If the lab _____ the sample by Thursday, we will release the batch on Friday morning.",
+      "options": [
+        {
+          "key": "A",
+          "text": "has cleared"
+        },
+        {
+          "key": "B",
+          "text": "had cleared"
+        },
+        {
+          "key": "C",
+          "text": "cleared"
+        },
+        {
+          "key": "D",
+          "text": "clearing"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "has cleared",
+      "explanation": "First conditional can use present perfect in the if-clause to stress completion before a future result: has cleared → will release.",
+      "commonMistake": "Choosing \"had cleared,\" which belongs in third-conditional unreal past, not with \"will release.\"",
+      "learningObjective": "Use present perfect in if-clauses when completion before a future outcome matters.",
+      "tags": [
+        "conditionals",
+        "first_conditional",
+        "present_perfect"
+      ]
+    },
+    {
+      "id": "TQB-P5-0160",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Modal perfect passive",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Compliance",
+      "question": "The incident report _____ to the safety board before the plant reopened last week.",
+      "options": [
+        {
+          "key": "A",
+          "text": "should have been submitted"
+        },
+        {
+          "key": "B",
+          "text": "should have submitted"
+        },
+        {
+          "key": "C",
+          "text": "should be submitting"
+        },
+        {
+          "key": "D",
+          "text": "should submitted"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "should have been submitted",
+      "explanation": "Passive perfect modal: should have been + past participle shows a required action that was not done to the report.",
+      "commonMistake": "Choosing \"should have submitted,\" an active form that needs a subject doing the submitting.",
+      "learningObjective": "Form modal perfect passives with modal + have been + past participle.",
+      "tags": [
+        "passive_voice",
+        "modal_perfect"
+      ]
+    },
+    {
+      "id": "TQB-P5-0161",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Need to be + past participle",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Facilities",
+      "question": "The emergency exits _____ clearly marked before the fire drill on Wednesday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "need to be"
+        },
+        {
+          "key": "B",
+          "text": "need to"
+        },
+        {
+          "key": "C",
+          "text": "are needing"
+        },
+        {
+          "key": "D",
+          "text": "need being"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "need to be",
+      "explanation": "\"Need to be + past participle\" expresses a required passive action: exits need to be marked.",
+      "commonMistake": "Selecting \"need to,\" which leaves the sentence without a passive marker before \"marked.\"",
+      "learningObjective": "Use need to be + pp for required workplace preparations.",
+      "tags": [
+        "passive_voice",
+        "need_to_be"
+      ]
+    },
+    {
+      "id": "TQB-P5-0162",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Are to be + past participle",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Event planning",
+      "question": "Name badges _____ distributed at the registration desk when guests arrive.",
+      "options": [
+        {
+          "key": "A",
+          "text": "are to be"
+        },
+        {
+          "key": "B",
+          "text": "are to"
+        },
+        {
+          "key": "C",
+          "text": "are being to"
+        },
+        {
+          "key": "D",
+          "text": "to be are"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "are to be",
+      "explanation": "\"Are to be + past participle\" states a planned or scheduled passive action in formal English.",
+      "commonMistake": "Choosing \"are to,\" which needs an active verb (are to distribute) rather than a past participle.",
+      "learningObjective": "Recognize are to be + pp for scheduled passive arrangements.",
+      "tags": [
+        "passive_voice",
+        "be_to_be"
+      ]
+    },
+    {
+      "id": "TQB-P5-0163",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Fail + to-infinitive",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Project management",
+      "question": "The contractor failed _____ the revised drawings before the steel order was placed.",
+      "options": [
+        {
+          "key": "A",
+          "text": "to submit"
+        },
+        {
+          "key": "B",
+          "text": "submitting"
+        },
+        {
+          "key": "C",
+          "text": "submit"
+        },
+        {
+          "key": "D",
+          "text": "to submitting"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "to submit",
+      "explanation": "\"Fail\" is followed by a to-infinitive: failed to submit.",
+      "commonMistake": "Choosing the gerund \"submitting,\" which does not follow fail in standard usage.",
+      "learningObjective": "Remember fail + to-infinitive for incomplete required actions.",
+      "tags": [
+        "gerunds_infinitives",
+        "fail_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0164",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Keep + gerund",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Customer service",
+      "question": "Agents should keep _____ callers' account numbers until the ticket is closed.",
+      "options": [
+        {
+          "key": "A",
+          "text": "confirming"
+        },
+        {
+          "key": "B",
+          "text": "to confirm"
+        },
+        {
+          "key": "C",
+          "text": "confirm"
+        },
+        {
+          "key": "D",
+          "text": "confirmed"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "confirming",
+      "explanation": "\"Keep\" meaning continue requires a gerund: keep confirming.",
+      "commonMistake": "Selecting \"to confirm,\" confusing keep with expect/want infinitive patterns.",
+      "learningObjective": "Use keep + gerund for repeated or ongoing workplace actions.",
+      "tags": [
+        "gerunds_infinitives",
+        "keep_gerund"
+      ]
+    },
+    {
+      "id": "TQB-P5-0165",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Have difficulty + gerund",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Software training",
+      "question": "Several clerks had difficulty _____ the new inventory codes into the handheld scanners.",
+      "options": [
+        {
+          "key": "A",
+          "text": "entering"
+        },
+        {
+          "key": "B",
+          "text": "to enter"
+        },
+        {
+          "key": "C",
+          "text": "enter"
+        },
+        {
+          "key": "D",
+          "text": "entered"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "entering",
+      "explanation": "\"Have difficulty\" is followed by a gerund: had difficulty entering.",
+      "commonMistake": "Choosing \"to enter,\" a pattern used after difficult (it is difficult to enter) but not after have difficulty.",
+      "learningObjective": "Pair have difficulty / trouble with a gerund, not a to-infinitive.",
+      "tags": [
+        "gerunds_infinitives",
+        "difficulty_gerund"
+      ]
+    },
+    {
+      "id": "TQB-P5-0166",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "May permission",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Building access",
+      "question": "Visitors _____ use the executive lounge only if they are accompanied by a host employee.",
+      "options": [
+        {
+          "key": "A",
+          "text": "may"
+        },
+        {
+          "key": "B",
+          "text": "may to"
+        },
+        {
+          "key": "C",
+          "text": "may be"
+        },
+        {
+          "key": "D",
+          "text": "maybe"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "may",
+      "explanation": "\"May\" + base verb expresses formal permission: may use.",
+      "commonMistake": "Choosing \"maybe,\" an adverb meaning \"perhaps,\" not a modal verb.",
+      "learningObjective": "Use may + base verb for formal permission in workplace rules.",
+      "tags": [
+        "modals",
+        "may_permission"
+      ]
+    },
+    {
+      "id": "TQB-P5-0167",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Cannot have + past participle (deduction)",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Accounting",
+      "question": "The invoice _____ have been approved yesterday—the manager was out of the country all week.",
+      "options": [
+        {
+          "key": "A",
+          "text": "cannot"
+        },
+        {
+          "key": "B",
+          "text": "should not"
+        },
+        {
+          "key": "C",
+          "text": "must not"
+        },
+        {
+          "key": "D",
+          "text": "need not"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "cannot",
+      "explanation": "\"Cannot have + past participle\" expresses a strong negative deduction about the past.",
+      "commonMistake": "Choosing \"must not,\" which usually means prohibition rather than past impossibility (cannot have is the clearest deduction form here).",
+      "learningObjective": "Use cannot have + pp for impossible past conclusions from evidence.",
+      "tags": [
+        "modals",
+        "cannot_have",
+        "deduction"
+      ]
+    },
+    {
+      "id": "TQB-P5-0168",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Will have to (future obligation)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Shipping",
+      "question": "Drivers _____ have to present digital delivery receipts at every stop starting next month.",
+      "options": [
+        {
+          "key": "A",
+          "text": "will"
+        },
+        {
+          "key": "B",
+          "text": "would"
+        },
+        {
+          "key": "C",
+          "text": "could"
+        },
+        {
+          "key": "D",
+          "text": "might"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "will",
+      "explanation": "\"Will have to\" states a future obligation: drivers will have to present receipts.",
+      "commonMistake": "Selecting \"would have to,\" which suggests a hypothetical condition rather than a firm policy start date.",
+      "learningObjective": "Use will have to for obligations that begin at a future time.",
+      "tags": [
+        "modals",
+        "will_have_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0169",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Result in",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Process improvement",
+      "question": "Streamlining the intake form should result _____ fewer incomplete applications each week.",
+      "options": [
+        {
+          "key": "A",
+          "text": "in"
+        },
+        {
+          "key": "B",
+          "text": "on"
+        },
+        {
+          "key": "C",
+          "text": "at"
+        },
+        {
+          "key": "D",
+          "text": "for"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "in",
+      "explanation": "The collocation is result in + noun/gerund for a consequence.",
+      "commonMistake": "Choosing \"on\" or \"at,\" which do not form the standard result-in pattern.",
+      "learningObjective": "Remember result in for cause → outcome relationships.",
+      "tags": [
+        "prepositions",
+        "result_in"
+      ]
+    },
+    {
+      "id": "TQB-P5-0170",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "The majority of + plural noun",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Survey results",
+      "question": "The majority of respondents _____ flexible start times over a four-day workweek.",
+      "options": [
+        {
+          "key": "A",
+          "text": "prefer"
+        },
+        {
+          "key": "B",
+          "text": "prefers"
+        },
+        {
+          "key": "C",
+          "text": "preferring"
+        },
+        {
+          "key": "D",
+          "text": "is preferring"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "prefer",
+      "explanation": "\"The majority of + plural noun\" takes a plural verb when the focus is on the individuals: respondents prefer.",
+      "commonMistake": "Agreeing with singular \"majority\" and choosing \"prefers,\" which is less natural when a plural noun follows of.",
+      "learningObjective": "Let the of-phrase noun guide agreement with the majority of + plural.",
+      "tags": [
+        "subject_verb_agreement",
+        "majority_of"
       ]
     }
   ]

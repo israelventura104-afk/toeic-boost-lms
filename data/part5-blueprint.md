@@ -33,31 +33,31 @@ Rough per-skill band: **16–17** (12 × 16 = 192; remainder distributed).
 | Lote 2 | TQB-P5-0071 … 0090 | +20 | Done — 80 / 200 |
 | Lote 3 | TQB-P5-0091 … 0110 | +20 | Done — 100 / 200 |
 | Lote 4 | TQB-P5-0111 … 0130 | +20 | Done — 120 / 200 |
-| **Lote 5** | TQB-P5-0131 … 0150 | +20 | **Done — 140 / 200** |
-| Lote 6 | TQB-P5-0151 … 0170 | +20 | Planned |
+| Lote 5 | TQB-P5-0131 … 0150 | +20 | Done — 140 / 200 |
+| **Lote 6** | TQB-P5-0151 … 0170 | +20 | **Done — 160 / 200** |
 | … | … | … | … |
 | Target | … → ~TQB-P5-0210 | ~200 | — |
 
-**After Lote 5:** **140 / 200** class items (70%). With free intro: **150** Part 5 items on site.
+**After Lote 6:** **160 / 200** class items (80%). With free intro: **170** Part 5 items on site.
 
-### Skill counts after Lote 5 (class bank only)
+### Skill counts after Lote 6 (class bank only)
 
 | Skill | Count | Gap to ~17 |
 |-------|------:|----------:|
 | Word Forms | 12 | ~5 |
 | Verb Tenses | 12 | ~5 |
-| Prepositions | 12 | ~5 |
-| Conjunctions/Transitions | 11 | ~6 |
-| Pronouns | 11 | ~6 |
-| Subject-Verb Agreement | 12 | ~5 |
-| Conditionals | 11 | ~6 |
-| Passive Voice | 11 | ~6 |
+| Prepositions | 13 | ~4 |
+| Conjunctions/Transitions | 14 | ~3 |
+| Pronouns | 14 | ~3 |
+| Subject-Verb Agreement | 13 | ~4 |
+| Conditionals | 14 | ~3 |
+| Passive Voice | 14 | ~3 |
 | Comparatives/Superlatives | 13 | ~4 |
-| Gerunds/Infinitives | 11 | ~6 |
+| Gerunds/Infinitives | 14 | ~3 |
 | Articles/Determiners | 13 | ~4 |
-| Modals | 11 | ~6 |
+| Modals | 14 | ~3 |
 
-Lote 5 lifted bank120 lows: **Comparatives/Superlatives** and **Articles/Determiners** from **9→13**. Other skills now sit at 11–12. Lowest for Lote 6 priority: **Conjunctions/Transitions, Pronouns, Conditionals, Passive Voice, Gerunds/Infinitives, Modals** (all at 11).
+Lote 6 lifted bank140 lows: **Conjunctions/Transitions, Pronouns, Conditionals, Passive Voice, Gerunds/Infinitives, Modals** from **11→14** (3 each), plus Prepositions and Subject-Verb Agreement **+1**. Lowest for Lote 7 priority: **Word Forms** and **Verb Tenses** (both at 12); then Prepositions, SVA, Comparatives/Superlatives, Articles/Determiners (all at 13).
 
 ## Batch rules
 
