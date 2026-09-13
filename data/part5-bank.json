@@ -4,11 +4,11 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "item_count": 180,
+  "item_count": 200,
   "validation": {
     "rubric": "data/part5-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110; Lote 4 added TQB-P5-0111–0130; Lote 5 added TQB-P5-0131–0150; Lote 6 added TQB-P5-0151–0170; Lote 7 added TQB-P5-0171–0190 (20 items) toward ~200-item class bank."
+    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110; Lote 4 added TQB-P5-0111–0130; Lote 5 added TQB-P5-0131–0150; Lote 6 added TQB-P5-0151–0170; Lote 7 added TQB-P5-0171–0190; Lote 8 (FINAL) added TQB-P5-0191–0210 — class bank complete at 200."
   },
   "items": [
     {
@@ -7038,6 +7038,786 @@
       "tags": [
         "articles",
         "determiners"
+      ]
+    },
+    {
+      "id": "TQB-P5-0191",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Even though + clause",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Logistics",
+      "question": "_____ the shipment left the warehouse on time, customs delays kept it from arriving until Tuesday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Even though"
+        },
+        {
+          "key": "B",
+          "text": "Because of"
+        },
+        {
+          "key": "C",
+          "text": "In spite of"
+        },
+        {
+          "key": "D",
+          "text": "Therefore"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Even though",
+      "explanation": "\"Even though\" introduces a full clause (subject + verb) that contrasts with the main idea. \"The shipment left…\" is a clause.",
+      "commonMistake": "\"In spite of\" and \"because of\" take noun phrases, not full clauses. \"Therefore\" shows result, not contrast.",
+      "learningObjective": "Even though / although + clause; in spite of / because of + noun.",
+      "tags": [
+        "conjunctions",
+        "even_though"
+      ]
+    },
+    {
+      "id": "TQB-P5-0192",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Therefore (result)",
+      "difficulty": 3,
+      "estimatedTime": 35,
+      "workplaceTopic": "Finance",
+      "question": "Several major clients delayed payment last month; _____, cash reserves fell below the target range.",
+      "options": [
+        {
+          "key": "A",
+          "text": "therefore"
+        },
+        {
+          "key": "B",
+          "text": "although"
+        },
+        {
+          "key": "C",
+          "text": "whereas"
+        },
+        {
+          "key": "D",
+          "text": "despite"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "therefore",
+      "explanation": "\"Therefore\" links a cause to a logical result after a semicolon. Delayed payments caused lower reserves.",
+      "commonMistake": "\"Although\" and \"whereas\" signal contrast, not result. \"Despite\" needs a noun phrase and cannot fill this slot alone.",
+      "learningObjective": "Therefore / consequently = result after a cause clause.",
+      "tags": [
+        "conjunctions",
+        "therefore"
+      ]
+    },
+    {
+      "id": "TQB-P5-0193",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "As soon as (time)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "IT",
+      "question": "Please notify the help desk _____ the system restart is complete so users can log back in.",
+      "options": [
+        {
+          "key": "A",
+          "text": "as soon as"
+        },
+        {
+          "key": "B",
+          "text": "in order to"
+        },
+        {
+          "key": "C",
+          "text": "as well as"
+        },
+        {
+          "key": "D",
+          "text": "instead of"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "as soon as",
+      "explanation": "\"As soon as\" introduces a time clause meaning \"immediately when.\" The restart finishing triggers the notice.",
+      "commonMistake": "\"In order to\" needs a base verb (purpose), not a full clause with \"is.\" \"As well as\" and \"instead of\" do not mark time.",
+      "learningObjective": "As soon as + clause = immediately when an event happens.",
+      "tags": [
+        "conjunctions",
+        "as_soon_as"
+      ]
+    },
+    {
+      "id": "TQB-P5-0194",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Each other (reciprocal)",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "HR",
+      "question": "During orientation, new hires are encouraged to help _____ with the online training modules.",
+      "options": [
+        {
+          "key": "A",
+          "text": "each other"
+        },
+        {
+          "key": "B",
+          "text": "themselves"
+        },
+        {
+          "key": "C",
+          "text": "anyone"
+        },
+        {
+          "key": "D",
+          "text": "whoever"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "each other",
+      "explanation": "\"Each other\" shows a reciprocal action between two or more people: they help one another.",
+      "commonMistake": "\"Themselves\" is reflexive (same subject acting on itself), not reciprocal between different people.",
+      "learningObjective": "Each other / one another = reciprocal; -selves = reflexive.",
+      "tags": [
+        "pronouns",
+        "reciprocal"
+      ]
+    },
+    {
+      "id": "TQB-P5-0195",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Whichever (choice)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Travel",
+      "question": "Staff may book _____ airline offers the lowest fare for the approved travel dates.",
+      "options": [
+        {
+          "key": "A",
+          "text": "whichever"
+        },
+        {
+          "key": "B",
+          "text": "wherever"
+        },
+        {
+          "key": "C",
+          "text": "whenever"
+        },
+        {
+          "key": "D",
+          "text": "however"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "whichever",
+      "explanation": "\"Whichever\" means \"any one that\" and chooses among options (airlines). It fits before a noun or as a determiner-like relative.",
+      "commonMistake": "\"Wherever\" refers to place, \"whenever\" to time, and \"however\" to manner—not to selecting among airlines.",
+      "learningObjective": "Whichever = any option that; contrast with wherever / whenever / however.",
+      "tags": [
+        "pronouns",
+        "whichever"
+      ]
+    },
+    {
+      "id": "TQB-P5-0196",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Possessive its",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "Marketing",
+      "question": "The agency updated _____ branding guidelines after the product line was renamed.",
+      "options": [
+        {
+          "key": "A",
+          "text": "its"
+        },
+        {
+          "key": "B",
+          "text": "it's"
+        },
+        {
+          "key": "C",
+          "text": "theirselves"
+        },
+        {
+          "key": "D",
+          "text": "them"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "its",
+      "explanation": "\"Its\" is the possessive form for a singular organization (the agency). No apostrophe is used for possession.",
+      "commonMistake": "\"It's\" means \"it is\" or \"it has,\" not possession. \"Them\" is an object pronoun, not a determiner before a noun.",
+      "learningObjective": "Its = possessive; it's = it is / it has.",
+      "tags": [
+        "pronouns",
+        "possessive_its"
+      ]
+    },
+    {
+      "id": "TQB-P5-0197",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "Even if (concessive)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Sales",
+      "question": "_____ the client rejects the first proposal, we will still submit a revised quote next week.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Even if"
+        },
+        {
+          "key": "B",
+          "text": "In case of"
+        },
+        {
+          "key": "C",
+          "text": "Because of"
+        },
+        {
+          "key": "D",
+          "text": "As a result of"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Even if",
+      "explanation": "\"Even if\" introduces a concessive condition: the main action happens regardless of whether the if-clause is true.",
+      "commonMistake": "\"In case of,\" \"because of,\" and \"as a result of\" need noun phrases, not a full clause with \"rejects.\"",
+      "learningObjective": "Even if + clause = the result happens anyway.",
+      "tags": [
+        "conditionals",
+        "even_if"
+      ]
+    },
+    {
+      "id": "TQB-P5-0198",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "Only if (restrictive)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Operations",
+      "question": "Overtime will be approved _____ the project deadline cannot be met during regular hours.",
+      "options": [
+        {
+          "key": "A",
+          "text": "only if"
+        },
+        {
+          "key": "B",
+          "text": "as if"
+        },
+        {
+          "key": "C",
+          "text": "if only"
+        },
+        {
+          "key": "D",
+          "text": "even so"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "only if",
+      "explanation": "\"Only if\" restricts the condition: overtime is allowed solely when regular hours are not enough.",
+      "commonMistake": "\"If only\" expresses a wish, not a restriction. \"As if\" means \"as though.\" \"Even so\" is a contrast transition, not a conditional linker.",
+      "learningObjective": "Only if = restricted condition; if only = wish.",
+      "tags": [
+        "conditionals",
+        "only_if"
+      ]
+    },
+    {
+      "id": "TQB-P5-0199",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "If it weren't for",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Customer service",
+      "question": "_____ the backup team, the call center would have missed hundreds of inquiries during the outage.",
+      "options": [
+        {
+          "key": "A",
+          "text": "If it weren't for"
+        },
+        {
+          "key": "B",
+          "text": "If it wasn't that"
+        },
+        {
+          "key": "C",
+          "text": "Unless for"
+        },
+        {
+          "key": "D",
+          "text": "Without that"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "If it weren't for",
+      "explanation": "\"If it weren't for + noun\" credits something that prevented a bad unreal result (would have + past participle).",
+      "commonMistake": "\"Unless for\" and \"without that\" are not standard conditional openers. \"If it wasn't that\" needs a clause, not a bare noun phrase.",
+      "learningObjective": "If it weren't for + noun + would (have) = without X, a bad result would follow.",
+      "tags": [
+        "conditionals",
+        "if_it_werent_for"
+      ]
+    },
+    {
+      "id": "TQB-P5-0200",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Passive infinitive (to be + pp)",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Facilities",
+      "question": "The conference rooms are scheduled _____ deep-cleaned before the investor visit on Thursday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "to be"
+        },
+        {
+          "key": "B",
+          "text": "being"
+        },
+        {
+          "key": "C",
+          "text": "to have"
+        },
+        {
+          "key": "D",
+          "text": "been"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "to be",
+      "explanation": "After \"scheduled,\" use a passive infinitive: to be + past participle (deep-cleaned). The rooms receive the action.",
+      "commonMistake": "\"Being\" would need a different frame (e.g., are being). \"To have\" and \"been\" do not form the required passive infinitive here.",
+      "learningObjective": "Scheduled / expected / due + to be + past participle.",
+      "tags": [
+        "passive_voice",
+        "passive_infinitive"
+      ]
+    },
+    {
+      "id": "TQB-P5-0201",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Causative have + object + pp",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Office",
+      "question": "Management had the reception area _____ over the weekend so staff would return to a refreshed lobby.",
+      "options": [
+        {
+          "key": "A",
+          "text": "repainted"
+        },
+        {
+          "key": "B",
+          "text": "repainting"
+        },
+        {
+          "key": "C",
+          "text": "to repaint"
+        },
+        {
+          "key": "D",
+          "text": "repaint"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "repainted",
+      "explanation": "Causative \"have + object + past participle\" means someone arranged for the work to be done: had the area repainted.",
+      "commonMistake": "Learners often choose the base verb or -ing as if management did the painting themselves. Here the past participle shows the object received the action.",
+      "learningObjective": "Have / get + object + past participle = arrange for something to be done.",
+      "tags": [
+        "passive_voice",
+        "causative"
+      ]
+    },
+    {
+      "id": "TQB-P5-0202",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Past simple passive with by-agent",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Manufacturing",
+      "question": "The defective batch _____ by the quality team within two hours of the complaint.",
+      "options": [
+        {
+          "key": "A",
+          "text": "was recalled"
+        },
+        {
+          "key": "B",
+          "text": "recalled"
+        },
+        {
+          "key": "C",
+          "text": "was recalling"
+        },
+        {
+          "key": "D",
+          "text": "has recall"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "was recalled",
+      "explanation": "The batch received the action from the quality team. Past simple passive: was + past participle.",
+      "commonMistake": "\"Recalled\" alone is active and needs a subject doing the recalling. \"Was recalling\" is past continuous active.",
+      "learningObjective": "Past simple passive = was/were + past participle (+ by-agent).",
+      "tags": [
+        "passive_voice",
+        "past_simple"
+      ]
+    },
+    {
+      "id": "TQB-P5-0203",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Agree + to-infinitive",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Legal",
+      "question": "Both parties agreed _____ the dispute through mediation rather than litigation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "to settle"
+        },
+        {
+          "key": "B",
+          "text": "settling"
+        },
+        {
+          "key": "C",
+          "text": "settle"
+        },
+        {
+          "key": "D",
+          "text": "settled"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "to settle",
+      "explanation": "\"Agree\" is followed by a to-infinitive: agree to settle.",
+      "commonMistake": "Choosing the gerund \"settling\" confuses agree with verbs like suggest or consider that take -ing.",
+      "learningObjective": "Agree / decide / plan / expect + to-infinitive.",
+      "tags": [
+        "gerunds_infinitives",
+        "agree_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0204",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Risk + gerund",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Finance",
+      "question": "By delaying the audit, the firm risks _____ compliance penalties from regulators.",
+      "options": [
+        {
+          "key": "A",
+          "text": "facing"
+        },
+        {
+          "key": "B",
+          "text": "to face"
+        },
+        {
+          "key": "C",
+          "text": "face"
+        },
+        {
+          "key": "D",
+          "text": "faced"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "facing",
+      "explanation": "\"Risk\" takes a gerund: risk facing penalties.",
+      "commonMistake": "\"To face\" follows verbs like want or decide, not risk.",
+      "learningObjective": "Risk / avoid / consider / finish + gerund.",
+      "tags": [
+        "gerunds_infinitives",
+        "risk"
+      ]
+    },
+    {
+      "id": "TQB-P5-0205",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Worth + gerund",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Training",
+      "question": "The new compliance module is worth _____ even if staff already completed last year's course.",
+      "options": [
+        {
+          "key": "A",
+          "text": "reviewing"
+        },
+        {
+          "key": "B",
+          "text": "to review"
+        },
+        {
+          "key": "C",
+          "text": "review"
+        },
+        {
+          "key": "D",
+          "text": "reviewed"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "reviewing",
+      "explanation": "After \"worth,\" use a gerund: worth reviewing.",
+      "commonMistake": "Learners often add \"to\" (worth to review), which is not idiomatic.",
+      "learningObjective": "Be worth + gerund = deserves the time/effort of doing.",
+      "tags": [
+        "gerunds_infinitives",
+        "worth"
+      ]
+    },
+    {
+      "id": "TQB-P5-0206",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Must have + past participle (deduction)",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Shipping",
+      "question": "The crates _____ have been left on the wrong dock—the labels do not match this morning's manifest.",
+      "options": [
+        {
+          "key": "A",
+          "text": "must"
+        },
+        {
+          "key": "B",
+          "text": "should"
+        },
+        {
+          "key": "C",
+          "text": "ought"
+        },
+        {
+          "key": "D",
+          "text": "would rather"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "must",
+      "explanation": "\"Must have + past participle\" expresses a strong deduction about a past event based on present evidence.",
+      "commonMistake": "\"Should have\" means past advice/regret, not deduction. \"Ought\" needs \"to\" and does not fit this deduction pattern as cleanly.",
+      "learningObjective": "Must have + pp = logical conclusion about the past.",
+      "tags": [
+        "modals",
+        "must_have"
+      ]
+    },
+    {
+      "id": "TQB-P5-0207",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Do not have to (no obligation)",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Meetings",
+      "question": "Remote staff _____ have to attend the weekly stand-up in person; a video link is available.",
+      "options": [
+        {
+          "key": "A",
+          "text": "do not"
+        },
+        {
+          "key": "B",
+          "text": "must not"
+        },
+        {
+          "key": "C",
+          "text": "should not"
+        },
+        {
+          "key": "D",
+          "text": "cannot"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "do not",
+      "explanation": "\"Do not have to\" means there is no obligation—attendance in person is optional because a video link exists.",
+      "commonMistake": "\"Must not\" means prohibition (not allowed). Lack of obligation is \"do not have to,\" not \"must not.\"",
+      "learningObjective": "Don't have to = not necessary; must not = not allowed.",
+      "tags": [
+        "modals",
+        "no_obligation"
+      ]
+    },
+    {
+      "id": "TQB-P5-0208",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Be able to (ability)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Customer service",
+      "question": "After the software update, agents will _____ to process refunds without a supervisor's code.",
+      "options": [
+        {
+          "key": "A",
+          "text": "be able"
+        },
+        {
+          "key": "B",
+          "text": "can"
+        },
+        {
+          "key": "C",
+          "text": "able"
+        },
+        {
+          "key": "D",
+          "text": "capability"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "be able",
+      "explanation": "After \"will,\" use \"be able to\" for future ability. \"Can\" has no infinitive form after will.",
+      "commonMistake": "Choosing \"can\" after \"will\" is ungrammatical (not *will can*). Use will be able to.",
+      "learningObjective": "Future ability = will be able to (not will can).",
+      "tags": [
+        "modals",
+        "be_able_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0209",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Noun after the + of",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "HR",
+      "question": "The board praised the _____ of the recruitment campaign in attracting qualified applicants.",
+      "options": [
+        {
+          "key": "A",
+          "text": "effectiveness"
+        },
+        {
+          "key": "B",
+          "text": "effective"
+        },
+        {
+          "key": "C",
+          "text": "effectively"
+        },
+        {
+          "key": "D",
+          "text": "effect"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "effectiveness",
+      "explanation": "After \"the\" and before \"of,\" a noun is needed. \"Effectiveness\" names the quality being praised.",
+      "commonMistake": "\"Effective\" is an adjective; \"effectively\" is an adverb. \"Effect\" is a different noun (result), not the quality of working well.",
+      "learningObjective": "The + noun + of: choose the noun form of the word family.",
+      "tags": [
+        "word_forms",
+        "noun_form"
+      ]
+    },
+    {
+      "id": "TQB-P5-0210",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Used to + base (past habit)",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Operations",
+      "question": "Before the automation project, clerks _____ to enter every invoice by hand.",
+      "options": [
+        {
+          "key": "A",
+          "text": "used"
+        },
+        {
+          "key": "B",
+          "text": "are used"
+        },
+        {
+          "key": "C",
+          "text": "use"
+        },
+        {
+          "key": "D",
+          "text": "using"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "used",
+      "explanation": "\"Used to + base verb\" describes a past habit that no longer continues: used to enter.",
+      "commonMistake": "\"Are used to\" means \"are accustomed to\" and needs a gerund, not the base verb \"enter.\" Context is a discontinued past habit.",
+      "learningObjective": "Used to + base = past habit; be used to + gerund = accustomed to.",
+      "tags": [
+        "verb_tenses",
+        "used_to"
       ]
     }
   ]

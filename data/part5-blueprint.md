@@ -35,30 +35,31 @@ Rough per-skill band: **16–17** (12 × 16 = 192; remainder distributed).
 | Lote 4 | TQB-P5-0111 … 0130 | +20 | Done — 120 / 200 |
 | Lote 5 | TQB-P5-0131 … 0150 | +20 | Done — 140 / 200 |
 | Lote 6 | TQB-P5-0151 … 0170 | +20 | Done — 160 / 200 |
-| **Lote 7** | TQB-P5-0171 … 0190 | +20 | **Done — 180 / 200** |
-| Lote 8 (final) | TQB-P5-0191 … 0210 | +20 | Pending — 200 / 200 |
-| Target | … → ~TQB-P5-0210 | ~200 | — |
+| Lote 7 | TQB-P5-0171 … 0190 | +20 | Done — 180 / 200 |
+| **Lote 8 (final)** | TQB-P5-0191 … 0210 | +20 | **Done — 200 / 200 COMPLETE** |
+| Target | … → TQB-P5-0210 | **200** | **COMPLETE** |
 
-**After Lote 7:** **180 / 200** class items (90%). With free intro: **190** Part 5 items on site.
+**After Lote 8:** **200 / 200 COMPLETE** class items (100%). With free intro: **210** Part 5 items on site.
 
-### Skill counts after Lote 7 (class bank only)
+### Skill counts after Lote 8 (class bank only) — FINAL
 
-| Skill | Count | Gap to ~17 |
-|-------|------:|----------:|
-| Word Forms | 16 | ~1 |
-| Verb Tenses | 16 | ~1 |
-| Prepositions | 16 | ~1 |
-| Conjunctions/Transitions | 14 | ~3 |
-| Pronouns | 14 | ~3 |
-| Subject-Verb Agreement | 16 | ~1 |
-| Conditionals | 14 | ~3 |
-| Passive Voice | 14 | ~3 |
-| Comparatives/Superlatives | 16 | ~1 |
-| Gerunds/Infinitives | 14 | ~3 |
-| Articles/Determiners | 16 | ~1 |
-| Modals | 14 | ~3 |
+| Skill | Count | Band |
+|-------|------:|------|
+| Word Forms | 17 | 16–17 ✓ |
+| Verb Tenses | 17 | 16–17 ✓ |
+| Prepositions | 16 | 16–17 ✓ |
+| Conjunctions/Transitions | 17 | 16–17 ✓ |
+| Pronouns | 17 | 16–17 ✓ |
+| Subject-Verb Agreement | 16 | 16–17 ✓ |
+| Conditionals | 17 | 16–17 ✓ |
+| Passive Voice | 17 | 16–17 ✓ |
+| Comparatives/Superlatives | 16 | 16–17 ✓ |
+| Gerunds/Infinitives | 17 | 16–17 ✓ |
+| Articles/Determiners | 16 | 16–17 ✓ |
+| Modals | 17 | 16–17 ✓ |
+| **Total** | **200** | **COMPLETE** |
 
-Lote 7 lifted bank160 lows: **Word Forms** and **Verb Tenses** 12→16 (4 each); **Prepositions, Subject-Verb Agreement, Comparatives/Superlatives, Articles/Determiners** 13→16 (3 each). Lowest for Lote 8 (final to 200): the six skills still at **14** — **Conjunctions/Transitions, Pronouns, Conditionals, Passive Voice, Gerunds/Infinitives, Modals** (~3 each = 18; trim/redistribute +2 across the six skills already at 16 to hit ~17 band / 200 total).
+Lote 8 (final) lifted bank180 lows: **Conjunctions/Transitions, Pronouns, Conditionals, Passive Voice, Gerunds/Infinitives, Modals** 14→17 (3 each); **Word Forms** and **Verb Tenses** 16→17 (1 each). All 12 skills sit in the **16–17** band.
 
 ## Batch rules
 
