@@ -31,31 +31,32 @@ Rough per-skill band: **16–17** (12 × 16 = 192; remainder distributed).
 | Validated seed | TQB-P5-0011 … 0050 | 40 | Done |
 | Lote 1 | TQB-P5-0051 … 0070 | +20 | Done — 60 / 200 |
 | Lote 2 | TQB-P5-0071 … 0090 | +20 | Done — 80 / 200 |
-| **Lote 3** | TQB-P5-0091 … 0110 | +20 | **Done — 100 / 200** |
-| Lote 4 | TQB-P5-0111 … 0130 | +20 | Planned |
+| Lote 3 | TQB-P5-0091 … 0110 | +20 | Done — 100 / 200 |
+| **Lote 4** | TQB-P5-0111 … 0130 | +20 | **Done — 120 / 200** |
+| Lote 5 | TQB-P5-0131 … 0150 | +20 | Planned |
 | … | … | … | … |
 | Target | … → ~TQB-P5-0210 | ~200 | — |
 
-**After Lote 3:** **100 / 200** class items (50%). With free intro: **110** Part 5 items on site.
+**After Lote 4:** **120 / 200** class items (60%). With free intro: **130** Part 5 items on site.
 
-### Skill counts after Lote 3 (class bank only)
+### Skill counts after Lote 4 (class bank only)
 
 | Skill | Count | Gap to ~17 |
 |-------|------:|----------:|
-| Word Forms | 8 | ~9 |
-| Verb Tenses | 8 | ~9 |
-| Prepositions | 8 | ~9 |
-| Conjunctions/Transitions | 9 | ~8 |
-| Pronouns | 9 | ~8 |
-| Subject-Verb Agreement | 7 | ~10 |
-| Conditionals | 9 | ~8 |
-| Passive Voice | 9 | ~8 |
+| Word Forms | 10 | ~7 |
+| Verb Tenses | 10 | ~7 |
+| Prepositions | 10 | ~7 |
+| Conjunctions/Transitions | 10 | ~7 |
+| Pronouns | 10 | ~7 |
+| Subject-Verb Agreement | 11 | ~6 |
+| Conditionals | 10 | ~7 |
+| Passive Voice | 10 | ~7 |
 | Comparatives/Superlatives | 9 | ~8 |
-| Gerunds/Infinitives | 7 | ~10 |
+| Gerunds/Infinitives | 11 | ~6 |
 | Articles/Determiners | 9 | ~8 |
-| Modals | 8 | ~9 |
+| Modals | 10 | ~7 |
 
-Lote 3 lifted the six bank80 lows from **6→9** (Conjunctions/Transitions, Pronouns, Conditionals, Passive Voice, Comparatives/Superlatives, Articles/Determiners). Lowest for Lote 4 priority: **Subject-Verb Agreement** and **Gerunds/Infinitives** (both at 7), then Word Forms / Verb Tenses / Prepositions / Modals (at 8).
+Lote 4 lifted bank100 lows: **Subject-Verb Agreement** and **Gerunds/Infinitives** from **7→11**, and Word Forms / Verb Tenses / Prepositions / Modals from **8→10**. Lowest for Lote 5 priority: **Comparatives/Superlatives** and **Articles/Determiners** (both at 9); all others sit at 10–11.
 
 ## Batch rules
 

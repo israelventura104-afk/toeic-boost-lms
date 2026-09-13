@@ -4,11 +4,11 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "item_count": 100,
+  "item_count": 120,
   "validation": {
     "rubric": "data/part5-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110 (20 items) toward ~200-item class bank."
+    "notes": "Items curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Intro set (TQB-P5-0001–0010) remains separate and unchanged. Lote 1 added TQB-P5-0051–0070; Lote 2 added TQB-P5-0071–0090; Lote 3 added TQB-P5-0091–0110; Lote 4 added TQB-P5-0111–0130 (20 items) toward ~200-item class bank."
   },
   "items": [
     {
@@ -3912,6 +3912,786 @@
       "tags": [
         "modals",
         "ought_to_have"
+      ]
+    },
+    {
+      "id": "TQB-P5-0111",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "A number of + plural",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "HR",
+      "question": "A number of employees _____ volunteered to mentor the incoming summer interns.",
+      "options": [
+        {
+          "key": "A",
+          "text": "has"
+        },
+        {
+          "key": "B",
+          "text": "have"
+        },
+        {
+          "key": "C",
+          "text": "having"
+        },
+        {
+          "key": "D",
+          "text": "to have"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "have",
+      "explanation": "\"A number of\" means \"several\" and takes a plural verb. \"Have volunteered\" agrees with the plural sense of employees.",
+      "commonMistake": "Learners confuse \"a number of\" (plural) with \"the number of\" (singular) and choose \"has.\"",
+      "learningObjective": "Use a plural verb after \"a number of + plural noun.\"",
+      "tags": [
+        "subject_verb_agreement",
+        "a_number_of"
+      ]
+    },
+    {
+      "id": "TQB-P5-0112",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "As well as interruption",
+      "difficulty": 4,
+      "estimatedTime": 45,
+      "workplaceTopic": "Finance",
+      "question": "The chief financial officer, as well as the junior analysts, _____ attending the budget hearing on Monday.",
+      "options": [
+        {
+          "key": "A",
+          "text": "are"
+        },
+        {
+          "key": "B",
+          "text": "is"
+        },
+        {
+          "key": "C",
+          "text": "were"
+        },
+        {
+          "key": "D",
+          "text": "have"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "is",
+      "explanation": "Phrases with \"as well as\" do not change the subject. The singular subject \"officer\" requires \"is.\"",
+      "commonMistake": "Choosing \"are\" because \"analysts\" is nearer and plural.",
+      "learningObjective": "Ignore \"as well as\" phrases when matching subject and verb.",
+      "tags": [
+        "subject_verb_agreement",
+        "as_well_as"
+      ]
+    },
+    {
+      "id": "TQB-P5-0113",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Uncountable equipment + singular",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Facilities",
+      "question": "The new laboratory equipment _____ scheduled for delivery before the research wing opens.",
+      "options": [
+        {
+          "key": "A",
+          "text": "are"
+        },
+        {
+          "key": "B",
+          "text": "have"
+        },
+        {
+          "key": "C",
+          "text": "is"
+        },
+        {
+          "key": "D",
+          "text": "were"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "is",
+      "explanation": "\"Equipment\" is an uncountable noun and takes a singular verb even when it refers to many machines.",
+      "commonMistake": "Treating \"equipment\" as plural because it names multiple devices.",
+      "learningObjective": "Use singular verbs with uncountable workplace nouns like equipment, information, and news.",
+      "tags": [
+        "subject_verb_agreement",
+        "uncountable"
+      ]
+    },
+    {
+      "id": "TQB-P5-0114",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Subject-Verb Agreement",
+      "subskill": "Every + singular noun",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Security",
+      "question": "Every visitor who enters the restricted wing _____ a temporary badge at the security desk.",
+      "options": [
+        {
+          "key": "A",
+          "text": "receive"
+        },
+        {
+          "key": "B",
+          "text": "receives"
+        },
+        {
+          "key": "C",
+          "text": "receiving"
+        },
+        {
+          "key": "D",
+          "text": "have received"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "receives",
+      "explanation": "\"Every\" makes the subject singular, so the verb must be \"receives\" even though \"who enters\" describes visitors.",
+      "commonMistake": "Matching the verb to \"visitors\" in meaning and choosing the plural \"receive.\"",
+      "learningObjective": "After \"every + singular noun,\" use a third-person singular verb.",
+      "tags": [
+        "subject_verb_agreement",
+        "every"
+      ]
+    },
+    {
+      "id": "TQB-P5-0115",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Consider + gerund",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Operations",
+      "question": "The plant manager is considering _____ a night shift to clear the order backlog.",
+      "options": [
+        {
+          "key": "A",
+          "text": "to add"
+        },
+        {
+          "key": "B",
+          "text": "add"
+        },
+        {
+          "key": "C",
+          "text": "adding"
+        },
+        {
+          "key": "D",
+          "text": "added"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "adding",
+      "explanation": "\"Consider\" is followed by a gerund when it means thinking about an action: considering adding.",
+      "commonMistake": "Using \"to add\" because many verbs of planning take infinitives.",
+      "learningObjective": "Use a gerund after consider when naming a possible action.",
+      "tags": [
+        "gerunds_infinitives",
+        "consider"
+      ]
+    },
+    {
+      "id": "TQB-P5-0116",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Expect + to-infinitive",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Sales",
+      "question": "Regional managers expect _____ the revised commission plan before the next quarter begins.",
+      "options": [
+        {
+          "key": "A",
+          "text": "receiving"
+        },
+        {
+          "key": "B",
+          "text": "to receive"
+        },
+        {
+          "key": "C",
+          "text": "receive"
+        },
+        {
+          "key": "D",
+          "text": "received"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "to receive",
+      "explanation": "\"Expect\" takes a to-infinitive when stating what someone anticipates doing or getting: expect to receive.",
+      "commonMistake": "Choosing the gerund \"receiving,\" which fits verbs like \"anticipate\" or \"look forward to.\"",
+      "learningObjective": "Use to-infinitive after expect + object-less pattern.",
+      "tags": [
+        "gerunds_infinitives",
+        "expect_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0117",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Postpone + gerund",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Meetings",
+      "question": "Because key stakeholders were traveling, the committee postponed _____ the merger vote.",
+      "options": [
+        {
+          "key": "A",
+          "text": "to hold"
+        },
+        {
+          "key": "B",
+          "text": "hold"
+        },
+        {
+          "key": "C",
+          "text": "holding"
+        },
+        {
+          "key": "D",
+          "text": "held"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "holding",
+      "explanation": "\"Postpone\" is followed by a gerund: postponed holding. Infinitives are not used after postpone.",
+      "commonMistake": "Selecting \"to hold\" by analogy with \"decide to\" or \"plan to.\"",
+      "learningObjective": "Use a gerund after postpone, delay, and similar verbs of deferring.",
+      "tags": [
+        "gerunds_infinitives",
+        "postpone"
+      ]
+    },
+    {
+      "id": "TQB-P5-0118",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Gerunds/Infinitives",
+      "subskill": "Committed to + gerund",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "Sustainability",
+      "question": "Our firm remains committed to _____ packaging waste across all product lines by 2028.",
+      "options": [
+        {
+          "key": "A",
+          "text": "reduce"
+        },
+        {
+          "key": "B",
+          "text": "reducing"
+        },
+        {
+          "key": "C",
+          "text": "reduced"
+        },
+        {
+          "key": "D",
+          "text": "be reduced"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "reducing",
+      "explanation": "In \"committed to,\" the word \"to\" is a preposition, so it takes a gerund: committed to reducing.",
+      "commonMistake": "Treating \"to\" as the infinitive marker and choosing \"reduce.\"",
+      "learningObjective": "After adjective + to (preposition), use a gerund, not a bare infinitive.",
+      "tags": [
+        "gerunds_infinitives",
+        "committed_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0119",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Adverb modifying adjective",
+      "difficulty": 2,
+      "estimatedTime": 35,
+      "workplaceTopic": "Marketing",
+      "question": "The campaign results were _____ better than the agency had projected in April.",
+      "options": [
+        {
+          "key": "A",
+          "text": "significant"
+        },
+        {
+          "key": "B",
+          "text": "significance"
+        },
+        {
+          "key": "C",
+          "text": "significantly"
+        },
+        {
+          "key": "D",
+          "text": "signify"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "significantly",
+      "explanation": "An adverb is needed to modify the comparative adjective \"better.\" \"Significantly\" is the adverb form.",
+      "commonMistake": "Choosing the adjective \"significant,\" which cannot modify another adjective.",
+      "learningObjective": "Use an adverb before a comparative adjective to show degree.",
+      "tags": [
+        "word_forms",
+        "adverb"
+      ]
+    },
+    {
+      "id": "TQB-P5-0120",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Word Forms",
+      "subskill": "Noun after the",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Legal",
+      "question": "Legal counsel requested a full _____ of the contractor's insurance coverage before signing.",
+      "options": [
+        {
+          "key": "A",
+          "text": "disclose"
+        },
+        {
+          "key": "B",
+          "text": "disclosure"
+        },
+        {
+          "key": "C",
+          "text": "disclosing"
+        },
+        {
+          "key": "D",
+          "text": "disclosed"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "disclosure",
+      "explanation": "After \"a full,\" the blank needs a noun. \"Disclosure\" is the noun naming the act of revealing information.",
+      "commonMistake": "Selecting the verb \"disclose\" because it looks related to the legal context.",
+      "learningObjective": "Recognize noun slots after article + adjective.",
+      "tags": [
+        "word_forms",
+        "noun_form"
+      ]
+    },
+    {
+      "id": "TQB-P5-0121",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Present perfect with since",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Customer service",
+      "question": "Complaint volume _____ steadily since the self-service portal launched in March.",
+      "options": [
+        {
+          "key": "A",
+          "text": "declined"
+        },
+        {
+          "key": "B",
+          "text": "has declined"
+        },
+        {
+          "key": "C",
+          "text": "is declining"
+        },
+        {
+          "key": "D",
+          "text": "will decline"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "has declined",
+      "explanation": "\"Since\" plus a past starting point signals present perfect for a change that continues to matter now: has declined.",
+      "commonMistake": "Using simple past \"declined,\" which does not connect the change to the present.",
+      "learningObjective": "Pair present perfect with since + starting time.",
+      "tags": [
+        "verb_tenses",
+        "present_perfect_since"
+      ]
+    },
+    {
+      "id": "TQB-P5-0122",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Verb Tenses",
+      "subskill": "Past perfect continuous",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "IT",
+      "question": "By the time the patch was released, technicians _____ the network issue for nearly six hours.",
+      "options": [
+        {
+          "key": "A",
+          "text": "have been investigating"
+        },
+        {
+          "key": "B",
+          "text": "were investigating"
+        },
+        {
+          "key": "C",
+          "text": "had been investigating"
+        },
+        {
+          "key": "D",
+          "text": "are investigating"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "had been investigating",
+      "explanation": "Past perfect continuous shows an action in progress up to a past moment (\"by the time the patch was released\").",
+      "commonMistake": "Choosing present perfect continuous, which cannot sit before a finished past time marker.",
+      "learningObjective": "Use had been + -ing for duration before a past reference point.",
+      "tags": [
+        "verb_tenses",
+        "past_perfect_continuous"
+      ]
+    },
+    {
+      "id": "TQB-P5-0123",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Depend on",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "Project management",
+      "question": "The launch date will depend _____ how quickly the suppliers can fulfill the rush order.",
+      "options": [
+        {
+          "key": "A",
+          "text": "of"
+        },
+        {
+          "key": "B",
+          "text": "on"
+        },
+        {
+          "key": "C",
+          "text": "for"
+        },
+        {
+          "key": "D",
+          "text": "at"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "on",
+      "explanation": "The fixed collocation is \"depend on\" (or \"upon\"). Other prepositions are incorrect here.",
+      "commonMistake": "Saying \"depend of,\" a transfer error from Spanish \"depender de.\"",
+      "learningObjective": "Memorize depend on as the standard workplace preposition pattern.",
+      "tags": [
+        "prepositions",
+        "depend_on"
+      ]
+    },
+    {
+      "id": "TQB-P5-0124",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Prepositions",
+      "subskill": "Participate in",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "Training",
+      "question": "All supervisors are expected to participate _____ the two-day leadership workshop in October.",
+      "options": [
+        {
+          "key": "A",
+          "text": "on"
+        },
+        {
+          "key": "B",
+          "text": "at"
+        },
+        {
+          "key": "C",
+          "text": "in"
+        },
+        {
+          "key": "D",
+          "text": "to"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "in",
+      "explanation": "\"Participate\" takes the preposition \"in\" before an event or activity: participate in the workshop.",
+      "commonMistake": "Choosing \"on\" or \"at,\" which fit other verbs (focus on, arrive at) but not participate.",
+      "learningObjective": "Use participate in + activity/event.",
+      "tags": [
+        "prepositions",
+        "participate_in"
+      ]
+    },
+    {
+      "id": "TQB-P5-0125",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Need to obligation",
+      "difficulty": 2,
+      "estimatedTime": 30,
+      "workplaceTopic": "Compliance",
+      "question": "Contractors _____ to complete the online safety quiz before they may enter the site.",
+      "options": [
+        {
+          "key": "A",
+          "text": "need"
+        },
+        {
+          "key": "B",
+          "text": "needs"
+        },
+        {
+          "key": "C",
+          "text": "needing"
+        },
+        {
+          "key": "D",
+          "text": "needed"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "need",
+      "explanation": "\"Need to\" expresses obligation. With a plural subject, the form is \"need to complete.\"",
+      "commonMistake": "Using \"needs\" to agree with a singular idea of \"each contractor\" when the subject is plural.",
+      "learningObjective": "Use need to + base verb for workplace requirements.",
+      "tags": [
+        "modals",
+        "need_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0126",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Modals",
+      "subskill": "Be supposed to",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Logistics",
+      "question": "The refrigerated shipment _____ to arrive before noon, but the truck is still two hours away.",
+      "options": [
+        {
+          "key": "A",
+          "text": "supposed"
+        },
+        {
+          "key": "B",
+          "text": "was supposed"
+        },
+        {
+          "key": "C",
+          "text": "is suppose"
+        },
+        {
+          "key": "D",
+          "text": "suppose"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "was supposed",
+      "explanation": "\"Be supposed to\" marks an expected plan. Past \"was supposed to\" fits because the expected arrival time has already passed relative to the contrast.",
+      "commonMistake": "Dropping the auxiliary and writing \"supposed to\" without \"was/is.\"",
+      "learningObjective": "Use be supposed to for scheduled expectations, with tense matching the time frame.",
+      "tags": [
+        "modals",
+        "supposed_to"
+      ]
+    },
+    {
+      "id": "TQB-P5-0127",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conjunctions/Transitions",
+      "subskill": "Furthermore addition",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Real estate",
+      "question": "The downtown branch offers extended hours; _____, it provides free notary services to account holders.",
+      "options": [
+        {
+          "key": "A",
+          "text": "furthermore"
+        },
+        {
+          "key": "B",
+          "text": "instead"
+        },
+        {
+          "key": "C",
+          "text": "otherwise"
+        },
+        {
+          "key": "D",
+          "text": "although"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "furthermore",
+      "explanation": "\"Furthermore\" adds a second positive point after a semicolon, matching the additive relationship between the two clauses.",
+      "commonMistake": "Choosing \"instead,\" which signals replacement rather than addition.",
+      "learningObjective": "Use furthermore to add supporting information between independent clauses.",
+      "tags": [
+        "conjunctions",
+        "furthermore"
+      ]
+    },
+    {
+      "id": "TQB-P5-0128",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Pronouns",
+      "subskill": "Possessive ours",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Office",
+      "question": "Their proposal is longer, but _____ includes clearer cost estimates for the renovation.",
+      "options": [
+        {
+          "key": "A",
+          "text": "our"
+        },
+        {
+          "key": "B",
+          "text": "ours"
+        },
+        {
+          "key": "C",
+          "text": "ourselves"
+        },
+        {
+          "key": "D",
+          "text": "us"
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "ours",
+      "explanation": "The blank stands alone as the subject of \"includes,\" so the independent possessive pronoun \"ours\" is required, not the determiner \"our.\"",
+      "commonMistake": "Choosing \"our,\" which must be followed by a noun (our proposal).",
+      "learningObjective": "Use ours/theirs/mine when the possessive pronoun replaces a whole noun phrase.",
+      "tags": [
+        "pronouns",
+        "possessive_ours"
+      ]
+    },
+    {
+      "id": "TQB-P5-0129",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Conditionals",
+      "subskill": "Mixed conditional",
+      "difficulty": 4,
+      "estimatedTime": 50,
+      "workplaceTopic": "HR",
+      "question": "If the company _____ the satellite office last year, commuting times would be shorter for many staff today.",
+      "options": [
+        {
+          "key": "A",
+          "text": "opens"
+        },
+        {
+          "key": "B",
+          "text": "opened"
+        },
+        {
+          "key": "C",
+          "text": "had opened"
+        },
+        {
+          "key": "D",
+          "text": "would open"
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "had opened",
+      "explanation": "This mixed conditional links a past unreal condition (had opened) to a present result (would be shorter).",
+      "commonMistake": "Using second-conditional \"opened,\" which would pair with a present/future hypothetical, not a past missed action.",
+      "learningObjective": "Combine past perfect in the if-clause with would + base verb for present results of past unreal conditions.",
+      "tags": [
+        "conditionals",
+        "mixed"
+      ]
+    },
+    {
+      "id": "TQB-P5-0130",
+      "section": "Reading",
+      "part": 5,
+      "type": "Incomplete Sentences",
+      "skill": "Passive Voice",
+      "subskill": "Going to future passive",
+      "difficulty": 3,
+      "estimatedTime": 40,
+      "workplaceTopic": "Facilities",
+      "question": "The visitor parking lot _____ to be resurfaced during the holiday shutdown next month.",
+      "options": [
+        {
+          "key": "A",
+          "text": "is going"
+        },
+        {
+          "key": "B",
+          "text": "goes"
+        },
+        {
+          "key": "C",
+          "text": "went"
+        },
+        {
+          "key": "D",
+          "text": "has gone"
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "is going",
+      "explanation": "Future passive with \"going to\" uses \"is/are going to be + past participle\": is going to be resurfaced.",
+      "commonMistake": "Reading \"is going\" as incomplete and rejecting it, or choosing active forms that ignore the passive marker \"to be resurfaced.\"",
+      "learningObjective": "Recognize be going to be + past participle as a planned future passive.",
+      "tags": [
+        "passive_voice",
+        "going_to_passive"
       ]
     }
   ]
