@@ -1,10 +1,10 @@
-# TOEIC Boost (Paso 3 — Part 5 Incomplete Sentences)
+# TOEIC Boost (Paso 3+ — Part 5 Incomplete Sentences + timed mock)
 
 Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to TOEFL ITP Boost.
 
 **Paso 1:** Landing page (marketing).  
 **Paso 2:** Class-code access, student dashboard, free Reading & Grammar short demo (Part 5–7 style).  
-**Paso 3:** Original Part 5 Incomplete Sentences bank (210 items total = 10 intro + 200 class-validated), free fixed practice (10), class guided practice (15), a real Reading hub, and a free Part 5 Strategies library.
+**Paso 3:** Original Part 5 Incomplete Sentences bank (210 items total = 10 intro + 200 class-validated), free fixed practice (10), class guided practice (15), timed Part 5 mock (30Q / 20 min), a real Reading hub, and a free Part 5 Strategies library.
 
 ## Preview locally
 
@@ -31,13 +31,22 @@ Open <http://localhost:8765/>.
 
 | Path | Needs code? | What you get |
 |------|-------------|--------------|
-| `reading.html` | No | Reading hub: Part 5 links + Parts 6/7 coming-next notes |
+| `reading.html` | No | Reading hub: Part 5 free / guided / mock + Parts 6/7 coming-next notes |
 | `strategies.html` | **No** | Free Part 5 study library (12 skills + exam habits) · `#part5` anchor |
 | `part5-practice.html` | **No** | Fixed 10-item intro (`TQB-P5-0001`–`0010`), immediate feedback, restart |
 | `part5-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 15 items from the 200-item class bank, balanced by skill, session saved |
+| `part5-mock.html` | **Yes** `TOEIC-VENTURA-2026` | Timed mock: **30 questions · 20 minutes**, no feedback until end, skill-balanced set, auto-submit at 0 |
 | `demo-test.html` | No | Short Part 5–7 snapshot (unchanged from Paso 2) |
 
-Guided practice shows an inline class-code gate if the device is locked. The 10 free items are never reused in guided sets.
+Guided practice and the mock show an inline class-code gate if the device is locked. The 10 free intro items are never reused in guided or mock sets.
+
+### Part 5 mock details
+
+- Timer: **20:00** (1200 seconds); early submit allowed; auto-submit when time hits 0.
+- Set: 30 unique items from `data/part5-bank.json`, skill-balanced round-robin across the 12 skills, question order shuffled each session; option keys **A–D kept as authored**.
+- During the exam: no skill titles / grammar meta on questions.
+- After submit: score X/30, percent, study focus by skill, Review mistakes panel (same style as guided).
+- Progress: `ToeicProgress.recordPart5Session({ mode: "mock", durationSeconds, timedOut, ... })`.
 
 ## Part 5 item bank (original workplace English)
 
@@ -80,15 +89,16 @@ Each item: one blank, four options (A–D), one `correctKey` that matches `corre
 | `styles.css` | Landing + dashboard + demo + Part 5 / Reading hub + strategy library |
 | `nav.js` | Landing toggle + shared app header |
 | `access.js` / `data/access.json` | Teacher class-code unlock |
-| `progress.js` | Demo + Part 5 guided session storage |
+| `progress.js` | Demo + Part 5 guided/mock session storage |
 | `dashboard.html` / `dashboard.js` | Progress dashboard + class access panel |
 | `demo-test.html` / `demo-test.js` | Free Part 5–7 demo flow |
 | `data/demo-test.json` / `data/demo-items.json` | Demo config + original items |
 | `reading.html` | Reading hub (Part 5 live; 6/7 coming next) |
 | `part5-practice.html` / `part5-practice.js` | Free 10-item Part 5 set |
 | `part5-guided-practice.html` / `part5-guided-practice.js` | Class 15-item Part 5 drill |
+| `part5-mock.html` / `part5-mock.js` | Class timed Part 5 mock (30Q / 20 min) |
 | `data/part5-intro.json` | Fixed free intro (10) |
-| `data/part5-bank.json` | Guided/mock class bank (**200** validated — COMPLETE) |
+| `data/part5-bank.json` | Guided + mock class bank (**200** validated — COMPLETE) |
 | `data/part5-validation-rubric.md` | Teacher rubric (ES) for Part 5 class items |
 | `data/part5-bank-validation.json` | Validation summary (kept/rewritten/dropped) + lote batches |
 | `data/part5-blueprint.md` | 200-item skill targets — **COMPLETE** |

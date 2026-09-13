@@ -1,6 +1,6 @@
 /**
  * Practice progress — Paso 3
- * Saves demo + Part 5 guided sessions on this device (localStorage).
+ * Saves demo + Part 5 guided/mock sessions on this device (localStorage).
  * No accounts. Teacher class materials only.
  */
 
@@ -213,11 +213,12 @@
     const items = Array.isArray(session.items) ? session.items : [];
     const { skillMap, mistakes } = buildSkillMapFromItems(items);
 
+    const mode = session.mode || "guided";
     const record = {
       id: `p5-${Date.now()}`,
       section: "reading",
       part: 5,
-      mode: session.mode || "guided",
+      mode,
       at: new Date().toISOString(),
       correct,
       total,
@@ -225,6 +226,9 @@
       skills: skillMap,
       mistakes,
       questionIds: Array.isArray(session.questionIds) ? session.questionIds : [],
+      durationSeconds:
+        session.durationSeconds != null ? Number(session.durationSeconds) : null,
+      timedOut: Boolean(session.timedOut),
       items: items.map((entry) => ({
         questionId: entry.questionId || "",
         skill: entry.skill || "",

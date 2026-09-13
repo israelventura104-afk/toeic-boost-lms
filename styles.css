@@ -1383,6 +1383,41 @@ a.is-access-locked {
   background: var(--panel);
 }
 
+.mock-timer {
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.mock-timer.is-urgent {
+  color: #8a2f28;
+}
+
+.mock-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.mock-nav-btn {
+  min-height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mock-nav-btn.is-answered {
+  background: rgba(13, 138, 141, 0.12);
+  border-color: rgba(13, 138, 141, 0.35);
+}
+
+.mock-nav-btn.is-current {
+  outline: 2px solid var(--teal);
+}
+
 .practice-status {
   margin: 0 0 1rem;
   padding: 0.75rem 1rem;
@@ -1707,6 +1742,10 @@ button:disabled {
 
   .mock-exam-bar {
     grid-template-columns: 1fr;
+  }
+
+  .mock-nav-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .choice-list {

@@ -146,13 +146,18 @@
         at: summary.demo.last.at,
       });
     }
-    if (summary.part5?.last) {
+    // Show up to a few recent Part 5 sessions (guided + mock)
+    const part5Sessions =
+      (window.ToeicProgress.getPart5Sessions && window.ToeicProgress.getPart5Sessions()) ||
+      (summary.part5?.last ? [summary.part5.last] : []);
+    part5Sessions.slice(0, 4).forEach((session) => {
+      const mode = session.mode === "mock" ? "mock" : "guided";
       rows.push({
-        label: "Part 5 guided practice",
-        score: `${summary.part5.last.correct}/${summary.part5.last.total} (${summary.part5.last.percent}%)`,
-        at: summary.part5.last.at,
+        label: mode === "mock" ? "Part 5 mock test" : "Part 5 guided practice",
+        score: `${session.correct}/${session.total} (${session.percent}%)`,
+        at: session.at,
       });
-    }
+    });
     rows.sort((a, b) => String(b.at || "").localeCompare(String(a.at || "")));
 
     if (!rows.length) {
@@ -248,7 +253,7 @@
         summary.part5?.skills,
         summary.part5?.sessionCount
           ? "Sessions saved, but no skill tags yet."
-          : "No Part 5 guided practice saved yet."
+          : "No Part 5 practice or mock saved yet."
       );
     }
     const part5Meta = document.querySelector("[data-dash-part5-meta]");

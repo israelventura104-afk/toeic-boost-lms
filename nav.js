@@ -21,7 +21,8 @@
     if (
       file === "reading.html" ||
       file === "part5-practice.html" ||
-      file === "part5-guided-practice.html"
+      file === "part5-guided-practice.html" ||
+      file === "part5-mock.html"
     ) {
       return { area: "reading" };
     }
