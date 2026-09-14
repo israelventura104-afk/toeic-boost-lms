@@ -31,10 +31,10 @@ Genre rotation across 20 passages: aim for a spread of email / letter / memo / n
 | **Lote 2** | TQB-P6-0005 … 0008 | +4 | +16 | **Done — 32 / 80** |
 | **Lote 3** | TQB-P6-0009 … 0012 | +4 | +16 | **Done — 48 / 80** |
 | **Lote 4** | TQB-P6-0013 … 0016 | +4 | +16 | **Done — 64 / 80** |
-| Lote 5 (final) | TQB-P6-0017 … 0020 | +4 | +16 | Planned — **80 / 80** |
-| Target | … → TQB-P6-0020 | **20** | **80** | In progress |
+| **Lote 5 (final)** | TQB-P6-0017 … 0020 | +4 | +16 | **Done — 80 / 80** |
+| **Target** | … → TQB-P6-0020 | **20** | **80** | **COMPLETE** |
 
-**After Lote 4:** **64 / 80** class questions (80%). With free intro: **68** Part 6 questions on site (1 intro passage + 16 class passages).
+**After Lote 5:** **80 / 80** class questions (100%) — **bank complete**. With free intro: **84** Part 6 questions on site (1 intro passage + 20 class passages).
 
 ### Lote 1 snapshot
 
@@ -84,6 +84,22 @@ Bank totals after Lote 3: word_form 12 · vocabulary 12 · connector 12 · sente
 
 Blank-type counts (lote 4): word_form 4 · vocabulary 4 · connector 4 · sentence_insertion 4.  
 Bank totals after Lote 4: word_form 16 · vocabulary 16 · connector 16 · sentence_insertion 16.
+
+
+
+
+### Lote 5 snapshot
+
+| Passage | Genre | Topic | Blank types |
+|---------|-------|-------|-------------|
+| TQB-P6-0017 | ad | Marketing / AeroBlend Pro product launch | word_form, connector, vocabulary, sentence_insertion |
+| TQB-P6-0018 | article | IT / workplace cybersecurity tips | vocabulary, connector, word_form, sentence_insertion |
+| TQB-P6-0019 | memo | Facilities / third-floor renovation | vocabulary, connector, word_form, sentence_insertion |
+| TQB-P6-0020 | letter | Finance / supplier payment confirmation | word_form, connector, vocabulary, sentence_insertion |
+
+Blank-type counts (lote 5): word_form 4 · vocabulary 4 · connector 4 · sentence_insertion 4.  
+Bank totals after Lote 5: word_form 20 · vocabulary 20 · connector 20 · sentence_insertion 20.  
+**Target reached — bank complete (20 passages / 80 questions).** Genres: email 3 · memo 4 · notice 3 · letter 4 · ad 3 · article 3.
 
 
 ## Batch rules

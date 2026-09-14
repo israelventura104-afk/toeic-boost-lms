@@ -5,7 +5,7 @@ Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to
 **Paso 1:** Landing page (marketing).  
 **Paso 2:** Class-code access, student dashboard, free Reading & Grammar short demo (Part 5–7 style).  
 **Paso 3:** Original Part 5 Incomplete Sentences bank (210 items = 10 intro + 200 class-validated), free/guided/mock flows, Reading hub, and Part 5 Strategies.
-**Paso 3b (Part 6 start):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank Lotes 1–4 (16 passages × 4 = 64 validated Q toward ~80), free practice UI; guided/mock/strategies for Part 6 come next.
+**Paso 3b (Part 6):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank **COMPLETE** Lotes 1–5 (20 passages × 4 = **80** validated Q), free practice UI; guided/mock/strategies for Part 6 come next.
 
 ## Preview locally
 
@@ -80,20 +80,22 @@ Each item: one blank, four options (A–D), one `correctKey` that matches `corre
 
 ## Part 6 item bank (original workplace English)
 
-Part 6 = **Text Completion**: short workplace texts with **4 blanks** each (word/phrase, connector, **sentence insertion**). Class bank target: **~80 questions** (20 passages × 4).
+Part 6 = **Text Completion**: short workplace texts with **4 blanks** each (word/phrase, connector, **sentence insertion**). Class bank: **80 questions COMPLETE** (20 passages × 4).
 
 - Intro (free, fixed, `purpose: free_intro_fixed`): `data/part6-intro.json` — **1** passage × **4** Q, IDs `TQB-P6-INTRO-001` + `Q01`–`Q04`
-- Bank (guided + later mocks, class-validated): `data/part6-bank.json` — **Lotes 1–4:** 16 passages × 4 = **64** Q, IDs `TQB-P6-0001` … `0016` (**64 / 80**)
+- Bank (guided + later mocks, class-validated): `data/part6-bank.json` — **Lotes 1–5 COMPLETE:** 20 passages × 4 = **80** Q, IDs `TQB-P6-0001` … `0020` (**80 / 80**)
 - Validation: `data/part6-validation-rubric.md` + `data/part6-bank-validation.json`
 - Blueprint: `data/part6-blueprint.md`
 
-Genres so far: **email** 3 · **memo** 3 · **notice** 3 · **letter** 3 · **ad** 2 · **article** 2. Blank types (64): word_form 16 · vocabulary 16 · connector 16 · sentence_insertion 16.
+Genres: **email** 3 · **memo** 4 · **notice** 3 · **letter** 4 · **ad** 3 · **article** 3. Blank types (80): word_form 20 · vocabulary 20 · connector 20 · sentence_insertion 20.
 
 Lote 2 added: ad (office products), article (sustainability), email (Customer Service), memo (Finance/policy).
 
 Lote 3 added: notice (product recall), letter (vendor/purchasing), ad (conference hotel), email (benefits enrollment).
 
 Lote 4 added: article (hybrid remote work), memo (warehouse safety), notice (charity food drive), letter (client portal-outage apology).
+
+Lote 5 (final) added: ad (AeroBlend Pro product launch), article (cybersecurity tips), memo (third-floor renovation), letter (supplier payment confirmation). **Bank complete 80/80.**
 
 Blank markers in passage text use `[[131]]` style for UI highlight.
 
