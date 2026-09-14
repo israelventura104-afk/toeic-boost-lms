@@ -1,6 +1,6 @@
 /**
  * Practice progress — Paso 3
- * Saves demo + Part 5 guided/mock sessions on this device (localStorage).
+ * Saves demo + Part 5 guided/mock + Part 6 guided sessions on this device (localStorage).
  * No accounts. Teacher class materials only.
  */
 
@@ -15,6 +15,7 @@
       listeningSessions: [],
       readingSessions: [],
       part5Sessions: [],
+      part6Sessions: [],
     };
   }
 
@@ -28,6 +29,7 @@
       if (!Array.isArray(data.listeningSessions)) data.listeningSessions = [];
       if (!Array.isArray(data.readingSessions)) data.readingSessions = [];
       if (!Array.isArray(data.part5Sessions)) data.part5Sessions = [];
+      if (!Array.isArray(data.part6Sessions)) data.part6Sessions = [];
       return data;
     } catch {
       return emptyState();
@@ -242,8 +244,57 @@
     if (state.part5Sessions.length > MAX_SESSIONS) {
       state.part5Sessions = state.part5Sessions.slice(0, MAX_SESSIONS);
     }
-    // Keep a slim readingSessions alias for later Part 6/7 aggregation
-    state.readingSessions = state.part5Sessions;
+    syncReadingSessions(state);
+    save(state);
+    return record;
+  }
+
+  function syncReadingSessions(state) {
+    // Combined Part 5 + Part 6 for aggregation; Part 5 arrays stay intact.
+    const combined = [...(state.part5Sessions || []), ...(state.part6Sessions || [])];
+    combined.sort((a, b) => String(b.at || "").localeCompare(String(a.at || "")));
+    state.readingSessions = combined.slice(0, MAX_SESSIONS);
+  }
+
+  function recordPart6Session(session) {
+    const state = load();
+    const total = Number(session.total) || 0;
+    const correct = Number(session.correct) || 0;
+    const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const items = Array.isArray(session.items) ? session.items : [];
+    const { skillMap, mistakes } = buildSkillMapFromItems(items);
+
+    const mode = session.mode || "guided";
+    const record = {
+      id: `p6-${Date.now()}`,
+      section: "reading",
+      part: 6,
+      mode,
+      at: new Date().toISOString(),
+      correct,
+      total,
+      percent,
+      skills: skillMap,
+      mistakes,
+      questionIds: Array.isArray(session.questionIds) ? session.questionIds : [],
+      passageIds: Array.isArray(session.passageIds) ? session.passageIds : [],
+      durationSeconds:
+        session.durationSeconds != null ? Number(session.durationSeconds) : null,
+      timedOut: Boolean(session.timedOut),
+      items: items.map((entry) => ({
+        questionId: entry.questionId || "",
+        skill: entry.skill || "",
+        subskill: entry.subskill || "",
+        part: 6,
+        correct: Boolean(entry.correct),
+      })),
+    };
+
+    state.part6Sessions.unshift(record);
+    if (state.part6Sessions.length > MAX_SESSIONS) {
+      state.part6Sessions = state.part6Sessions.slice(0, MAX_SESSIONS);
+    }
+    syncReadingSessions(state);
     save(state);
     return record;
   }
@@ -252,6 +303,9 @@
     const section = String(session.section || session.part || "practice").toLowerCase();
     if (section === "part5" || section === "p5" || Number(session.part) === 5) {
       return recordPart5Session(session);
+    }
+    if (section === "part6" || section === "p6" || Number(session.part) === 6) {
+      return recordPart6Session(session);
     }
     if (section === "demo") {
       return recordDemoSession(session);
@@ -266,11 +320,17 @@
   function getPart5Sessions() {
     const state = load();
     if (state.part5Sessions && state.part5Sessions.length) return state.part5Sessions;
-    return state.readingSessions || [];
+    // Legacy: older saves may only have readingSessions that were Part 5 aliases
+    return (state.readingSessions || []).filter((s) => !s.part || s.part === 5);
+  }
+
+  function getPart6Sessions() {
+    const state = load();
+    return state.part6Sessions || [];
   }
 
   function getStreakDays() {
-    const all = [...getDemoSessions(), ...getPart5Sessions()];
+    const all = [...getDemoSessions(), ...getPart5Sessions(), ...getPart6Sessions()];
     const days = [...new Set(all.map((s) => dayKey(s.at)).filter(Boolean))]
       .sort()
       .reverse();
@@ -300,8 +360,10 @@
   function getSummary() {
     const demos = getDemoSessions();
     const part5 = getPart5Sessions();
+    const part6 = getPart6Sessions();
     const demoCount = demos.length;
     const part5Count = part5.length;
+    const part6Count = part6.length;
     const last = demos[0] || null;
     const avg =
       demoCount > 0
@@ -313,23 +375,54 @@
         ? Math.round(part5.reduce((sum, s) => sum + (s.percent || 0), 0) / part5Count)
         : null;
     const part5Skills = rankSkills(aggregateSkillsFromSessions(part5), 5);
-    const combinedSkills = rankSkills(aggregateSkillsFromSessions([...demos, ...part5]), 5);
-    const focus = combinedSkills[0] || skills[0] || part5Skills[0] || null;
-    const totalSessionsAll = demoCount + part5Count;
+    const part6Avg =
+      part6Count > 0
+        ? Math.round(part6.reduce((sum, s) => sum + (s.percent || 0), 0) / part6Count)
+        : null;
+    const part6Skills = rankSkills(aggregateSkillsFromSessions(part6), 5);
+    const readingSessions = [...part5, ...part6].sort((a, b) =>
+      String(b.at || "").localeCompare(String(a.at || ""))
+    );
+    const readingSkills = rankSkills(aggregateSkillsFromSessions(readingSessions), 5);
+    const combinedSkills = rankSkills(
+      aggregateSkillsFromSessions([...demos, ...part5, ...part6]),
+      5
+    );
+    const focus = combinedSkills[0] || skills[0] || part5Skills[0] || part6Skills[0] || null;
+    const totalSessionsAll = demoCount + part5Count + part6Count;
     const readingBlock = {
+      sessionCount: part5Count + part6Count,
+      averagePercent:
+        part5Count + part6Count > 0
+          ? Math.round(
+              readingSessions.reduce((sum, s) => sum + (s.percent || 0), 0) /
+                (part5Count + part6Count)
+            )
+          : null,
+      last: readingSessions[0] || null,
+      skills: readingSkills,
+    };
+    const part5Block = {
       sessionCount: part5Count,
       averagePercent: part5Avg,
       last: part5[0] || null,
       skills: part5Skills,
     };
+    const part6Block = {
+      sessionCount: part6Count,
+      averagePercent: part6Avg,
+      last: part6[0] || null,
+      skills: part6Skills,
+    };
 
-    let focusNote = "Take the free short demo or Part 5 practice to see what to study next.";
+    let focusNote = "Take the free short demo or Part 5 / Part 6 practice to see what to study next.";
     let focusSection = "Reading";
     if (focus) {
-      focusSection = part5Count ? "Part 5" : "Demo";
-      focusNote = part5Count
-        ? `Focus: ${focus.skill} (${focus.percent}% so far across saved sessions).`
-        : `Demo focus: ${focus.skill} (${focus.percent}% so far).`;
+      focusSection = part5Count || part6Count ? "Reading" : "Demo";
+      focusNote =
+        part5Count || part6Count
+          ? `Focus: ${focus.skill} (${focus.percent}% so far across saved sessions).`
+          : `Demo focus: ${focus.skill} (${focus.percent}% so far).`;
     }
 
     return {
@@ -350,7 +443,8 @@
       focusNote,
       listening: { sessionCount: 0, averagePercent: null, last: null, skills: [] },
       reading: readingBlock,
-      part5: readingBlock,
+      part5: part5Block,
+      part6: part6Block,
     };
   }
 
@@ -362,9 +456,11 @@
     normalizeSkill,
     recordDemoSession,
     recordPart5Session,
+    recordPart6Session,
     recordPracticeSession,
     getDemoSessions,
     getPart5Sessions,
+    getPart6Sessions,
     getStreakDays,
     getSummary,
     clearProgress,

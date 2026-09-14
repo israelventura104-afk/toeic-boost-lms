@@ -146,7 +146,7 @@
         at: summary.demo.last.at,
       });
     }
-    // Show up to a few recent Part 5 sessions (guided + mock)
+    // Show recent Part 5 / Part 6 sessions (guided + mock)
     const part5Sessions =
       (window.ToeicProgress.getPart5Sessions && window.ToeicProgress.getPart5Sessions()) ||
       (summary.part5?.last ? [summary.part5.last] : []);
@@ -158,11 +158,22 @@
         at: session.at,
       });
     });
+    const part6Sessions =
+      (window.ToeicProgress.getPart6Sessions && window.ToeicProgress.getPart6Sessions()) ||
+      (summary.part6?.last ? [summary.part6.last] : []);
+    part6Sessions.slice(0, 4).forEach((session) => {
+      const mode = session.mode === "mock" ? "mock" : "guided";
+      rows.push({
+        label: mode === "mock" ? "Part 6 mock test" : "Part 6 guided practice",
+        score: `${session.correct}/${session.total} (${session.percent}%)`,
+        at: session.at,
+      });
+    });
     rows.sort((a, b) => String(b.at || "").localeCompare(String(a.at || "")));
 
     if (!rows.length) {
       host.innerHTML =
-        `<li class="dash-empty-note">Finish the free short demo or a Part 5 session to see results here.</li>`;
+        `<li class="dash-empty-note">Finish the free short demo or a Part 5 / Part 6 session to see results here.</li>`;
       return;
     }
 

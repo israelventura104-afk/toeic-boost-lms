@@ -5,7 +5,7 @@ Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to
 **Paso 1:** Landing page (marketing).  
 **Paso 2:** Class-code access, student dashboard, free Reading & Grammar short demo (Part 5–7 style).  
 **Paso 3:** Original Part 5 Incomplete Sentences bank (210 items = 10 intro + 200 class-validated), free/guided/mock flows, Reading hub, and Part 5 Strategies.
-**Paso 3b (Part 6):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank **COMPLETE** Lotes 1–5 (20 passages × 4 = **80** validated Q), free practice UI; guided/mock/strategies for Part 6 come next.
+**Paso 3b (Part 6):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank **COMPLETE** Lotes 1–5 (20 passages × 4 = **80** validated Q), free practice UI, **guided practice live** (2 passages / 8 Q); mock/strategies for Part 6 come next.
 
 ## Preview locally
 
@@ -32,8 +32,9 @@ Open <http://localhost:8765/>.
 
 | Path | Needs code? | What you get |
 |------|-------------|--------------|
-| `reading.html` | No | Reading hub: Part 5 free / guided / mock + Part 6 free practice (guided/mock coming next) + Part 7 coming-next |
+| `reading.html` | No | Reading hub: Part 5 free / guided / mock + Part 6 free / guided (mock coming next) + Part 7 coming-next |
 | `part6-practice.html` | **No** | Fixed 1-passage Part 6 intro (`TQB-P6-INTRO-001`, Q01–Q04), immediate feedback |
+| `part6-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 2 random passages (8 blanks) from the 20-passage class bank · no timer · session saved |
 | `strategies.html` | **No** | Free Part 5 study library (12 skills + exam habits) · `#part5` anchor |
 | `part5-practice.html` | **No** | Fixed 10-item intro (`TQB-P5-0001`–`0010`), immediate feedback, restart |
 | `part5-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 15 items from the 200-item class bank, balanced by skill, session saved |
@@ -49,6 +50,14 @@ Guided practice and the mock show an inline class-code gate if the device is loc
 - During the exam: no skill titles / grammar meta on questions.
 - After submit: score X/30, percent, study focus by skill, Review mistakes panel (same style as guided).
 - Progress: `ToeicProgress.recordPart5Session({ mode: "mock", durationSeconds, timedOut, ... })`.
+
+### Part 6 guided details
+
+- Session: **2 random passages** from `data/part6-bank.json` = **8 questions** (each passage’s 4 blanks stay in order; passage pair reshuffles on “New practice”).
+- No timer; immediate feedback after each answer; grammar-point / blankType titles stay hidden.
+- Passage panel switches when you move from Q4 → Q5 (second passage).
+- End screen: score + Review mistakes (yours / correct / why), same pattern as Part 5 guided / Part 6 free.
+- Progress: `ToeicProgress.recordPart6Session({ mode: "guided", passageIds, ... })`.
 
 ## Part 5 item bank (original workplace English)
 
@@ -114,11 +123,11 @@ Blank markers in passage text use `[[131]]` style for UI highlight.
 | `styles.css` | Landing + dashboard + demo + Part 5/6 / Reading hub + strategy library |
 | `nav.js` | Landing toggle + shared app header |
 | `access.js` / `data/access.json` | Teacher class-code unlock |
-| `progress.js` | Demo + Part 5 guided/mock session storage |
+| `progress.js` | Demo + Part 5 guided/mock + Part 6 guided session storage |
 | `dashboard.html` / `dashboard.js` | Progress dashboard + class access panel |
 | `demo-test.html` / `demo-test.js` | Free Part 5–7 demo flow |
 | `data/demo-test.json` / `data/demo-items.json` | Demo config + original items |
-| `reading.html` | Reading hub (Part 5 live; Part 6 free live; guided/mock & Part 7 coming next) |
+| `reading.html` | Reading hub (Part 5 live; Part 6 free + guided live; mock & Part 7 coming next) |
 | `part5-practice.html` / `part5-practice.js` | Free 10-item Part 5 set |
 | `part5-guided-practice.html` / `part5-guided-practice.js` | Class 15-item Part 5 drill |
 | `part5-mock.html` / `part5-mock.js` | Class timed Part 5 mock (30Q / 20 min) |
@@ -127,6 +136,10 @@ Blank markers in passage text use `[[131]]` style for UI highlight.
 | `data/part5-validation-rubric.md` | Teacher rubric (ES) for Part 5 class items |
 | `data/part5-bank-validation.json` | Validation summary (kept/rewritten/dropped) + lote batches |
 | `data/part5-blueprint.md` | 200-item skill targets — **COMPLETE** |
+| `part6-practice.html` / `part6-practice.js` | Free 1-passage Part 6 intro |
+| `part6-guided-practice.html` / `part6-guided-practice.js` | Class 2-passage / 8-blank Part 6 drill |
+| `data/part6-intro.json` | Fixed free intro (1×4) |
+| `data/part6-bank.json` | Guided + later mock class bank (**80** validated — COMPLETE) |
 | `strategies.html` | Free Part 5 strategies library (Listening/6–7 stubs on same page) |
 | `listening.html` | Coming-next stub |
 | `assets/` | Logo / favicon / hero art |
