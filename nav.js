@@ -27,7 +27,8 @@
       file === "part6-guided-practice.html" ||
       file === "part6-mock.html" ||
       file === "part7-practice.html" ||
-      file === "part7-guided-practice.html"
+      file === "part7-guided-practice.html" ||
+      file === "part7-mock.html"
     ) {
       return { area: "reading" };
     }

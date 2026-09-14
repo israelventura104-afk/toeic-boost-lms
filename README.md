@@ -6,7 +6,7 @@ Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to
 **Paso 2:** Class-code access, student dashboard, free Reading & Grammar short demo (Part 5–7 style).  
 **Paso 3:** Original Part 5 Incomplete Sentences bank (210 items = 10 intro + 200 class-validated), free/guided/mock flows, Reading hub, and Part 5 Strategies.
 **Paso 3b (Part 6):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank **COMPLETE** Lotes 1–5 (20 passages × 4 = **80** validated Q), free practice UI, **guided practice live** (2 passages / 8 Q), **timed mock live** (4 passages / 16 Q · 12 min); **Part 6 strategies live** on `strategies.html#part6`.
-**Paso 3c (Part 7 Phase 1):** Original Part 7 Reading Comprehension — free intro (1 single × 3 Q), class bank **COMPLETE** Lotes 1–5 (17 singles + 5 doubles + 2 triples = **100** validated Q), free practice UI live; **guided practice live** (2 sets · prefer single + multi); mock/strategies not built yet.
+**Paso 3c (Part 7 Phase 1):** Original Part 7 Reading Comprehension — free intro (1 single × 3 Q), class bank **COMPLETE** Lotes 1–5 (17 singles + 5 doubles + 2 triples = **100** validated Q), free practice UI live; **guided practice live** (2 sets · prefer single + multi); **timed mock live** (54 Q · 55 min); Part 7 strategies not built yet.
 
 ## Preview locally
 
@@ -33,9 +33,10 @@ Open <http://localhost:8765/>.
 
 | Path | Needs code? | What you get |
 |------|-------------|--------------|
-| `reading.html` | No | Reading hub: Part 5 + 6 free / guided / mock live; Part 7 free + guided live, mock coming next |
+| `reading.html` | No | Reading hub: Part 5–7 free / guided / mock live |
 | `part7-practice.html` | **No** | Fixed 1-passage Part 7 intro (`TQB-P7-INTRO-001`, Q01–Q03), immediate feedback |
 | `part7-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 2 random sets from the 24-set class bank · prefer 1 single + 1 multi · no timer · session saved |
+| `part7-mock.html` | **Yes** `TOEIC-VENTURA-2026` | Timed mock: **~54 questions · 55 minutes**, singles then multis, no feedback until end, auto-submit at 0 |
 | `part6-practice.html` | **No** | Fixed 1-passage Part 6 intro (`TQB-P6-INTRO-001`, Q01–Q04), immediate feedback |
 | `part6-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 2 random passages (8 blanks) from the 20-passage class bank · no timer · session saved |
 | `part6-mock.html` | **Yes** `TOEIC-VENTURA-2026` | Timed mock: **4 passages · 16 blanks · 12 minutes**, no feedback until end, auto-submit at 0 |
@@ -78,6 +79,16 @@ Guided practice and the mock show an inline class-code gate if the device is loc
 - No timer; immediate feedback; skill / questionType titles stay hidden.
 - End screen: score + Review mistakes (yours / correct / why). Exact set-ID pair avoided when possible (like Part 6).
 - Progress: `ToeicProgress.recordPart7Session({ mode: "guided", setIds, ... })`.
+
+### Part 7 mock details
+
+- Timer: **55:00** (3300 seconds); early submit allowed; auto-submit when time hits 0.
+- Set construction (official-ish): pick **5 multi** sets (double/triple) = **25 Q**; pick singles that sum to **exactly 29 Q** (bank recipe: **3×3Q + 5×4Q** = 8 singles). Total **54**.
+- Order: **all singles first**, then multi sets (exam-like). Shuffle singles among themselves and multis among themselves; keep authored question order inside each set. Exact set-ID combination avoided when possible.
+- During the exam: no skill / questionType titles; displayed passage(s) switch when the active set changes (single / double / triple).
+- After submit: score X/54, percent, study focus by skill, Review mistakes panel.
+- Progress: `ToeicProgress.recordPart7Session({ mode: "mock", durationSeconds, timedOut, setIds, ... })`.
+
 
 ## Part 5 item bank (original workplace English)
 
@@ -134,7 +145,7 @@ Blank markers in passage text use `[[131]]` style for UI highlight.
 Part 7 = **Reading Comprehension**: single, double, and (later) triple workplace texts. Official full section = **54** Q (29 single + 25 multi). Phase 1 class target: ~**100** Q via lotes.
 
 - Intro (free, fixed, `purpose: free_intro_fixed`): `data/part7-intro.json` — **1** single email × **3** Q, ID `TQB-P7-INTRO-001` + `Q01`–`Q03`
-- Bank (guided + mocks later, class-validated): `data/part7-bank.json` — **Lotes 1–5 COMPLETE:** 17 singles + 5 doubles + 2 triples = **100** Q, IDs `TQB-P7-0001` … `0024` (**100 / 100**)
+- Bank (guided + mocks, class-validated): `data/part7-bank.json` — **Lotes 1–5 COMPLETE:** 17 singles + 5 doubles + 2 triples = **100** Q, IDs `TQB-P7-0001` … `0024` (**100 / 100**)
 - Validation: `data/part7-validation-rubric.md` + `data/part7-bank-validation.json`
 - Blueprint: `data/part7-blueprint.md`
 
@@ -150,7 +161,7 @@ Lote 5 (final) added: **schedule** (visitor shuttle), **notice** (elevator outag
 
 Schema: each set has `setType` (`single` | `double` | `triple`), `passages[]` (length 1/2/3), and `questions[]` with 4 options A–D.
 
-**Not built yet (Phase 1):** Part 7 mock or strategy cards. Guided practice is live.
+**Not built yet (Phase 1):** Part 7 strategy cards. Free / guided / timed mock are live.
 
 ## Short demo (free, Paso 2)
 
@@ -167,11 +178,11 @@ Schema: each set has `setType` (`single` | `double` | `triple`), `passages[]` (l
 | `styles.css` | Landing + dashboard + demo + Part 5/6/7 / Reading hub + strategy library |
 | `nav.js` | Landing toggle + shared app header |
 | `access.js` / `data/access.json` | Teacher class-code unlock |
-| `progress.js` | Demo + Part 5/6 guided/mock + Part 7 guided session storage |
+| `progress.js` | Demo + Part 5/6/7 guided/mock session storage |
 | `dashboard.html` / `dashboard.js` | Progress dashboard + class access panel |
 | `demo-test.html` / `demo-test.js` | Free Part 5–7 demo flow |
 | `data/demo-test.json` / `data/demo-items.json` | Demo config + original items |
-| `reading.html` | Reading hub (Part 5 + Part 6 free / guided / mock live; Part 7 free + guided live) |
+| `reading.html` | Reading hub (Part 5–7 free / guided / mock live) |
 | `part5-practice.html` / `part5-practice.js` | Free 10-item Part 5 set |
 | `part5-guided-practice.html` / `part5-guided-practice.js` | Class 15-item Part 5 drill |
 | `part5-mock.html` / `part5-mock.js` | Class timed Part 5 mock (30Q / 20 min) |
@@ -187,6 +198,7 @@ Schema: each set has `setType` (`single` | `double` | `triple`), `passages[]` (l
 | `data/part6-bank.json` | Guided + mock class bank (**80** validated — COMPLETE) |
 | `part7-practice.html` / `part7-practice.js` | Free 1-passage Part 7 intro |
 | `part7-guided-practice.html` / `part7-guided-practice.js` | Class 2-set Part 7 drill (prefer single + multi) |
+| `part7-mock.html` / `part7-mock.js` | Class timed Part 7 mock (~54Q / 55 min · singles then multis) |
 | `data/part7-intro.json` | Fixed free intro (1 single × 3 Q) |
 | `data/part7-bank.json` | Class bank Lotes 1–5 **COMPLETE** (**100** validated — 17 singles + 5 doubles + 2 triples) |
 | `data/part7-validation-rubric.md` | Teacher rubric (ES) for Part 7 class items |
