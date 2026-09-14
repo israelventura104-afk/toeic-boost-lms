@@ -3,53 +3,54 @@
   "validated_at": "2026-09-14",
   "rubric_file": "data/part7-validation-rubric.md",
   "threshold": "average >= 4.0; no dimension < 3",
-  "lote": "lote1+lote2",
-  "set_count": 8,
-  "question_count": 33,
-  "item_count": 33,
-  "validated_item_count": 33,
-  "target_ids": "TQB-P7-0001 … TQB-P7-0008",
+  "lote": "lote1+lote2+lote3",
+  "set_count": 12,
+  "question_count": 50,
+  "item_count": 50,
+  "validated_item_count": 50,
+  "target_ids": "TQB-P7-0001 … TQB-P7-0012",
   "counts": {
     "kept_as_is": 0,
     "rewritten": 0,
-    "new": 33,
+    "new": 50,
     "dropped": 0
   },
   "set_type_histogram": {
-    "single": 6,
-    "double": 2
+    "single": 9,
+    "double": 3
   },
   "question_type_histogram": {
-    "main_idea": 5,
-    "detail": 10,
-    "vocabulary": 5,
-    "inference": 7,
-    "not_except": 4,
-    "cross_reference": 2
+    "main_idea": 7,
+    "detail": 15,
+    "vocabulary": 8,
+    "inference": 10,
+    "not_except": 7,
+    "cross_reference": 3
   },
   "genre_histogram": {
     "email": 2,
-    "ad": 1,
-    "article": 1,
-    "chat": 1,
-    "notice": 2,
+    "ad": 2,
+    "article": 2,
+    "chat": 2,
+    "notice": 3,
     "memo": 1,
     "letter": 1,
-    "form": 1
+    "form": 1,
+    "invoice": 1
   },
   "difficulty_histogram": {
-    "2": 7,
-    "3": 16,
-    "4": 10
+    "2": 11,
+    "3": 24,
+    "4": 15
   },
   "mean_dimension_scores": {
     "format_authenticity": 5.0,
     "passage_quality": 5.0,
     "question_clarity": 5.0,
-    "distractors": 4.61,
+    "distractors": 4.64,
     "explanation": 5.0
   },
-  "overall_mean": 4.92,
+  "overall_mean": 4.93,
   "batches": [
     {
       "lote": "lote1",
@@ -98,6 +99,30 @@
         "cross_reference": 1
       },
       "notes": "3 singles (memo/letter/form) + 1 double (email+notice). All items pass rubric."
+    },
+    {
+      "lote": "lote3",
+      "date": "2026-09-14",
+      "set_ids": [
+        "TQB-P7-0009",
+        "TQB-P7-0010",
+        "TQB-P7-0011",
+        "TQB-P7-0012"
+      ],
+      "question_count": 17,
+      "set_types": {
+        "single": 3,
+        "double": 1
+      },
+      "question_types": {
+        "main_idea": 2,
+        "detail": 5,
+        "vocabulary": 3,
+        "inference": 3,
+        "not_except": 3,
+        "cross_reference": 1
+      },
+      "notes": "3 singles (article/ad/invoice) + 1 double (chat+notice bike commute). All items pass rubric."
     }
   ],
   "items": [
@@ -694,6 +719,312 @@
       "average": 4.8,
       "pass": true,
       "note": "Priya permit not stated"
+    },
+    {
+      "id": "TQB-P7-0009-Q01",
+      "set_id": "TQB-P7-0009",
+      "setType": "single",
+      "questionType": "detail",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "reserve by 5pm day before",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0009-Q02",
+      "set_id": "TQB-P7-0009",
+      "setType": "single",
+      "questionType": "inference",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "note": "night shift vs 5pm cutoff",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 4.8,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0009-Q03",
+      "set_id": "TQB-P7-0009",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "reclaimed = recovered for new use",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0009-Q04",
+      "set_id": "TQB-P7-0009",
+      "setType": "single",
+      "questionType": "main_idea",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "pilot success + expansion with adjustments",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0010-Q01",
+      "set_id": "TQB-P7-0010",
+      "setType": "single",
+      "questionType": "main_idea",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "autumn fleet maintenance package",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0010-Q02",
+      "set_id": "TQB-P7-0010",
+      "setType": "single",
+      "questionType": "detail",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "$89 per vehicle",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0010-Q03",
+      "set_id": "TQB-P7-0010",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "complimentary = free",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0010-Q04",
+      "set_id": "TQB-P7-0010",
+      "setType": "single",
+      "questionType": "not_except",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "note": "NOT evening appts for every fleet",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 4.8,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0011-Q01",
+      "set_id": "TQB-P7-0011",
+      "setType": "single",
+      "questionType": "detail",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "total $6784",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0011-Q02",
+      "set_id": "TQB-P7-0011",
+      "setType": "single",
+      "questionType": "inference",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "pay by Sept 15 for 2% discount",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0011-Q03",
+      "set_id": "TQB-P7-0011",
+      "setType": "single",
+      "questionType": "not_except",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "note": "NOT charged: wooden rack removal",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 4.8,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0011-Q04",
+      "set_id": "TQB-P7-0011",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "at no extra charge",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0012-Q01",
+      "set_id": "TQB-P7-0012",
+      "setType": "double",
+      "questionType": "detail",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "stipend closes Friday noon",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0012-Q02",
+      "set_id": "TQB-P7-0012",
+      "setType": "double",
+      "questionType": "detail",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "Rack A holds 40",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0012-Q03",
+      "set_id": "TQB-P7-0012",
+      "setType": "double",
+      "questionType": "inference",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "note": "Priya used stipend this year",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 4.8,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0012-Q04",
+      "set_id": "TQB-P7-0012",
+      "setType": "double",
+      "questionType": "cross_reference",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "note": "cross-ref: Rack B offline Tue → A or Lot C",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 4.8,
+      "pass": true
+    },
+    {
+      "id": "TQB-P7-0012-Q05",
+      "set_id": "TQB-P7-0012",
+      "setType": "double",
+      "questionType": "not_except",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "note": "NOT instant commute cards",
+      "disposition": "new",
+      "lote": "lote3",
+      "average": 5.0,
+      "pass": true
     }
   ]
 }

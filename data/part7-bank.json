@@ -4,35 +4,36 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "set_count": 8,
-  "question_count": 33,
-  "item_count": 33,
+  "set_count": 12,
+  "question_count": 50,
+  "item_count": 50,
   "validation": {
     "rubric": "data/part7-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Lotes 1–2 curated for Teacher Israel Ventura. Original workplace English only (not ETS material). 8 sets / 33 questions. Lote 1: email, ad, article, chat+notice. Lote 2: memo, letter, form, email+notice."
+    "notes": "Lotes 1–3 curated for Teacher Israel Ventura. Original workplace English only (not ETS material). 12 sets / 50 questions. Lote 1: email, ad, article, chat+notice. Lote 2: memo, letter, form, email+notice. Lote 3: article, ad, invoice, chat+notice."
   },
   "set_type_counts": {
-    "single": 6,
-    "double": 2
+    "single": 9,
+    "double": 3
   },
   "question_type_counts": {
-    "main_idea": 5,
-    "detail": 10,
-    "vocabulary": 5,
-    "inference": 7,
-    "not_except": 4,
-    "cross_reference": 2
+    "main_idea": 7,
+    "detail": 15,
+    "vocabulary": 8,
+    "inference": 10,
+    "not_except": 7,
+    "cross_reference": 3
   },
   "genre_counts": {
     "email": 2,
-    "ad": 1,
-    "article": 1,
-    "chat": 1,
-    "notice": 2,
+    "ad": 2,
+    "article": 2,
+    "chat": 2,
+    "notice": 3,
     "memo": 1,
     "letter": 1,
-    "form": 1
+    "form": 1,
+    "invoice": 1
   },
   "sets": [
     {
@@ -1144,6 +1145,576 @@
           "correctAnswer": "Priya will pick up the Lot D parking permit",
           "explanation": "A–C appear in the email or notice. Priya has printed catalogs; neither text assigns her to pick up the parking permit.",
           "commonMistake": "Assuming Priya handles all logistics because she has the catalogs."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0009",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "article",
+      "title": "Hot-desking pilot results at Northvale Labs",
+      "difficulty": 3,
+      "workplaceTopic": "HR / Facilities",
+      "lote": "lote3",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "article",
+          "heading": "Northvale Labs News — Desk-booking pilot wraps up",
+          "body": "Northvale Labs has completed a three-month pilot of a desk-booking system on floors 4 and 5. Under the program, employees reserve a workstation through the DeskFlex app by 5:00 p.m. the day before. Unclaimed desks are released at 9:30 a.m. for same-day booking.\n\nFacilities manager Carla Nguyen reported that average desk occupancy rose from 61 percent to 78 percent, and the company reclaimed twelve unused private offices for collaboration rooms. Survey responses were mostly positive, though night-shift lab technicians said the 5:00 p.m. cutoff left them with fewer morning options.\n\nLeadership will expand DeskFlex to floor 3 in January but will keep dedicated desks for the night-shift team. Training sessions for new users will be held during the first week of December."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0009-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the article, by what time must employees reserve a desk for the following day?",
+          "options": [
+            {
+              "key": "A",
+              "text": "9:30 a.m."
+            },
+            {
+              "key": "B",
+              "text": "5:00 p.m."
+            },
+            {
+              "key": "C",
+              "text": "Noon"
+            },
+            {
+              "key": "D",
+              "text": "The first week of December"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "5:00 p.m.",
+          "explanation": "Employees reserve through DeskFlex by 5:00 p.m. the day before. 9:30 a.m. is when unclaimed desks are released.",
+          "commonMistake": "Confusing the reservation deadline with the 9:30 a.m. release time for unclaimed desks."
+        },
+        {
+          "id": "TQB-P7-0009-Q02",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What can be inferred about night-shift lab technicians?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They will lose all assigned desks when DeskFlex expands to floor 3."
+            },
+            {
+              "key": "B",
+              "text": "They preferred the pilot more than any other group surveyed."
+            },
+            {
+              "key": "C",
+              "text": "Their work schedule made the advance booking deadline inconvenient."
+            },
+            {
+              "key": "D",
+              "text": "They already use DeskFlex successfully on floor 3."
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Their work schedule made the advance booking deadline inconvenient.",
+          "explanation": "They said the 5:00 p.m. cutoff left fewer morning options, and leadership will keep dedicated desks for them—implying the booking window conflicted with night-shift hours.",
+          "commonMistake": "Assuming they will lose desks, when the article says dedicated desks will be kept for them."
+        },
+        {
+          "id": "TQB-P7-0009-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the article, the word “reclaimed” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "purchased for the first time"
+            },
+            {
+              "key": "B",
+              "text": "recovered for a new use"
+            },
+            {
+              "key": "C",
+              "text": "permanently closed to staff"
+            },
+            {
+              "key": "D",
+              "text": "rented to another company"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "recovered for a new use",
+          "explanation": "Twelve unused private offices were recovered and turned into collaboration rooms—taken back for a different purpose.",
+          "commonMistake": "Choosing “permanently closed,” which contradicts converting them into collaboration rooms."
+        },
+        {
+          "id": "TQB-P7-0009-Q04",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the main idea of the article?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Northvale Labs is ending remote work and requiring daily attendance."
+            },
+            {
+              "key": "B",
+              "text": "A desk-booking pilot improved occupancy and will expand with some adjustments."
+            },
+            {
+              "key": "C",
+              "text": "Floor 3 will replace DeskFlex with assigned seating next month."
+            },
+            {
+              "key": "D",
+              "text": "Carla Nguyen is leaving her role after the pilot ends."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "A desk-booking pilot improved occupancy and will expand with some adjustments.",
+          "explanation": "The article reports higher occupancy, space recovered for collaboration rooms, expansion to floor 3, and dedicated desks kept for night-shift staff.",
+          "commonMistake": "Focusing only on the night-shift exception and missing the overall positive pilot outcome."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0010",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "ad",
+      "title": "FleetCare Pro corporate maintenance promo",
+      "difficulty": 2,
+      "workplaceTopic": "Marketing / Fleet services",
+      "lote": "lote3",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "ad",
+          "heading": "FleetCare Pro — Keep your company vehicles on the road",
+          "body": "Tired of last-minute repair surprises? FleetCare Pro offers scheduled maintenance for corporate fleets of 5–200 vehicles.\n\nAutumn Business Package (valid Sept 1 – Nov 30):\n• Oil change, tire rotation, and multi-point inspection — $89 per vehicle\n• Free loaner car for repairs lasting more than four hours\n• Priority booking window: weekdays 7:00 a.m. – 9:00 a.m.\n• 10% discount on brake service when you enroll three or more vehicles\n\nMobile vans available within 25 miles of our Riverside depot. Evening appointments after 6:00 p.m. are offered only for fleets of 20+ vehicles.\n\nCall 555-0148 or visit fleetcarepro.com/business. New accounts receive a complimentary cabin air filter on the first visit."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0010-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the purpose of this advertisement?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To sell new company cars at the Riverside depot"
+            },
+            {
+              "key": "B",
+              "text": "To promote a seasonal corporate fleet maintenance package"
+            },
+            {
+              "key": "C",
+              "text": "To announce that FleetCare Pro is closing evening service"
+            },
+            {
+              "key": "D",
+              "text": "To recruit mechanics for mobile repair vans"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "To promote a seasonal corporate fleet maintenance package",
+          "explanation": "The ad markets the Autumn Business Package for corporate fleets with pricing, perks, and enrollment details.",
+          "commonMistake": "Thinking it sells vehicles rather than maintenance services."
+        },
+        {
+          "id": "TQB-P7-0010-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "How much does the autumn package cost per vehicle?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$25"
+            },
+            {
+              "key": "B",
+              "text": "$89"
+            },
+            {
+              "key": "C",
+              "text": "10% of brake service"
+            },
+            {
+              "key": "D",
+              "text": "It is free for new accounts"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "$89",
+          "explanation": "The package (oil change, tire rotation, multi-point inspection) is listed at $89 per vehicle. New accounts get a free cabin air filter, not a free package.",
+          "commonMistake": "Assuming the complimentary air filter means the whole package is free."
+        },
+        {
+          "id": "TQB-P7-0010-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the advertisement, the word “complimentary” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "required"
+            },
+            {
+              "key": "B",
+              "text": "expensive"
+            },
+            {
+              "key": "C",
+              "text": "provided at no charge"
+            },
+            {
+              "key": "D",
+              "text": "available only online"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "provided at no charge",
+          "explanation": "New accounts receive a complimentary cabin air filter—meaning it is given free on the first visit.",
+          "commonMistake": "Confusing “complimentary” with “complementary” (something that goes well with something else)."
+        },
+        {
+          "id": "TQB-P7-0010-Q04",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "Which of the following is NOT offered under the Autumn Business Package?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A free loaner car when repairs take more than four hours"
+            },
+            {
+              "key": "B",
+              "text": "Priority booking on weekday mornings"
+            },
+            {
+              "key": "C",
+              "text": "A 10% brake-service discount when enrolling three or more vehicles"
+            },
+            {
+              "key": "D",
+              "text": "Evening appointments after 6:00 p.m. for every fleet size"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Evening appointments after 6:00 p.m. for every fleet size",
+          "explanation": "Evening appointments after 6:00 p.m. are only for fleets of 20+ vehicles, not every fleet. A–C are explicitly included.",
+          "commonMistake": "Missing the 20+ vehicle restriction on evening appointments."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0011",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "invoice",
+      "title": "Invoice for warehouse shelving installation",
+      "difficulty": 3,
+      "workplaceTopic": "Purchasing / Facilities",
+      "lote": "lote3",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "invoice",
+          "heading": "INVOICE — Apex Rack Systems",
+          "body": "Invoice No.: ARS-3391\nBill to: Meridian Foods Distribution\nShip / Install to: Building C Loading Bay, 820 Industrial Parkway\nInvoice date: September 8\nPayment due: September 28 (Net 20)\nPurchase order: PO-MF-774\n\nDescription                          Qty    Unit     Amount\nHeavy-duty bay frames (12 ft)         8     $420    $3,360\nWire deck panels                     32      $55    $1,760\nOn-site installation labor            1   $1,200    $1,200\nSafety end-caps (set of 50)           2      $40       $80\n                                        Subtotal   $6,400\n                                   Tax (6%)         $384\n                                      TOTAL      $6,784\n\nNotes: Installation completed Sept 7. Old wooden racks were removed at no extra charge. A 2% early-payment discount applies if paid by September 15. Questions: billing@apexrack.com or 555-2290."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0011-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "What is the total amount due on invoice ARS-3391?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$6,400"
+            },
+            {
+              "key": "B",
+              "text": "$384"
+            },
+            {
+              "key": "C",
+              "text": "$6,784"
+            },
+            {
+              "key": "D",
+              "text": "$1,200"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "$6,784",
+          "explanation": "Subtotal is $6,400 plus 6% tax ($384), totaling $6,784.",
+          "commonMistake": "Selecting the subtotal ($6,400) instead of the tax-inclusive total."
+        },
+        {
+          "id": "TQB-P7-0011-Q02",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What will Meridian Foods most likely do to receive the early-payment discount?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Pay the invoice by September 15"
+            },
+            {
+              "key": "B",
+              "text": "Order additional wire deck panels before September 28"
+            },
+            {
+              "key": "C",
+              "text": "Request removal of the wooden racks again"
+            },
+            {
+              "key": "D",
+              "text": "Change the purchase order number"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Pay the invoice by September 15",
+          "explanation": "A 2% early-payment discount applies if paid by September 15. The Net 20 due date is September 28 without that discount.",
+          "commonMistake": "Confusing the regular due date (Sept 28) with the early-payment deadline (Sept 15)."
+        },
+        {
+          "id": "TQB-P7-0011-Q03",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "Which of the following is NOT listed as a charged item on the invoice?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Heavy-duty bay frames"
+            },
+            {
+              "key": "B",
+              "text": "On-site installation labor"
+            },
+            {
+              "key": "C",
+              "text": "Removal of old wooden racks"
+            },
+            {
+              "key": "D",
+              "text": "Safety end-caps"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Removal of old wooden racks",
+          "explanation": "Notes say old wooden racks were removed at no extra charge, so removal is not a billed line item. A, B, and D appear in the item table.",
+          "commonMistake": "Assuming every service mentioned in the notes was billed."
+        },
+        {
+          "id": "TQB-P7-0011-Q04",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the invoice notes, the phrase “at no extra charge” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "for an additional fee"
+            },
+            {
+              "key": "B",
+              "text": "without adding to the bill"
+            },
+            {
+              "key": "C",
+              "text": "only after tax is applied"
+            },
+            {
+              "key": "D",
+              "text": "if the customer complains"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "without adding to the bill",
+          "explanation": "Removal of old wooden racks cost nothing beyond the listed line items—no added amount on the invoice.",
+          "commonMistake": "Reading it as “an extra charge,” which is the opposite meaning."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0012",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "double",
+      "genre": "chat",
+      "title": "Bike-to-work stipend chat and parking notice",
+      "difficulty": 4,
+      "workplaceTopic": "HR / Facilities / Commute benefits",
+      "lote": "lote3",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "chat",
+          "heading": "Team chat — Commute benefits",
+          "body": "Maya Chen (HR): Reminder — Bike-to-Work stipend applications close Friday at noon. Upload a photo of your bike lock receipt in the portal under “Active Commute.”\nOmar Siddiq: Does the $150 cover a new helmet too, or only locks?\nMaya Chen: Helmets, lights, and locks all count. Instant commute cards do NOT.\nPriya Nair: I already got approved last month. Can I apply again this quarter?\nMaya Chen: One stipend per employee per calendar year. Priya, you’re set until January.\nOmar Siddiq: Also — is Covered Bike Rack B still closed?\nMaya Chen: Check the facilities notice. Rack A is fine; I think B has a schedule change this week."
+        },
+        {
+          "label": "B",
+          "genre": "notice",
+          "heading": "Facilities Notice — Covered bicycle parking",
+          "body": "Effective Monday–Wednesday this week, Covered Bike Rack B (east entrance) will be offline while the canopy roof is resealed. Please use Covered Bike Rack A (west entrance) or the open racks by Lot C.\n\nRack A capacity: 40 bikes. Arrive before 8:15 a.m. for the best chance of a spot; overflow bikes may be tagged and moved to Lot C open racks after 9:00 a.m.\n\nHelmets and small gear may be stored in the new lockers beside Rack A (badge access, first-come). Do not chain bikes to handrails or the loading dock.\n\nQuestions: facilities@greenfieldco.com · Ext. 2201"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0012-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the chat, when do Bike-to-Work stipend applications close?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Monday at 8:15 a.m."
+            },
+            {
+              "key": "B",
+              "text": "Friday at noon"
+            },
+            {
+              "key": "C",
+              "text": "After 9:00 a.m. Wednesday"
+            },
+            {
+              "key": "D",
+              "text": "In January only"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Friday at noon",
+          "explanation": "Maya states applications close Friday at noon. January refers to when Priya can apply again.",
+          "commonMistake": "Mixing the stipend deadline with bike-rack timing from the notice."
+        },
+        {
+          "id": "TQB-P7-0012-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the notice, how many bikes can Covered Bike Rack A hold?",
+          "options": [
+            {
+              "key": "A",
+              "text": "12"
+            },
+            {
+              "key": "B",
+              "text": "20"
+            },
+            {
+              "key": "C",
+              "text": "40"
+            },
+            {
+              "key": "D",
+              "text": "150"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "40",
+          "explanation": "The notice states Rack A capacity is 40 bikes.",
+          "commonMistake": "Confusing capacity with the $150 stipend amount from the chat."
+        },
+        {
+          "id": "TQB-P7-0012-Q03",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What is suggested about Priya Nair?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She can submit a second stipend application this week."
+            },
+            {
+              "key": "B",
+              "text": "She has already used her stipend for this calendar year."
+            },
+            {
+              "key": "C",
+              "text": "She works only at the east entrance near Rack B."
+            },
+            {
+              "key": "D",
+              "text": "She needs to upload a lock receipt by Friday noon."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "She has already used her stipend for this calendar year.",
+          "explanation": "Priya was approved last month; Maya says one stipend per employee per year and that Priya is set until January.",
+          "commonMistake": "Thinking she must still apply by Friday because Maya’s reminder was sent to the whole chat."
+        },
+        {
+          "id": "TQB-P7-0012-Q04",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "Based on the chat and the notice, what should Omar do if he bikes to work on Tuesday?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Use Covered Bike Rack B at the east entrance as usual"
+            },
+            {
+              "key": "B",
+              "text": "Chain his bike to the loading-dock handrail until Rack B reopens"
+            },
+            {
+              "key": "C",
+              "text": "Use Covered Bike Rack A or the open racks by Lot C because Rack B is offline"
+            },
+            {
+              "key": "D",
+              "text": "Skip applying for the stipend until Rack B’s canopy is resealed"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Use Covered Bike Rack A or the open racks by Lot C because Rack B is offline",
+          "explanation": "Omar asks if Rack B is still closed; Maya points him to the notice. The notice confirms Rack B is offline Monday–Wednesday and directs riders to Rack A or Lot C open racks.",
+          "commonMistake": "Answering from the chat alone without checking the notice’s Rack B closure dates."
+        },
+        {
+          "id": "TQB-P7-0012-Q05",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "Which of the following is NOT covered by the Bike-to-Work stipend, according to the chat?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Helmets"
+            },
+            {
+              "key": "B",
+              "text": "Lights"
+            },
+            {
+              "key": "C",
+              "text": "Locks"
+            },
+            {
+              "key": "D",
+              "text": "Instant commute cards"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Instant commute cards",
+          "explanation": "Maya says helmets, lights, and locks all count, but instant commute cards do NOT.",
+          "commonMistake": "Missing Maya’s explicit exclusion of instant commute cards."
         }
       ]
     }
