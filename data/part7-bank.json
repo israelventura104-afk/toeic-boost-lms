@@ -4,32 +4,35 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "set_count": 4,
-  "question_count": 16,
-  "item_count": 16,
+  "set_count": 8,
+  "question_count": 33,
+  "item_count": 33,
   "validation": {
     "rubric": "data/part7-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Lote 1 curated for Teacher Israel Ventura. Original workplace English only (not ETS material). 3 single sets + 1 double set = 16 questions. Genres: email, ad, article, chat+notice."
+    "notes": "Lotes 1–2 curated for Teacher Israel Ventura. Original workplace English only (not ETS material). 8 sets / 33 questions. Lote 1: email, ad, article, chat+notice. Lote 2: memo, letter, form, email+notice."
   },
   "set_type_counts": {
-    "single": 3,
-    "double": 1
+    "single": 6,
+    "double": 2
   },
   "question_type_counts": {
-    "main_idea": 3,
-    "detail": 5,
-    "vocabulary": 2,
-    "inference": 3,
-    "not_except": 2,
-    "cross_reference": 1
+    "main_idea": 5,
+    "detail": 10,
+    "vocabulary": 5,
+    "inference": 7,
+    "not_except": 4,
+    "cross_reference": 2
   },
   "genre_counts": {
-    "email": 1,
+    "email": 2,
     "ad": 1,
     "article": 1,
     "chat": 1,
-    "notice": 1
+    "notice": 2,
+    "memo": 1,
+    "letter": 1,
+    "form": 1
   },
   "sets": [
     {
@@ -571,6 +574,576 @@
           "correctAnswer": "Facilities will bring an extra HDMI cable automatically",
           "explanation": "Mia asks to invite Facilities for an HDMI cable, but neither text confirms automatic delivery. A, B, and D are explicit in the chat or notice.",
           "commonMistake": "Treating Mia’s request as a confirmed Facilities action."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0005",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "memo",
+      "title": "Cafeteria closure for floor renovation",
+      "difficulty": 2,
+      "workplaceTopic": "Facilities / Workplace services",
+      "lote": "lote2",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "memo",
+          "heading": "MEMO — Cafeteria closure for floor renovation",
+          "body": "TO: All Cedar Heights employees\nFROM: Facilities Operations\nDATE: September 8\nSUBJECT: Cafeteria closure for floor renovation\n\nThe employee cafeteria on Level 2 will be closed from Monday, September 15 through Friday, September 26 for flooring replacement and new serving-line equipment.\n\nTemporary options during the closure:\n• Food trucks in the west parking lot, 11:30 a.m.–1:30 p.m. weekdays\n• Microwave stations and seating in the Level 1 lobby lounge\n• 10% discount at Bistro North across the street with your employee badge\n\nVending machines on Levels 3 and 5 remain available. Catered meetings already booked in the cafeteria for those two weeks will be moved to Conference Suite B; organizers will receive a calendar update by September 10.\n\nPlease contact facilities@cedarheights.example with dietary or accessibility needs for the temporary setup.\n\nFacilities Operations"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0005-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the main purpose of this memo?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To announce a temporary cafeteria closure and alternatives"
+            },
+            {
+              "key": "B",
+              "text": "To permanently close the Level 1 lobby lounge"
+            },
+            {
+              "key": "C",
+              "text": "To advertise a new restaurant owned by Cedar Heights"
+            },
+            {
+              "key": "D",
+              "text": "To require all employees to eat only from vending machines"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "To announce a temporary cafeteria closure and alternatives",
+          "explanation": "The memo explains a two-week Level 2 cafeteria closure for renovation and lists temporary food options and meeting moves.",
+          "commonMistake": "Treating the Bistro North discount as the main point instead of the closure announcement."
+        },
+        {
+          "id": "TQB-P7-0005-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "When will the cafeteria be closed?",
+          "options": [
+            {
+              "key": "A",
+              "text": "September 8 only"
+            },
+            {
+              "key": "B",
+              "text": "September 10 through September 15"
+            },
+            {
+              "key": "C",
+              "text": "September 15 through September 26"
+            },
+            {
+              "key": "D",
+              "text": "Every weekend in September"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "September 15 through September 26",
+          "explanation": "The memo states closure from Monday, September 15 through Friday, September 26. September 8 is the memo date; September 10 is the calendar-update deadline.",
+          "commonMistake": "Confusing the memo date or the September 10 update deadline with the closure window."
+        },
+        {
+          "id": "TQB-P7-0005-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the memo, the word “temporary” most nearly means",
+          "options": [
+            {
+              "key": "A",
+              "text": "permanent"
+            },
+            {
+              "key": "B",
+              "text": "for a limited time"
+            },
+            {
+              "key": "C",
+              "text": "expensive"
+            },
+            {
+              "key": "D",
+              "text": "outdoor only"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "for a limited time",
+          "explanation": "“Temporary options during the closure” refers to arrangements that last only while the cafeteria is closed (Sept 15–26).",
+          "commonMistake": "Assuming temporary options are only the outdoor food trucks."
+        },
+        {
+          "id": "TQB-P7-0005-Q04",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What will happen to catered meetings that were booked in the cafeteria during the closure?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They will be canceled without notice"
+            },
+            {
+              "key": "B",
+              "text": "They will be moved to Conference Suite B"
+            },
+            {
+              "key": "C",
+              "text": "They will be held in the west parking lot"
+            },
+            {
+              "key": "D",
+              "text": "They must be rescheduled after September 26 by the organizers"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "They will be moved to Conference Suite B",
+          "explanation": "The memo says booked catered meetings will be moved to Conference Suite B, with calendar updates by September 10.",
+          "commonMistake": "Assuming organizers must reschedule themselves; Facilities is relocating the bookings."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0006",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "letter",
+      "title": "Quality apology for misaligned bottle labels",
+      "difficulty": 3,
+      "workplaceTopic": "Purchasing / Quality assurance",
+      "lote": "lote2",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "letter",
+          "heading": "Letter from ClearLabel Packaging Quality Manager",
+          "body": "Dear Ms. Okonkwo,\n\nThank you for your letter of August 28 describing the misaligned labels on the last shipment of Apex bottles (PO-7731).\n\nWe inspected the returned samples and confirmed that a printer calibration error on Line B caused the defect. Line B has been recalibrated, and we have added a double-check step before packaging.\n\nReplacement bottles for the full order of 2,400 units will ship tomorrow via overnight freight at no charge. You should receive them by Thursday. We will also credit your account $180 for the return shipping you arranged.\n\nIf you prefer a partial restock instead, please notify me by Tuesday at noon. We value your partnership with ClearLabel Packaging and apologize for the disruption to your production schedule.\n\nSincerely,\nJonas Feld\nQuality Manager, ClearLabel Packaging"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0006-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "What caused the labeling problem, according to the letter?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A shortage of Apex bottle caps"
+            },
+            {
+              "key": "B",
+              "text": "A printer calibration error on Line B"
+            },
+            {
+              "key": "C",
+              "text": "Incorrect shipping addresses on PO-7731"
+            },
+            {
+              "key": "D",
+              "text": "Damage during overnight freight"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "A printer calibration error on Line B",
+          "explanation": "Feld writes that inspection confirmed a printer calibration error on Line B caused the defect.",
+          "commonMistake": "Blaming overnight freight, which is how the replacement will ship, not the cause."
+        },
+        {
+          "id": "TQB-P7-0006-Q02",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What must Ms. Okonkwo do if she wants a partial restock instead of a full replacement?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Pay the $180 return-shipping credit first"
+            },
+            {
+              "key": "B",
+              "text": "Notify Jonas Feld by Tuesday at noon"
+            },
+            {
+              "key": "C",
+              "text": "Recalibrate Line B herself"
+            },
+            {
+              "key": "D",
+              "text": "Cancel PO-7731 permanently"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Notify Jonas Feld by Tuesday at noon",
+          "explanation": "The letter offers a partial restock if she notifies Feld by Tuesday at noon; otherwise the full 2,400-unit replacement proceeds.",
+          "commonMistake": "Thinking she must cancel the purchase order to change the restock size."
+        },
+        {
+          "id": "TQB-P7-0006-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the letter, the word “credit” most nearly means",
+          "options": [
+            {
+              "key": "A",
+              "text": "a loan application"
+            },
+            {
+              "key": "B",
+              "text": "an amount returned to a customer’s account"
+            },
+            {
+              "key": "C",
+              "text": "a job recommendation"
+            },
+            {
+              "key": "D",
+              "text": "a packaging design award"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "an amount returned to a customer’s account",
+          "explanation": "“Credit your account $180” means ClearLabel will put $180 back on Ms. Okonkwo’s account for return shipping.",
+          "commonMistake": "Reading “credit” as praise or a loan rather than an account adjustment."
+        },
+        {
+          "id": "TQB-P7-0006-Q04",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the main purpose of this letter?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To deny responsibility for the labeling defect"
+            },
+            {
+              "key": "B",
+              "text": "To explain the cause of a defect and offer replacements and a credit"
+            },
+            {
+              "key": "C",
+              "text": "To request a larger future order of Apex bottles"
+            },
+            {
+              "key": "D",
+              "text": "To announce the permanent shutdown of Line B"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "To explain the cause of a defect and offer replacements and a credit",
+          "explanation": "Feld confirms the cause, describes corrective steps, promises free overnight replacement, and offers a $180 credit plus an optional partial restock.",
+          "commonMistake": "Focusing only on the apology tone and missing the concrete remedies."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0007",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "form",
+      "title": "Tuition assistance request form",
+      "difficulty": 3,
+      "workplaceTopic": "HR / Training",
+      "lote": "lote2",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "form",
+          "heading": "BrightPath Consulting — Tuition Assistance Request Form",
+          "body": "Employee name: Lena Park\nDepartment: Client Analytics\nCourse title: Advanced SQL for Business Reporting\nProvider: Metro Tech Institute\nCourse dates: Oct 6 – Dec 12 (Tuesday evenings)\nTuition: $1,280\nEmployee contribution (per policy): 25% = $320\nAmount requested from BrightPath: $960\n\nEligibility checklist (all required boxes must be checked):\n☑ Full-time employee for at least 12 months\n☑ Course related to current role or approved career path\n☑ Manager approval attached\n☐ Prior tuition assistance repaid if employee left within 12 months of reimbursement (marked N/A — first request)\n\nInstructions: Submit this form and the course syllabus to hr-learning@brightpath.example at least 15 business days before the course start date. Reimbursement is paid after a grade of B or higher (or Pass) is documented. Maximum annual assistance: $2,000 per employee.\n\nManager signature: R. Soto · Date: Sep 2"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0007-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "How much tuition assistance is Lena Park requesting from BrightPath?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$320"
+            },
+            {
+              "key": "B",
+              "text": "$960"
+            },
+            {
+              "key": "C",
+              "text": "$1,280"
+            },
+            {
+              "key": "D",
+              "text": "$2,000"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "$960",
+          "explanation": "The form lists amount requested from BrightPath as $960. $320 is the employee’s 25% share; $1,280 is full tuition; $2,000 is the annual maximum.",
+          "commonMistake": "Selecting full tuition or the annual cap instead of the requested company share."
+        },
+        {
+          "id": "TQB-P7-0007-Q02",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "According to the form instructions, which of the following is NOT required before reimbursement is paid?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Submitting the form and syllabus at least 15 business days before the course starts"
+            },
+            {
+              "key": "B",
+              "text": "Documenting a grade of B or higher (or Pass)"
+            },
+            {
+              "key": "C",
+              "text": "Manager approval attached"
+            },
+            {
+              "key": "D",
+              "text": "Completing the course on weekday mornings only"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Completing the course on weekday mornings only",
+          "explanation": "A–C appear in the eligibility checklist or instructions. The course is listed as Tuesday evenings; nothing requires morning-only attendance.",
+          "commonMistake": "Assuming evening courses are ineligible because many workplaces favor daytime training."
+        },
+        {
+          "id": "TQB-P7-0007-Q03",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What can be inferred about Lena Park’s tuition-assistance history at BrightPath?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She has already used the full $2,000 annual maximum"
+            },
+            {
+              "key": "B",
+              "text": "This appears to be her first tuition-assistance request"
+            },
+            {
+              "key": "C",
+              "text": "She left the company within the past 12 months"
+            },
+            {
+              "key": "D",
+              "text": "She failed to get manager approval"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "This appears to be her first tuition-assistance request",
+          "explanation": "The repayment checkbox is marked N/A with the note “first request,” and manager approval is checked — so this is her first assistance request.",
+          "commonMistake": "Misreading the N/A repayment line as evidence she left the company."
+        },
+        {
+          "id": "TQB-P7-0007-Q04",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the form, the word “reimbursement” most nearly means",
+          "options": [
+            {
+              "key": "A",
+              "text": "a warning before dismissal"
+            },
+            {
+              "key": "B",
+              "text": "payment that covers an approved expense after it is incurred"
+            },
+            {
+              "key": "C",
+              "text": "a schedule of evening classes"
+            },
+            {
+              "key": "D",
+              "text": "a temporary employee badge"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "payment that covers an approved expense after it is incurred",
+          "explanation": "Reimbursement is paid after a qualifying grade is documented — money returned/paid for the approved course cost.",
+          "commonMistake": "Confusing reimbursement with advance payment before the course begins."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0008",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "double",
+      "genre": "email",
+      "title": "Trade-show booth setup and parking",
+      "difficulty": 4,
+      "workplaceTopic": "Sales / Events",
+      "lote": "lote2",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "email",
+          "heading": "Email — Thursday setup checklist",
+          "body": "From: Dana Ruiz\nTo: Booth crew — GreenLeaf Expo\nSubject: Thursday setup checklist\n\nTeam — Reminder that our booth (Hall C, Booth 214) must be ready by 8:00 a.m. Thursday for the buyer walkthrough. Please arrive by 6:30 a.m. with badges. Marcus is bringing the demo tablets; Priya has the printed catalogs.\n\nI requested two extra power strips from Facilities — confirmation #EX-902. If they are not at the booth by 7:00 a.m., call the service desk at extension 4400.\n\nAlso note: overnight parking for the van is Lot D only this week (see attached venue notice). Do not leave the van in Lot A after 10:00 p.m. Wednesday.\n\nThanks,\nDana"
+        },
+        {
+          "label": "B",
+          "genre": "notice",
+          "heading": "GREENLEAF EXPO — Exhibitor logistics notice",
+          "body": "Week of October 20\n\nParking:\n• Lot A (main entrance): Exhibitor unloading Wednesday 4:00–10:00 p.m. only. Vehicles must exit Lot A by 10:00 p.m. Overnight parking is not allowed in Lot A.\n• Lot D (south): Overnight exhibitor parking permitted with a dashboard permit. Permits available at the Exhibitor Services desk (Hall B lobby) until 9:00 p.m. Wednesday.\n\nHall access Thursday:\nDoors open for exhibitors at 6:00 a.m. Buyer walkthrough begins at 8:00 a.m. Public show floor opens at 9:30 a.m.\n\nElectrical / extras:\nLast-minute power or furniture requests must be filed at Exhibitor Services by 7:00 a.m. Thursday. Requests after that time cannot be guaranteed before the walkthrough.\n\nQuestions: logistics@greenleafexpo.example"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0008-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to Dana’s email, where is the company’s booth located?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hall B lobby"
+            },
+            {
+              "key": "B",
+              "text": "Hall C, Booth 214"
+            },
+            {
+              "key": "C",
+              "text": "Lot D, space 4400"
+            },
+            {
+              "key": "D",
+              "text": "Exhibitor Services desk"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Hall C, Booth 214",
+          "explanation": "Dana reminds the crew that the booth is Hall C, Booth 214. Hall B is where permits are picked up.",
+          "commonMistake": "Confusing the Exhibitor Services location (Hall B) with the booth location."
+        },
+        {
+          "id": "TQB-P7-0008-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the venue notice, when do exhibitor hall doors open on Thursday?",
+          "options": [
+            {
+              "key": "A",
+              "text": "6:00 a.m."
+            },
+            {
+              "key": "B",
+              "text": "6:30 a.m."
+            },
+            {
+              "key": "C",
+              "text": "8:00 a.m."
+            },
+            {
+              "key": "D",
+              "text": "9:30 a.m."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "6:00 a.m.",
+          "explanation": "The notice states doors open for exhibitors at 6:00 a.m. Dana asks the crew to arrive by 6:30; the walkthrough is at 8:00; public opening is 9:30.",
+          "commonMistake": "Using Dana’s arrival time (6:30) instead of the official door-open time."
+        },
+        {
+          "id": "TQB-P7-0008-Q03",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "Why does Dana tell the crew not to leave the van in Lot A after 10:00 p.m. Wednesday?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Lot A closes permanently after the expo"
+            },
+            {
+              "key": "B",
+              "text": "Overnight parking in Lot A is not allowed"
+            },
+            {
+              "key": "C",
+              "text": "Lot A is reserved only for buyer walkthrough guests"
+            },
+            {
+              "key": "D",
+              "text": "Power strips can only be delivered to Lot D"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Overnight parking in Lot A is not allowed",
+          "explanation": "Dana points to the venue notice: Lot A is for Wednesday unloading until 10:00 p.m., and overnight parking there is forbidden; overnight parking is Lot D with a permit.",
+          "commonMistake": "Assuming Lot A is only for buyers rather than reading the overnight restriction."
+        },
+        {
+          "id": "TQB-P7-0008-Q04",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "Based on the email and the notice, what should the crew do to park the van overnight before Thursday’s setup?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Leave it in Lot A after unloading because the booth booking is confirmed"
+            },
+            {
+              "key": "B",
+              "text": "Move it to Lot D and obtain a dashboard permit from Exhibitor Services by 9:00 p.m. Wednesday"
+            },
+            {
+              "key": "C",
+              "text": "Park in Hall C next to Booth 214 overnight"
+            },
+            {
+              "key": "D",
+              "text": "Keep the van in Lot A and file a power request at extension 4400"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Move it to Lot D and obtain a dashboard permit from Exhibitor Services by 9:00 p.m. Wednesday",
+          "explanation": "Dana says overnight parking is Lot D only; the notice requires a dashboard permit from Exhibitor Services (Hall B lobby) until 9:00 p.m. Wednesday. Lot A overnight is banned.",
+          "commonMistake": "Relying only on Dana’s Lot D mention and missing the permit deadline in the notice."
+        },
+        {
+          "id": "TQB-P7-0008-Q05",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "Which of the following is NOT stated in either passage?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The buyer walkthrough begins at 8:00 a.m. Thursday"
+            },
+            {
+              "key": "B",
+              "text": "Marcus is bringing the demo tablets"
+            },
+            {
+              "key": "C",
+              "text": "Public show floor opens at 9:30 a.m."
+            },
+            {
+              "key": "D",
+              "text": "Priya will pick up the Lot D parking permit"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Priya will pick up the Lot D parking permit",
+          "explanation": "A–C appear in the email or notice. Priya has printed catalogs; neither text assigns her to pick up the parking permit.",
+          "commonMistake": "Assuming Priya handles all logistics because she has the catalogs."
         }
       ]
     }

@@ -41,11 +41,12 @@ Genre rotation: email · ad · article · memo · notice · letter · form · ch
 | Milestone | Class bank IDs | Sets | Questions | Status |
 |-----------|----------------|-----:|----------:|--------|
 | **Lote 1** | TQB-P7-0001 … 0004 | 4 (3 single + 1 double) | **16** | **Done — 16 / 100** |
-| Lote 2 | TQB-P7-0005 … | +~20 Q | +~20 | Planned |
+| **Lote 2** | TQB-P7-0005 … 0008 | 4 (3 single + 1 double) | **+17** | **Done — 33 / 100** |
+| Lote 3 | TQB-P7-0009 … | +~20 Q | +~20 | Planned |
 | … | … | … | … | … |
 | **Target** | … | mix singles + doubles/triples | **~100** | In progress |
 
-**After Lote 1:** **16 / 100** class questions (16%). With free intro: **19** Part 7 questions on site (1 intro set + 4 class sets).
+**After Lote 2:** **33 / 100** class questions (33%). With free intro: **36** Part 7 questions on site (1 intro set + 8 class sets).
 
 ### Lote 1 snapshot
 
@@ -60,6 +61,23 @@ questionType counts (lote 1): detail 5 · main_idea 3 · inference 3 · vocabula
 setType counts: single 3 · double 1.  
 Genre variety: email · ad · article · chat · notice.
 
+### Lote 2 snapshot
+
+| Set | setType | Genre(s) | Topic | Q count | questionTypes |
+|-----|---------|----------|-------|--------:|---------------|
+| TQB-P7-0005 | single | memo | Facilities / cafeteria renovation closure | 4 | main_idea, detail, vocabulary, inference |
+| TQB-P7-0006 | single | letter | Purchasing / label-defect quality apology | 4 | detail, inference, vocabulary, main_idea |
+| TQB-P7-0007 | single | form | HR / tuition assistance request | 4 | detail, not_except, inference, vocabulary |
+| TQB-P7-0008 | double | email + notice | Sales / trade-show booth setup & parking | 5 | detail, detail, inference, cross_reference, not_except |
+
+questionType counts (lote 2): detail 5 · main_idea 2 · inference 4 · vocabulary 3 · not_except 2 · cross_reference 1.  
+setType counts: single 3 · double 1.  
+Genre variety (new): memo · letter · form · email · notice.
+
+**Bank totals after Lote 2:** 8 sets · 33 Q · single 6 · double 2.  
+questionType totals: detail 10 · main_idea 5 · inference 7 · vocabulary 5 · not_except 4 · cross_reference 2.  
+Genres: email · ad · article · chat · notice · memo · letter · form.
+
 ## Batch rules
 
 - Prefer ~**16–20** new original questions per lote; workplace English; schema with `passages[]` + `questions[]`.
@@ -68,4 +86,4 @@ Genre variety: email · ad · article · chat · notice.
 - Self-score every question on the five rubric dimensions; rewrite until the set passes.
 - Append to `part7-bank.json`, bump `set_count` / `question_count` / `item_count`, log under `batches` in `part7-bank-validation.json`, refresh this blueprint and README counts.
 - Do not alter `part7-intro.json` or degrade validated sets.
-- Schema must keep supporting **single + double + triple** for later growth (Phase 1 ships free intro + lote1 bank only).
+- Schema must keep supporting **single + double + triple** for later growth (Phase 1 ships free intro + class bank through Lote 2 so far).

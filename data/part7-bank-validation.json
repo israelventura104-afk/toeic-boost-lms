@@ -3,47 +3,50 @@
   "validated_at": "2026-09-14",
   "rubric_file": "data/part7-validation-rubric.md",
   "threshold": "average >= 4.0; no dimension < 3",
-  "lote": "lote1",
-  "set_count": 4,
-  "question_count": 16,
-  "item_count": 16,
-  "validated_item_count": 16,
-  "target_ids": "TQB-P7-0001 … TQB-P7-0004",
+  "lote": "lote1+lote2",
+  "set_count": 8,
+  "question_count": 33,
+  "item_count": 33,
+  "validated_item_count": 33,
+  "target_ids": "TQB-P7-0001 … TQB-P7-0008",
   "counts": {
     "kept_as_is": 0,
     "rewritten": 0,
-    "new": 16,
+    "new": 33,
     "dropped": 0
   },
   "set_type_histogram": {
-    "single": 3,
-    "double": 1
+    "single": 6,
+    "double": 2
   },
   "question_type_histogram": {
-    "main_idea": 3,
-    "detail": 5,
-    "vocabulary": 2,
-    "inference": 3,
-    "not_except": 2,
-    "cross_reference": 1
+    "main_idea": 5,
+    "detail": 10,
+    "vocabulary": 5,
+    "inference": 7,
+    "not_except": 4,
+    "cross_reference": 2
   },
   "genre_histogram": {
-    "email": 1,
+    "email": 2,
     "ad": 1,
     "article": 1,
     "chat": 1,
-    "notice": 1
+    "notice": 2,
+    "memo": 1,
+    "letter": 1,
+    "form": 1
   },
   "difficulty_histogram": {
-    "3": 8,
-    "2": 3,
-    "4": 5
+    "2": 7,
+    "3": 16,
+    "4": 10
   },
   "mean_dimension_scores": {
     "format_authenticity": 5.0,
     "passage_quality": 5.0,
     "question_clarity": 5.0,
-    "distractors": 4.62,
+    "distractors": 4.61,
     "explanation": 5.0
   },
   "overall_mean": 4.92,
@@ -71,6 +74,30 @@
         "cross_reference": 1
       },
       "notes": "3 singles (email/ad/article) + 1 double (chat+notice). All items pass rubric."
+    },
+    {
+      "lote": "lote2",
+      "date": "2026-09-14",
+      "set_ids": [
+        "TQB-P7-0005",
+        "TQB-P7-0006",
+        "TQB-P7-0007",
+        "TQB-P7-0008"
+      ],
+      "question_count": 17,
+      "set_types": {
+        "single": 3,
+        "double": 1
+      },
+      "question_types": {
+        "main_idea": 2,
+        "detail": 5,
+        "vocabulary": 3,
+        "inference": 4,
+        "not_except": 2,
+        "cross_reference": 1
+      },
+      "notes": "3 singles (memo/letter/form) + 1 double (email+notice). All items pass rubric."
     }
   ],
   "items": [
@@ -361,6 +388,312 @@
       "average": 4.8,
       "pass": true,
       "note": "HDMI not confirmed automatic"
+    },
+    {
+      "id": "TQB-P7-0005-Q01",
+      "set_id": "TQB-P7-0005",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "purpose = cafeteria closure + alternatives"
+    },
+    {
+      "id": "TQB-P7-0005-Q02",
+      "set_id": "TQB-P7-0005",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "closure Sept 15–26"
+    },
+    {
+      "id": "TQB-P7-0005-Q03",
+      "set_id": "TQB-P7-0005",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "temporary = limited time"
+    },
+    {
+      "id": "TQB-P7-0005-Q04",
+      "set_id": "TQB-P7-0005",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "meetings move to Suite B"
+    },
+    {
+      "id": "TQB-P7-0006-Q01",
+      "set_id": "TQB-P7-0006",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Line B printer calibration"
+    },
+    {
+      "id": "TQB-P7-0006-Q02",
+      "set_id": "TQB-P7-0006",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "notify by Tuesday noon for partial"
+    },
+    {
+      "id": "TQB-P7-0006-Q03",
+      "set_id": "TQB-P7-0006",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "credit = account amount"
+    },
+    {
+      "id": "TQB-P7-0006-Q04",
+      "set_id": "TQB-P7-0006",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "purpose = cause + remedies"
+    },
+    {
+      "id": "TQB-P7-0007-Q01",
+      "set_id": "TQB-P7-0007",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "request $960 from BrightPath"
+    },
+    {
+      "id": "TQB-P7-0007-Q02",
+      "set_id": "TQB-P7-0007",
+      "setType": "single",
+      "questionType": "not_except",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "NOT morning-only course"
+    },
+    {
+      "id": "TQB-P7-0007-Q03",
+      "set_id": "TQB-P7-0007",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "first request via N/A note"
+    },
+    {
+      "id": "TQB-P7-0007-Q04",
+      "set_id": "TQB-P7-0007",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "reimbursement after grade"
+    },
+    {
+      "id": "TQB-P7-0008-Q01",
+      "set_id": "TQB-P7-0008",
+      "setType": "double",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Hall C Booth 214 from email"
+    },
+    {
+      "id": "TQB-P7-0008-Q02",
+      "set_id": "TQB-P7-0008",
+      "setType": "double",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "doors 6:00 a.m. from notice"
+    },
+    {
+      "id": "TQB-P7-0008-Q03",
+      "set_id": "TQB-P7-0008",
+      "setType": "double",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Lot A overnight banned"
+    },
+    {
+      "id": "TQB-P7-0008-Q04",
+      "set_id": "TQB-P7-0008",
+      "setType": "double",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "cross-ref: Lot D + permit by 9pm Wed"
+    },
+    {
+      "id": "TQB-P7-0008-Q05",
+      "set_id": "TQB-P7-0008",
+      "setType": "double",
+      "questionType": "not_except",
+      "disposition": "new",
+      "lote": "lote2",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Priya permit not stated"
     }
   ]
 }
