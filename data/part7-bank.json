@@ -4,37 +4,41 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "set_count": 16,
-  "question_count": 67,
-  "item_count": 67,
+  "set_count": 24,
+  "question_count": 100,
+  "item_count": 100,
   "validation": {
     "rubric": "data/part7-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Lotes 1–4 curated for Teacher Israel Ventura. Original workplace English only (not ETS material). 16 sets / 67 questions. Lote 1: email, ad, article, chat+notice. Lote 2: memo, letter, form, email+notice. Lote 3: article, ad, invoice, chat+notice. Lote 4: email, memo, letter, email+notice+form (first triple)."
+    "notes": "Lotes 1–5 curated for Teacher Israel Ventura. Original workplace English only (not ETS material). 24 sets / 100 questions. TARGET REACHED (100/100). Lote 1: email, ad, article, chat+notice. Lote 2: memo, letter, form, email+notice. Lote 3: article, ad, invoice, chat+notice. Lote 4: email, memo, letter, email+notice+form (first triple). Lote 5 (FINAL): schedule, notice, chat, order, article, email+notice (double), chat+form (double), notice+email+schedule (triple).",
+    "bank_complete": true,
+    "target_reached": true
   },
   "set_type_counts": {
-    "single": 12,
-    "double": 3,
-    "triple": 1
+    "single": 17,
+    "double": 5,
+    "triple": 2
   },
   "question_type_counts": {
-    "main_idea": 10,
-    "detail": 20,
-    "vocabulary": 10,
-    "inference": 14,
-    "not_except": 8,
-    "cross_reference": 5
+    "main_idea": 13,
+    "detail": 30,
+    "vocabulary": 14,
+    "inference": 21,
+    "not_except": 11,
+    "cross_reference": 11
   },
   "genre_counts": {
-    "email": 4,
+    "email": 6,
     "ad": 2,
-    "article": 2,
-    "chat": 2,
-    "notice": 4,
+    "article": 3,
+    "chat": 4,
+    "notice": 7,
     "memo": 2,
     "letter": 2,
-    "form": 2,
-    "invoice": 1
+    "form": 3,
+    "invoice": 1,
+    "schedule": 2,
+    "order": 1
   },
   "sets": [
     {
@@ -2294,6 +2298,1132 @@
           "commonMistake": "Choosing the training room or parking lot instead of the badge-photo location shared by both texts."
         }
       ]
+    },
+    {
+      "id": "TQB-P7-0017",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "schedule",
+      "title": "Visitor shuttle and lobby hours",
+      "difficulty": 2,
+      "workplaceTopic": "Facilities / Visitor access",
+      "lote": "lote5",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "schedule",
+          "heading": "RIVERVIEW TOWER — Visitor Shuttle & Lobby Hours",
+          "body": "Weekday visitor services (Monday–Friday)\n\nLobby reception: 7:30 a.m. – 6:00 p.m.\nVisitor badge desk: 8:00 a.m. – 5:30 p.m. (photo ID required)\n\nShuttle to Metro Plaza garage\n• Morning: every 20 minutes, 7:40 a.m. – 9:40 a.m.\n• Evening: every 20 minutes, 4:20 p.m. – 6:20 p.m.\n• Pickup: Tower Main Entrance (not the loading dock)\n• Last shuttle: 6:20 p.m. No weekend service.\n\nHosts must pre-register guests in TowerPass by 4:00 p.m. the day before.\nAfter-hours entry: security desk, Ext. 1100."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0017-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the main purpose of this schedule?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To advertise a new Metro Plaza shopping center"
+            },
+            {
+              "key": "B",
+              "text": "To explain weekday visitor lobby hours and shuttle times"
+            },
+            {
+              "key": "C",
+              "text": "To announce that the loading dock will close permanently"
+            },
+            {
+              "key": "D",
+              "text": "To require all employees to work from Metro Plaza"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "To explain weekday visitor lobby hours and shuttle times",
+          "explanation": "The document lists lobby and badge-desk hours plus morning and evening shuttle times for visitors. It is informational, not a shopping ad or a work-location change.",
+          "commonMistake": "Focusing on Metro Plaza as a destination and treating the schedule as a retail advertisement."
+        },
+        {
+          "id": "TQB-P7-0017-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "Until what time can visitors obtain a badge on weekdays?",
+          "options": [
+            {
+              "key": "A",
+              "text": "7:30 a.m."
+            },
+            {
+              "key": "B",
+              "text": "4:00 p.m."
+            },
+            {
+              "key": "C",
+              "text": "5:30 p.m."
+            },
+            {
+              "key": "D",
+              "text": "6:20 p.m."
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "5:30 p.m.",
+          "explanation": "The visitor badge desk operates from 8:00 a.m. to 5:30 p.m. Lobby reception stays open until 6:00 p.m., and 6:20 p.m. is the last shuttle.",
+          "commonMistake": "Confusing badge-desk closing time with lobby hours or the last shuttle."
+        },
+        {
+          "id": "TQB-P7-0017-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the schedule, the word “pre-register” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "sign guests in after they arrive"
+            },
+            {
+              "key": "B",
+              "text": "submit guest information in advance"
+            },
+            {
+              "key": "C",
+              "text": "cancel a shuttle reservation"
+            },
+            {
+              "key": "D",
+              "text": "pay a parking fee at Metro Plaza"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "submit guest information in advance",
+          "explanation": "Hosts must pre-register guests in TowerPass by 4:00 p.m. the day before, which means entering guest details ahead of the visit.",
+          "commonMistake": "Reading “pre-” as optional and choosing same-day sign-in instead of advance registration."
+        },
+        {
+          "id": "TQB-P7-0017-Q04",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What is most likely true for a visitor arriving on Saturday?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A shuttle will leave every 20 minutes until 6:20 p.m."
+            },
+            {
+              "key": "B",
+              "text": "The badge desk will issue a photo ID until 5:30 p.m."
+            },
+            {
+              "key": "C",
+              "text": "No shuttle service is available according to this schedule"
+            },
+            {
+              "key": "D",
+              "text": "Hosts can still pre-register guests in TowerPass that morning"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "No shuttle service is available according to this schedule",
+          "explanation": "The schedule covers Monday–Friday services and states there is no weekend shuttle service.",
+          "commonMistake": "Assuming weekday intervals also apply on weekends."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0018",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "notice",
+      "title": "Elevator modernization outage",
+      "difficulty": 2,
+      "workplaceTopic": "Facilities / Building maintenance",
+      "lote": "lote5",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "notice",
+          "heading": "Building Notice — Elevator Cars 3 & 4",
+          "body": "PLEASE POST — Floors 8–14\n\nElevator Cars 3 and 4 will be offline Tuesday and Wednesday, October 6–7, for modernization. Cars 1 and 2 will remain in service.\n\nExpect longer wait times between 8:00–9:30 a.m. and 4:30–6:00 p.m. Freight deliveries over 50 kg must use the service elevator (Car S) and book a slot with Facilities by Monday, October 5.\n\nStairwells A and B are open to all occupants. Do not prop fire doors.\n\nQuestions: facilities@riverview.example · Ext. 2200"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0018-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "Which elevator cars will be unavailable on October 6–7?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Cars 1 and 2"
+            },
+            {
+              "key": "B",
+              "text": "Cars 3 and 4"
+            },
+            {
+              "key": "C",
+              "text": "Car S only"
+            },
+            {
+              "key": "D",
+              "text": "All passenger cars"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Cars 3 and 4",
+          "explanation": "The notice states Elevator Cars 3 and 4 will be offline; Cars 1 and 2 remain in service and Car S is for freight.",
+          "commonMistake": "Reversing the offline cars with the ones that stay available."
+        },
+        {
+          "id": "TQB-P7-0018-Q02",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What should a team expecting a 70 kg delivery on Tuesday most likely do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Use Car 3 during the morning rush"
+            },
+            {
+              "key": "B",
+              "text": "Carry the shipment up Stairwell A without notifying anyone"
+            },
+            {
+              "key": "C",
+              "text": "Book the service elevator (Car S) with Facilities by Monday"
+            },
+            {
+              "key": "D",
+              "text": "Wait until weekend shuttle service resumes"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Book the service elevator (Car S) with Facilities by Monday",
+          "explanation": "Freight over 50 kg must use Car S and be booked with Facilities by Monday, October 5.",
+          "commonMistake": "Assuming passenger cars or stairwells are acceptable for heavy freight."
+        },
+        {
+          "id": "TQB-P7-0018-Q03",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "According to the notice, which of the following is NOT stated?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Cars 1 and 2 will remain in service"
+            },
+            {
+              "key": "B",
+              "text": "Stairwells A and B are open to occupants"
+            },
+            {
+              "key": "C",
+              "text": "Fire doors must not be propped open"
+            },
+            {
+              "key": "D",
+              "text": "The building cafeteria will close during the outage"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "The building cafeteria will close during the outage",
+          "explanation": "The notice covers elevators, freight booking, and stairwells. It never mentions the cafeteria.",
+          "commonMistake": "Selecting a true elevator or stairwell detail instead of the option that is absent."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0019",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "chat",
+      "title": "Product-launch timeline chat",
+      "difficulty": 3,
+      "workplaceTopic": "Marketing / Project coordination",
+      "lote": "lote5",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "chat",
+          "heading": "Team chat — NovaLine launch",
+          "body": "Elena Ruiz (PM): Quick check — design lock for NovaLine is still Thursday noon, right?\nJin Park: Yes. After noon Thursday, no more art changes without Elena’s OK.\nSam Ortiz: Copy for the landing page is ready. Who uploads it to WebCMS?\nElena Ruiz: Sam, please upload by Wednesday 3:00 p.m. so QA can test Thursday morning.\nJin Park: Legal still needs the FAQ PDF. Can someone ping Dana?\nElena Ruiz: I’ll send Dana the draft tonight. Soft launch stays Monday; full ads go live Tuesday.\nSam Ortiz: Got it — upload Wed, soft launch Mon, ads Tue. Thanks."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0019-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the main purpose of this chat?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To cancel the NovaLine product entirely"
+            },
+            {
+              "key": "B",
+              "text": "To confirm launch deadlines and who owns each task"
+            },
+            {
+              "key": "C",
+              "text": "To hire a new WebCMS administrator"
+            },
+            {
+              "key": "D",
+              "text": "To announce that Legal has already approved the FAQ"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "To confirm launch deadlines and who owns each task",
+          "explanation": "The team verifies design lock, upload timing, Legal’s FAQ need, and soft-launch versus ad dates.",
+          "commonMistake": "Treating Dana’s pending FAQ as already approved."
+        },
+        {
+          "id": "TQB-P7-0019-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "By when should Sam upload the landing-page copy?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Thursday noon"
+            },
+            {
+              "key": "B",
+              "text": "Wednesday at 3:00 p.m."
+            },
+            {
+              "key": "C",
+              "text": "Monday morning"
+            },
+            {
+              "key": "D",
+              "text": "Tuesday when ads go live"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Wednesday at 3:00 p.m.",
+          "explanation": "Elena asks Sam to upload by Wednesday 3:00 p.m. so QA can test Thursday morning. Thursday noon is the design lock.",
+          "commonMistake": "Mixing the upload deadline with the design-lock time."
+        },
+        {
+          "id": "TQB-P7-0019-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the chat, the phrase “design lock” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "a physical key for the design studio"
+            },
+            {
+              "key": "B",
+              "text": "the point after which artwork should not change"
+            },
+            {
+              "key": "C",
+              "text": "a meeting to brainstorm new logos"
+            },
+            {
+              "key": "D",
+              "text": "software used to edit the landing page"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "the point after which artwork should not change",
+          "explanation": "Jin says that after Thursday noon, no more art changes are allowed without Elena’s approval, which defines the design lock.",
+          "commonMistake": "Taking “lock” literally as a key or a tool name."
+        },
+        {
+          "id": "TQB-P7-0019-Q04",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What can be inferred about the FAQ PDF?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Legal has already signed off on the final version"
+            },
+            {
+              "key": "B",
+              "text": "Dana still needs to review it before launch work continues smoothly"
+            },
+            {
+              "key": "C",
+              "text": "Sam will upload it to WebCMS on Tuesday"
+            },
+            {
+              "key": "D",
+              "text": "It will replace the soft launch on Monday"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Dana still needs to review it before launch work continues smoothly",
+          "explanation": "Jin notes Legal still needs the FAQ PDF and Elena plans to send Dana the draft, so review is pending.",
+          "commonMistake": "Assuming Elena’s plan to send the draft means Legal approval is finished."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0020",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "order",
+      "title": "Office supply order confirmation",
+      "difficulty": 3,
+      "workplaceTopic": "Purchasing / Office supplies",
+      "lote": "lote5",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "order",
+          "heading": "Order Confirmation — PaperTrail Supplies",
+          "body": "Thank you for your order, Helix Analytics.\n\nOrder No.: PT-88421\nPlaced by: Nora Kim (Purchasing)\nOrder date: September 10, 2026\nEstimated delivery: September 17–18 (standard ground)\n\nItems:\n• 10 cases multipurpose A4 paper — $42.00 each\n• 4 toner cartridges (Model HX-220) — $68.50 each\n• 2 desk organizers (oak) — $24.00 each\n\nSubtotal: $722.00\nShipping: $18.00 (waived if you upgrade to next-day by Sept 11, 5:00 p.m.)\nTax: $58.40\nTotal charged to card ending 4412: $798.40\n\nTo change the ship-to address, reply within 24 hours of this confirmation. Back-ordered toner would delay the whole shipment; none of your items are back-ordered."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0020-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "What is the total amount charged for order PT-88421?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$722.00"
+            },
+            {
+              "key": "B",
+              "text": "$740.00"
+            },
+            {
+              "key": "C",
+              "text": "$798.40"
+            },
+            {
+              "key": "D",
+              "text": "$68.50"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "$798.40",
+          "explanation": "The confirmation lists total charged to the card as $798.40 after shipping and tax. $722.00 is only the subtotal.",
+          "commonMistake": "Selecting the subtotal and ignoring shipping and tax."
+        },
+        {
+          "id": "TQB-P7-0020-Q02",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the confirmation, the word “waived” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "increased automatically"
+            },
+            {
+              "key": "B",
+              "text": "canceled or not charged"
+            },
+            {
+              "key": "C",
+              "text": "paid by a second invoice"
+            },
+            {
+              "key": "D",
+              "text": "delayed until next month"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "canceled or not charged",
+          "explanation": "Shipping is $18.00 but “waived” if the customer upgrades to next-day by the stated deadline, meaning the fee would not be charged.",
+          "commonMistake": "Thinking “waived” means postponed rather than removed."
+        },
+        {
+          "id": "TQB-P7-0020-Q03",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "Which of the following is NOT true according to the confirmation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nora Kim placed the order"
+            },
+            {
+              "key": "B",
+              "text": "Estimated delivery is September 17–18"
+            },
+            {
+              "key": "C",
+              "text": "None of the items are currently back-ordered"
+            },
+            {
+              "key": "D",
+              "text": "The ship-to address can be changed anytime before delivery"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "The ship-to address can be changed anytime before delivery",
+          "explanation": "Address changes must be requested within 24 hours of the confirmation, not anytime before delivery. The other statements match the text.",
+          "commonMistake": "Overlooking the 24-hour limit on address changes."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0021",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "article",
+      "title": "Newsletter: peer mentoring pilot",
+      "difficulty": 3,
+      "workplaceTopic": "HR / Professional development",
+      "lote": "lote5",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "article",
+          "heading": "Helix Weekly — Peer Mentoring Pilot Expands",
+          "body": "After a six-month trial in Customer Support, Helix Analytics will open its peer mentoring program to all full-time staff beginning November 1. Mentors and mentees meet twice a month for 45 minutes, either in person or by video.\n\nParticipants reported a 22% rise in confidence on internal skills surveys. Managers may nominate mentors; employees who want a mentee match should apply in GrowHub by October 20. Pairs are announced the last week of October.\n\nThe Learning team will host an optional kickoff workshop on October 28 in Room B-4. Contractors and interns are not eligible in this round but may join a separate track in Q1."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0021-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the article mainly about?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A company-wide expansion of the peer mentoring program"
+            },
+            {
+              "key": "B",
+              "text": "A permanent ban on video meetings for mentors"
+            },
+            {
+              "key": "C",
+              "text": "A new cafeteria menu for Customer Support"
+            },
+            {
+              "key": "D",
+              "text": "Mandatory training for all contractors in October"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "A company-wide expansion of the peer mentoring program",
+          "explanation": "The newsletter announces that the pilot is opening to all full-time staff and gives dates and eligibility.",
+          "commonMistake": "Focusing on the optional workshop as if it were the main news."
+        },
+        {
+          "id": "TQB-P7-0021-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "By when should employees apply in GrowHub for a mentee match?",
+          "options": [
+            {
+              "key": "A",
+              "text": "October 20"
+            },
+            {
+              "key": "B",
+              "text": "October 28"
+            },
+            {
+              "key": "C",
+              "text": "November 1"
+            },
+            {
+              "key": "D",
+              "text": "The last week of October"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "October 20",
+          "explanation": "Employees who want a mentee match should apply in GrowHub by October 20. Pairs are announced later that month; November 1 is when the program opens.",
+          "commonMistake": "Choosing the workshop date or the program start date instead of the application deadline."
+        },
+        {
+          "id": "TQB-P7-0021-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the article, the word “eligible” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "required to resign"
+            },
+            {
+              "key": "B",
+              "text": "qualified to take part"
+            },
+            {
+              "key": "C",
+              "text": "unable to use GrowHub"
+            },
+            {
+              "key": "D",
+              "text": "paid an extra bonus automatically"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "qualified to take part",
+          "explanation": "Contractors and interns “are not eligible in this round,” meaning they do not qualify to join this phase of the program.",
+          "commonMistake": "Confusing eligibility with a pay or systems restriction."
+        },
+        {
+          "id": "TQB-P7-0021-Q04",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What is suggested about contractors during this round?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They must attend the October 28 workshop"
+            },
+            {
+              "key": "B",
+              "text": "They cannot join the November mentoring expansion"
+            },
+            {
+              "key": "C",
+              "text": "They will automatically be paired as mentors"
+            },
+            {
+              "key": "D",
+              "text": "They already completed the Customer Support pilot"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "They cannot join the November mentoring expansion",
+          "explanation": "The article states contractors are not eligible in this round and may join a separate track in Q1.",
+          "commonMistake": "Assuming the optional workshop overrides the eligibility rule."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0022",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "double",
+      "genre": "email",
+      "title": "Leadership webinar registration and tech notice",
+      "difficulty": 4,
+      "workplaceTopic": "Learning / Virtual events",
+      "lote": "lote5",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "email",
+          "heading": "Email — Leadership Lab webinar",
+          "body": "From: Priya Desai, Learning & Development\nTo: People managers, Grade M1+\nSubject: Register for Leadership Lab (Oct 22)\n\nYou are invited to Leadership Lab: Coaching Under Pressure, a live 90-minute webinar on Wednesday, October 22, from 10:00–11:30 a.m. (local). Seats are limited to 80.\n\nRegister in LearnPort by Friday, October 17. After you register, you will receive a calendar invite and a dial-in backup code. Cameras are encouraged but not required.\n\nIf you cannot attend live, a recording will be posted in LearnPort for two weeks. Direct reports below Grade M1 are not eligible for this session.\n\nPriya Desai\nLearning & Development"
+        },
+        {
+          "label": "B",
+          "genre": "notice",
+          "heading": "IT Notice — Webinar day connectivity",
+          "body": "IT Service Desk — October 22 webinar guidance\n\nFor the Leadership Lab webinar, join from a wired connection if possible. Guest Wi-Fi may throttle video after 45 minutes.\n\nRecommended: Chrome or Edge (latest). Disable VPN split-tunnel exceptions that block meet.helix.example.\n\nA 15-minute tech check room opens at 9:40 a.m. Use the same link as the webinar. Phone dial-in: +1-555-014-2200, code 77821#.\n\nSupport chat: ithelp@helix.example during the session."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0022-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the email, by when must managers register?",
+          "options": [
+            {
+              "key": "A",
+              "text": "October 17"
+            },
+            {
+              "key": "B",
+              "text": "October 22 at 9:40 a.m."
+            },
+            {
+              "key": "C",
+              "text": "Two weeks after the webinar"
+            },
+            {
+              "key": "D",
+              "text": "Only on the morning of October 22"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "October 17",
+          "explanation": "Priya asks managers to register in LearnPort by Friday, October 17. October 22 is the webinar date; 9:40 a.m. is the tech-check start from the notice.",
+          "commonMistake": "Using the tech-check time from the IT notice as the registration deadline."
+        },
+        {
+          "id": "TQB-P7-0022-Q02",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What is suggested about employees below Grade M1?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They should register first because seats fill quickly"
+            },
+            {
+              "key": "B",
+              "text": "They are not eligible for this Leadership Lab session"
+            },
+            {
+              "key": "C",
+              "text": "They must dial in only by phone"
+            },
+            {
+              "key": "D",
+              "text": "They will host the optional tech check"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "They are not eligible for this Leadership Lab session",
+          "explanation": "The email states direct reports below Grade M1 are not eligible for this session.",
+          "commonMistake": "Assuming limited seats mean junior staff should register early."
+        },
+        {
+          "id": "TQB-P7-0022-Q03",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "Based on the email and the IT notice, what should a registered manager do if video fails during the webinar?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Wait for the recording and ignore the live session entirely"
+            },
+            {
+              "key": "B",
+              "text": "Use the dial-in number and code provided in the IT notice"
+            },
+            {
+              "key": "C",
+              "text": "Ask a Grade M1 colleague to re-register for them"
+            },
+            {
+              "key": "D",
+              "text": "Join Guest Wi-Fi only after 45 minutes"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Use the dial-in number and code provided in the IT notice",
+          "explanation": "The email promises a dial-in backup code after registration; the IT notice supplies the phone number and code 77821# for audio backup.",
+          "commonMistake": "Answering from only one passage or choosing the recording option as the only fallback."
+        },
+        {
+          "id": "TQB-P7-0022-Q04",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "According to both passages, when can participants test their connection before the session?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Friday, October 17 in LearnPort"
+            },
+            {
+              "key": "B",
+              "text": "During a 15-minute tech check starting at 9:40 a.m. on October 22"
+            },
+            {
+              "key": "C",
+              "text": "Only after the recording is posted"
+            },
+            {
+              "key": "D",
+              "text": "Anytime on Guest Wi-Fi without the webinar link"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "During a 15-minute tech check starting at 9:40 a.m. on October 22",
+          "explanation": "The email schedules the webinar on October 22 starting at 10:00 a.m.; the IT notice opens a 15-minute tech check at 9:40 a.m. using the same link.",
+          "commonMistake": "Treating the registration deadline as a tech-check opportunity."
+        },
+        {
+          "id": "TQB-P7-0022-Q05",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "Which of the following is NOT mentioned in either passage?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Seats are limited to 80"
+            },
+            {
+              "key": "B",
+              "text": "Chrome or Edge browsers are recommended"
+            },
+            {
+              "key": "C",
+              "text": "A recording will be available in LearnPort for two weeks"
+            },
+            {
+              "key": "D",
+              "text": "Attendees will receive printed workbooks by courier"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Attendees will receive printed workbooks by courier",
+          "explanation": "Seat limits, browser advice, and the two-week recording are stated. Printed workbooks are never mentioned.",
+          "commonMistake": "Missing that workbooks are invented and selecting a true detail instead."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0023",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "double",
+      "genre": "chat",
+      "title": "Client-site travel request chat and form",
+      "difficulty": 3,
+      "workplaceTopic": "Travel / Client services",
+      "lote": "lote5",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "chat",
+          "heading": "Team chat — Brighton client visit",
+          "body": "Luis Ortega: Can someone cover the Brighton site walkthrough next Thursday?\nAisha Rahman: I can go if Travel approves overnight stay. Train is cleaner than driving.\nLuis Ortega: Submit the TravelRequest form today. Policy caps coach rail at $120 one way.\nKenji Mori: Hotels near the plant max out at the $145/night rate unless Finance waives it.\nAisha Rahman: I’ll request Thursday–Friday and return Friday evening. Who signs as manager?\nLuis Ortega: I will. Also attach the client invite PDF or the form gets bounced."
+        },
+        {
+          "label": "B",
+          "genre": "form",
+          "heading": "TravelRequest — confirmation draft",
+          "body": "HELIX ANALYTICS — TravelRequest\n\nEmployee: Aisha Rahman\nDestination: Brighton Manufacturing Plant\nDates: Thursday–Friday (overnight Thursday)\nTransport: Rail (coach) — estimated $98 outbound / $98 return\nLodging: Plantview Inn — $145/night (within policy)\nManager approver: Luis Ortega\nClient invite attached: Yes (Brighton_Walkthrough.pdf)\nStatus: Pending Finance review\n\nNote: Requests over policy require a Finance waiver code before ticketing."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0023-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the chat, what is the policy cap for coach rail one way?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$98"
+            },
+            {
+              "key": "B",
+              "text": "$120"
+            },
+            {
+              "key": "C",
+              "text": "$145"
+            },
+            {
+              "key": "D",
+              "text": "$196"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "$120",
+          "explanation": "Luis states policy caps coach rail at $120 one way. $98 appears on the form as Aisha’s estimate; $145 is the hotel rate.",
+          "commonMistake": "Using the form’s estimated rail fare instead of the policy cap from the chat."
+        },
+        {
+          "id": "TQB-P7-0023-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the form, what is the lodging rate at Plantview Inn?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$98 per night"
+            },
+            {
+              "key": "B",
+              "text": "$120 per night"
+            },
+            {
+              "key": "C",
+              "text": "$145 per night"
+            },
+            {
+              "key": "D",
+              "text": "$196 per night"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "$145 per night",
+          "explanation": "The form lists Plantview Inn at $145/night and notes it is within policy.",
+          "commonMistake": "Confusing the hotel rate with the rail estimates."
+        },
+        {
+          "id": "TQB-P7-0023-Q03",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What is suggested about Aisha’s rail estimates?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They exceed the one-way policy cap and need a waiver"
+            },
+            {
+              "key": "B",
+              "text": "They appear to stay under the $120 one-way policy cap"
+            },
+            {
+              "key": "C",
+              "text": "They must be paid only in cash at the station"
+            },
+            {
+              "key": "D",
+              "text": "They replace the need for a client invite PDF"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "They appear to stay under the $120 one-way policy cap",
+          "explanation": "Each leg is estimated at $98, which is under the $120 one-way cap Luis mentioned.",
+          "commonMistake": "Adding both legs and comparing $196 to the one-way cap incorrectly."
+        },
+        {
+          "id": "TQB-P7-0023-Q04",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "Based on the chat and the form, which statement is true?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Kenji Mori is listed as the manager approver"
+            },
+            {
+              "key": "B",
+              "text": "Luis Ortega will approve, and the client invite is attached"
+            },
+            {
+              "key": "C",
+              "text": "Finance has already issued a waiver code"
+            },
+            {
+              "key": "D",
+              "text": "Aisha plans to drive because rail is over policy"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Luis Ortega will approve, and the client invite is attached",
+          "explanation": "In the chat Luis agrees to sign and insists on the invite PDF; the form shows Luis as approver and the invite attached.",
+          "commonMistake": "Picking Kenji because he mentioned hotels, or assuming Finance already approved."
+        },
+        {
+          "id": "TQB-P7-0023-Q05",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "According to both passages, when does Aisha plan to stay overnight?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Wednesday night only"
+            },
+            {
+              "key": "B",
+              "text": "Thursday night, returning Friday evening"
+            },
+            {
+              "key": "C",
+              "text": "The entire following weekend"
+            },
+            {
+              "key": "D",
+              "text": "No overnight stay is requested"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Thursday night, returning Friday evening",
+          "explanation": "Aisha says she will request Thursday–Friday and return Friday evening; the form lists overnight Thursday.",
+          "commonMistake": "Reading “Thursday–Friday” as two full overnight stays."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0024",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "triple",
+      "genre": "notice",
+      "title": "All-hands town hall day logistics",
+      "difficulty": 4,
+      "workplaceTopic": "Internal communications / Events",
+      "lote": "lote5",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "notice",
+          "heading": "ALL-HANDS TOWN HALL — October 30",
+          "body": "Helix Analytics All-Hands Town Hall\nDate: Thursday, October 30\nLocation: Auditorium Level B (overflow: Rooms B-2 and B-3 with live stream)\n\nDoors open 1:45 p.m. Program 2:00–3:15 p.m. Remote staff join via TownHall Live.\nBadge scan required for on-site headcount. Food trucks in Lot D after the program (first-come; not a substitute for badge scan).\n\nQuestions: internalcomms@helix.example"
+        },
+        {
+          "label": "B",
+          "genre": "email",
+          "heading": "Email — Dept seating assignment",
+          "body": "From: Carla Nguyen, Internal Comms\nTo: Operations Department\nSubject: Your town hall seating block\n\nOperations is assigned Rows G–J in the auditorium. Please arrive by 1:50 p.m. so we can release empty seats to overflow guests at 2:00.\n\nIf you prefer the live-stream rooms, reply by Tuesday, October 28. Remote-only staff should ignore seating and use TownHall Live.\n\nBring earbuds if you sit in B-2/B-3; audio sometimes lags the main stage.\n\nCarla Nguyen"
+        },
+        {
+          "label": "C",
+          "genre": "schedule",
+          "heading": "Town Hall Run-of-Show",
+          "body": "October 30 — Run-of-Show (Auditorium)\n1:45 p.m. Doors / badge scan\n2:00–2:20 CEO welcome & Q3 highlights\n2:20–2:50 Product roadmap panel\n2:50–3:10 Live Q&A (submit questions in the app by 2:45)\n3:10–3:15 Closing\n3:20 p.m. Food trucks open in Lot D\n\nNote: The roadmap panel will not be in the public recording; attend live or in overflow."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0024-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the notice, when do town hall doors open?",
+          "options": [
+            {
+              "key": "A",
+              "text": "1:45 p.m."
+            },
+            {
+              "key": "B",
+              "text": "2:00 p.m."
+            },
+            {
+              "key": "C",
+              "text": "2:45 p.m."
+            },
+            {
+              "key": "D",
+              "text": "3:20 p.m."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "1:45 p.m.",
+          "explanation": "The notice states doors open at 1:45 p.m.; the program runs 2:00–3:15 p.m.",
+          "commonMistake": "Choosing the program start time instead of door time."
+        },
+        {
+          "id": "TQB-P7-0024-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to Carla’s email, which auditorium rows are reserved for Operations?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Rows A–C"
+            },
+            {
+              "key": "B",
+              "text": "Rows G–J"
+            },
+            {
+              "key": "C",
+              "text": "Rooms B-2 and B-3 only"
+            },
+            {
+              "key": "D",
+              "text": "Lot D outdoor seating"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Rows G–J",
+          "explanation": "Carla assigns Operations to Rows G–J and asks them to arrive by 1:50 p.m.",
+          "commonMistake": "Selecting overflow rooms mentioned for people who skip the main auditorium."
+        },
+        {
+          "id": "TQB-P7-0024-Q03",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What is suggested about the product roadmap panel?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It will be fully available in the public recording afterward"
+            },
+            {
+              "key": "B",
+              "text": "Staff who want that content should attend live or in overflow"
+            },
+            {
+              "key": "C",
+              "text": "It replaces the CEO welcome entirely"
+            },
+            {
+              "key": "D",
+              "text": "It happens only at the Lot D food trucks"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Staff who want that content should attend live or in overflow",
+          "explanation": "The run-of-show notes the roadmap panel will not be in the public recording, so live or overflow attendance is needed.",
+          "commonMistake": "Assuming every segment is recorded for later viewing."
+        },
+        {
+          "id": "TQB-P7-0024-Q04",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "Based on the notice and the email, what should an on-site Operations employee do to be counted?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Only buy food in Lot D after 3:20 p.m."
+            },
+            {
+              "key": "B",
+              "text": "Scan a badge for on-site headcount and sit in Rows G–J if using the auditorium"
+            },
+            {
+              "key": "C",
+              "text": "Join TownHall Live even while sitting in the auditorium"
+            },
+            {
+              "key": "D",
+              "text": "Reply by October 28 to cancel badge scanning"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Scan a badge for on-site headcount and sit in Rows G–J if using the auditorium",
+          "explanation": "The notice requires badge scan for on-site headcount; the email assigns Operations to Rows G–J. Food trucks are not a substitute for scanning.",
+          "commonMistake": "Thinking Lot D food service replaces the badge-scan requirement."
+        },
+        {
+          "id": "TQB-P7-0024-Q05",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "According to the email and the run-of-show, by when should live Q&A questions be submitted in the app?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Tuesday, October 28"
+            },
+            {
+              "key": "B",
+              "text": "1:50 p.m. on October 30"
+            },
+            {
+              "key": "C",
+              "text": "2:45 p.m. on October 30"
+            },
+            {
+              "key": "D",
+              "text": "3:20 p.m. when food trucks open"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "2:45 p.m. on October 30",
+          "explanation": "The schedule says submit Q&A questions in the app by 2:45. October 28 is the overflow-room reply deadline from the email; 1:50 is the Operations arrival target.",
+          "commonMistake": "Confusing the overflow RSVP deadline with the Q&A submission cutoff."
+        }
+      ]
     }
-  ]
+  ],
+  "bank_complete": true,
+  "target_reached": true
 }

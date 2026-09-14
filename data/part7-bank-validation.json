@@ -3,55 +3,57 @@
   "validated_at": "2026-09-14",
   "rubric_file": "data/part7-validation-rubric.md",
   "threshold": "average >= 4.0; no dimension < 3",
-  "lote": "lote1+lote2+lote3+lote4",
-  "set_count": 16,
-  "question_count": 67,
-  "item_count": 67,
-  "validated_item_count": 67,
-  "target_ids": "TQB-P7-0001 … TQB-P7-0016",
+  "lote": "lote1+lote2+lote3+lote4+lote5",
+  "set_count": 24,
+  "question_count": 100,
+  "item_count": 100,
+  "validated_item_count": 100,
+  "target_ids": "TQB-P7-0001 … TQB-P7-0024",
   "counts": {
     "kept_as_is": 0,
     "rewritten": 0,
-    "new": 67,
+    "new": 100,
     "dropped": 0
   },
   "set_type_histogram": {
-    "single": 12,
-    "double": 3,
-    "triple": 1
+    "single": 17,
+    "double": 5,
+    "triple": 2
   },
   "question_type_histogram": {
-    "main_idea": 10,
-    "detail": 20,
-    "vocabulary": 10,
-    "inference": 14,
-    "not_except": 8,
-    "cross_reference": 5
+    "main_idea": 13,
+    "detail": 30,
+    "vocabulary": 14,
+    "inference": 21,
+    "not_except": 11,
+    "cross_reference": 11
   },
   "genre_histogram": {
-    "email": 4,
+    "email": 6,
     "ad": 2,
-    "article": 2,
-    "chat": 2,
-    "notice": 4,
+    "article": 3,
+    "chat": 4,
+    "notice": 7,
     "memo": 2,
     "letter": 2,
-    "form": 2,
-    "invoice": 1
+    "form": 3,
+    "invoice": 1,
+    "schedule": 2,
+    "order": 1
   },
   "difficulty_histogram": {
-    "2": 15,
-    "3": 32,
-    "4": 20
+    "2": 22,
+    "3": 48,
+    "4": 30
   },
   "mean_dimension_scores": {
     "format_authenticity": 5.0,
     "passage_quality": 5.0,
     "question_clarity": 5.0,
-    "distractors": 4.63,
+    "distractors": 4.69,
     "explanation": 5.0
   },
-  "overall_mean": 4.93,
+  "overall_mean": 4.94,
   "batches": [
     {
       "lote": "lote1",
@@ -148,6 +150,36 @@
         "cross_reference": 2
       },
       "notes": "3 singles (email/memo/letter) + 1 first triple (email+notice+form safety orientation). Boosted main_idea and cross_reference. All items pass rubric."
+    },
+    {
+      "lote": "lote5",
+      "date": "2026-09-14",
+      "set_ids": [
+        "TQB-P7-0017",
+        "TQB-P7-0018",
+        "TQB-P7-0019",
+        "TQB-P7-0020",
+        "TQB-P7-0021",
+        "TQB-P7-0022",
+        "TQB-P7-0023",
+        "TQB-P7-0024"
+      ],
+      "question_count": 33,
+      "set_types": {
+        "single": 5,
+        "double": 2,
+        "triple": 1
+      },
+      "question_types": {
+        "main_idea": 3,
+        "detail": 10,
+        "vocabulary": 4,
+        "inference": 7,
+        "not_except": 3,
+        "cross_reference": 6
+      },
+      "notes": "FINAL lote: 5 singles (schedule/notice/chat/order/article) + 2 doubles (email+notice webinar; chat+form travel) + 1 triple (notice+email+schedule town hall). Target reached 100/100. Boosted cross_reference (+6). All items pass rubric.",
+      "target_reached": true
     }
   ],
   "items": [
@@ -1356,6 +1388,602 @@
       "average": 4.8,
       "pass": true,
       "note": "cross-ref notice+form: Lobby Desk 3 after session"
+    },
+    {
+      "id": "TQB-P7-0017-Q01",
+      "set_id": "TQB-P7-0017",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "purpose = visitor hours + shuttle"
+    },
+    {
+      "id": "TQB-P7-0017-Q02",
+      "set_id": "TQB-P7-0017",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "badge desk until 5:30 vs lobby/shuttle"
+    },
+    {
+      "id": "TQB-P7-0017-Q03",
+      "set_id": "TQB-P7-0017",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "pre-register = advance submit"
+    },
+    {
+      "id": "TQB-P7-0017-Q04",
+      "set_id": "TQB-P7-0017",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "no weekend shuttle"
+    },
+    {
+      "id": "TQB-P7-0018-Q01",
+      "set_id": "TQB-P7-0018",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "cars 3&4 offline"
+    },
+    {
+      "id": "TQB-P7-0018-Q02",
+      "set_id": "TQB-P7-0018",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "freight >50kg → Car S by Monday"
+    },
+    {
+      "id": "TQB-P7-0018-Q03",
+      "set_id": "TQB-P7-0018",
+      "setType": "single",
+      "questionType": "not_except",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "cafeteria not mentioned"
+    },
+    {
+      "id": "TQB-P7-0019-Q01",
+      "set_id": "TQB-P7-0019",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "confirm launch deadlines/owners"
+    },
+    {
+      "id": "TQB-P7-0019-Q02",
+      "set_id": "TQB-P7-0019",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "upload Wed 3pm"
+    },
+    {
+      "id": "TQB-P7-0019-Q03",
+      "set_id": "TQB-P7-0019",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "design lock = no art changes"
+    },
+    {
+      "id": "TQB-P7-0019-Q04",
+      "set_id": "TQB-P7-0019",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Dana/Legal FAQ still pending"
+    },
+    {
+      "id": "TQB-P7-0020-Q01",
+      "set_id": "TQB-P7-0020",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "total $798.40 not subtotal"
+    },
+    {
+      "id": "TQB-P7-0020-Q02",
+      "set_id": "TQB-P7-0020",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "waived = not charged"
+    },
+    {
+      "id": "TQB-P7-0020-Q03",
+      "set_id": "TQB-P7-0020",
+      "setType": "single",
+      "questionType": "not_except",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "address change only within 24h"
+    },
+    {
+      "id": "TQB-P7-0021-Q01",
+      "set_id": "TQB-P7-0021",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "mentoring expands company-wide"
+    },
+    {
+      "id": "TQB-P7-0021-Q02",
+      "set_id": "TQB-P7-0021",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "GrowHub apply by Oct 20"
+    },
+    {
+      "id": "TQB-P7-0021-Q03",
+      "set_id": "TQB-P7-0021",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "eligible = qualified to join"
+    },
+    {
+      "id": "TQB-P7-0021-Q04",
+      "set_id": "TQB-P7-0021",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "contractors not in this round"
+    },
+    {
+      "id": "TQB-P7-0022-Q01",
+      "set_id": "TQB-P7-0022",
+      "setType": "double",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "register by Oct 17"
+    },
+    {
+      "id": "TQB-P7-0022-Q02",
+      "set_id": "TQB-P7-0022",
+      "setType": "double",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "below M1 not eligible"
+    },
+    {
+      "id": "TQB-P7-0022-Q03",
+      "set_id": "TQB-P7-0022",
+      "setType": "double",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "email backup + notice dial-in"
+    },
+    {
+      "id": "TQB-P7-0022-Q04",
+      "set_id": "TQB-P7-0022",
+      "setType": "double",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "tech check 9:40 same link"
+    },
+    {
+      "id": "TQB-P7-0022-Q05",
+      "set_id": "TQB-P7-0022",
+      "setType": "double",
+      "questionType": "not_except",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "workbooks not mentioned"
+    },
+    {
+      "id": "TQB-P7-0023-Q01",
+      "set_id": "TQB-P7-0023",
+      "setType": "double",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "rail cap $120 one way"
+    },
+    {
+      "id": "TQB-P7-0023-Q02",
+      "set_id": "TQB-P7-0023",
+      "setType": "double",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "hotel $145/night"
+    },
+    {
+      "id": "TQB-P7-0023-Q03",
+      "set_id": "TQB-P7-0023",
+      "setType": "double",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "$98 under one-way cap"
+    },
+    {
+      "id": "TQB-P7-0023-Q04",
+      "set_id": "TQB-P7-0023",
+      "setType": "double",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Luis approves + invite attached"
+    },
+    {
+      "id": "TQB-P7-0023-Q05",
+      "set_id": "TQB-P7-0023",
+      "setType": "double",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "overnight Thursday"
+    },
+    {
+      "id": "TQB-P7-0024-Q01",
+      "set_id": "TQB-P7-0024",
+      "setType": "triple",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "doors 1:45"
+    },
+    {
+      "id": "TQB-P7-0024-Q02",
+      "set_id": "TQB-P7-0024",
+      "setType": "triple",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Ops rows G–J"
+    },
+    {
+      "id": "TQB-P7-0024-Q03",
+      "set_id": "TQB-P7-0024",
+      "setType": "triple",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "roadmap not in public recording"
+    },
+    {
+      "id": "TQB-P7-0024-Q04",
+      "set_id": "TQB-P7-0024",
+      "setType": "triple",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "badge scan + assigned rows"
+    },
+    {
+      "id": "TQB-P7-0024-Q05",
+      "set_id": "TQB-P7-0024",
+      "setType": "triple",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote5",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Q&A app by 2:45"
     }
-  ]
+  ],
+  "bank_complete": true,
+  "target_reached": true
 }
