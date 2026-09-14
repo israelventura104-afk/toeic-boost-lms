@@ -6,7 +6,7 @@ Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to
 **Paso 2:** Class-code access, student dashboard, free Reading & Grammar short demo (Part 5–7 style).  
 **Paso 3:** Original Part 5 Incomplete Sentences bank (210 items = 10 intro + 200 class-validated), free/guided/mock flows, Reading hub, and Part 5 Strategies.
 **Paso 3b (Part 6):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank **COMPLETE** Lotes 1–5 (20 passages × 4 = **80** validated Q), free practice UI, **guided practice live** (2 passages / 8 Q), **timed mock live** (4 passages / 16 Q · 12 min); **Part 6 strategies live** on `strategies.html#part6`.
-**Paso 3c (Part 7 Phase 1):** Original Part 7 Reading Comprehension — free intro (1 single × 3 Q), class bank **COMPLETE** Lotes 1–5 (17 singles + 5 doubles + 2 triples = **100** validated Q), free practice UI live; **guided practice live** (2 sets · prefer single + multi); **timed mock live** (54 Q · 55 min); Part 7 strategies not built yet.
+**Paso 3c (Part 7 Phase 1):** Original Part 7 Reading Comprehension — free intro (1 single × 3 Q), class bank **COMPLETE** Lotes 1–5 (17 singles + 5 doubles + 2 triples = **100** validated Q), free practice UI live; **guided practice live** (2 sets · prefer single + multi); **timed mock live** (54 Q · 55 min); **Part 7 strategies live** on `strategies.html#part7`.
 
 ## Preview locally
 
@@ -40,7 +40,7 @@ Open <http://localhost:8765/>.
 | `part6-practice.html` | **No** | Fixed 1-passage Part 6 intro (`TQB-P6-INTRO-001`, Q01–Q04), immediate feedback |
 | `part6-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 2 random passages (8 blanks) from the 20-passage class bank · no timer · session saved |
 | `part6-mock.html` | **Yes** `TOEIC-VENTURA-2026` | Timed mock: **4 passages · 16 blanks · 12 minutes**, no feedback until end, auto-submit at 0 |
-| `strategies.html` | **No** | Free Part 5 + Part 6 study library · `#part5` / `#part6` anchors |
+| `strategies.html` | **No** | Free Part 5 + Part 6 + Part 7 study library · `#part5` / `#part6` / `#part7` anchors |
 | `part5-practice.html` | **No** | Fixed 10-item intro (`TQB-P5-0001`–`0010`), immediate feedback, restart |
 | `part5-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 15 items from the 200-item class bank, balanced by skill, session saved |
 | `part5-mock.html` | **Yes** `TOEIC-VENTURA-2026` | Timed mock: **30 questions · 20 minutes**, no feedback until end, skill-balanced set, auto-submit at 0 |
@@ -161,7 +161,7 @@ Lote 5 (final) added: **schedule** (visitor shuttle), **notice** (elevator outag
 
 Schema: each set has `setType` (`single` | `double` | `triple`), `passages[]` (length 1/2/3), and `questions[]` with 4 options A–D.
 
-**Not built yet (Phase 1):** Part 7 strategy cards. Free / guided / timed mock are live.
+**Strategies:** Part 7 strategy cards live on `strategies.html#part7`. Free / guided / timed mock are live.
 
 ## Short demo (free, Paso 2)
 
@@ -204,7 +204,7 @@ Schema: each set has `setType` (`single` | `double` | `triple`), `passages[]` (l
 | `data/part7-validation-rubric.md` | Teacher rubric (ES) for Part 7 class items |
 | `data/part7-bank-validation.json` | Lotes 1–5 validation summary (target reached) |
 | `data/part7-blueprint.md` | 100-Q target via lotes — **COMPLETE** (100/100) |
-| `strategies.html` | Free Part 5 + Part 6 strategies library (Part 7 strategies / Listening stubs) |
+| `strategies.html` | Free Part 5 + Part 6 + Part 7 strategies library (Listening stubs) |
 | `listening.html` | Coming-next stub |
 | `assets/` | Logo / favicon / hero art |
 
