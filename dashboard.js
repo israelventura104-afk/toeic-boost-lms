@@ -180,11 +180,29 @@
         at: session.at,
       });
     });
+    const readingMockSessions =
+      (window.ToeicProgress.getReadingMockSessions &&
+        window.ToeicProgress.getReadingMockSessions()) ||
+      (summary.readingMock?.last ? [summary.readingMock.last] : []);
+    readingMockSessions.slice(0, 4).forEach((session) => {
+      const p5 = session.partScores?.part5;
+      const p6 = session.partScores?.part6;
+      const p7 = session.partScores?.part7;
+      const partNote =
+        p5 && p6 && p7
+          ? ` · P5 ${p5.correct}/${p5.total} · P6 ${p6.correct}/${p6.total} · P7 ${p7.correct}/${p7.total}`
+          : "";
+      rows.push({
+        label: "Full Reading Mock",
+        score: `${session.correct}/${session.total} (${session.percent}%)${partNote}`,
+        at: session.at,
+      });
+    });
     rows.sort((a, b) => String(b.at || "").localeCompare(String(a.at || "")));
 
     if (!rows.length) {
       host.innerHTML =
-        `<li class="dash-empty-note">Finish the free short demo or a Part 5 / Part 6 / Part 7 session to see results here.</li>`;
+        `<li class="dash-empty-note">Finish the free short demo, a Part 5–7 session, or the Full Reading Mock to see results here.</li>`;
       return;
     }
 
@@ -248,12 +266,13 @@
     const hasReading =
       (summary.part5?.sessionCount || 0) +
         (summary.part6?.sessionCount || 0) +
-        (summary.part7?.sessionCount || 0) >
+        (summary.part7?.sessionCount || 0) +
+        (summary.readingMock?.sessionCount || 0) >
       0;
     text(
       document.querySelector("[data-dash-sessions-note]"),
       hasReading
-        ? "Demo and Part 5 / Part 6 / Part 7 sessions on this device"
+        ? "Demo, Part 5–7, and Full Reading Mock sessions on this device"
         : "Demo sessions on this device"
     );
 

@@ -1,4 +1,4 @@
-# TOEIC Boost (Paso 3+ — Part 5 + Part 6 + Part 7 Phase 1)
+# TOEIC Boost (Paso 3+ — Part 5 + Part 6 + Part 7 + Full Reading Mock)
 
 Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to TOEFL ITP Boost.
 
@@ -7,6 +7,7 @@ Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to
 **Paso 3:** Original Part 5 Incomplete Sentences bank (210 items = 10 intro + 200 class-validated), free/guided/mock flows, Reading hub, and Part 5 Strategies.
 **Paso 3b (Part 6):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank **COMPLETE** Lotes 1–5 (20 passages × 4 = **80** validated Q), free practice UI, **guided practice live** (2 passages / 8 Q), **timed mock live** (4 passages / 16 Q · 12 min); **Part 6 strategies live** on `strategies.html#part6`.
 **Paso 3c (Part 7 Phase 1):** Original Part 7 Reading Comprehension — free intro (1 single × 3 Q), class bank **COMPLETE** Lotes 1–5 (17 singles + 5 doubles + 2 triples = **100** validated Q), free practice UI live; **guided practice live** (2 sets · prefer single + multi); **timed mock live** (54 Q · 55 min); **Part 7 strategies live** on `strategies.html#part7`.
+**Paso 3d (Full Reading Mock):** Continuous Parts 5→6→7 exam — **100 questions · 75 minutes** (`reading-mock.html`), same section-mock construction, class code required, per-part breakdown + `recordReadingMockSession`.
 
 ## Preview locally
 
@@ -33,7 +34,8 @@ Open <http://localhost:8765/>.
 
 | Path | Needs code? | What you get |
 |------|-------------|--------------|
-| `reading.html` | No | Reading hub: Part 5–7 free / guided / mock live |
+| `reading.html` | No | Reading hub: Part 5–7 free / guided / mock + Full Reading Mock |
+| `reading-mock.html` | **Yes** `TOEIC-VENTURA-2026` | Full Reading Mock: **100 Q · 75 min**, Part 5→6→7, no feedback until end, auto-submit at 0 |
 | `part7-practice.html` | **No** | Fixed 1-passage Part 7 intro (`TQB-P7-INTRO-001`, Q01–Q03), immediate feedback |
 | `part7-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 2 random sets from the 24-set class bank · prefer 1 single + 1 multi · no timer · session saved |
 | `part7-mock.html` | **Yes** `TOEIC-VENTURA-2026` | Timed mock: **~54 questions · 55 minutes**, singles then multis, no feedback until end, auto-submit at 0 |
@@ -88,6 +90,14 @@ Guided practice and the mock show an inline class-code gate if the device is loc
 - During the exam: no skill / questionType titles; displayed passage(s) switch when the active set changes (single / double / triple).
 - After submit: score X/54, percent, study focus by skill, Review mistakes panel.
 - Progress: `ToeicProgress.recordPart7Session({ mode: "mock", durationSeconds, timedOut, setIds, ... })`.
+
+### Full Reading Mock details
+
+- Timer: **75:00** (4500 seconds) continuous across Parts 5–7; early submit allowed; auto-submit when time hits 0.
+- Set: **100 questions** in official order — Part 5 **30** (skill-balanced, intro IDs excluded) + Part 6 **16** (4 passages × 4) + Part 7 **54** (8 singles / 29 Q + 5 multis / 25 Q). Same builders as the section mocks.
+- During the exam: section label, counter 1–100, Prev/Next, optional section jump / nav (no correctness revealed); skill / blankType / questionType titles hidden.
+- After submit: overall /100, scores by Part 5·6·7, study focus, Review mistakes; Retry / New set.
+- Progress: `ToeicProgress.recordReadingMockSession({ partScores, durationSeconds, timedOut, ... })`.
 
 
 ## Part 5 item bank (original workplace English)
@@ -178,11 +188,12 @@ Schema: each set has `setType` (`single` | `double` | `triple`), `passages[]` (l
 | `styles.css` | Landing + dashboard + demo + Part 5/6/7 / Reading hub + strategy library |
 | `nav.js` | Landing toggle + shared app header |
 | `access.js` / `data/access.json` | Teacher class-code unlock |
-| `progress.js` | Demo + Part 5/6/7 guided/mock session storage |
+| `progress.js` | Demo + Part 5/6/7 guided/mock + Full Reading mock session storage |
 | `dashboard.html` / `dashboard.js` | Progress dashboard + class access panel |
 | `demo-test.html` / `demo-test.js` | Free Part 5–7 demo flow |
 | `data/demo-test.json` / `data/demo-items.json` | Demo config + original items |
-| `reading.html` | Reading hub (Part 5–7 free / guided / mock live) |
+| `reading.html` | Reading hub (Part 5–7 free / guided / mock + Full Reading Mock) |
+| `reading-mock.html` / `reading-mock.js` | Full Reading Mock (100Q / 75 min · Parts 5→6→7) |
 | `part5-practice.html` / `part5-practice.js` | Free 10-item Part 5 set |
 | `part5-guided-practice.html` / `part5-guided-practice.js` | Class 15-item Part 5 drill |
 | `part5-mock.html` / `part5-mock.js` | Class timed Part 5 mock (30Q / 20 min) |

@@ -1,6 +1,6 @@
 /**
  * Practice progress — Paso 3
- * Saves demo + Part 5/6/7 guided (and Part 5/6 mock) sessions on this device (localStorage).
+ * Saves demo + Part 5/6/7 guided/mock + Full Reading mock sessions on this device (localStorage).
  * No accounts. Teacher class materials only.
  */
 
@@ -17,6 +17,7 @@
       part5Sessions: [],
       part6Sessions: [],
       part7Sessions: [],
+      readingMockSessions: [],
     };
   }
 
@@ -32,6 +33,7 @@
       if (!Array.isArray(data.part5Sessions)) data.part5Sessions = [];
       if (!Array.isArray(data.part6Sessions)) data.part6Sessions = [];
       if (!Array.isArray(data.part7Sessions)) data.part7Sessions = [];
+      if (!Array.isArray(data.readingMockSessions)) data.readingMockSessions = [];
       return data;
     } catch {
       return emptyState();
@@ -252,14 +254,64 @@
   }
 
   function syncReadingSessions(state) {
-    // Combined Part 5 + Part 6 + Part 7 for aggregation; per-part arrays stay intact.
+    // Combined Part 5 + Part 6 + Part 7 + Full Reading mock; per-part arrays stay intact.
     const combined = [
       ...(state.part5Sessions || []),
       ...(state.part6Sessions || []),
       ...(state.part7Sessions || []),
+      ...(state.readingMockSessions || []),
     ];
     combined.sort((a, b) => String(b.at || "").localeCompare(String(a.at || "")));
     state.readingSessions = combined.slice(0, MAX_SESSIONS);
+  }
+
+  function recordReadingMockSession(session) {
+    const state = load();
+    const total = Number(session.total) || 0;
+    const correct = Number(session.correct) || 0;
+    const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const items = Array.isArray(session.items) ? session.items : [];
+    const { skillMap, mistakes } = buildSkillMapFromItems(items);
+
+    const partScores = session.partScores || {};
+    const record = {
+      id: `rm-${Date.now()}`,
+      section: "reading",
+      part: "reading-mock",
+      mode: session.mode || "reading-mock",
+      at: new Date().toISOString(),
+      correct,
+      total,
+      percent,
+      skills: skillMap,
+      mistakes,
+      questionIds: Array.isArray(session.questionIds) ? session.questionIds : [],
+      passageIds: Array.isArray(session.passageIds) ? session.passageIds : [],
+      setIds: Array.isArray(session.setIds) ? session.setIds : [],
+      durationSeconds:
+        session.durationSeconds != null ? Number(session.durationSeconds) : null,
+      timedOut: Boolean(session.timedOut),
+      partScores: {
+        part5: partScores.part5 || { correct: 0, total: 0 },
+        part6: partScores.part6 || { correct: 0, total: 0 },
+        part7: partScores.part7 || { correct: 0, total: 0 },
+      },
+      items: items.map((entry) => ({
+        questionId: entry.questionId || "",
+        skill: entry.skill || "",
+        subskill: entry.subskill || "",
+        part: entry.part || null,
+        correct: Boolean(entry.correct),
+      })),
+    };
+
+    state.readingMockSessions.unshift(record);
+    if (state.readingMockSessions.length > MAX_SESSIONS) {
+      state.readingMockSessions = state.readingMockSessions.slice(0, MAX_SESSIONS);
+    }
+    syncReadingSessions(state);
+    save(state);
+    return record;
   }
 
   function recordPart6Session(session) {
@@ -386,12 +438,18 @@
     return state.part7Sessions || [];
   }
 
+  function getReadingMockSessions() {
+    const state = load();
+    return state.readingMockSessions || [];
+  }
+
   function getStreakDays() {
     const all = [
       ...getDemoSessions(),
       ...getPart5Sessions(),
       ...getPart6Sessions(),
       ...getPart7Sessions(),
+      ...getReadingMockSessions(),
     ];
     const days = [...new Set(all.map((s) => dayKey(s.at)).filter(Boolean))]
       .sort()
@@ -424,10 +482,12 @@
     const part5 = getPart5Sessions();
     const part6 = getPart6Sessions();
     const part7 = getPart7Sessions();
+    const readingMocks = getReadingMockSessions();
     const demoCount = demos.length;
     const part5Count = part5.length;
     const part6Count = part6.length;
     const part7Count = part7.length;
+    const readingMockCount = readingMocks.length;
     const last = demos[0] || null;
     const avg =
       demoCount > 0
@@ -449,12 +509,12 @@
         ? Math.round(part7.reduce((sum, s) => sum + (s.percent || 0), 0) / part7Count)
         : null;
     const part7Skills = rankSkills(aggregateSkillsFromSessions(part7), 5);
-    const readingSessions = [...part5, ...part6, ...part7].sort((a, b) =>
+    const readingSessions = [...part5, ...part6, ...part7, ...readingMocks].sort((a, b) =>
       String(b.at || "").localeCompare(String(a.at || ""))
     );
     const readingSkills = rankSkills(aggregateSkillsFromSessions(readingSessions), 5);
     const combinedSkills = rankSkills(
-      aggregateSkillsFromSessions([...demos, ...part5, ...part6, ...part7]),
+      aggregateSkillsFromSessions([...demos, ...part5, ...part6, ...part7, ...readingMocks]),
       5
     );
     const focus =
@@ -464,8 +524,8 @@
       part6Skills[0] ||
       part7Skills[0] ||
       null;
-    const totalSessionsAll = demoCount + part5Count + part6Count + part7Count;
-    const readingCount = part5Count + part6Count + part7Count;
+    const totalSessionsAll = demoCount + part5Count + part6Count + part7Count + readingMockCount;
+    const readingCount = part5Count + part6Count + part7Count + readingMockCount;
     const readingBlock = {
       sessionCount: readingCount,
       averagePercent:
@@ -494,6 +554,18 @@
       averagePercent: part7Avg,
       last: part7[0] || null,
       skills: part7Skills,
+    };
+    const readingMockAvg =
+      readingMockCount > 0
+        ? Math.round(
+            readingMocks.reduce((sum, s) => sum + (s.percent || 0), 0) / readingMockCount
+          )
+        : null;
+    const readingMockBlock = {
+      sessionCount: readingMockCount,
+      averagePercent: readingMockAvg,
+      last: readingMocks[0] || null,
+      skills: rankSkills(aggregateSkillsFromSessions(readingMocks), 5),
     };
 
     let focusNote = "Take the free short demo or Part 5 / Part 6 / Part 7 practice to see what to study next.";
@@ -526,6 +598,7 @@
       part5: part5Block,
       part6: part6Block,
       part7: part7Block,
+      readingMock: readingMockBlock,
     };
   }
 
@@ -539,11 +612,13 @@
     recordPart5Session,
     recordPart6Session,
     recordPart7Session,
+    recordReadingMockSession,
     recordPracticeSession,
     getDemoSessions,
     getPart5Sessions,
     getPart6Sessions,
     getPart7Sessions,
+    getReadingMockSessions,
     getStreakDays,
     getSummary,
     clearProgress,

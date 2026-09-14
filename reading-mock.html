@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Full Reading Mock | TOEIC Boost</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <header class="topbar" data-site-header></header>
+    <script src="nav.js"></script>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero guided-hero">
+        <a class="back-link" href="reading.html">Back to Reading hub</a>
+        <p class="eyebrow">Reading · Full mock · Parts 5–7</p>
+        <h1>Full Reading Mock</h1>
+        <p>
+          Official Reading order · 100 questions · 75 minutes · Part 5 → Part 6 → Part 7 ·
+          feedback at the end · class banks only. One continuous timer across the whole exam.
+        </p>
+        <p class="access-status" data-access-status></p>
+        <p class="practice-status" data-mock-status hidden></p>
+      </header>
+
+      <div data-access-gate></div>
+
+      <div data-access-protected hidden>
+        <!-- START -->
+        <section class="mock-start-panel" data-mock-start>
+          <div class="section-heading">
+            <p class="eyebrow">Before you begin</p>
+            <h2>Exam conditions</h2>
+          </div>
+          <ul class="mock-rules">
+            <li><strong>100 questions</strong> in official order: Part 5 (30) → Part 6 (16) → Part 7 (54).</li>
+            <li><strong>75 minutes</strong> on one continuous clock. When time ends, answers are submitted automatically.</li>
+            <li><strong>No explanations while you work</strong> — overall score, per-part breakdown, study focus, and mistake review come after submit.</li>
+            <li>You may move Previous / Next, jump by section, and change answers until you submit. Nav never shows correctness.</li>
+            <li>Sets reuse the same construction as the section mocks (skill-balanced Part 5; 4×4 Part 6; 8 singles + 5 multis Part 7). Free intro items are excluded.</li>
+          </ul>
+          <div class="practice-actions">
+            <button class="button primary" type="button" data-mock-begin disabled>Start 75-minute Reading mock</button>
+            <a class="button secondary" href="reading.html">Back to Reading hub</a>
+          </div>
+        </section>
+
+        <!-- EXAM -->
+        <section class="guided-practice-panel" data-mock-exam hidden>
+          <div class="mock-exam-bar">
+            <div>
+              <p class="eyebrow">Time remaining</p>
+              <strong class="mock-timer" data-mock-timer>75:00</strong>
+            </div>
+            <div>
+              <p class="eyebrow">Progress</p>
+              <strong data-mock-answered>0 / 100 answered</strong>
+            </div>
+            <div>
+              <p class="eyebrow">Section</p>
+              <strong data-mock-section>Part 5</strong>
+            </div>
+            <div>
+              <p class="eyebrow">Mode</p>
+              <strong>No feedback until end</strong>
+            </div>
+          </div>
+
+          <div class="mock-section-jump" data-mock-section-jump aria-label="Jump to section">
+            <button type="button" class="button secondary compact-button" data-jump-part="5">Part 5 (1–30)</button>
+            <button type="button" class="button secondary compact-button" data-jump-part="6">Part 6 (31–46)</button>
+            <button type="button" class="button secondary compact-button" data-jump-part="7">Part 7 (47–100)</button>
+          </div>
+
+          <div class="practice-card guided-card reading-mock-card">
+            <div class="practice-topline">
+              <span data-mock-counter>1 / 100</span>
+              <span class="question-meta" data-mock-type-label>Incomplete Sentences</span>
+            </div>
+
+            <!-- Part 6 passage -->
+            <article class="reading-passage part6-passage" data-part6-passage hidden aria-label="Part 6 passage">
+              <p class="part6-passage-meta" data-passage-meta></p>
+              <h3 data-passage-title>Passage</h3>
+              <div class="part6-passage-body" data-passage-body></div>
+            </article>
+
+            <!-- Part 7 passages -->
+            <div class="part7-passages" data-passages hidden aria-label="Part 7 passage(s)"></div>
+
+            <!-- skill / blankType / questionType stay hidden during exam -->
+            <p class="question-meta" data-mock-meta hidden></p>
+            <h3 data-mock-question></h3>
+            <div class="choice-list" data-mock-options></div>
+            <div class="practice-actions">
+              <button class="button secondary" type="button" data-mock-prev>Previous</button>
+              <button class="button secondary" type="button" data-mock-next>Next</button>
+              <button class="button primary" type="button" data-mock-submit>Submit exam</button>
+            </div>
+          </div>
+
+          <div class="mock-nav-grid" data-mock-nav aria-label="Question map"></div>
+        </section>
+
+        <!-- RESULTS -->
+        <section class="results-panel" id="results" data-mock-results hidden>
+          <div class="results-hero">
+            <div>
+              <p class="eyebrow">Reading mock complete</p>
+              <h2>Your score</h2>
+              <p data-mock-result-message hidden></p>
+              <p class="dash-last-session" data-mock-result-meta></p>
+            </div>
+            <div class="result-score">
+              <span>Score</span>
+              <strong data-mock-final-score>0/100</strong>
+              <small data-mock-final-note></small>
+            </div>
+          </div>
+
+          <div class="result-part-scores" data-mock-part-scores></div>
+          <div class="result-study" data-mock-study-focus></div>
+          <div class="result-misses-panel" data-mock-mistakes></div>
+
+          <div class="practice-actions results-actions">
+            <button class="button primary" type="button" data-mock-retry>Retry</button>
+            <button class="button secondary" type="button" data-mock-new-set>New mock set</button>
+            <a class="button secondary" href="reading.html">Back to Reading hub</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <strong>TOEIC BOOST</strong>
+      <span>by Teacher Israel Ventura</span>
+    </footer>
+
+    <script src="access.js"></script>
+    <script src="progress.js"></script>
+    <script src="reading-mock.js"></script>
+  </body>
+</html>
