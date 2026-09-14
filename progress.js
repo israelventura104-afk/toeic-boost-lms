@@ -1,6 +1,6 @@
 /**
  * Practice progress — Paso 3
- * Saves demo + Part 5 guided/mock + Part 6 guided sessions on this device (localStorage).
+ * Saves demo + Part 5 guided/mock + Part 6 guided/mock sessions on this device (localStorage).
  * No accounts. Teacher class materials only.
  */
 

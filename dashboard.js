@@ -234,10 +234,12 @@
 
     const totalSessions = summary.totalSessionsAll || 0;
     text(document.querySelector("[data-dash-sessions]"), String(totalSessions));
+    const hasReading =
+      (summary.part5?.sessionCount || 0) + (summary.part6?.sessionCount || 0) > 0;
     text(
       document.querySelector("[data-dash-sessions-note]"),
-      summary.part5?.sessionCount
-        ? "Demo and Part 5 sessions on this device"
+      hasReading
+        ? "Demo and Part 5 / Part 6 sessions on this device"
         : "Demo sessions on this device"
     );
 
@@ -271,6 +273,22 @@
     if (part5Meta) {
       part5Meta.textContent = summary.part5?.sessionCount
         ? `${summary.part5.sessionCount} session${summary.part5.sessionCount === 1 ? "" : "s"} · avg ${summary.part5.averagePercent ?? 0}%`
+        : "No sessions yet";
+    }
+
+    const part6Host = document.querySelector("[data-dash-skills-part6]");
+    if (part6Host) {
+      part6Host.innerHTML = skillRowsHtml(
+        summary.part6?.skills,
+        summary.part6?.sessionCount
+          ? "Sessions saved, but no skill tags yet."
+          : "No Part 6 practice or mock saved yet."
+      );
+    }
+    const part6Meta = document.querySelector("[data-dash-part6-meta]");
+    if (part6Meta) {
+      part6Meta.textContent = summary.part6?.sessionCount
+        ? `${summary.part6.sessionCount} session${summary.part6.sessionCount === 1 ? "" : "s"} · avg ${summary.part6.averagePercent ?? 0}%`
         : "No sessions yet";
     }
 
