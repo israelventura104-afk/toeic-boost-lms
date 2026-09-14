@@ -3,51 +3,52 @@
   "validated_at": "2026-09-14",
   "rubric_file": "data/part7-validation-rubric.md",
   "threshold": "average >= 4.0; no dimension < 3",
-  "lote": "lote1+lote2+lote3",
-  "set_count": 12,
-  "question_count": 50,
-  "item_count": 50,
-  "validated_item_count": 50,
-  "target_ids": "TQB-P7-0001 … TQB-P7-0012",
+  "lote": "lote1+lote2+lote3+lote4",
+  "set_count": 16,
+  "question_count": 67,
+  "item_count": 67,
+  "validated_item_count": 67,
+  "target_ids": "TQB-P7-0001 … TQB-P7-0016",
   "counts": {
     "kept_as_is": 0,
     "rewritten": 0,
-    "new": 50,
+    "new": 67,
     "dropped": 0
   },
   "set_type_histogram": {
-    "single": 9,
-    "double": 3
+    "single": 12,
+    "double": 3,
+    "triple": 1
   },
   "question_type_histogram": {
-    "main_idea": 7,
-    "detail": 15,
-    "vocabulary": 8,
-    "inference": 10,
-    "not_except": 7,
-    "cross_reference": 3
+    "main_idea": 10,
+    "detail": 20,
+    "vocabulary": 10,
+    "inference": 14,
+    "not_except": 8,
+    "cross_reference": 5
   },
   "genre_histogram": {
-    "email": 2,
+    "email": 4,
     "ad": 2,
     "article": 2,
     "chat": 2,
-    "notice": 3,
-    "memo": 1,
-    "letter": 1,
-    "form": 1,
+    "notice": 4,
+    "memo": 2,
+    "letter": 2,
+    "form": 2,
     "invoice": 1
   },
   "difficulty_histogram": {
-    "2": 11,
-    "3": 24,
-    "4": 15
+    "2": 15,
+    "3": 32,
+    "4": 20
   },
   "mean_dimension_scores": {
     "format_authenticity": 5.0,
     "passage_quality": 5.0,
     "question_clarity": 5.0,
-    "distractors": 4.64,
+    "distractors": 4.63,
     "explanation": 5.0
   },
   "overall_mean": 4.93,
@@ -123,6 +124,30 @@
         "cross_reference": 1
       },
       "notes": "3 singles (article/ad/invoice) + 1 double (chat+notice bike commute). All items pass rubric."
+    },
+    {
+      "lote": "lote4",
+      "date": "2026-09-14",
+      "set_ids": [
+        "TQB-P7-0013",
+        "TQB-P7-0014",
+        "TQB-P7-0015",
+        "TQB-P7-0016"
+      ],
+      "question_count": 17,
+      "set_types": {
+        "single": 3,
+        "triple": 1
+      },
+      "question_types": {
+        "main_idea": 3,
+        "detail": 4,
+        "vocabulary": 2,
+        "inference": 4,
+        "not_except": 1,
+        "cross_reference": 2
+      },
+      "notes": "3 singles (email/memo/letter) + 1 first triple (email+notice+form safety orientation). Boosted main_idea and cross_reference. All items pass rubric."
     }
   ],
   "items": [
@@ -1025,6 +1050,312 @@
       "lote": "lote3",
       "average": 5.0,
       "pass": true
+    },
+    {
+      "id": "TQB-P7-0013-Q01",
+      "set_id": "TQB-P7-0013",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "purpose = MFA enrollment deadline"
+    },
+    {
+      "id": "TQB-P7-0013-Q02",
+      "set_id": "TQB-P7-0013",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "enroll by Sept 30"
+    },
+    {
+      "id": "TQB-P7-0013-Q03",
+      "set_id": "TQB-P7-0013",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "exempt = not subject for now"
+    },
+    {
+      "id": "TQB-P7-0013-Q04",
+      "set_id": "TQB-P7-0013",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "on-site desktops wait until January"
+    },
+    {
+      "id": "TQB-P7-0014-Q01",
+      "set_id": "TQB-P7-0014",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "purpose = Q3 cutoff + rules"
+    },
+    {
+      "id": "TQB-P7-0014-Q02",
+      "set_id": "TQB-P7-0014",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "submit by Sept 25 5pm"
+    },
+    {
+      "id": "TQB-P7-0014-Q03",
+      "set_id": "TQB-P7-0014",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "late posts to Q4 / delayed reimbursement"
+    },
+    {
+      "id": "TQB-P7-0014-Q04",
+      "set_id": "TQB-P7-0014",
+      "setType": "single",
+      "questionType": "not_except",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "NOT email submission alternative"
+    },
+    {
+      "id": "TQB-P7-0015-Q01",
+      "set_id": "TQB-P7-0015",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "confirm kickoff + request SOW"
+    },
+    {
+      "id": "TQB-P7-0015-Q02",
+      "set_id": "TQB-P7-0015",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "fieldwork starts Sept 21"
+    },
+    {
+      "id": "TQB-P7-0015-Q03",
+      "set_id": "TQB-P7-0015",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "fieldwork = on-site audit work"
+    },
+    {
+      "id": "TQB-P7-0015-Q04",
+      "set_id": "TQB-P7-0015",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "no SOW by 15th → may not reserve team"
+    },
+    {
+      "id": "TQB-P7-0016-Q01",
+      "set_id": "TQB-P7-0016",
+      "setType": "triple",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "register by Sept 16"
+    },
+    {
+      "id": "TQB-P7-0016-Q02",
+      "set_id": "TQB-P7-0016",
+      "setType": "triple",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "both sessions in C-2"
+    },
+    {
+      "id": "TQB-P7-0016-Q03",
+      "set_id": "TQB-P7-0016",
+      "setType": "triple",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Session 2 → no east cafeteria lunch"
+    },
+    {
+      "id": "TQB-P7-0016-Q04",
+      "set_id": "TQB-P7-0016",
+      "setType": "triple",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "cross-ref email+form: Session 2 before deadline"
+    },
+    {
+      "id": "TQB-P7-0016-Q05",
+      "set_id": "TQB-P7-0016",
+      "setType": "triple",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote4",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "cross-ref notice+form: Lobby Desk 3 after session"
     }
   ]
 }

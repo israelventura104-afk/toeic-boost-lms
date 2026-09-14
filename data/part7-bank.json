@@ -4,35 +4,36 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "set_count": 12,
-  "question_count": 50,
-  "item_count": 50,
+  "set_count": 16,
+  "question_count": 67,
+  "item_count": 67,
   "validation": {
     "rubric": "data/part7-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Lotes 1–3 curated for Teacher Israel Ventura. Original workplace English only (not ETS material). 12 sets / 50 questions. Lote 1: email, ad, article, chat+notice. Lote 2: memo, letter, form, email+notice. Lote 3: article, ad, invoice, chat+notice."
+    "notes": "Lotes 1–4 curated for Teacher Israel Ventura. Original workplace English only (not ETS material). 16 sets / 67 questions. Lote 1: email, ad, article, chat+notice. Lote 2: memo, letter, form, email+notice. Lote 3: article, ad, invoice, chat+notice. Lote 4: email, memo, letter, email+notice+form (first triple)."
   },
   "set_type_counts": {
-    "single": 9,
-    "double": 3
+    "single": 12,
+    "double": 3,
+    "triple": 1
   },
   "question_type_counts": {
-    "main_idea": 7,
-    "detail": 15,
-    "vocabulary": 8,
-    "inference": 10,
-    "not_except": 7,
-    "cross_reference": 3
+    "main_idea": 10,
+    "detail": 20,
+    "vocabulary": 10,
+    "inference": 14,
+    "not_except": 8,
+    "cross_reference": 5
   },
   "genre_counts": {
-    "email": 2,
+    "email": 4,
     "ad": 2,
     "article": 2,
     "chat": 2,
-    "notice": 3,
-    "memo": 1,
-    "letter": 1,
-    "form": 1,
+    "notice": 4,
+    "memo": 2,
+    "letter": 2,
+    "form": 2,
     "invoice": 1
   },
   "sets": [
@@ -1715,6 +1716,582 @@
           "correctAnswer": "Instant commute cards",
           "explanation": "Maya says helmets, lights, and locks all count, but instant commute cards do NOT.",
           "commonMistake": "Missing Maya’s explicit exclusion of instant commute cards."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0013",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "email",
+      "title": "Mandatory MFA enrollment for remote staff",
+      "difficulty": 3,
+      "workplaceTopic": "IT / Security",
+      "lote": "lote4",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "email",
+          "heading": "Subject: Action required — enroll in MFA by September 30",
+          "body": "From: Keiko Tanaka, IT Security\nTo: All remote and hybrid staff\n\nDear colleagues,\n\nStarting October 1, all staff who access company systems from outside the office must use multi-factor authentication (MFA). Enrollment is now open in the Security Portal.\n\nPlease complete enrollment by September 30. After that date, remote logins without MFA will be blocked. On-site desktop users are exempt until January, when MFA will extend to all accounts.\n\nIf you lose your phone or cannot enroll, contact the IT Help Desk at extension 2200 before September 28 so we can issue a hardware token. Walk-in token pickup is available in Building A, Room 112, weekdays 9:00 a.m.–3:00 p.m.\n\nA 12-minute tutorial video is posted on the intranet under Security > MFA Guide.\n\nThank you for helping protect client data.\n\nKeiko Tanaka\nIT Security Manager"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0013-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the main purpose of this email?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To announce that the Security Portal will close in January"
+            },
+            {
+              "key": "B",
+              "text": "To require remote and hybrid staff to enroll in MFA by a deadline"
+            },
+            {
+              "key": "C",
+              "text": "To replace all employee phones with hardware tokens"
+            },
+            {
+              "key": "D",
+              "text": "To cancel on-site desktop access until October 1"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "To require remote and hybrid staff to enroll in MFA by a deadline",
+          "explanation": "The email announces that remote/hybrid staff must enroll in MFA by September 30 before remote logins without MFA are blocked on October 1.",
+          "commonMistake": "Focusing on the January extension for on-site users and missing the primary MFA enrollment requirement."
+        },
+        {
+          "id": "TQB-P7-0013-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "By when must staff complete MFA enrollment?",
+          "options": [
+            {
+              "key": "A",
+              "text": "September 28"
+            },
+            {
+              "key": "B",
+              "text": "September 30"
+            },
+            {
+              "key": "C",
+              "text": "October 1"
+            },
+            {
+              "key": "D",
+              "text": "January 1"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "September 30",
+          "explanation": "Enrollment must be completed by September 30. September 28 is the help-desk contact deadline for tokens; October 1 is when remote logins without MFA are blocked.",
+          "commonMistake": "Confusing the enrollment deadline with the October 1 blocking date or the September 28 token request cutoff."
+        },
+        {
+          "id": "TQB-P7-0013-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the email, the word “exempt” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "required to finish early"
+            },
+            {
+              "key": "B",
+              "text": "not subject to the rule for now"
+            },
+            {
+              "key": "C",
+              "text": "unable to use the intranet"
+            },
+            {
+              "key": "D",
+              "text": "responsible for training others"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "not subject to the rule for now",
+          "explanation": "On-site desktop users are exempt until January, meaning they do not have to follow the MFA rule yet.",
+          "commonMistake": "Choosing a meaning related to training or deadlines instead of temporary exclusion from the rule."
+        },
+        {
+          "id": "TQB-P7-0013-Q04",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What can be inferred about employees who work only at on-site desktops?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They must enroll in MFA before September 30"
+            },
+            {
+              "key": "B",
+              "text": "They will lose intranet access on October 1"
+            },
+            {
+              "key": "C",
+              "text": "They are not required to use MFA until January"
+            },
+            {
+              "key": "D",
+              "text": "They must pick up a hardware token in Room 112"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "They are not required to use MFA until January",
+          "explanation": "The email states on-site desktop users are exempt until January, when MFA extends to all accounts.",
+          "commonMistake": "Assuming the September 30 deadline applies to every employee, including on-site-only staff."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0014",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "memo",
+      "title": "Q3 expense report cutoff revision",
+      "difficulty": 2,
+      "workplaceTopic": "Finance / Policy",
+      "lote": "lote4",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "memo",
+          "heading": "MEMORANDUM — Q3 expense report cutoff",
+          "body": "To: All department managers\nFrom: Luis Ortega, Finance\nDate: September 12, 2026\nSubject: Q3 expense report cutoff — revised\n\nPlease remind your teams that Q3 expense reports must be submitted in the ExpenseHub portal by Friday, September 25, at 5:00 p.m. Reports filed after that time will post to Q4 and may delay reimbursements until late October.\n\nPaper receipts are no longer accepted for meals under $25; upload a digital photo instead. Travel expenses over $500 still require a pre-approval code (TRAV-Q3) before submission.\n\nManagers should approve pending reports by Monday, September 28, so Payroll can process reimbursements on October 3.\n\nQuestions: finance@northbridge.example"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0014-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the main purpose of this memo?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To announce that ExpenseHub will shut down in October"
+            },
+            {
+              "key": "B",
+              "text": "To update managers on the Q3 expense deadline and related rules"
+            },
+            {
+              "key": "C",
+              "text": "To cancel all travel over $500 for the rest of the year"
+            },
+            {
+              "key": "D",
+              "text": "To hire additional staff for the Payroll department"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "To update managers on the Q3 expense deadline and related rules",
+          "explanation": "The memo revises the Q3 submission cutoff, clarifies receipt rules, and sets a manager approval date so reimbursements can be processed.",
+          "commonMistake": "Treating the travel pre-approval detail as the memo’s overall purpose."
+        },
+        {
+          "id": "TQB-P7-0014-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "When must Q3 expense reports be submitted?",
+          "options": [
+            {
+              "key": "A",
+              "text": "September 12 at noon"
+            },
+            {
+              "key": "B",
+              "text": "September 25 at 5:00 p.m."
+            },
+            {
+              "key": "C",
+              "text": "September 28 at 5:00 p.m."
+            },
+            {
+              "key": "D",
+              "text": "October 3 at 5:00 p.m."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "September 25 at 5:00 p.m.",
+          "explanation": "Reports must be submitted by Friday, September 25, at 5:00 p.m. September 28 is the manager approval deadline; October 3 is the reimbursement processing date.",
+          "commonMistake": "Mixing up the employee submission deadline with the manager approval date."
+        },
+        {
+          "id": "TQB-P7-0014-Q03",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What will most likely happen if an employee submits a Q3 report on September 26?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It will be paid on October 3 with other Q3 reports"
+            },
+            {
+              "key": "B",
+              "text": "It will be rejected and must be mailed as a paper form"
+            },
+            {
+              "key": "C",
+              "text": "It will post to Q4 and reimbursement may be delayed until late October"
+            },
+            {
+              "key": "D",
+              "text": "It will require a TRAV-Q3 code even for meals under $25"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "It will post to Q4 and reimbursement may be delayed until late October",
+          "explanation": "The memo states reports filed after September 25 will post to Q4 and may delay reimbursements until late October.",
+          "commonMistake": "Assuming late reports are still processed with the October 3 Q3 reimbursement run."
+        },
+        {
+          "id": "TQB-P7-0014-Q04",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "According to the memo, which of the following is NOT stated?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Meals under $25 need a digital photo instead of a paper receipt"
+            },
+            {
+              "key": "B",
+              "text": "Travel over $500 still needs a TRAV-Q3 pre-approval code"
+            },
+            {
+              "key": "C",
+              "text": "Managers should approve pending reports by September 28"
+            },
+            {
+              "key": "D",
+              "text": "Employees may submit Q3 reports by email if ExpenseHub is busy"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Employees may submit Q3 reports by email if ExpenseHub is busy",
+          "explanation": "The memo requires submission in ExpenseHub and never offers email as an alternative. The other options are explicitly stated.",
+          "commonMistake": "Selecting a true detail (such as the photo-receipt rule) instead of the option that is not mentioned."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0015",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "letter",
+      "title": "Warehouse inventory audit kickoff confirmation",
+      "difficulty": 3,
+      "workplaceTopic": "Consulting / Client services",
+      "lote": "lote4",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "letter",
+          "heading": "Letter — Coral Analytics to Meridian Retail Group",
+          "body": "September 8, 2026\n\nMs. Hannah Cho\nOperations Director\nMeridian Retail Group\n\nDear Ms. Cho,\n\nThank you for selecting Coral Analytics for your warehouse inventory audit. We confirm that fieldwork will begin Monday, September 21, at your Springfield distribution center.\n\nOur lead auditor, Rajiv Mehta, will arrive at 8:00 a.m. with two associates. Please arrange badge access and a secure workstation near the receiving dock. The on-site phase is expected to last four business days; a draft findings report will follow within ten business days after fieldwork ends.\n\nAs agreed, the fixed fee is $14,800, with 40% due upon kickoff and the balance upon delivery of the final report. Kindly return the signed Statement of Work by September 15 so we can reserve the audit team.\n\nWe look forward to a productive engagement.\n\nSincerely,\nElena Vargas\nClient Partner, Coral Analytics"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0015-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the main purpose of this letter?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To request a discount on Meridian’s warehouse lease"
+            },
+            {
+              "key": "B",
+              "text": "To confirm audit start details and request a signed Statement of Work"
+            },
+            {
+              "key": "C",
+              "text": "To announce that Coral Analytics is hiring new auditors"
+            },
+            {
+              "key": "D",
+              "text": "To cancel the Springfield distribution center visit"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "To confirm audit start details and request a signed Statement of Work",
+          "explanation": "Elena confirms the September 21 fieldwork start, logistics, fee schedule, and asks for the signed Statement of Work by September 15.",
+          "commonMistake": "Focusing only on the fee amount and missing the confirmation-and-SOW purpose."
+        },
+        {
+          "id": "TQB-P7-0015-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "When will fieldwork at the Springfield distribution center begin?",
+          "options": [
+            {
+              "key": "A",
+              "text": "September 8"
+            },
+            {
+              "key": "B",
+              "text": "September 15"
+            },
+            {
+              "key": "C",
+              "text": "September 21"
+            },
+            {
+              "key": "D",
+              "text": "Ten business days after kickoff"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "September 21",
+          "explanation": "The letter confirms fieldwork begins Monday, September 21. September 15 is the SOW return deadline; the draft report follows within ten business days after fieldwork ends.",
+          "commonMistake": "Confusing the Statement of Work deadline with the fieldwork start date."
+        },
+        {
+          "id": "TQB-P7-0015-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the letter, the word “fieldwork” most nearly means",
+          "options": [
+            {
+              "key": "A",
+              "text": "on-site audit work at the client location"
+            },
+            {
+              "key": "B",
+              "text": "online training for new warehouse staff"
+            },
+            {
+              "key": "C",
+              "text": "marketing research about retail competitors"
+            },
+            {
+              "key": "D",
+              "text": "construction work near the receiving dock"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "on-site audit work at the client location",
+          "explanation": "Fieldwork refers to the auditors’ on-site phase at the Springfield distribution center lasting four business days.",
+          "commonMistake": "Reading “field” literally as construction or outdoor physical labor."
+        },
+        {
+          "id": "TQB-P7-0015-Q04",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What will most likely happen if Meridian does not return the signed Statement of Work by September 15?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The audit fee will automatically drop below $14,800"
+            },
+            {
+              "key": "B",
+              "text": "Coral may be unable to reserve the audit team as planned"
+            },
+            {
+              "key": "C",
+              "text": "Rajiv Mehta will start fieldwork one day early"
+            },
+            {
+              "key": "D",
+              "text": "Badge access will be arranged by Coral Analytics"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Coral may be unable to reserve the audit team as planned",
+          "explanation": "Elena asks for the signed SOW by September 15 specifically so Coral can reserve the audit team.",
+          "commonMistake": "Inferring a fee change or schedule change that the letter never suggests."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0016",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "triple",
+      "genre": "email",
+      "title": "New-hire safety orientation day",
+      "difficulty": 4,
+      "workplaceTopic": "HR / Safety training",
+      "lote": "lote4",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "email",
+          "heading": "Email — Mandatory safety orientation",
+          "body": "From: Morgan Ellis, Safety Coordinator\nTo: September new-hire cohort\nSubject: Mandatory safety orientation — September 18\n\nWelcome to Northbridge Logistics. All September hires must attend the safety orientation on Thursday, September 18, before receiving warehouse floor access. Choose Session 1 (9:00–11:00 a.m.) or Session 2 (1:00–3:00 p.m.) and register by Tuesday, September 16, using the linked form.\n\nBring closed-toe shoes. Laptops are not needed. Lunch is provided only for Session 1 attendees in the east cafeteria.\n\nIf you cannot attend either session, email me by Monday so we can schedule a make-up on September 25.\n\nMorgan Ellis\nSafety Coordinator"
+        },
+        {
+          "label": "B",
+          "genre": "notice",
+          "heading": "NORTHBRIDGE LOGISTICS — Safety Orientation Notice",
+          "body": "Building C Training Room — September 18\n\nSessions:\n• Session 1: 9:00–11:00 a.m. — Training Room C-2\n• Session 2: 1:00–3:00 p.m. — Training Room C-2\n\nImportant:\n• Badge photos are taken at the end of each session at Lobby Desk 3.\n• Parking for orientation day: Lot G only (Lot B is reserved for outbound trucks).\n• Arrivals more than 15 minutes late will be asked to reschedule.\n\nQuestions: safety@northbridge.example"
+        },
+        {
+          "label": "C",
+          "genre": "form",
+          "heading": "Safety Orientation Registration — confirmation",
+          "body": "NORTHBRIDGE LOGISTICS — Safety Orientation Registration\n\nEmployee: Samira Okonkwo\nDepartment: Receiving\nSelected session: Session 2 (1:00–3:00 p.m.)\nRegistration submitted: September 14, 2026\nStatus: Confirmed\n\nNotes: Closed-toe shoes required. Badge photo after session at Lobby Desk 3.\nManager copy sent to: Jordan Lee"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0016-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to Morgan’s email, by when must new hires register for orientation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Monday before the make-up date"
+            },
+            {
+              "key": "B",
+              "text": "Tuesday, September 16"
+            },
+            {
+              "key": "C",
+              "text": "Thursday, September 18"
+            },
+            {
+              "key": "D",
+              "text": "September 25"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Tuesday, September 16",
+          "explanation": "The email asks new hires to register by Tuesday, September 16. Monday is only for requesting a make-up; September 18 is orientation day.",
+          "commonMistake": "Using the orientation date or the make-up date instead of the registration deadline."
+        },
+        {
+          "id": "TQB-P7-0016-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the notice, where will both orientation sessions be held?",
+          "options": [
+            {
+              "key": "A",
+              "text": "East cafeteria"
+            },
+            {
+              "key": "B",
+              "text": "Lobby Desk 3"
+            },
+            {
+              "key": "C",
+              "text": "Training Room C-2"
+            },
+            {
+              "key": "D",
+              "text": "Lot G"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Training Room C-2",
+          "explanation": "The notice lists both Session 1 and Session 2 in Training Room C-2. Lobby Desk 3 is for badge photos; Lot G is parking.",
+          "commonMistake": "Choosing badge-photo or parking locations mentioned nearby in the notice."
+        },
+        {
+          "id": "TQB-P7-0016-Q03",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What can be inferred about lunch for Samira Okonkwo on September 18?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She will receive lunch in the east cafeteria because all new hires do"
+            },
+            {
+              "key": "B",
+              "text": "She should not expect the provided east-cafeteria lunch"
+            },
+            {
+              "key": "C",
+              "text": "She must buy lunch vouchers at Lobby Desk 3"
+            },
+            {
+              "key": "D",
+              "text": "Lunch is only available to Receiving staff in Lot G"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "She should not expect the provided east-cafeteria lunch",
+          "explanation": "Lunch is provided only for Session 1 attendees, and Samira’s form confirms Session 2.",
+          "commonMistake": "Assuming cafeteria lunch applies to every orientation participant."
+        },
+        {
+          "id": "TQB-P7-0016-Q04",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "Based on the email and Samira’s registration form, which statement is true?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She selected Session 1 and will eat in the east cafeteria"
+            },
+            {
+              "key": "B",
+              "text": "She confirmed Session 2 and registered before the Tuesday deadline"
+            },
+            {
+              "key": "C",
+              "text": "She requested a make-up session on September 25"
+            },
+            {
+              "key": "D",
+              "text": "She works in Facilities and must bring a laptop"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "She confirmed Session 2 and registered before the Tuesday deadline",
+          "explanation": "The form shows Session 2 confirmed on September 14; the email sets the registration deadline as Tuesday, September 16.",
+          "commonMistake": "Using only the form’s session time without checking the email deadline, or assuming Session 1 benefits apply."
+        },
+        {
+          "id": "TQB-P7-0016-Q05",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "According to the notice and the registration form, where should Samira go for her badge photo?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Training Room C-2 before Session 2 begins"
+            },
+            {
+              "key": "B",
+              "text": "Lobby Desk 3 after her session ends"
+            },
+            {
+              "key": "C",
+              "text": "Lot G at 9:00 a.m."
+            },
+            {
+              "key": "D",
+              "text": "East cafeteria during Session 1"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Lobby Desk 3 after her session ends",
+          "explanation": "Both the notice and the form note that badge photos are taken after the session at Lobby Desk 3.",
+          "commonMistake": "Choosing the training room or parking lot instead of the badge-photo location shared by both texts."
         }
       ]
     }
