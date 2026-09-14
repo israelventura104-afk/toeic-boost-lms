@@ -4,27 +4,27 @@
   "purpose": "guided_and_mocks_class_validated",
   "reuse_in_mocks": true,
   "exclude_from_free_intro": true,
-  "passage_count": 12,
-  "question_count": 48,
-  "item_count": 48,
+  "passage_count": 16,
+  "question_count": 64,
+  "item_count": 64,
   "validation": {
     "rubric": "data/part6-validation-rubric.md",
     "threshold": "average >= 4.0 and no dimension < 3",
-    "notes": "Lotes 1–3 curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Lote 3 added notice (product recall), letter (vendor/purchasing), ad (conference hotel), and email (benefits enrollment)."
+    "notes": "Lotes 1–4 curated for Teacher Israel Ventura class guided practice and future mocks. Original workplace English only (not ETS material). Lote 4 added article (hybrid remote work), memo (warehouse safety), notice (charity food drive), and letter (client portal-outage apology)."
   },
   "blank_type_counts": {
-    "word_form": 12,
-    "vocabulary": 12,
-    "connector": 12,
-    "sentence_insertion": 12
+    "word_form": 16,
+    "vocabulary": 16,
+    "connector": 16,
+    "sentence_insertion": 16
   },
   "genre_counts": {
     "email": 3,
-    "memo": 2,
-    "notice": 2,
-    "letter": 2,
+    "memo": 3,
+    "notice": 3,
+    "letter": 3,
     "ad": 2,
-    "article": 1
+    "article": 2
   },
   "passages": [
     {
@@ -1788,6 +1788,590 @@
           "correctAnswer": "After you submit, you will receive a confirmation email that you should save for your records.",
           "explanation": "A describes the confirmation step that follows submitting enrollment, fitting the close before the contact line.",
           "commonMistake": "Inserting an unrelated company announcement that does not help employees finish open enrollment."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0013",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "article",
+      "title": "Staff news: hybrid remote-work schedule",
+      "difficulty": 3,
+      "workplaceTopic": "HR / Remote work policy",
+      "lote": "lote4",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "CLEARWATER CHRONICLE — Staff News\n\nHybrid Work Schedule Begins in October"
+        },
+        {
+          "paragraph": 2,
+          "content": "Clearwater Analytics will introduce a company-wide hybrid schedule on October 1. Under the new policy, most office staff will work from home two days each week and report to headquarters on the remaining three."
+        },
+        {
+          "paragraph": 3,
+          "content": "Early feedback from a summer pilot has been [[179]]. Teams reported higher focus on deep-work tasks and fewer late arrivals. [[180]], managers asked for clearer guidelines on which days entire teams must be on-site together."
+        },
+        {
+          "paragraph": 4,
+          "content": "Human Resources will publish an [[181]] calendar for each department by September 20. [[182]]\n\nEmployees with questions may contact hybrid@clearwater.example."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0013-Q01",
+          "blankLabel": "179",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "fragile"
+            },
+            {
+              "key": "B",
+              "text": "favorable"
+            },
+            {
+              "key": "C",
+              "text": "former"
+            },
+            {
+              "key": "D",
+              "text": "formal"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "favorable",
+          "explanation": "Higher focus and fewer late arrivals are positive outcomes, so the feedback is \"favorable\" (encouraging or positive).",
+          "commonMistake": "Choosing a look-alike adjective (fragile / former / formal) that does not mean positive or promising."
+        },
+        {
+          "id": "TQB-P6-0013-Q02",
+          "blankLabel": "180",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "However"
+            },
+            {
+              "key": "B",
+              "text": "Likewise"
+            },
+            {
+              "key": "C",
+              "text": "For instance"
+            },
+            {
+              "key": "D",
+              "text": "Previously"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "However",
+          "explanation": "The managers' request for clearer guidelines contrasts with the otherwise positive pilot results. \"However\" marks that contrast.",
+          "commonMistake": "Using \"Likewise\" or \"For instance\" when the sentence introduces a concern, not a parallel or example."
+        },
+        {
+          "id": "TQB-P6-0013-Q03",
+          "blankLabel": "181",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "office"
+            },
+            {
+              "key": "B",
+              "text": "official"
+            },
+            {
+              "key": "C",
+              "text": "officially"
+            },
+            {
+              "key": "D",
+              "text": "officiate"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "official",
+          "explanation": "An adjective is needed before the noun \"calendar.\" \"Official\" correctly modifies \"calendar.\"",
+          "commonMistake": "Choosing the adverb \"officially\" or the noun \"office\" where an adjective slot before a noun is required."
+        },
+        {
+          "id": "TQB-P6-0013-Q04",
+          "blankLabel": "182",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Departments may propose different on-site days once that calendar is posted."
+            },
+            {
+              "key": "B",
+              "text": "The lobby elevator will be out of service this weekend."
+            },
+            {
+              "key": "C",
+              "text": "Please renew your parking permit before Friday."
+            },
+            {
+              "key": "D",
+              "text": "The annual awards banquet will feature a guest speaker."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Departments may propose different on-site days once that calendar is posted.",
+          "explanation": "A continues the hybrid-policy topic by linking the upcoming calendar to a concrete next step for departments.",
+          "commonMistake": "Selecting an unrelated workplace sentence that is grammatical but breaks the remote-work article flow."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0014",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "memo",
+      "title": "Operations: warehouse forklift and aisle safety",
+      "difficulty": 4,
+      "workplaceTopic": "Operations / Warehouse safety",
+      "lote": "lote4",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "MEMORANDUM\n\nTo: All warehouse associates\nFrom: Operations Safety Office\nDate: September 12\nSubject: Updated forklift and aisle safety rules"
+        },
+        {
+          "paragraph": 2,
+          "content": "Beginning September 22, all forklift operators must complete a refresher course before their next shift. Associates who miss the training will not be [[183]] to operate powered equipment until they are certified."
+        },
+        {
+          "paragraph": 3,
+          "content": "Yellow walkways must remain clear of pallets and packaging waste. [[184]] high-visibility vests are required in Zones B and C at all times, including during short breaks."
+        },
+        {
+          "paragraph": 4,
+          "content": "Supervisors should log any near-miss incidents within one hour. [[185]], they must close any aisle that becomes blocked until the hazard is removed. [[186]]\n\nThank you for helping keep the floor safe.\n— Operations Safety Office"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0014-Q01",
+          "blankLabel": "183",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "permit"
+            },
+            {
+              "key": "B",
+              "text": "permission"
+            },
+            {
+              "key": "C",
+              "text": "permitted"
+            },
+            {
+              "key": "D",
+              "text": "permitting"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "permitted",
+          "explanation": "After \"will not be,\" a past-participle / adjective form is required. \"Permitted\" means allowed.",
+          "commonMistake": "Choosing the noun \"permission\" or the base verb \"permit\" where a be + adjective/participle slot is needed."
+        },
+        {
+          "id": "TQB-P6-0014-Q02",
+          "blankLabel": "184",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Mandatory"
+            },
+            {
+              "key": "B",
+              "text": "Optional"
+            },
+            {
+              "key": "C",
+              "text": "Decorative"
+            },
+            {
+              "key": "D",
+              "text": "Casual"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Mandatory",
+          "explanation": "Safety rules that apply \"at all times\" describe requirements that are \"mandatory\" (required), not optional.",
+          "commonMistake": "Choosing \"Optional,\" which contradicts a rule that applies at all times including breaks."
+        },
+        {
+          "id": "TQB-P6-0014-Q03",
+          "blankLabel": "185",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Conversely"
+            },
+            {
+              "key": "B",
+              "text": "Furthermore"
+            },
+            {
+              "key": "C",
+              "text": "Previously"
+            },
+            {
+              "key": "D",
+              "text": "Rather"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Furthermore",
+          "explanation": "Closing a blocked aisle is an additional safety duty alongside logging near-misses. \"Furthermore\" adds that requirement.",
+          "commonMistake": "Choosing \"Conversely,\" which would introduce an opposite idea rather than another rule."
+        },
+        {
+          "id": "TQB-P6-0014-Q04",
+          "blankLabel": "186",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "A printed schedule of refresher sessions is posted by the time clock."
+            },
+            {
+              "key": "B",
+              "text": "The marketing team will redesign the product brochure next spring."
+            },
+            {
+              "key": "C",
+              "text": "Please reserve parking spaces for the visiting auditors."
+            },
+            {
+              "key": "D",
+              "text": "The fitness center will extend evening hours in November."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "A printed schedule of refresher sessions is posted by the time clock.",
+          "explanation": "A connects back to the required forklift refresher by telling associates where to find the session schedule.",
+          "commonMistake": "Selecting an unrelated workplace sentence that ignores the safety-training context."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0015",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "notice",
+      "title": "HR: annual community food-drive notice",
+      "difficulty": 2,
+      "workplaceTopic": "HR / Community charity drive",
+      "lote": "lote4",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "NOTICE\n\nAnnual Community Food Drive — October 6–10"
+        },
+        {
+          "paragraph": 2,
+          "content": "Human Resources invites all employees to donate nonperishable food for the Metro Food Bank. Collection barrels will be placed in the lobby and on each floor near the elevators."
+        },
+        {
+          "paragraph": 3,
+          "content": "Barrels fill quickly during the lunch rush. [[187]], please drop off donations in the morning when possible."
+        },
+        {
+          "paragraph": 4,
+          "content": "Every department that fills at least one barrel will receive a [[188]] mention in the staff newsletter. Teams are encouraged to record their [[189]] on the sheet taped to each barrel. [[190]]\n\nDrop-off ends at 4:00 P.M. on Friday, October 10. For volunteer shifts packing boxes on October 11, sign up at hr.example/fooddrive.\n— Human Resources"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0015-Q01",
+          "blankLabel": "187",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Therefore"
+            },
+            {
+              "key": "B",
+              "text": "In contrast"
+            },
+            {
+              "key": "C",
+              "text": "Previously"
+            },
+            {
+              "key": "D",
+              "text": "Otherwise"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Therefore",
+          "explanation": "Morning drop-off is a logical response to barrels filling during lunch. \"Therefore\" marks that consequence.",
+          "commonMistake": "Using \"In contrast\" when there is no opposing idea, only a practical recommendation."
+        },
+        {
+          "id": "TQB-P6-0015-Q02",
+          "blankLabel": "188",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "specialize"
+            },
+            {
+              "key": "B",
+              "text": "special"
+            },
+            {
+              "key": "C",
+              "text": "specially"
+            },
+            {
+              "key": "D",
+              "text": "specialist"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "special",
+          "explanation": "An adjective is needed before the noun \"mention.\" \"Special\" correctly modifies \"mention.\"",
+          "commonMistake": "Choosing the adverb \"specially\" or the verb \"specialize\" where an adjective slot is required."
+        },
+        {
+          "id": "TQB-P6-0015-Q03",
+          "blankLabel": "189",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "contributions"
+            },
+            {
+              "key": "B",
+              "text": "contradictions"
+            },
+            {
+              "key": "C",
+              "text": "contractions"
+            },
+            {
+              "key": "D",
+              "text": "constructions"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "contributions",
+          "explanation": "Teams record what they donate; \"contributions\" means donated items or gifts.",
+          "commonMistake": "Choosing a similar-looking noun (contradictions / contractions / constructions) that does not mean donated goods."
+        },
+        {
+          "id": "TQB-P6-0015-Q04",
+          "blankLabel": "190",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "The cafeteria will serve a new soup recipe on Monday."
+            },
+            {
+              "key": "B",
+              "text": "Please update your password before the next login."
+            },
+            {
+              "key": "C",
+              "text": "Cash gifts may be left with reception in a sealed envelope."
+            },
+            {
+              "key": "D",
+              "text": "The fitness center will extend evening hours in November."
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Cash gifts may be left with reception in a sealed envelope.",
+          "explanation": "C adds another donation option that fits a charity-drive notice between recording food donations and the drop-off deadline.",
+          "commonMistake": "Selecting an unrelated facility or IT sentence that does not advance the food-drive topic."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0016",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "letter",
+      "title": "Client Success: apology for portal outage",
+      "difficulty": 3,
+      "workplaceTopic": "Customer Success / Service apology",
+      "lote": "lote4",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "Dear Mr. Brennan,\n\nI am writing to apologize for the service interruption that affected your online ordering portal on September 9. Our technical team traced the outage to a failed software update."
+        },
+        {
+          "paragraph": 2,
+          "content": "The portal was restored at 2:40 P.M., and we have [[191]] additional monitoring overnight to prevent a recurrence. [[192]], we have credited your account with one month of hosting fees at no charge."
+        },
+        {
+          "paragraph": 3,
+          "content": "Please accept our [[193]] for the inconvenience this caused your sales staff. [[194]]\n\nSincerely,\nPriya Nair\nClient Success Manager\nOrbitWeb Hosting"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0016-Q01",
+          "blankLabel": "191",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "implied"
+            },
+            {
+              "key": "B",
+              "text": "implemented"
+            },
+            {
+              "key": "C",
+              "text": "imported"
+            },
+            {
+              "key": "D",
+              "text": "impressed"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "implemented",
+          "explanation": "The company put new monitoring in place; \"implemented\" means put into operation.",
+          "commonMistake": "Choosing a similar-looking verb (implied / imported / impressed) that does not mean put a system into use."
+        },
+        {
+          "id": "TQB-P6-0016-Q02",
+          "blankLabel": "192",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "In addition"
+            },
+            {
+              "key": "B",
+              "text": "On the contrary"
+            },
+            {
+              "key": "C",
+              "text": "Previously"
+            },
+            {
+              "key": "D",
+              "text": "For instance"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "In addition",
+          "explanation": "The fee credit is a second remedy after the monitoring step. \"In addition\" marks that additive relationship.",
+          "commonMistake": "Using \"On the contrary\" when the sentence continues the apology remedies rather than opposing them."
+        },
+        {
+          "id": "TQB-P6-0016-Q03",
+          "blankLabel": "193",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "apologize"
+            },
+            {
+              "key": "B",
+              "text": "apologetic"
+            },
+            {
+              "key": "C",
+              "text": "apologizing"
+            },
+            {
+              "key": "D",
+              "text": "apologies"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "apologies",
+          "explanation": "After \"our,\" a plural noun is required. \"Apologies\" is the standard phrase for a formal expression of regret.",
+          "commonMistake": "Choosing the verb \"apologize\" or the adjective \"apologetic\" where a noun slot after \"our\" is needed."
+        },
+        {
+          "id": "TQB-P6-0016-Q04",
+          "blankLabel": "194",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "A detailed incident report will be emailed to you by Thursday."
+            },
+            {
+              "key": "B",
+              "text": "The warehouse closes for inventory every December."
+            },
+            {
+              "key": "C",
+              "text": "Our marketing brochure was redesigned last year."
+            },
+            {
+              "key": "D",
+              "text": "Parking validation is available in the lobby."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "A detailed incident report will be emailed to you by Thursday.",
+          "explanation": "A offers a concrete follow-up document that fits an apology letter after the expression of regret.",
+          "commonMistake": "Selecting an unrelated workplace sentence that does not continue the client-service recovery flow."
         }
       ]
     }

@@ -30,11 +30,11 @@ Genre rotation across 20 passages: aim for a spread of email / letter / memo / n
 | **Lote 1** | TQB-P6-0001 … 0004 | 4 | 16 | **Done — 16 / 80** |
 | **Lote 2** | TQB-P6-0005 … 0008 | +4 | +16 | **Done — 32 / 80** |
 | **Lote 3** | TQB-P6-0009 … 0012 | +4 | +16 | **Done — 48 / 80** |
-| Lote 4 | TQB-P6-0013 … 0016 | +4 | +16 | Planned — 64 / 80 |
+| **Lote 4** | TQB-P6-0013 … 0016 | +4 | +16 | **Done — 64 / 80** |
 | Lote 5 (final) | TQB-P6-0017 … 0020 | +4 | +16 | Planned — **80 / 80** |
 | Target | … → TQB-P6-0020 | **20** | **80** | In progress |
 
-**After Lote 3:** **48 / 80** class questions (60%). With free intro: **52** Part 6 questions on site (1 intro passage + 12 class passages).
+**After Lote 4:** **64 / 80** class questions (80%). With free intro: **68** Part 6 questions on site (1 intro passage + 16 class passages).
 
 ### Lote 1 snapshot
 
@@ -71,6 +71,20 @@ Bank totals after Lote 2: word_form 8 · vocabulary 8 · connector 8 · sentence
 
 Blank-type counts (lote 3): word_form 4 · vocabulary 4 · connector 4 · sentence_insertion 4.  
 Bank totals after Lote 3: word_form 12 · vocabulary 12 · connector 12 · sentence_insertion 12.
+
+
+### Lote 4 snapshot
+
+| Passage | Genre | Topic | Blank types |
+|---------|-------|-------|-------------|
+| TQB-P6-0013 | article | HR / hybrid remote-work policy | vocabulary, connector, word_form, sentence_insertion |
+| TQB-P6-0014 | memo | Operations / warehouse forklift & aisle safety | word_form, vocabulary, connector, sentence_insertion |
+| TQB-P6-0015 | notice | HR / community food-drive charity | connector, word_form, vocabulary, sentence_insertion |
+| TQB-P6-0016 | letter | Customer Success / portal-outage apology | vocabulary, connector, word_form, sentence_insertion |
+
+Blank-type counts (lote 4): word_form 4 · vocabulary 4 · connector 4 · sentence_insertion 4.  
+Bank totals after Lote 4: word_form 16 · vocabulary 16 · connector 16 · sentence_insertion 16.
+
 
 ## Batch rules
 
