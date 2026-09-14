@@ -146,7 +146,7 @@
         at: summary.demo.last.at,
       });
     }
-    // Show recent Part 5 / Part 6 sessions (guided + mock)
+    // Show recent Part 5 / Part 6 / Part 7 sessions (guided + mock)
     const part5Sessions =
       (window.ToeicProgress.getPart5Sessions && window.ToeicProgress.getPart5Sessions()) ||
       (summary.part5?.last ? [summary.part5.last] : []);
@@ -169,11 +169,22 @@
         at: session.at,
       });
     });
+    const part7Sessions =
+      (window.ToeicProgress.getPart7Sessions && window.ToeicProgress.getPart7Sessions()) ||
+      (summary.part7?.last ? [summary.part7.last] : []);
+    part7Sessions.slice(0, 4).forEach((session) => {
+      const mode = session.mode === "mock" ? "mock" : "guided";
+      rows.push({
+        label: mode === "mock" ? "Part 7 mock test" : "Part 7 guided practice",
+        score: `${session.correct}/${session.total} (${session.percent}%)`,
+        at: session.at,
+      });
+    });
     rows.sort((a, b) => String(b.at || "").localeCompare(String(a.at || "")));
 
     if (!rows.length) {
       host.innerHTML =
-        `<li class="dash-empty-note">Finish the free short demo or a Part 5 / Part 6 session to see results here.</li>`;
+        `<li class="dash-empty-note">Finish the free short demo or a Part 5 / Part 6 / Part 7 session to see results here.</li>`;
       return;
     }
 
@@ -235,11 +246,14 @@
     const totalSessions = summary.totalSessionsAll || 0;
     text(document.querySelector("[data-dash-sessions]"), String(totalSessions));
     const hasReading =
-      (summary.part5?.sessionCount || 0) + (summary.part6?.sessionCount || 0) > 0;
+      (summary.part5?.sessionCount || 0) +
+        (summary.part6?.sessionCount || 0) +
+        (summary.part7?.sessionCount || 0) >
+      0;
     text(
       document.querySelector("[data-dash-sessions-note]"),
       hasReading
-        ? "Demo and Part 5 / Part 6 sessions on this device"
+        ? "Demo and Part 5 / Part 6 / Part 7 sessions on this device"
         : "Demo sessions on this device"
     );
 
@@ -289,6 +303,22 @@
     if (part6Meta) {
       part6Meta.textContent = summary.part6?.sessionCount
         ? `${summary.part6.sessionCount} session${summary.part6.sessionCount === 1 ? "" : "s"} · avg ${summary.part6.averagePercent ?? 0}%`
+        : "No sessions yet";
+    }
+
+    const part7Host = document.querySelector("[data-dash-skills-part7]");
+    if (part7Host) {
+      part7Host.innerHTML = skillRowsHtml(
+        summary.part7?.skills,
+        summary.part7?.sessionCount
+          ? "Sessions saved, but no skill tags yet."
+          : "No Part 7 practice saved yet."
+      );
+    }
+    const part7Meta = document.querySelector("[data-dash-part7-meta]");
+    if (part7Meta) {
+      part7Meta.textContent = summary.part7?.sessionCount
+        ? `${summary.part7.sessionCount} session${summary.part7.sessionCount === 1 ? "" : "s"} · avg ${summary.part7.averagePercent ?? 0}%`
         : "No sessions yet";
     }
 
