@@ -1,0 +1,578 @@
+{
+  "id": "P7-BANK",
+  "title": "Part 7 Class Practice Bank (Validated)",
+  "purpose": "guided_and_mocks_class_validated",
+  "reuse_in_mocks": true,
+  "exclude_from_free_intro": true,
+  "set_count": 4,
+  "question_count": 16,
+  "item_count": 16,
+  "validation": {
+    "rubric": "data/part7-validation-rubric.md",
+    "threshold": "average >= 4.0 and no dimension < 3",
+    "notes": "Lote 1 curated for Teacher Israel Ventura. Original workplace English only (not ETS material). 3 single sets + 1 double set = 16 questions. Genres: email, ad, article, chat+notice."
+  },
+  "set_type_counts": {
+    "single": 3,
+    "double": 1
+  },
+  "question_type_counts": {
+    "main_idea": 3,
+    "detail": 5,
+    "vocabulary": 2,
+    "inference": 3,
+    "not_except": 2,
+    "cross_reference": 1
+  },
+  "genre_counts": {
+    "email": 1,
+    "ad": 1,
+    "article": 1,
+    "chat": 1,
+    "notice": 1
+  },
+  "sets": [
+    {
+      "id": "TQB-P7-0001",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "email",
+      "title": "Apology for delayed office chairs",
+      "difficulty": 3,
+      "workplaceTopic": "Operations / Shipping",
+      "lote": "lote1",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "email",
+          "heading": "Subject: Update on order #48219 — delivery delay",
+          "body": "Dear Mr. Delgado,\n\nI am writing regarding your order of twelve ergonomic chairs for the Westside branch. The shipment was scheduled to leave our warehouse on Monday, but a supplier shortage has delayed production of the adjustable armrests.\n\nWe now expect the chairs to ship on Friday and to arrive at your location by next Wednesday. As a courtesy, we will include two free lumbar cushions and waive the express shipping fee on this order.\n\nIf next Wednesday is too late for your staff move-in, please reply by Thursday noon so we can transfer you to our rental inventory for two weeks at no charge.\n\nWe apologize for the inconvenience and appreciate your patience.\n\nSincerely,\nAisha Rahman\nFulfillment Coordinator, SeatWell Office"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0001-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the main purpose of this email?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To confirm that twelve chairs have already been delivered"
+            },
+            {
+              "key": "B",
+              "text": "To explain a shipping delay and offer remedies"
+            },
+            {
+              "key": "C",
+              "text": "To request payment for express shipping"
+            },
+            {
+              "key": "D",
+              "text": "To announce a permanent change in armrest design"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "To explain a shipping delay and offer remedies",
+          "explanation": "The email reports a delay caused by a supplier shortage and offers free cushions, waived fees, and optional rentals.",
+          "commonMistake": "Focusing only on the free cushions and missing that the core purpose is the delay update."
+        },
+        {
+          "id": "TQB-P7-0001-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the email, when are the chairs now expected to arrive?",
+          "options": [
+            {
+              "key": "A",
+              "text": "This Monday"
+            },
+            {
+              "key": "B",
+              "text": "This Friday"
+            },
+            {
+              "key": "C",
+              "text": "Next Wednesday"
+            },
+            {
+              "key": "D",
+              "text": "Thursday noon"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Next Wednesday",
+          "explanation": "The chairs will ship on Friday and arrive by next Wednesday. Thursday noon is the reply deadline for rentals.",
+          "commonMistake": "Confusing the new ship date (Friday) with the arrival date (next Wednesday)."
+        },
+        {
+          "id": "TQB-P7-0001-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the email, the phrase “as a courtesy” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "as a legal requirement"
+            },
+            {
+              "key": "B",
+              "text": "as a temporary loan"
+            },
+            {
+              "key": "C",
+              "text": "as a polite gesture"
+            },
+            {
+              "key": "D",
+              "text": "as a final warning"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "as a polite gesture",
+          "explanation": "“As a courtesy” introduces goodwill extras (free cushions, waived fee) offered to soften the inconvenience.",
+          "commonMistake": "Reading “courtesy” as something owed by contract rather than a goodwill offer."
+        },
+        {
+          "id": "TQB-P7-0001-Q04",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What must Mr. Delgado do if he wants temporary rental chairs?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Pay the express shipping fee in advance"
+            },
+            {
+              "key": "B",
+              "text": "Reply by Thursday noon"
+            },
+            {
+              "key": "C",
+              "text": "Visit the SeatWell warehouse on Monday"
+            },
+            {
+              "key": "D",
+              "text": "Cancel order #48219 immediately"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Reply by Thursday noon",
+          "explanation": "The email says to reply by Thursday noon so the company can transfer him to rental inventory at no charge.",
+          "commonMistake": "Assuming he must cancel the original order; the email offers rentals as a bridge, not a cancellation."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0002",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "ad",
+      "title": "Harbor Desk coworking promotion",
+      "difficulty": 2,
+      "workplaceTopic": "Marketing / Real Estate",
+      "lote": "lote1",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "ad",
+          "heading": "Harbor Desk — Flexible desks for growing teams",
+          "body": "Looking for a professional workspace without a long lease?\n\nHarbor Desk offers hot desks, private offices, and meeting rooms in the Riverfront district. Members enjoy high-speed Wi-Fi, printing credits, complimentary coffee, and 24-hour key-card access.\n\nSpring offer for new annual members (through April 30):\n• First month free on any private office\n• Two guest day passes each month\n• 15% off weekday meeting-room bookings\n\nTour our third-floor loft this Saturday from 10:00 a.m. to 2:00 p.m. Reserve a spot at harbordesk.example/tour or call (555) 014-2280.\n\nCurrent day-pass holders are welcome but do not qualify for the spring discount."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0002-Q01",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is this advertisement mainly promoting?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A spring membership deal at a coworking space"
+            },
+            {
+              "key": "B",
+              "text": "A coffee shop opening in the Riverfront district"
+            },
+            {
+              "key": "C",
+              "text": "A weekend technology conference"
+            },
+            {
+              "key": "D",
+              "text": "A long-term residential lease program"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "A spring membership deal at a coworking space",
+          "explanation": "The ad presents Harbor Desk workspace options and a spring offer for new annual members through April 30.",
+          "commonMistake": "Focusing on complimentary coffee and treating the ad as a café promotion."
+        },
+        {
+          "id": "TQB-P7-0002-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "When can interested people tour the third-floor loft?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Any weekday after 2:00 p.m."
+            },
+            {
+              "key": "B",
+              "text": "Saturday from 10:00 a.m. to 2:00 p.m."
+            },
+            {
+              "key": "C",
+              "text": "Only on April 30"
+            },
+            {
+              "key": "D",
+              "text": "24 hours a day with a key card"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Saturday from 10:00 a.m. to 2:00 p.m.",
+          "explanation": "The ad explicitly invites a Saturday tour from 10:00 a.m. to 2:00 p.m. Key-card access is a member benefit, not the tour time.",
+          "commonMistake": "Mixing member 24-hour access with the scheduled public tour hours."
+        },
+        {
+          "id": "TQB-P7-0002-Q03",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "Which of the following is NOT included in the spring offer for new annual members?",
+          "options": [
+            {
+              "key": "A",
+              "text": "First month free on a private office"
+            },
+            {
+              "key": "B",
+              "text": "Two guest day passes each month"
+            },
+            {
+              "key": "C",
+              "text": "15% off weekday meeting-room bookings"
+            },
+            {
+              "key": "D",
+              "text": "Unlimited free printing for guests"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Unlimited free printing for guests",
+          "explanation": "A–C are listed in the spring offer. The ad mentions printing credits for members, not unlimited free guest printing.",
+          "commonMistake": "Assuming printing credits equal unlimited free printing for guests."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0003",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "article",
+      "title": "Northline pilots desk-side wellness coaches",
+      "difficulty": 3,
+      "workplaceTopic": "HR / Employee Wellness",
+      "lote": "lote1",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "article",
+          "heading": "Northline Logistics pilots on-site wellness coaches",
+          "body": "Northline Logistics has launched a six-month pilot that places certified wellness coaches at its two largest distribution hubs. Employees can book 20-minute sessions during lunch breaks to discuss sleep habits, stress, and simple stretches for warehouse work.\n\nParticipation is voluntary and free. Early figures show that about 40 percent of day-shift workers at the Lakeside hub have booked at least one session. Night-shift staff may join starting next month, when evening coach hours will be added.\n\nHR director Elena Vargas said the company will survey participants in September before deciding whether to expand the program to smaller sites. Managers are asked not to require attendance or to track who skips sessions.\n\n“We want people to feel supported, not monitored,” Vargas noted. Coaches will also run a monthly workshop open to all employees, including remote office staff who can attend by video."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0003-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "How long is the wellness-coach pilot scheduled to last?",
+          "options": [
+            {
+              "key": "A",
+              "text": "20 minutes"
+            },
+            {
+              "key": "B",
+              "text": "One month"
+            },
+            {
+              "key": "C",
+              "text": "Six months"
+            },
+            {
+              "key": "D",
+              "text": "Until September only"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Six months",
+          "explanation": "The article opens by stating Northline has launched a six-month pilot. Twenty minutes is the session length, not the program length.",
+          "commonMistake": "Confusing session length (20 minutes) with the pilot duration."
+        },
+        {
+          "id": "TQB-P7-0003-Q02",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What can be inferred about night-shift workers at the start of the pilot?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They already make up 40 percent of bookings."
+            },
+            {
+              "key": "B",
+              "text": "They cannot yet book coach sessions during their shift hours."
+            },
+            {
+              "key": "C",
+              "text": "They must attend the monthly workshop in person."
+            },
+            {
+              "key": "D",
+              "text": "They are required to complete a September survey."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "They cannot yet book coach sessions during their shift hours.",
+          "explanation": "Night-shift staff may join starting next month when evening coach hours are added — implying they are not covered yet.",
+          "commonMistake": "Assuming the 40% Lakeside figure includes night-shift workers."
+        },
+        {
+          "id": "TQB-P7-0003-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the article, the word “voluntary” most nearly means",
+          "options": [
+            {
+              "key": "A",
+              "text": "required by managers"
+            },
+            {
+              "key": "B",
+              "text": "done by choice"
+            },
+            {
+              "key": "C",
+              "text": "paid by the employee"
+            },
+            {
+              "key": "D",
+              "text": "limited to remote staff"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "done by choice",
+          "explanation": "Participation is voluntary and free, and managers must not require attendance — so employees join by choice.",
+          "commonMistake": "Confusing “voluntary” with “unpaid” because of similar Spanish false friends."
+        },
+        {
+          "id": "TQB-P7-0003-Q04",
+          "questionType": "main_idea",
+          "skill": "Main Idea / Purpose",
+          "question": "What is the article mainly about?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A temporary wellness-coach program at Northline hubs"
+            },
+            {
+              "key": "B",
+              "text": "A permanent company-wide sleep clinic"
+            },
+            {
+              "key": "C",
+              "text": "A new rule requiring stretch breaks every hour"
+            },
+            {
+              "key": "D",
+              "text": "A plan to close smaller distribution sites"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "A temporary wellness-coach program at Northline hubs",
+          "explanation": "The piece describes a six-month pilot at two hubs, with a September review before any expansion.",
+          "commonMistake": "Overgeneralizing to a permanent company-wide program before the survey decision."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P7-0004",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "double",
+      "genre": "chat",
+      "title": "Conference room booking conflict",
+      "difficulty": 4,
+      "workplaceTopic": "Facilities / Meetings",
+      "lote": "lote1",
+      "validated": true,
+      "passages": [
+        {
+          "label": "A",
+          "genre": "chat",
+          "heading": "Team chat — Project Orion kickoff",
+          "body": "Mia Chen: Can someone grab Maple Room for Thursday 2–4 p.m.? We need a screen for the vendor demo.\nSam Ortiz: I just checked the portal — Maple is free then. Want me to book it under Orion?\nMia Chen: Yes please. Also invite Facilities so they bring the extra HDMI cable.\nSam Ortiz: Booked. Confirmation #MR-4418. I’ll ping Facilities now.\nPriya Nair: Heads-up — I saw a building notice about AV testing on Thursday afternoon. Might affect Maple.\nSam Ortiz: Thanks. I’ll read the notice and move us if needed."
+        },
+        {
+          "label": "B",
+          "genre": "notice",
+          "heading": "Facilities notice — Thursday AV system testing",
+          "body": "TO: All staff\nFROM: Facilities Services\nDATE: March 11\nSUBJECT: Audiovisual testing — Thursday, March 14\n\nFacilities will test upgraded projectors and wireless display adapters in Maple Room and Cedar Room on Thursday, March 14, from 1:30 p.m. to 3:30 p.m.\n\nDuring this window, screen sharing may be interrupted without notice. Meetings that require a stable display should be relocated to Willow Room (available all afternoon) or rescheduled.\n\nBookings already confirmed for Maple or Cedar during the test will remain in the portal, but Facilities cannot guarantee AV performance. For help moving a reservation, email rooms@northline.example or use confirmation lookup in the booking portal.\n\nThank you for your flexibility.\nFacilities Services"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-0004-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "What confirmation number did Sam receive for the Maple Room booking?",
+          "options": [
+            {
+              "key": "A",
+              "text": "MR-4418"
+            },
+            {
+              "key": "B",
+              "text": "HDMI-20"
+            },
+            {
+              "key": "C",
+              "text": "Orion-314"
+            },
+            {
+              "key": "D",
+              "text": "AV-1330"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "MR-4418",
+          "explanation": "In the chat, Sam says the booking is confirmed as #MR-4418.",
+          "commonMistake": "Inventing a number from the project name or test times."
+        },
+        {
+          "id": "TQB-P7-0004-Q02",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "According to the notice, how long will the audiovisual testing last?",
+          "options": [
+            {
+              "key": "A",
+              "text": "From 2:00 p.m. to 4:00 p.m."
+            },
+            {
+              "key": "B",
+              "text": "From 1:30 p.m. to 3:30 p.m."
+            },
+            {
+              "key": "C",
+              "text": "All day on March 14"
+            },
+            {
+              "key": "D",
+              "text": "Only during lunch"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "From 1:30 p.m. to 3:30 p.m.",
+          "explanation": "The notice states testing in Maple and Cedar on March 14 from 1:30 p.m. to 3:30 p.m.",
+          "commonMistake": "Using the meeting time from the chat (2–4 p.m.) instead of the notice window."
+        },
+        {
+          "id": "TQB-P7-0004-Q03",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "Why does Priya mention the building notice in the chat?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She wants to cancel the vendor demo permanently."
+            },
+            {
+              "key": "B",
+              "text": "She is warning that Maple’s display may be unreliable Thursday afternoon."
+            },
+            {
+              "key": "C",
+              "text": "She needs an HDMI cable for Willow Room."
+            },
+            {
+              "key": "D",
+              "text": "She is confirming that Cedar Room is already booked for Orion."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "She is warning that Maple’s display may be unreliable Thursday afternoon.",
+          "explanation": "Priya flags a notice about AV testing Thursday afternoon that might affect Maple — a caution about display reliability.",
+          "commonMistake": "Assuming she is canceling the meeting rather than raising a risk."
+        },
+        {
+          "id": "TQB-P7-0004-Q04",
+          "questionType": "cross_reference",
+          "skill": "Cross-Reference",
+          "question": "Based on the chat and the notice, what is the best next step for the Orion meeting?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Keep Maple Room and ignore the notice because the booking is confirmed"
+            },
+            {
+              "key": "B",
+              "text": "Move the demo to Willow Room or another time to ensure a stable screen"
+            },
+            {
+              "key": "C",
+              "text": "Switch the meeting to Cedar Room at the same time"
+            },
+            {
+              "key": "D",
+              "text": "Ask Facilities to stop testing until after 4:00 p.m."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Move the demo to Willow Room or another time to ensure a stable screen",
+          "explanation": "The chat needs a screen for a vendor demo during 2–4 p.m.; the notice warns Maple AV may fail 1:30–3:30 and recommends Willow or rescheduling. Cedar is also under test.",
+          "commonMistake": "Choosing Cedar — it is tested in the same window — or relying only on the portal confirmation."
+        },
+        {
+          "id": "TQB-P7-0004-Q05",
+          "questionType": "not_except",
+          "skill": "NOT / Except",
+          "question": "Which of the following is NOT stated in either passage?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Maple Room was booked for Thursday 2–4 p.m."
+            },
+            {
+              "key": "B",
+              "text": "Willow Room is available all Thursday afternoon"
+            },
+            {
+              "key": "C",
+              "text": "Facilities will bring an extra HDMI cable automatically"
+            },
+            {
+              "key": "D",
+              "text": "AV testing may interrupt screen sharing"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Facilities will bring an extra HDMI cable automatically",
+          "explanation": "Mia asks to invite Facilities for an HDMI cable, but neither text confirms automatic delivery. A, B, and D are explicit in the chat or notice.",
+          "commonMistake": "Treating Mia’s request as a confirmed Facilities action."
+        }
+      ]
+    }
+  ]
+}

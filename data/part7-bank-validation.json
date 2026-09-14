@@ -1,0 +1,366 @@
+{
+  "bank_id": "P7-BANK",
+  "validated_at": "2026-09-14",
+  "rubric_file": "data/part7-validation-rubric.md",
+  "threshold": "average >= 4.0; no dimension < 3",
+  "lote": "lote1",
+  "set_count": 4,
+  "question_count": 16,
+  "item_count": 16,
+  "validated_item_count": 16,
+  "target_ids": "TQB-P7-0001 … TQB-P7-0004",
+  "counts": {
+    "kept_as_is": 0,
+    "rewritten": 0,
+    "new": 16,
+    "dropped": 0
+  },
+  "set_type_histogram": {
+    "single": 3,
+    "double": 1
+  },
+  "question_type_histogram": {
+    "main_idea": 3,
+    "detail": 5,
+    "vocabulary": 2,
+    "inference": 3,
+    "not_except": 2,
+    "cross_reference": 1
+  },
+  "genre_histogram": {
+    "email": 1,
+    "ad": 1,
+    "article": 1,
+    "chat": 1,
+    "notice": 1
+  },
+  "difficulty_histogram": {
+    "3": 8,
+    "2": 3,
+    "4": 5
+  },
+  "mean_dimension_scores": {
+    "format_authenticity": 5.0,
+    "passage_quality": 5.0,
+    "question_clarity": 5.0,
+    "distractors": 4.62,
+    "explanation": 5.0
+  },
+  "overall_mean": 4.92,
+  "batches": [
+    {
+      "lote": "lote1",
+      "date": "2026-09-14",
+      "set_ids": [
+        "TQB-P7-0001",
+        "TQB-P7-0002",
+        "TQB-P7-0003",
+        "TQB-P7-0004"
+      ],
+      "question_count": 16,
+      "set_types": {
+        "single": 3,
+        "double": 1
+      },
+      "question_types": {
+        "main_idea": 3,
+        "detail": 5,
+        "vocabulary": 2,
+        "inference": 3,
+        "not_except": 2,
+        "cross_reference": 1
+      },
+      "notes": "3 singles (email/ad/article) + 1 double (chat+notice). All items pass rubric."
+    }
+  ],
+  "items": [
+    {
+      "id": "TQB-P7-0001-Q01",
+      "set_id": "TQB-P7-0001",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "purpose = delay + remedies"
+    },
+    {
+      "id": "TQB-P7-0001-Q02",
+      "set_id": "TQB-P7-0001",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "arrival next Wednesday vs ship Friday"
+    },
+    {
+      "id": "TQB-P7-0001-Q03",
+      "set_id": "TQB-P7-0001",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "as a courtesy = polite gesture"
+    },
+    {
+      "id": "TQB-P7-0001-Q04",
+      "set_id": "TQB-P7-0001",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "reply by Thursday noon for rentals"
+    },
+    {
+      "id": "TQB-P7-0002-Q01",
+      "set_id": "TQB-P7-0002",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "spring coworking membership deal"
+    },
+    {
+      "id": "TQB-P7-0002-Q02",
+      "set_id": "TQB-P7-0002",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "Saturday tour 10–2"
+    },
+    {
+      "id": "TQB-P7-0002-Q03",
+      "set_id": "TQB-P7-0002",
+      "setType": "single",
+      "questionType": "not_except",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "NOT unlimited guest printing"
+    },
+    {
+      "id": "TQB-P7-0003-Q01",
+      "set_id": "TQB-P7-0003",
+      "setType": "single",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "six-month pilot duration"
+    },
+    {
+      "id": "TQB-P7-0003-Q02",
+      "set_id": "TQB-P7-0003",
+      "setType": "single",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "night shift not yet covered"
+    },
+    {
+      "id": "TQB-P7-0003-Q03",
+      "set_id": "TQB-P7-0003",
+      "setType": "single",
+      "questionType": "vocabulary",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "voluntary = by choice"
+    },
+    {
+      "id": "TQB-P7-0003-Q04",
+      "set_id": "TQB-P7-0003",
+      "setType": "single",
+      "questionType": "main_idea",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "main idea = temporary coach pilot"
+    },
+    {
+      "id": "TQB-P7-0004-Q01",
+      "set_id": "TQB-P7-0004",
+      "setType": "double",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "confirmation MR-4418 from chat"
+    },
+    {
+      "id": "TQB-P7-0004-Q02",
+      "set_id": "TQB-P7-0004",
+      "setType": "double",
+      "questionType": "detail",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 5,
+        "explanation": 5
+      },
+      "average": 5.0,
+      "pass": true,
+      "note": "AV test 1:30–3:30 from notice"
+    },
+    {
+      "id": "TQB-P7-0004-Q03",
+      "set_id": "TQB-P7-0004",
+      "setType": "double",
+      "questionType": "inference",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "Priya warns Maple display risk"
+    },
+    {
+      "id": "TQB-P7-0004-Q04",
+      "set_id": "TQB-P7-0004",
+      "setType": "double",
+      "questionType": "cross_reference",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "cross-ref: move to Willow / reschedule"
+    },
+    {
+      "id": "TQB-P7-0004-Q05",
+      "set_id": "TQB-P7-0004",
+      "setType": "double",
+      "questionType": "not_except",
+      "disposition": "new",
+      "lote": "lote1",
+      "scores": {
+        "format_authenticity": 5,
+        "passage_quality": 5,
+        "question_clarity": 5,
+        "distractors": 4,
+        "explanation": 5
+      },
+      "average": 4.8,
+      "pass": true,
+      "note": "HDMI not confirmed automatic"
+    }
+  ]
+}

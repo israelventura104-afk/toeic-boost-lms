@@ -1,4 +1,4 @@
-# TOEIC Boost (Paso 3+ — Part 5 + Part 6 Text Completion)
+# TOEIC Boost (Paso 3+ — Part 5 + Part 6 + Part 7 Phase 1)
 
 Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to TOEFL ITP Boost.
 
@@ -6,6 +6,7 @@ Static site for **TOEIC Boost** by Teacher Israel Ventura — sibling product to
 **Paso 2:** Class-code access, student dashboard, free Reading & Grammar short demo (Part 5–7 style).  
 **Paso 3:** Original Part 5 Incomplete Sentences bank (210 items = 10 intro + 200 class-validated), free/guided/mock flows, Reading hub, and Part 5 Strategies.
 **Paso 3b (Part 6):** Original Part 6 Text Completion — free intro (1 passage × 4 blanks), class bank **COMPLETE** Lotes 1–5 (20 passages × 4 = **80** validated Q), free practice UI, **guided practice live** (2 passages / 8 Q), **timed mock live** (4 passages / 16 Q · 12 min); **Part 6 strategies live** on `strategies.html#part6`.
+**Paso 3c (Part 7 Phase 1):** Original Part 7 Reading Comprehension — free intro (1 single × 3 Q), class bank **Lote 1** (3 singles + 1 double = **16** validated Q), free practice UI live; guided/mock/strategies not built yet.
 
 ## Preview locally
 
@@ -32,7 +33,8 @@ Open <http://localhost:8765/>.
 
 | Path | Needs code? | What you get |
 |------|-------------|--------------|
-| `reading.html` | No | Reading hub: Part 5 free / guided / mock + Part 6 free / guided / mock + Part 7 coming-next |
+| `reading.html` | No | Reading hub: Part 5 + 6 free / guided / mock live; Part 7 free live, guided/mock coming next |
+| `part7-practice.html` | **No** | Fixed 1-passage Part 7 intro (`TQB-P7-INTRO-001`, Q01–Q03), immediate feedback |
 | `part6-practice.html` | **No** | Fixed 1-passage Part 6 intro (`TQB-P6-INTRO-001`, Q01–Q04), immediate feedback |
 | `part6-guided-practice.html` | **Yes** `TOEIC-VENTURA-2026` | 2 random passages (8 blanks) from the 20-passage class bank · no timer · session saved |
 | `part6-mock.html` | **Yes** `TOEIC-VENTURA-2026` | Timed mock: **4 passages · 16 blanks · 12 minutes**, no feedback until end, auto-submit at 0 |
@@ -117,6 +119,22 @@ Lote 5 (final) added: ad (AeroBlend Pro product launch), article (cybersecurity 
 
 Blank markers in passage text use `[[131]]` style for UI highlight.
 
+
+## Part 7 item bank (original workplace English)
+
+Part 7 = **Reading Comprehension**: single, double, and (later) triple workplace texts. Official full section = **54** Q (29 single + 25 multi). Phase 1 class target: ~**100** Q via lotes.
+
+- Intro (free, fixed, `purpose: free_intro_fixed`): `data/part7-intro.json` — **1** single email × **3** Q, ID `TQB-P7-INTRO-001` + `Q01`–`Q03`
+- Bank (guided + mocks later, class-validated): `data/part7-bank.json` — **Lote 1:** 3 singles + 1 double = **16** Q, IDs `TQB-P7-0001` … `0004` (**16 / 100**)
+- Validation: `data/part7-validation-rubric.md` + `data/part7-bank-validation.json`
+- Blueprint: `data/part7-blueprint.md`
+
+Lote 1 genres: **email** · **ad** · **article** · **chat + notice** (double). questionTypes: detail 5 · main_idea 3 · inference 3 · vocabulary 2 · not_except 2 · cross_reference 1.
+
+Schema: each set has `setType` (`single` | `double` | `triple`), `passages[]` (length 1/2/3), and `questions[]` with 4 options A–D.
+
+**Not built yet (Phase 1):** Part 7 guided practice, mock, or strategy cards.
+
 ## Short demo (free, Paso 2)
 
 
@@ -129,14 +147,14 @@ Blank markers in passage text use `[[131]]` style for UI highlight.
 | Path | Purpose |
 |------|---------|
 | `index.html` | Landing |
-| `styles.css` | Landing + dashboard + demo + Part 5/6 / Reading hub + strategy library |
+| `styles.css` | Landing + dashboard + demo + Part 5/6/7 / Reading hub + strategy library |
 | `nav.js` | Landing toggle + shared app header |
 | `access.js` / `data/access.json` | Teacher class-code unlock |
 | `progress.js` | Demo + Part 5 guided/mock + Part 6 guided/mock session storage |
 | `dashboard.html` / `dashboard.js` | Progress dashboard + class access panel |
 | `demo-test.html` / `demo-test.js` | Free Part 5–7 demo flow |
 | `data/demo-test.json` / `data/demo-items.json` | Demo config + original items |
-| `reading.html` | Reading hub (Part 5 + Part 6 free / guided / mock live; Part 7 coming next) |
+| `reading.html` | Reading hub (Part 5 + Part 6 free / guided / mock live; Part 7 free live) |
 | `part5-practice.html` / `part5-practice.js` | Free 10-item Part 5 set |
 | `part5-guided-practice.html` / `part5-guided-practice.js` | Class 15-item Part 5 drill |
 | `part5-mock.html` / `part5-mock.js` | Class timed Part 5 mock (30Q / 20 min) |
@@ -150,7 +168,13 @@ Blank markers in passage text use `[[131]]` style for UI highlight.
 | `part6-mock.html` / `part6-mock.js` | Class timed Part 6 mock (16Q / 12 min · 4 passages) |
 | `data/part6-intro.json` | Fixed free intro (1×4) |
 | `data/part6-bank.json` | Guided + mock class bank (**80** validated — COMPLETE) |
-| `strategies.html` | Free Part 5 + Part 6 strategies library (Listening / Part 7 stubs on same page) |
+| `part7-practice.html` / `part7-practice.js` | Free 1-passage Part 7 intro |
+| `data/part7-intro.json` | Fixed free intro (1 single × 3 Q) |
+| `data/part7-bank.json` | Class bank Lote 1 (**16** validated — 3 singles + 1 double) |
+| `data/part7-validation-rubric.md` | Teacher rubric (ES) for Part 7 class items |
+| `data/part7-bank-validation.json` | Lote 1 validation summary |
+| `data/part7-blueprint.md` | ~100-Q target via lotes — Lote 1 done (16/100) |
+| `strategies.html` | Free Part 5 + Part 6 strategies library (Part 7 strategies / Listening stubs) |
 | `listening.html` | Coming-next stub |
 | `assets/` | Logo / favicon / hero art |
 

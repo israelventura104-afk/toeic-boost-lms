@@ -1,0 +1,118 @@
+{
+  "id": "P7-INTRO",
+  "title": "Part 7 Free Practice Set",
+  "purpose": "free_intro_fixed",
+  "fixed": true,
+  "shuffle": false,
+  "reuse_in_mocks": false,
+  "exclude_from_free_intro": false,
+  "set_count": 1,
+  "question_count": 3,
+  "item_count": 3,
+  "sets": [
+    {
+      "id": "TQB-P7-INTRO-001",
+      "part": 7,
+      "type": "Reading Comprehension",
+      "setType": "single",
+      "genre": "email",
+      "title": "Client visit schedule update",
+      "difficulty": 2,
+      "workplaceTopic": "Sales / Client Relations",
+      "passages": [
+        {
+          "label": "A",
+          "genre": "email",
+          "heading": "Subject: Thursday client visit — revised start time",
+          "body": "Dear Jordan,\n\nThank you for confirming that Ms. Alvarez will visit our downtown showroom on Thursday. Because of a delayed flight, she will now arrive at 11:15 a.m. instead of 10:00 a.m.\n\nPlease meet her at the reception desk and escort her to Meeting Room 3. I have reserved the room until 1:00 p.m. and arranged a light lunch for three people.\n\nIf the product samples from the warehouse are not ready by 10:30 a.m., call me so we can adjust the presentation order. Otherwise, begin with the new catalog overview as planned.\n\nBest regards,\nNora Kim\nAccount Lead, BrightPath Interiors"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P7-INTRO-001-Q01",
+          "questionType": "detail",
+          "skill": "Detail",
+          "question": "What time is Ms. Alvarez now expected to arrive?",
+          "options": [
+            {
+              "key": "A",
+              "text": "10:00 a.m."
+            },
+            {
+              "key": "B",
+              "text": "10:30 a.m."
+            },
+            {
+              "key": "C",
+              "text": "11:15 a.m."
+            },
+            {
+              "key": "D",
+              "text": "1:00 p.m."
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "11:15 a.m.",
+          "explanation": "The email states she will now arrive at 11:15 a.m. instead of 10:00 a.m. because of a delayed flight.",
+          "commonMistake": "Choosing 10:00 a.m. — that was the original time, not the revised one."
+        },
+        {
+          "id": "TQB-P7-INTRO-001-Q02",
+          "questionType": "inference",
+          "skill": "Inference",
+          "question": "What can be inferred about Meeting Room 3?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is located in the warehouse."
+            },
+            {
+              "key": "B",
+              "text": "It has been reserved for the client visit."
+            },
+            {
+              "key": "C",
+              "text": "It will be unavailable until 1:00 p.m."
+            },
+            {
+              "key": "D",
+              "text": "It is where product samples are stored."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "It has been reserved for the client visit.",
+          "explanation": "Nora writes that she has reserved Meeting Room 3 until 1:00 p.m. for the visit. The other options are not supported.",
+          "commonMistake": "Misreading “reserved until 1:00 p.m.” as meaning the room is unavailable until then."
+        },
+        {
+          "id": "TQB-P7-INTRO-001-Q03",
+          "questionType": "vocabulary",
+          "skill": "Vocabulary in Context",
+          "question": "In the email, the word “escort” is closest in meaning to",
+          "options": [
+            {
+              "key": "A",
+              "text": "accompany"
+            },
+            {
+              "key": "B",
+              "text": "hire"
+            },
+            {
+              "key": "C",
+              "text": "replace"
+            },
+            {
+              "key": "D",
+              "text": "photograph"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "accompany",
+          "explanation": "Jordan is asked to meet Ms. Alvarez at reception and escort her to Meeting Room 3 — that is, go with her / accompany her there.",
+          "commonMistake": "Associating “escort” only with security or formal events and missing the workplace sense of guiding a visitor."
+        }
+      ]
+    }
+  ]
+}
