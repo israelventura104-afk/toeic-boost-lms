@@ -192,13 +192,36 @@ function flattenQuestions(passages) {
   return items;
 }
 
-async function loadBank() {
-  const response = await fetch(BANK_URL, { cache: "no-cache" });
-  if (!response.ok) {
-    throw new Error(`Could not load ${BANK_URL} (${response.status}).`);
-  }
 
+async function loadPart6BankPassages(bankUrl) {
+  const response = await fetch(bankUrl, { cache: "no-cache" });
+  if (!response.ok) {
+    throw new Error(`Could not load ${bankUrl} (${response.status}).`);
+  }
   const data = await response.json();
+  if (Array.isArray(data.passages) && data.passages.length) {
+    return data;
+  }
+  const shardFiles = Array.isArray(data.shardFiles) ? data.shardFiles : [];
+  if (!shardFiles.length) {
+    throw new Error("Part 6 bank has no passages or shardFiles.");
+  }
+  const shards = await Promise.all(
+    shardFiles.map(async (path) => {
+      const res = await fetch(path, { cache: "no-cache" });
+      if (!res.ok) throw new Error(`Could not load shard ${path} (${res.status}).`);
+      return res.json();
+    })
+  );
+  const passages = [];
+  shards.forEach((shard) => {
+    (shard.passages || []).forEach((p) => passages.push(p));
+  });
+  return { ...data, passages };
+}
+
+async function loadBank() {
+  const data = await loadPart6BankPassages(BANK_URL);
   const rawPassages = Array.isArray(data.passages) ? data.passages : [];
   if (!rawPassages.length) {
     throw new Error("Part 6 bank has no passages.");
