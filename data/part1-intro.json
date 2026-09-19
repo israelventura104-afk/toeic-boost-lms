@@ -1,0 +1,135 @@
+{
+  "id": "P1-INTRO",
+  "title": "Part 1 Free Practice Set",
+  "purpose": "free_intro_fixed",
+  "part": 1,
+  "fixed": true,
+  "shuffle": false,
+  "item_count": 3,
+  "note": "Look at each photo, play the audio (four statements), then choose A–D. Immediate feedback. No class code.",
+  "items": [
+    {
+      "id": "TQB-P1-0001",
+      "section": "Listening",
+      "part": 1,
+      "type": "Photographs",
+      "skill": "People and actions",
+      "difficulty": 2,
+      "sceneType": "Office portrait",
+      "image": "assets/part1/images/p1-01.jpg",
+      "imageAlt": "A man in a suit facing forward in a professional portrait.",
+      "imageCredit": "Photo via Unsplash (free license).",
+      "audio": "assets/part1/audio/p1-01.mp3",
+      "narratorScript": "Look at the picture. Mark your answer on your answer sheet.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "He's adjusting his necktie in front of a mirror."
+        },
+        {
+          "key": "B",
+          "text": "He's wearing a suit and looking toward the camera."
+        },
+        {
+          "key": "C",
+          "text": "He's handing a folder to a colleague."
+        },
+        {
+          "key": "D",
+          "text": "He's sitting at a desk and typing on a laptop."
+        }
+      ],
+      "correctKey": "B",
+      "correctAnswer": "He's wearing a suit and looking toward the camera.",
+      "explanation": "The photo shows a man in a suit facing forward. B matches what we can see. A, C, and D add actions or objects that are not visible.",
+      "commonMistake": "Choosing C or D because office scenes often include folders or laptops, even when they are not in this photo.",
+      "tags": [
+        "part1",
+        "people",
+        "clothing"
+      ]
+    },
+    {
+      "id": "TQB-P1-0002",
+      "section": "Listening",
+      "part": 1,
+      "type": "Photographs",
+      "skill": "Group interaction",
+      "difficulty": 2,
+      "sceneType": "Team collaboration",
+      "image": "assets/part1/images/p1-02.jpg",
+      "imageAlt": "Several colleagues gathered around a table with a laptop.",
+      "imageCredit": "Photo via Unsplash (free license).",
+      "audio": "assets/part1/audio/p1-02.mp3",
+      "narratorScript": "Look at the picture. Mark your answer on your answer sheet.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "They're standing in line at a ticket counter."
+        },
+        {
+          "key": "B",
+          "text": "One person is giving a speech on a stage."
+        },
+        {
+          "key": "C",
+          "text": "They're looking at a laptop together at a table."
+        },
+        {
+          "key": "D",
+          "text": "They're packing boxes in a warehouse."
+        }
+      ],
+      "correctKey": "C",
+      "correctAnswer": "They're looking at a laptop together at a table.",
+      "explanation": "The photo shows a group around a table focused on a laptop. C describes that. A, B, and D describe different workplace scenes.",
+      "commonMistake": "Picking A because people are close together, without checking that there is no ticket counter.",
+      "tags": [
+        "part1",
+        "group",
+        "laptop"
+      ]
+    },
+    {
+      "id": "TQB-P1-0003",
+      "section": "Listening",
+      "part": 1,
+      "type": "Photographs",
+      "skill": "Location and objects",
+      "difficulty": 2,
+      "sceneType": "Warehouse / logistics",
+      "image": "assets/part1/images/p1-03.jpg",
+      "imageAlt": "Stacked cardboard boxes in a warehouse aisle.",
+      "imageCredit": "Photo via Unsplash (free license).",
+      "audio": "assets/part1/audio/p1-03.mp3",
+      "narratorScript": "Look at the picture. Mark your answer on your answer sheet.",
+      "statements": [
+        {
+          "key": "A",
+          "text": "Boxes are stacked along a warehouse aisle."
+        },
+        {
+          "key": "B",
+          "text": "A clerk is scanning items at a checkout counter."
+        },
+        {
+          "key": "C",
+          "text": "Passengers are boarding an airplane."
+        },
+        {
+          "key": "D",
+          "text": "A gardener is watering plants outdoors."
+        }
+      ],
+      "correctKey": "A",
+      "correctAnswer": "Boxes are stacked along a warehouse aisle.",
+      "explanation": "The photo clearly shows stacked boxes in a storage/warehouse setting. A matches. The other options describe unrelated places.",
+      "commonMistake": "Choosing B by assuming any indoor work scene must be retail checkout.",
+      "tags": [
+        "part1",
+        "warehouse",
+        "objects"
+      ]
+    }
+  ]
+}
