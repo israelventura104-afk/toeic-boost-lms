@@ -1,6 +1,7 @@
 /**
- * Student dashboard — access + progress (Paso 3)
+ * Student dashboard — access + progress (Paso 3+)
  * Name saved on this browser (localStorage). No accounts.
+ * Listening Phase 1: Part 1 free practice is open on listening.html / part1-practice.html (no class code).
  */
 
 (function () {
@@ -146,7 +147,6 @@
         at: summary.demo.last.at,
       });
     }
-    // Show recent Part 5 / Part 6 / Part 7 sessions (guided + mock)
     const part5Sessions =
       (window.ToeicProgress.getPart5Sessions && window.ToeicProgress.getPart5Sessions()) ||
       (summary.part5?.last ? [summary.part5.last] : []);
@@ -343,7 +343,6 @@
 
     renderRecent(summary);
 
-    // Locked card labels
     const unlocked = window.ToeicAccess ? window.ToeicAccess.isUnlocked() : false;
     document.querySelectorAll("[data-lock-label]").forEach((el) => {
       el.hidden = unlocked;
