@@ -17,7 +17,9 @@
   function here() {
     if (file === "dashboard.html") return { area: "progress" };
     if (file === "demo-test.html") return { area: "demo" };
-    if (file === "listening.html") return { area: "listening" };
+    if (file === "listening.html" || file === "part1-practice.html") {
+      return { area: "listening" };
+    }
     if (
       file === "reading.html" ||
       file === "part5-practice.html" ||
