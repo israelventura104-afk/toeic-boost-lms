@@ -1,0 +1,62 @@
+/* Part 1 Photographs + clickable feature cards (Listening Phase 1) */
+a.feature-card {
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+a.feature-card:hover {
+  border-color: rgba(35, 141, 133, 0.35);
+  background: #f0faf9;
+}
+.part1-photo-wrap {
+  margin: 0 0 14px;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+.part1-photo {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #eef2f8;
+  object-fit: cover;
+  box-shadow: 0 10px 28px rgba(19, 34, 56, 0.08);
+}
+.part1-photo-credit {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: center;
+}
+.part1-audio-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+.part1-audio-bar audio {
+  flex: 1 1 220px;
+  min-width: 0;
+  width: 100%;
+  max-width: 420px;
+  height: 40px;
+}
+.hub-chip.is-soon {
+  background: #f3f0ea;
+  color: #7a6a4f;
+}
+.hub-path-card-disabled {
+  opacity: 0.88;
+  cursor: default;
+  box-shadow: none;
+  background: #fbfaf6;
+}
+.hub-path-card-disabled:hover {
+  border-color: var(--line);
+  background: #fbfaf6;
+}
