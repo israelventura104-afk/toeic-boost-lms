@@ -35,7 +35,9 @@
     ) {
       return { area: "reading" };
     }
-    if (file === "strategies.html") return { area: "strategies" };
+    if (file === "strategies.html" || file === "strategy-p5-01-word-forms.html") {
+      return { area: "strategies" };
+    }
     if (file === "index.html" || file === "") return { area: "home" };
     return { area: "" };
   }

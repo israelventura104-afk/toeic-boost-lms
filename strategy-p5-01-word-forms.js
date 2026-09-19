@@ -77,7 +77,6 @@
     },
   ];
 
-  // Balanced correctKey: A4 B4 C4 D3
   const practice = [
     {
       id: "Q01",
@@ -253,13 +252,13 @@
       stem: "Parking permits will be ____ at the security desk starting Monday.",
       options: [
         { key: "A", text: "availability" },
-        { key: "B", text: "available" },
+        { key: "B", text: "avail" },
         { key: "C", text: "availably" },
-        { key: "D", text: "avail" },
+        { key: "D", text: "available" },
       ],
-      correctKey: "B",
+      correctKey: "D",
       slot: "adjective",
-      explain: "After be (will be) → adjective available. Wait — B is used 5 times. Need fix.",
+      explain: "After be (will be) → adjective available.",
     },
     {
       id: "Q15",
@@ -276,44 +275,24 @@
     },
   ];
 
-  // Fix Q14 to D balance: change options order so correct is D... actually available is correct.
-  // Change Q14 correct presentation: move available to D
-  practice[13] = {
-      id: "Q14",
-      stem: "Parking permits will be ____ at the security desk starting Monday.",
-      options: [
-        { key: "A", text: "availability" },
-        { key: "B", text: "avail" },
-        { key: "C", text: "availably" },
-        { key: "D", text: "available" },
-      ],
-      correctKey: "D",
-      slot: "adjective",
-      explain: "After be (will be) → adjective available.",
-  };
-
-  // Now check: Q12 is B - we have B at Q02,Q06,Q10,Q12 = 4. Good.
-  // A: Q01,Q05,Q09,Q13 = 4
-  // C: Q03,Q07,Q08,Q15 = 4
-  // D: Q04,Q11,Q14 = 3
-  // Wait Q08 is C flexibly - that's 4 C. Good.
-
-  const counts = { A: 0, B: 0, C: 0, D: 0 };
-  practice.forEach((q) => { counts[q.correctKey] += 1; });
-  console.info("[Word Forms] practice balance", counts);
-
-  const demoList = document.getElementById("demo-list");
-  const practiceList = document.getElementById("practice-list");
-  const submitBtn = document.getElementById("submit-btn");
-  const resetBtn = document.getElementById("reset-btn");
+  const demoCard = document.getElementById("demo-card");
+  const practiceCard = document.getElementById("practice-card");
+  const practiceStatus = document.getElementById("practice-status");
   const results = document.getElementById("results");
   const scoreLine = document.getElementById("score-line");
   const balanceNote = document.getElementById("balance-note");
+  const finalScore = document.getElementById("final-score");
   const reviewList = document.getElementById("review-list");
-  const practiceStatus = document.getElementById("practice-status");
+  const resetBtn = document.getElementById("reset-btn");
 
-  const answers = new Map();
-  let submitted = false;
+  const state = {
+    screen: "teach",
+    demoIndex: 0,
+    demoOpen: false,
+    practiceIndex: 0,
+    answers: new Map(),
+    submitted: false,
+  };
 
   function escapeHtml(value) {
     return String(value ?? "")
@@ -327,144 +306,227 @@
     return escapeHtml(stem).replace(/____/g, '<span class="blank">____</span>');
   }
 
-  function renderDemos() {
-    demoList.innerHTML = demos
-      .map((item, index) => {
-        const options = item.options
-          .map(
-            (opt) => `
-          <div class="opt locked">
-            <span class="key">${escapeHtml(opt.key)}</span>
-            <span>${escapeHtml(opt.text)}</span>
-          </div>`
-          )
-          .join("");
-        const right = item.options.find((o) => o.key === item.correctKey);
+  function optionButtons(item, selectedKey, { locked = false, name = "opt" } = {}) {
+    return item.options
+      .map((opt) => {
+        const selected = selectedKey === opt.key ? " is-selected" : "";
+        const tag = locked ? "div" : "button";
+        const type = locked ? "" : ' type="button"';
         return `
-        <article class="demo-card" data-demo="${escapeHtml(item.id)}">
-          <h3>${escapeHtml(item.title)}</h3>
-          <p class="stem">${formatStem(item.stem)}</p>
-          <div class="options">${options}</div>
-          <button type="button" class="btn-reveal" data-reveal="${index}">Reveal model answer</button>
-          <div class="reveal" id="demo-reveal-${index}" hidden>
-            <strong>Slot: ${escapeHtml(item.slot)} · Answer: ${escapeHtml(item.correctKey)}. ${escapeHtml(right?.text || "")}</strong>
-            <p>${escapeHtml(item.teach)}</p>
-          </div>
-        </article>`;
+          <${tag}${type} class="choice-button${selected}" data-${name}="${escapeHtml(item.id)}" data-key="${escapeHtml(opt.key)}">
+            <b>${escapeHtml(opt.key)}</b>
+            <span>${escapeHtml(opt.text)}</span>
+          </${tag}>`;
       })
       .join("");
-
-    demoList.querySelectorAll("[data-reveal]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const idx = btn.getAttribute("data-reveal");
-        const box = document.getElementById(`demo-reveal-${idx}`);
-        if (!box) return;
-        box.hidden = !box.hidden;
-        btn.textContent = box.hidden ? "Reveal model answer" : "Hide model answer";
-      });
-    });
   }
 
-  function renderPractice() {
-    practiceList.innerHTML = practice
-      .map((item, index) => {
-        const options = item.options
-          .map(
-            (opt) => `
-          <button type="button" class="opt" data-q="${escapeHtml(item.id)}" data-key="${escapeHtml(opt.key)}">
-            <span class="key">${escapeHtml(opt.key)}</span>
-            <span>${escapeHtml(opt.text)}</span>
-          </button>`
-          )
-          .join("");
-        return `
-        <article class="q-card" id="card-${escapeHtml(item.id)}">
-          <h3>Question ${index + 1} of 15</h3>
-          <p class="stem">${formatStem(item.stem)}</p>
-          <div class="options">${options}</div>
-        </article>`;
-      })
-      .join("");
-
-    practiceList.querySelectorAll(".opt").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        if (submitted) return;
-        const qid = btn.getAttribute("data-q");
-        const key = btn.getAttribute("data-key");
-        answers.set(qid, key);
-        practiceList.querySelectorAll(`.opt[data-q="${CSS.escape(qid)}"]`).forEach((el) => {
-          el.classList.toggle("selected", el.getAttribute("data-key") === key);
-        });
-        updateStatus();
-      });
+  function showScreen(name) {
+    if (!["teach", "demo", "practice"].includes(name)) name = "teach";
+    state.screen = name;
+    document.querySelectorAll("[data-wf-screen]").forEach((el) => {
+      el.hidden = el.dataset.wfScreen !== name;
     });
+    document.querySelectorAll(".wf-tabs [data-screen]").forEach((btn) => {
+      btn.classList.toggle("active", btn.getAttribute("data-screen") === name);
+    });
+    if (name === "demo") renderDemo();
+    if (name === "practice") renderPractice();
+    if (history.replaceState) {
+      history.replaceState(null, "", `#${name}`);
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function renderDemo() {
+    const item = demos[state.demoIndex];
+    const right = item.options.find((o) => o.key === item.correctKey);
+    const atStart = state.demoIndex <= 0;
+    const atEnd = state.demoIndex >= demos.length - 1;
+    demoCard.innerHTML = `
+      <div class="practice-topline">
+        <span>${state.demoIndex + 1} / ${demos.length}</span>
+        <strong>${escapeHtml(item.title)}</strong>
+      </div>
+      <p class="question-meta">Ask for the slot before you reveal.</p>
+      <p class="wf-stem">${formatStem(item.stem)}</p>
+      <div class="choice-list">
+        ${optionButtons(item, null, { locked: true })}
+      </div>
+      ${
+        state.demoOpen
+          ? `<div class="wf-reveal">
+              <strong>Slot: ${escapeHtml(item.slot)} · Answer: ${escapeHtml(item.correctKey)}. ${escapeHtml(right?.text || "")}</strong>
+              <p>${escapeHtml(item.teach)}</p>
+            </div>`
+          : ""
+      }
+      <div class="practice-actions">
+        <button class="button secondary" type="button" data-demo-prev ${atStart ? "disabled" : ""}>Previous</button>
+        <button class="button secondary" type="button" data-demo-reveal>
+          ${state.demoOpen ? "Hide model answer" : "Reveal model answer"}
+        </button>
+        ${
+          atEnd
+            ? `<button class="button primary" type="button" data-screen="practice">Continue to practice</button>`
+            : `<button class="button primary" type="button" data-demo-next>Next</button>`
+        }
+      </div>
+    `;
   }
 
   function updateStatus() {
-    const n = answers.size;
+    const n = state.answers.size;
     practiceStatus.hidden = false;
+    if (state.submitted) {
+      practiceStatus.textContent = "Submitted. Review your results below.";
+      return;
+    }
     practiceStatus.textContent =
       n === 15
         ? "All 15 answered. Ready to submit — no item feedback until then."
         : `Answered ${n} of 15. Keep going; scores stay hidden until submit.`;
   }
 
-  function submit() {
-    if (answers.size < 15) {
-      practiceStatus.hidden = false;
-      practiceStatus.textContent = `Answer all 15 before submitting (${answers.size}/15 so far).`;
+  function renderPractice() {
+    if (state.submitted) {
+      practiceCard.hidden = true;
+      results.hidden = false;
+      updateStatus();
       return;
     }
-    submitted = true;
-    submitBtn.hidden = true;
-    resetBtn.hidden = false;
+    practiceCard.hidden = false;
+    results.hidden = true;
+    const item = practice[state.practiceIndex];
+    const chosen = state.answers.get(item.id);
+    const atStart = state.practiceIndex <= 0;
+    const atEnd = state.practiceIndex >= practice.length - 1;
+    practiceCard.innerHTML = `
+      <div class="practice-topline">
+        <span>${state.practiceIndex + 1} / ${practice.length}</span>
+        <strong>${state.answers.size}/${practice.length} answered</strong>
+      </div>
+      <p class="wf-stem">${formatStem(item.stem)}</p>
+      <div class="choice-list">
+        ${optionButtons(item, chosen, { name: "q" })}
+      </div>
+      <div class="practice-actions">
+        <button class="button secondary" type="button" data-q-prev ${atStart ? "disabled" : ""}>Previous</button>
+        ${
+          atEnd
+            ? `<button class="button primary" type="button" data-submit>Submit practice (15)</button>`
+            : `<button class="button primary" type="button" data-q-next>Next</button>`
+        }
+      </div>
+    `;
+    updateStatus();
+  }
+
+  function submit() {
+    if (state.answers.size < 15) {
+      practiceStatus.hidden = false;
+      practiceStatus.textContent = `Answer all 15 before submitting (${state.answers.size}/15 so far).`;
+      practiceStatus.classList.add("is-error");
+      return;
+    }
+    practiceStatus.classList.remove("is-error");
+    state.submitted = true;
 
     let correct = 0;
-    const review = [];
-    practice.forEach((item, index) => {
-      const chosen = answers.get(item.id);
+    const review = practice.map((item, index) => {
+      const chosen = state.answers.get(item.id);
       const ok = chosen === item.correctKey;
       if (ok) correct += 1;
       const chosenText = item.options.find((o) => o.key === chosen)?.text || "—";
       const rightText = item.options.find((o) => o.key === item.correctKey)?.text || "";
-      review.push({ index, item, chosen, chosenText, rightText, ok });
+      return { index, item, chosen, chosenText, rightText, ok };
     });
 
-    results.hidden = false;
-    scoreLine.textContent = `Score: ${correct} / 15 (${Math.round((correct / 15) * 100)}%)`;
+    scoreLine.textContent = `Score: ${correct} / 15 (${Math.round((correct / 15) * 100)}%).`;
+    finalScore.textContent = `${correct}/15`;
     balanceNote.textContent =
       "This set’s correct-letter balance: A×4 · B×4 · C×4 · D×3 (mixed noun / verb / adjective / adverb slots).";
 
-    reviewList.innerHTML = review
-      .map(({ index, item, chosen, chosenText, rightText, ok }) => `
-        <article class="review-item ${ok ? "ok" : "bad"}">
+    reviewList.innerHTML = `<div class="wf-review">${review
+      .map(
+        ({ index, item, chosen, chosenText, rightText, ok }) => `
+        <article class="${ok ? "ok" : "bad"}">
           <h4>Q${index + 1} · ${ok ? "Correct" : "Incorrect"} · slot: ${escapeHtml(item.slot)}</h4>
-          <p class="stem">${formatStem(item.stem)}</p>
+          <p class="wf-stem">${formatStem(item.stem)}</p>
           <p>Your answer: <strong>${escapeHtml(chosen || "—")}. ${escapeHtml(chosenText)}</strong></p>
           <p>Correct: <strong>${escapeHtml(item.correctKey)}. ${escapeHtml(rightText)}</strong></p>
           <p>${escapeHtml(item.explain)}</p>
-        </article>`)
-      .join("");
+        </article>`
+      )
+      .join("")}</div>`;
 
+    renderPractice();
     results.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function reset() {
-    submitted = false;
-    answers.clear();
-    submitBtn.hidden = false;
-    resetBtn.hidden = true;
-    results.hidden = true;
-    reviewList.innerHTML = "";
-    practiceList.querySelectorAll(".opt").forEach((el) => el.classList.remove("selected"));
-    updateStatus();
-    document.getElementById("practice").scrollIntoView({ behavior: "smooth", block: "start" });
+    state.submitted = false;
+    state.practiceIndex = 0;
+    state.answers.clear();
+    practiceStatus.classList.remove("is-error");
+    renderPractice();
+    practiceCard.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  submitBtn.addEventListener("click", submit);
+  document.addEventListener("click", (event) => {
+    const screenBtn = event.target.closest("[data-screen]");
+    if (screenBtn) {
+      event.preventDefault();
+      showScreen(screenBtn.getAttribute("data-screen"));
+      return;
+    }
+
+    if (event.target.closest("[data-demo-prev]")) {
+      state.demoIndex = Math.max(0, state.demoIndex - 1);
+      state.demoOpen = false;
+      renderDemo();
+      return;
+    }
+    if (event.target.closest("[data-demo-next]")) {
+      state.demoIndex = Math.min(demos.length - 1, state.demoIndex + 1);
+      state.demoOpen = false;
+      renderDemo();
+      return;
+    }
+    if (event.target.closest("[data-demo-reveal]")) {
+      state.demoOpen = !state.demoOpen;
+      renderDemo();
+      return;
+    }
+
+    const choice = event.target.closest("[data-q]");
+    if (choice && !state.submitted) {
+      state.answers.set(choice.getAttribute("data-q"), choice.getAttribute("data-key"));
+      renderPractice();
+      return;
+    }
+    if (event.target.closest("[data-q-prev]")) {
+      state.practiceIndex = Math.max(0, state.practiceIndex - 1);
+      renderPractice();
+      return;
+    }
+    if (event.target.closest("[data-q-next]")) {
+      state.practiceIndex = Math.min(practice.length - 1, state.practiceIndex + 1);
+      renderPractice();
+      return;
+    }
+    if (event.target.closest("[data-submit]")) {
+      submit();
+    }
+  });
+
   resetBtn.addEventListener("click", reset);
 
-  renderDemos();
-  renderPractice();
-  updateStatus();
+  window.addEventListener("hashchange", () => {
+    const name = (location.hash || "#teach").slice(1);
+    showScreen(name);
+  });
+
+  const initial = (location.hash || "#teach").slice(1);
+  showScreen(initial);
 })();
