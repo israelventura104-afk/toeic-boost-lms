@@ -1,1 +1,1 @@
-PLACEHOLDER
+@file:///workspace/toeic-boost-publish-git/part6-mock.js
