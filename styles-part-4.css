@@ -1,0 +1,126 @@
+.strategy-topic-item > summary::after {
+  content: "Open";
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  min-width: 60px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: #e8f5f4;
+  color: var(--teal-dark);
+  font-size: 0.72rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.strategy-topic-item[open] > summary::after {
+  content: "Close";
+  background: var(--coral);
+  color: #fff;
+}
+
+.strategy-topic-item p {
+  margin-bottom: 0;
+  padding: 0 16px 16px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.strategy-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.strategy-note {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid rgba(13, 138, 141, 0.2);
+  border-radius: 8px;
+  background: #e8f5f4;
+  color: var(--teal-dark);
+}
+
+.strategy-note p {
+  margin-bottom: 0;
+  line-height: 1.55;
+}
+
+.strategy-coming-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.strategy-coming-card {
+  display: grid;
+  gap: 8px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(19, 34, 56, 0.06);
+}
+
+.strategy-coming-card strong {
+  font-size: 1.05rem;
+}
+
+.strategy-coming-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .strategy-topic-grid,
+  .strategy-intro-grid,
+  .strategy-study-flow,
+  .strategy-coming-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .strategy-section-header {
+    flex-direction: column;
+  }
+
+  .strategy-anchor-tabs {
+    position: static;
+  }
+
+  .strategy-actions {
+    flex-direction: column;
+  }
+
+  .strategy-actions .button {
+    width: 100%;
+  }
+}
+
+/* Part 6 blanks: underline look (not numbered chips) */
+.part6-blank {
+  display: inline-block;
+  min-width: 4.75rem;
+  padding: 0 0.2rem 0.05rem;
+  margin: 0 0.12rem;
+  border: 0;
+  border-bottom: 2.5px solid #1e2d5a;
+  border-radius: 0;
+  background: rgba(30, 45, 90, 0.04);
+  color: #1e2d5a;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  vertical-align: baseline;
+  font-size: 0.95em;
+}
+.part6-blank.is-active {
+  border-bottom-color: #238d85;
+  background: rgba(91, 184, 176, 0.18);
+  color: #1e2d5a;
+  box-shadow: none;
+}
