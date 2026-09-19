@@ -1,1 +1,12 @@
-{"id": "P6-BANK"}
+{
+  "id": "P6-BANK",
+  "title": "Part 6 Class Practice Bank (Validated)",
+  "purpose": "guided_and_mocks_class_validated",
+  "format": "sharded",
+  "shardFiles": [
+    "data/part6-bank-shards/part6-bank-shard-1.json",
+    "data/part6-bank-shards/part6-bank-shard-2.json",
+    "data/part6-bank-shards/part6-bank-shard-3.json",
+    "data/part6-bank-shards/part6-bank-shard-4.json"
+  ]
+}
