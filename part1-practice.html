@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Part 1 Free Practice | TOEIC Boost</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-body">
+    <header class="topbar" data-site-header></header>
+    <script src="nav.js"></script>
+
+    <main class="lesson-shell">
+      <header class="lesson-hero">
+        <a class="back-link" href="listening.html">Back to Listening hub</a>
+        <p class="eyebrow">Listening · Part 1 · Free</p>
+        <h1>Photographs — 3 fixed questions</h1>
+        <p>
+          Open to everyone. Same order every time, no class code, no timer.
+          Look at the photo, play the audio (four statements), then choose A–D.
+          You will see whether your answer is correct, plus a short explanation,
+          before you move on.
+        </p>
+      </header>
+
+      <section class="intro-practice" aria-labelledby="intro-practice-title">
+        <div class="section-heading">
+          <p class="eyebrow">Free practice</p>
+          <h2 id="intro-practice-title">See the photo. Hear four statements. Pick the best match.</h2>
+          <p>
+            One photo per item. Four spoken statements. Immediate feedback with the
+            correct letter, the matching phrase, and a short tip.
+          </p>
+        </div>
+
+        <p class="practice-status" data-practice-status hidden></p>
+
+        <div class="practice-card" data-practice-card>
+          <div class="practice-topline">
+            <span data-counter>1 / 3</span>
+            <strong data-score>0/0 correct</strong>
+          </div>
+          <p class="question-meta" data-question-meta></p>
+          <figure class="part1-photo-wrap">
+            <img
+              class="part1-photo"
+              data-photo
+              src=""
+              alt="Part 1 photograph"
+              width="720"
+              height="480"
+            />
+            <figcaption class="part1-photo-credit" data-photo-credit hidden></figcaption>
+          </figure>
+          <div class="part1-audio-bar">
+            <audio data-audio preload="metadata" controls></audio>
+            <button class="button secondary compact-button" type="button" data-replay>
+              Replay audio
+            </button>
+          </div>
+          <h3 data-question>Look at the picture. Listen to the four statements. Choose the best answer.</h3>
+          <div class="choice-list" data-options></div>
+          <div class="practice-feedback" data-feedback hidden></div>
+          <div class="practice-actions">
+            <button class="button secondary" type="button" data-prev>Previous</button>
+            <button class="button primary" type="button" data-next>Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="results-panel" data-results hidden>
+        <div class="results-hero">
+          <div>
+            <p class="eyebrow">Free practice snapshot</p>
+            <h2>Your score</h2>
+            <p data-result-message></p>
+          </div>
+          <div class="result-score">
+            <span>Total</span>
+            <strong data-final-score>0/3</strong>
+            <small data-final-note></small>
+          </div>
+        </div>
+        <div class="result-misses-panel" data-mistakes></div>
+        <div class="practice-actions results-actions">
+          <button class="button primary" type="button" data-restart>Try again</button>
+          <a class="button secondary" href="listening.html">Listening hub</a>
+          <a class="button secondary" href="dashboard.html">Dashboard</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <strong>TOEIC BOOST</strong>
+      <span>by Teacher Israel Ventura</span>
+    </footer>
+
+    <script src="assets/part1/image-p1-01.js?v=20260919b"></script>
+    <script src="assets/part1/image-p1-02.js?v=20260919b"></script>
+    <script src="assets/part1/image-p1-03.js?v=20260919b"></script>
+    <script src="assets/part1/audio-p1-01.js?v=20260919b"></script>
+    <script src="assets/part1/audio-p1-02.js?v=20260919b"></script>
+    <script src="assets/part1/audio-p1-03.js?v=20260919b"></script>
+    <script src="part1-practice.js?v=20260919a"></script>
+  </body>
+</html>
