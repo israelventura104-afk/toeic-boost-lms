@@ -1,0 +1,720 @@
+{
+  "id": "P6-BANK-SHARD-4",
+  "passages": [
+    {
+      "id": "TQB-P6-0016",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "letter",
+      "title": "Client Success: apology for portal outage",
+      "difficulty": 3,
+      "workplaceTopic": "Customer Success / Service apology",
+      "lote": "lote4",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "Dear Mr. Brennan,\n\nI am writing to apologize for the service interruption that affected your online ordering portal on September 9. Our technical team traced the outage to a failed software update."
+        },
+        {
+          "paragraph": 2,
+          "content": "The portal was restored at 2:40 P.M., and we have [[191]] additional monitoring overnight to prevent a recurrence. [[192]], we have credited your account with one month of hosting fees at no charge."
+        },
+        {
+          "paragraph": 3,
+          "content": "Please accept our [[193]] for the inconvenience this caused your sales staff. [[194]]\n\nSincerely,\nPriya Nair\nClient Success Manager\nOrbitWeb Hosting"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0016-Q01",
+          "blankLabel": "191",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "implied"
+            },
+            {
+              "key": "B",
+              "text": "implemented"
+            },
+            {
+              "key": "C",
+              "text": "imported"
+            },
+            {
+              "key": "D",
+              "text": "impressed"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "implemented",
+          "explanation": "The company put new monitoring in place; \"implemented\" means put into operation.",
+          "commonMistake": "Choosing a similar-looking verb (implied / imported / impressed) that does not mean put a system into use."
+        },
+        {
+          "id": "TQB-P6-0016-Q02",
+          "blankLabel": "192",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "On the contrary"
+            },
+            {
+              "key": "B",
+              "text": "Previously"
+            },
+            {
+              "key": "C",
+              "text": "In addition"
+            },
+            {
+              "key": "D",
+              "text": "For instance"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "In addition",
+          "explanation": "The fee credit is a second remedy after the monitoring step. \"In addition\" marks that additive relationship.",
+          "commonMistake": "Using \"On the contrary\" when the sentence continues the apology remedies rather than opposing them."
+        },
+        {
+          "id": "TQB-P6-0016-Q03",
+          "blankLabel": "193",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "apologize"
+            },
+            {
+              "key": "B",
+              "text": "apologetic"
+            },
+            {
+              "key": "C",
+              "text": "apologizing"
+            },
+            {
+              "key": "D",
+              "text": "apologies"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "apologies",
+          "explanation": "After \"our,\" a plural noun is required. \"Apologies\" is the standard phrase for a formal expression of regret.",
+          "commonMistake": "Choosing the verb \"apologize\" or the adjective \"apologetic\" where a noun slot after \"our\" is needed."
+        },
+        {
+          "id": "TQB-P6-0016-Q04",
+          "blankLabel": "194",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "A detailed incident report will be emailed to you by Thursday."
+            },
+            {
+              "key": "B",
+              "text": "The warehouse closes for inventory every December."
+            },
+            {
+              "key": "C",
+              "text": "Our marketing brochure was redesigned last year."
+            },
+            {
+              "key": "D",
+              "text": "Parking validation is available in the lobby."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "A detailed incident report will be emailed to you by Thursday.",
+          "explanation": "A offers a concrete follow-up document that fits an apology letter after the expression of regret.",
+          "commonMistake": "Selecting an unrelated workplace sentence that does not continue the client-service recovery flow."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0017",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "ad",
+      "title": "Product launch: AeroBlend Pro kitchen blender",
+      "difficulty": 2,
+      "workplaceTopic": "Marketing / Product launch",
+      "lote": "lote5",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "INTRODUCING THE AEROBLEND PRO\n\nKitchenWare Co. is proud to announce the AeroBlend Pro, our most powerful countertop blender yet. Designed for busy cafés and home cooks alike, it delivers restaurant-quality results in under sixty seconds."
+        },
+        {
+          "paragraph": 2,
+          "content": "The AeroBlend Pro features a [[195]] motor housing that stays cool during long blending cycles. [[196]], every unit ships with a recipe booklet and a two-year limited warranty at no extra cost."
+        },
+        {
+          "paragraph": 3,
+          "content": "Order before October 31 and [[197]] 15 percent off your first case. [[198]]\n\nVisit kitchenwareco.com/aeroblend or call 1-800-555-0192 to place your wholesale order today."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0017-Q01",
+          "blankLabel": "195",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "durably"
+            },
+            {
+              "key": "B",
+              "text": "durability"
+            },
+            {
+              "key": "C",
+              "text": "endure"
+            },
+            {
+              "key": "D",
+              "text": "durable"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "durable",
+          "explanation": "Before the noun \"motor housing,\" an adjective is required. \"Durable\" correctly modifies the housing.",
+          "commonMistake": "Choosing the adverb \"durably\" or the noun \"durability\" where an adjective slot before a noun is needed."
+        },
+        {
+          "id": "TQB-P6-0017-Q02",
+          "blankLabel": "196",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nevertheless"
+            },
+            {
+              "key": "B",
+              "text": "Otherwise"
+            },
+            {
+              "key": "C",
+              "text": "In addition"
+            },
+            {
+              "key": "D",
+              "text": "By contrast"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "In addition",
+          "explanation": "The recipe booklet and warranty are extra benefits after the motor feature. \"In addition\" marks that additive relationship.",
+          "commonMistake": "Using a contrast connector (Nevertheless / By contrast) when the sentence adds another selling point."
+        },
+        {
+          "id": "TQB-P6-0017-Q03",
+          "blankLabel": "197",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "receive"
+            },
+            {
+              "key": "B",
+              "text": "reserve"
+            },
+            {
+              "key": "C",
+              "text": "replace"
+            },
+            {
+              "key": "D",
+              "text": "review"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "receive",
+          "explanation": "Customers who order early get a discount; \"receive\" means obtain that 15 percent off.",
+          "commonMistake": "Selecting a similar-looking verb (reserve / replace / review) that does not mean obtain a discount."
+        },
+        {
+          "id": "TQB-P6-0017-Q04",
+          "blankLabel": "198",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "The accounting department closes its books every Friday."
+            },
+            {
+              "key": "B",
+              "text": "Free ground shipping is included on all domestic wholesale orders."
+            },
+            {
+              "key": "C",
+              "text": "Employees must renew parking permits by March."
+            },
+            {
+              "key": "D",
+              "text": "Please submit travel receipts within ten days."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Free ground shipping is included on all domestic wholesale orders.",
+          "explanation": "A continues the product-launch offer with another purchase incentive that fits between the discount and the call to action.",
+          "commonMistake": "Selecting an unrelated internal-office sentence that does not belong in a product advertisement."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0018",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "article",
+      "title": "Newsletter: workplace cybersecurity tips",
+      "difficulty": 3,
+      "workplaceTopic": "IT / Cybersecurity awareness",
+      "lote": "lote5",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "PROTECTING COMPANY DATA AT WORK\n\nLast quarter, Meridian Holdings reported a 40 percent drop in phishing incidents after rolling out a company-wide security awareness campaign. The Information Security Office shares three practices that contributed to that improvement."
+        },
+        {
+          "paragraph": 2,
+          "content": "First, employees are asked to verify [[199]] requests for password resets by calling the help desk on a known number. [[200]], staff should never click links in unexpected emails that ask for account credentials."
+        },
+        {
+          "paragraph": 3,
+          "content": "A short online quiz will be [[201]] each month to reinforce these habits. [[202]]\n\nFor questions, contact infosec@meridianholdings.com or visit the intranet Security Hub."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0018-Q01",
+          "blankLabel": "199",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "successful"
+            },
+            {
+              "key": "B",
+              "text": "suspicious"
+            },
+            {
+              "key": "C",
+              "text": "sufficient"
+            },
+            {
+              "key": "D",
+              "text": "subsequent"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "suspicious",
+          "explanation": "Employees should check password-reset requests that look questionable; \"suspicious\" means causing distrust.",
+          "commonMistake": "Choosing a similar-looking adjective (successful / sufficient / subsequent) that does not mean questionable or untrustworthy."
+        },
+        {
+          "id": "TQB-P6-0018-Q02",
+          "blankLabel": "200",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Moreover"
+            },
+            {
+              "key": "B",
+              "text": "Instead"
+            },
+            {
+              "key": "C",
+              "text": "Meanwhile"
+            },
+            {
+              "key": "D",
+              "text": "Consequently"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "Moreover",
+          "explanation": "The second tip adds another security practice. \"Moreover\" signals that additive relationship between the two guidelines.",
+          "commonMistake": "Using \"Instead\" (replacement) or \"Consequently\" (result) when the sentence simply adds a parallel tip."
+        },
+        {
+          "id": "TQB-P6-0018-Q03",
+          "blankLabel": "201",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "administer"
+            },
+            {
+              "key": "B",
+              "text": "administration"
+            },
+            {
+              "key": "C",
+              "text": "administered"
+            },
+            {
+              "key": "D",
+              "text": "administrative"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "administered",
+          "explanation": "After \"will be,\" a past participle is needed for the passive voice. \"Administered\" correctly forms \"will be administered.\"",
+          "commonMistake": "Choosing the base verb \"administer\" or the noun \"administration\" where a passive past participle is required."
+        },
+        {
+          "id": "TQB-P6-0018-Q04",
+          "blankLabel": "202",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "The cafeteria will offer a new vegetarian menu next Monday."
+            },
+            {
+              "key": "B",
+              "text": "Our logo was updated to include a lighter shade of blue."
+            },
+            {
+              "key": "C",
+              "text": "Visitors must sign in at the front desk before noon."
+            },
+            {
+              "key": "D",
+              "text": "Completion of the quiz is required before employees can renew remote-access credentials."
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Completion of the quiz is required before employees can renew remote-access credentials.",
+          "explanation": "A links the monthly quiz to a concrete access consequence, fitting a cybersecurity newsletter after the quiz mention.",
+          "commonMistake": "Selecting an unrelated facilities or branding sentence that does not continue the security-awareness theme."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0019",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "memo",
+      "title": "Facilities: third-floor renovation schedule",
+      "difficulty": 4,
+      "workplaceTopic": "Facilities / Office renovation",
+      "lote": "lote5",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "MEMORANDUM\n\nTo: All third-floor staff\nFrom: Lena Ortiz, Facilities Director\nDate: September 14\nSubject: Renovation of the east wing conference area\n\nBeginning Monday, September 21, contractors will renovate the east wing conference rooms on the third floor. The project is expected to last approximately three weeks."
+        },
+        {
+          "paragraph": 2,
+          "content": "During this period, meetings normally held in Rooms 3E and 3F should be [[203]] to the second-floor training center. [[204]], temporary workstations will be set up in the west atrium for employees whose desks are adjacent to the construction zone."
+        },
+        {
+          "paragraph": 3,
+          "content": "Please pack personal items by Friday so that movers can clear the area [[205]]. [[206]]\n\nThank you for your cooperation.\nLena Ortiz"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0019-Q01",
+          "blankLabel": "203",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "relocated"
+            },
+            {
+              "key": "B",
+              "text": "recalled"
+            },
+            {
+              "key": "C",
+              "text": "reduced"
+            },
+            {
+              "key": "D",
+              "text": "released"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "relocated",
+          "explanation": "Meetings need to be moved to another space; \"relocated\" means transferred to a different place.",
+          "commonMistake": "Choosing a similar-looking verb (recalled / reduced / released) that does not mean move meetings to another room."
+        },
+        {
+          "id": "TQB-P6-0019-Q02",
+          "blankLabel": "204",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Nonetheless"
+            },
+            {
+              "key": "B",
+              "text": "Formerly"
+            },
+            {
+              "key": "C",
+              "text": "Likewise"
+            },
+            {
+              "key": "D",
+              "text": "Furthermore"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Furthermore",
+          "explanation": "Temporary workstations are an additional accommodation. \"Furthermore\" adds that second logistical detail.",
+          "commonMistake": "Using \"Nonetheless\" (contrast) when the memo continues listing renovation accommodations."
+        },
+        {
+          "id": "TQB-P6-0019-Q03",
+          "blankLabel": "205",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "prompt"
+            },
+            {
+              "key": "B",
+              "text": "promptness"
+            },
+            {
+              "key": "C",
+              "text": "promptly"
+            },
+            {
+              "key": "D",
+              "text": "prompted"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "promptly",
+          "explanation": "An adverb is needed to modify \"can clear.\" \"Promptly\" means without delay.",
+          "commonMistake": "Choosing the adjective \"prompt\" or the noun \"promptness\" where an adverb modifying the verb phrase is required."
+        },
+        {
+          "id": "TQB-P6-0019-Q04",
+          "blankLabel": "206",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "The marketing team plans to redesign the company website next spring."
+            },
+            {
+              "key": "B",
+              "text": "Labeled packing boxes will be delivered to each affected desk by Wednesday afternoon."
+            },
+            {
+              "key": "C",
+              "text": "Overtime pay rates will be reviewed during the annual budget meeting."
+            },
+            {
+              "key": "D",
+              "text": "Please update your emergency contact information in the HR portal."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Labeled packing boxes will be delivered to each affected desk by Wednesday afternoon.",
+          "explanation": "A supplies a practical next step that supports the packing request and fits a facilities renovation memo.",
+          "commonMistake": "Selecting an unrelated HR or marketing sentence that does not address the renovation logistics."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0020",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "letter",
+      "title": "Accounts Payable: supplier payment confirmation",
+      "difficulty": 3,
+      "workplaceTopic": "Finance / Supplier payment",
+      "lote": "lote5",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "Northbridge Manufacturing\n480 Industrial Parkway\nColumbus, OH 43215\n\nSeptember 14\n\nMs. Hannah Cho\nAccounts Receivable\nSummit Fasteners Ltd.\n22 Harbor Road\nCleveland, OH 44114\n\nDear Ms. Cho,\n\nThank you for your invoice SF-4481 dated August 28 for the August bolt shipment. We have reviewed the charges against our purchase order PO-9920 and confirmed that the totals are accurate."
+        },
+        {
+          "paragraph": 2,
+          "content": "A wire transfer for $18,450 will be [[207]] to your designated account on September 18. [[208]], please note that future invoices should reference both the purchase-order number and the delivery receipt to speed processing."
+        },
+        {
+          "paragraph": 3,
+          "content": "We appreciate your continued [[209]] as a preferred supplier. [[210]]\n\nSincerely,\nDavid Ruiz\nAccounts Payable Supervisor\nNorthbridge Manufacturing"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0020-Q01",
+          "blankLabel": "207",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "send"
+            },
+            {
+              "key": "B",
+              "text": "sent"
+            },
+            {
+              "key": "C",
+              "text": "sending"
+            },
+            {
+              "key": "D",
+              "text": "sender"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "sent",
+          "explanation": "After \"will be,\" the passive past participle \"sent\" is required: \"will be sent to your designated account.\"",
+          "commonMistake": "Choosing the base verb \"send\" or the gerund \"sending\" where a passive past participle is needed."
+        },
+        {
+          "id": "TQB-P6-0020-Q02",
+          "blankLabel": "208",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Similarly"
+            },
+            {
+              "key": "B",
+              "text": "Therefore"
+            },
+            {
+              "key": "C",
+              "text": "However"
+            },
+            {
+              "key": "D",
+              "text": "For example"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "However",
+          "explanation": "After confirming payment, the letter adds a request that softens into a mild contrast/shift. \"However\" introduces that procedural note.",
+          "commonMistake": "Using \"Therefore\" (result) when the second sentence is a contrasting request, not a consequence of the wire transfer."
+        },
+        {
+          "id": "TQB-P6-0020-Q03",
+          "blankLabel": "209",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "reliability"
+            },
+            {
+              "key": "B",
+              "text": "reliance"
+            },
+            {
+              "key": "C",
+              "text": "reluctance"
+            },
+            {
+              "key": "D",
+              "text": "relevance"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "reliability",
+          "explanation": "The buyer values the supplier's consistent performance; \"reliability\" fits a preferred-supplier compliment.",
+          "commonMistake": "Selecting a similar-looking noun (reliance / reluctance / relevance) that does not praise consistent supplier performance."
+        },
+        {
+          "id": "TQB-P6-0020-Q04",
+          "blankLabel": "210",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "The holiday party will be held in the atrium on December 12."
+            },
+            {
+              "key": "B",
+              "text": "Please reserve the main lobby for the product showcase."
+            },
+            {
+              "key": "C",
+              "text": "Our new cafeteria vendor begins service next Monday."
+            },
+            {
+              "key": "D",
+              "text": "A payment confirmation number will be emailed to you once the transfer posts."
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "A payment confirmation number will be emailed to you once the transfer posts.",
+          "explanation": "A provides a concrete follow-up on the wire transfer and fits a supplier payment confirmation letter.",
+          "commonMistake": "Selecting an unrelated event or facilities sentence that does not continue the accounts-payable correspondence."
+        }
+      ]
+    }
+  ]
+}
