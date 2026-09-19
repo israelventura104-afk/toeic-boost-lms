@@ -1,0 +1,5 @@
+Part 1 media: 97 chunk files + 6 combiners.
+Combiners already on main.
+Chunk pattern: assets/part1/{image,audio}-p1-0N-cK.js
+HTML expects ?v=20260919e script tags (local part1-practice.html).
+Upload remaining via create_or_update_file from /tmp/mcp_single_XX.json
