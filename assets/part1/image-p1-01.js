@@ -1,0 +1,1 @@
+window.TOEIC_PART1_IMAGES=window.TOEIC_PART1_IMAGES||{};(function(){var k="TOEIC_PART1_IMAGES:p1-01";var parts=(window.__TOEIC_P1_CHUNKS&&window.__TOEIC_P1_CHUNKS[k])||[];window.TOEIC_PART1_IMAGES["p1-01"]=parts.join("");})();

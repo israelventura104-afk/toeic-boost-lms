@@ -1,0 +1,1 @@
+window.TOEIC_PART1_AUDIO=window.TOEIC_PART1_AUDIO||{};(function(){var k="TOEIC_PART1_AUDIO:p1-01";var parts=(window.__TOEIC_P1_CHUNKS&&window.__TOEIC_P1_CHUNKS[k])||[];window.TOEIC_PART1_AUDIO["p1-01"]=parts.join("");})();
