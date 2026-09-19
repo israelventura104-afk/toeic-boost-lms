@@ -71,22 +71,22 @@
           "options": [
             {
               "key": "A",
-              "text": "In addition"
-            },
-            {
-              "key": "B",
               "text": "Otherwise"
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "On the contrary"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "Nevertheless"
+            },
+            {
+              "key": "D",
+              "text": "In addition"
             }
           ],
-          "correctKey": "A",
+          "correctKey": "D",
           "correctAnswer": "In addition",
           "explanation": "The next sentence adds another workshop activity. \"In addition\" signals an additive relationship.",
           "commonMistake": "Picking a contrast connector (Nevertheless / On the contrary) when no contrast is present."
@@ -129,22 +129,22 @@
           "options": [
             {
               "key": "A",
-              "text": "Printed materials will be available at the registration desk."
-            },
-            {
-              "key": "B",
               "text": "The cafeteria menu will change again next month."
             },
             {
-              "key": "C",
+              "key": "B",
               "text": "Please submit your expense reports before Friday."
+            },
+            {
+              "key": "C",
+              "text": "Printed materials will be available at the registration desk."
             },
             {
               "key": "D",
               "text": "Our downtown branch is relocating in October."
             }
           ],
-          "correctKey": "A",
+          "correctKey": "C",
           "correctAnswer": "Printed materials will be available at the registration desk.",
           "explanation": "Only A continues the workshop logistics (materials for participants). The other options introduce unrelated office topics.",
           "commonMistake": "Choosing a grammatical sentence that does not fit the email’s topic (workshop logistics)."
