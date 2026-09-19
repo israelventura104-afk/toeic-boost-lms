@@ -1,0 +1,740 @@
+{
+  "id": "P6-BANK-SHARD-1",
+  "passages": [
+    {
+      "id": "TQB-P6-0001",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "email",
+      "title": "Follow-up after product demo",
+      "difficulty": 3,
+      "workplaceTopic": "Sales",
+      "lote": "lote1",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "Dear Ms. Patel,\n\nThank you for joining yesterday’s online demonstration of our inventory software. We were pleased to answer your questions about reporting tools and user permissions."
+        },
+        {
+          "paragraph": 2,
+          "content": "As discussed, I have attached a [[131]] proposal that outlines pricing for a 25-user license. The quote remains valid for 30 days from the date of this message."
+        },
+        {
+          "paragraph": 3,
+          "content": "Our implementation team can schedule a kickoff meeting as early as next week. [[132]], we recommend completing the order form by Friday if you would like the May installation window."
+        },
+        {
+          "paragraph": 4,
+          "content": "Please let me know if you need a live trial for two additional managers. [[133]]\n\nI look forward to your [[134]].\n\nBest regards,\nMarcus Chen\nAccount Manager, StockFlow Systems"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0001-Q01",
+          "blankLabel": "131",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "detail"
+            },
+            {
+              "key": "B",
+              "text": "detailing"
+            },
+            {
+              "key": "C",
+              "text": "detailed"
+            },
+            {
+              "key": "D",
+              "text": "details"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "detailed",
+          "explanation": "An adjective is needed before the noun \"proposal.\" \"Detailed\" correctly modifies the noun.",
+          "commonMistake": "Choosing the noun \"detail\" or \"details\" when an adjective slot is required."
+        },
+        {
+          "id": "TQB-P6-0001-Q02",
+          "blankLabel": "132",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Meanwhile"
+            },
+            {
+              "key": "B",
+              "text": "In contrast"
+            },
+            {
+              "key": "C",
+              "text": "For example"
+            },
+            {
+              "key": "D",
+              "text": "Therefore"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "Therefore",
+          "explanation": "The second sentence is a logical result of wanting the May window: act by Friday. \"Therefore\" marks consequence.",
+          "commonMistake": "Using \"In contrast\" when there is no opposing idea."
+        },
+        {
+          "id": "TQB-P6-0001-Q03",
+          "blankLabel": "133",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "The warehouse closes for inventory every December."
+            },
+            {
+              "key": "B",
+              "text": "I can arrange that access within one business day."
+            },
+            {
+              "key": "C",
+              "text": "Our marketing brochure was redesigned last year."
+            },
+            {
+              "key": "D",
+              "text": "Parking validation is available in the lobby."
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "I can arrange that access within one business day.",
+          "explanation": "The previous sentence offers a live trial for managers; A responds to that offer with a concrete next step.",
+          "commonMistake": "Selecting an unrelated workplace sentence that is grammatical but breaks the sales follow-up flow."
+        },
+        {
+          "id": "TQB-P6-0001-Q04",
+          "blankLabel": "134",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "reply"
+            },
+            {
+              "key": "B",
+              "text": "replace"
+            },
+            {
+              "key": "C",
+              "text": "relieve"
+            },
+            {
+              "key": "D",
+              "text": "rely"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "reply",
+          "explanation": "\"Look forward to your reply\" is the natural closing for a sales email awaiting a response.",
+          "commonMistake": "Choosing a similar-looking verb (rely / relieve) that does not fit the closing formula."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0002",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "memo",
+      "title": "Visitor parking update",
+      "difficulty": 2,
+      "workplaceTopic": "Facilities",
+      "lote": "lote1",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "MEMORANDUM\n\nTo: All employees\nFrom: Facilities Management\nDate: March 12\nSubject: Temporary changes to visitor parking"
+        },
+        {
+          "paragraph": 2,
+          "content": "Beginning Monday, the north lot will be closed for resurfacing. Visitors should use the south lot and display a guest pass on the dashboard. Guest passes are [[135]] at the security desk in Building A."
+        },
+        {
+          "paragraph": 3,
+          "content": "Construction vehicles will enter through Gate 2 only. [[136]], employees are asked not to leave personal vehicles overnight in the south lot during the project."
+        },
+        {
+          "paragraph": 4,
+          "content": "We appreciate your [[137]] while the work is completed. [[138]]\n\nPlease contact Facilities at ext. 4400 with questions."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0002-Q01",
+          "blankLabel": "135",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "available"
+            },
+            {
+              "key": "B",
+              "text": "avoidable"
+            },
+            {
+              "key": "C",
+              "text": "admirable"
+            },
+            {
+              "key": "D",
+              "text": "affordable"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "available",
+          "explanation": "Passes can be obtained at the desk — \"available\" means ready to be used or obtained.",
+          "commonMistake": "Selecting a similar adjective (affordable / admirable) that does not fit \"at the security desk.\""
+        },
+        {
+          "id": "TQB-P6-0002-Q02",
+          "blankLabel": "136",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Instead"
+            },
+            {
+              "key": "B",
+              "text": "Earlier"
+            },
+            {
+              "key": "C",
+              "text": "Likewise"
+            },
+            {
+              "key": "D",
+              "text": "In addition"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "In addition",
+          "explanation": "The sentence adds another restriction related to the parking project. \"In addition\" is the additive connector.",
+          "commonMistake": "Choosing \"Instead,\" which would replace an idea rather than add one."
+        },
+        {
+          "id": "TQB-P6-0002-Q03",
+          "blankLabel": "137",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "patient"
+            },
+            {
+              "key": "B",
+              "text": "patience"
+            },
+            {
+              "key": "C",
+              "text": "patiently"
+            },
+            {
+              "key": "D",
+              "text": "patients"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "patience",
+          "explanation": "After the possessive determiner \"your,\" a noun is required. \"Patience\" is the noun form.",
+          "commonMistake": "Using the adjective \"patient\" after \"your,\" where a noun slot is needed."
+        },
+        {
+          "id": "TQB-P6-0002-Q04",
+          "blankLabel": "138",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "All interns will receive new laptop chargers tomorrow."
+            },
+            {
+              "key": "B",
+              "text": "The cafeteria will introduce vegetarian specials in June."
+            },
+            {
+              "key": "C",
+              "text": "The resurfacing is expected to take approximately two weeks."
+            },
+            {
+              "key": "D",
+              "text": "Please update your emergency contacts in the HR portal."
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "The resurfacing is expected to take approximately two weeks.",
+          "explanation": "A continues the parking/resurfacing topic with useful project timing before the contact line.",
+          "commonMistake": "Inserting a correct English sentence about an unrelated workplace topic."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0003",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "notice",
+      "title": "Scheduled network maintenance",
+      "difficulty": 3,
+      "workplaceTopic": "IT",
+      "lote": "lote1",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "NOTICE\n\nNetwork Maintenance — Sunday, April 6"
+        },
+        {
+          "paragraph": 2,
+          "content": "The Information Technology department will perform essential upgrades to the company network this Sunday from 1:00 a.m. to 5:00 a.m. During this period, email and shared drives will be [[139]] unavailable."
+        },
+        {
+          "paragraph": 3,
+          "content": "Please save open files and log out of all systems before you leave on Friday. [[140]], remote access will also be interrupted, so plan offline work if you expect to work from home early Sunday morning."
+        },
+        {
+          "paragraph": 4,
+          "content": "Most services should be [[141]] by 5:30 a.m. [[142]]\n\nFor urgent issues after the window, contact the on-call technician at 555-0188.\n— IT Operations"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0003-Q01",
+          "blankLabel": "139",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "temporary"
+            },
+            {
+              "key": "B",
+              "text": "temporariness"
+            },
+            {
+              "key": "C",
+              "text": "temporarily"
+            },
+            {
+              "key": "D",
+              "text": "temporaries"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "temporarily",
+          "explanation": "An adverb is needed to modify the adjective \"unavailable.\" \"Temporarily\" is the adverb form.",
+          "commonMistake": "Choosing the adjective \"temporary\" to modify another adjective."
+        },
+        {
+          "id": "TQB-P6-0003-Q02",
+          "blankLabel": "140",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Otherwise"
+            },
+            {
+              "key": "B",
+              "text": "Furthermore"
+            },
+            {
+              "key": "C",
+              "text": "Previously"
+            },
+            {
+              "key": "D",
+              "text": "Rather"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "Furthermore",
+          "explanation": "The sentence adds another impact of the outage (remote access). \"Furthermore\" is additive.",
+          "commonMistake": "Using \"Otherwise,\" which signals an alternative consequence, not an added fact."
+        },
+        {
+          "id": "TQB-P6-0003-Q03",
+          "blankLabel": "141",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "restrained"
+            },
+            {
+              "key": "B",
+              "text": "reserved"
+            },
+            {
+              "key": "C",
+              "text": "researched"
+            },
+            {
+              "key": "D",
+              "text": "restored"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "restored",
+          "explanation": "After maintenance, services are brought back — \"restored\" means returned to normal operation.",
+          "commonMistake": "Picking a look-alike verb (reserved / restrained) that does not mean \"back online.\""
+        },
+        {
+          "id": "TQB-P6-0003-Q04",
+          "blankLabel": "142",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "A confirmation message will be posted on the intranet when the work is finished."
+            },
+            {
+              "key": "B",
+              "text": "The annual picnic will be held at Riverside Park."
+            },
+            {
+              "key": "C",
+              "text": "New business cards can be ordered through the supply portal."
+            },
+            {
+              "key": "D",
+              "text": "Please remember to recycle paper in the blue bins."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "A confirmation message will be posted on the intranet when the work is finished.",
+          "explanation": "A fits between the restore-time statement and the urgent-contact line, telling staff how they will know the outage is over.",
+          "commonMistake": "Choosing an unrelated notice sentence that does not connect maintenance to staff communication."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0004",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "letter",
+      "title": "Internship offer letter",
+      "difficulty": 4,
+      "workplaceTopic": "HR",
+      "lote": "lote1",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "Dear Mr. Alvarez,\n\nWe are delighted to offer you a summer internship in the Marketing Department at BrightHarbor Media. Your start date will be June 2, and the internship will last ten weeks."
+        },
+        {
+          "paragraph": 2,
+          "content": "During the program, you will assist with social media campaigns and prepare [[143]] reports for weekly team meetings. You will also shadow a senior coordinator on client calls."
+        },
+        {
+          "paragraph": 3,
+          "content": "The position is paid at the rate listed in the enclosed agreement. [[144]], the company will provide a transit subsidy for commuting days spent at the downtown office."
+        },
+        {
+          "paragraph": 4,
+          "content": "Please sign and return the agreement by April 20 to [[145]] your place in the cohort. [[146]]\n\nWe look forward to welcoming you in June.\n\nSincerely,\nDana Whitfield\nHuman Resources Manager"
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0004-Q01",
+          "blankLabel": "143",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "summarize"
+            },
+            {
+              "key": "B",
+              "text": "summary"
+            },
+            {
+              "key": "C",
+              "text": "summarily"
+            },
+            {
+              "key": "D",
+              "text": "summarizing"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "summary",
+          "explanation": "A noun is needed to modify \"reports\" in the compound sense \"summary reports\" (or act as the adjective-noun pattern). \"Summary\" is the correct form before \"reports.\"",
+          "commonMistake": "Choosing the verb \"summarize\" where a noun modifier is required."
+        },
+        {
+          "id": "TQB-P6-0004-Q02",
+          "blankLabel": "144",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "Even so"
+            },
+            {
+              "key": "B",
+              "text": "By contrast"
+            },
+            {
+              "key": "C",
+              "text": "At first"
+            },
+            {
+              "key": "D",
+              "text": "In addition"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "In addition",
+          "explanation": "The transit subsidy is an extra benefit beyond the pay rate. \"In addition\" signals that additive relationship.",
+          "commonMistake": "Using a contrast connector (Even so / By contrast) when the letter is listing benefits."
+        },
+        {
+          "id": "TQB-P6-0004-Q03",
+          "blankLabel": "145",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "confine"
+            },
+            {
+              "key": "B",
+              "text": "conform"
+            },
+            {
+              "key": "C",
+              "text": "confirm"
+            },
+            {
+              "key": "D",
+              "text": "confer"
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "confirm",
+          "explanation": "Returning the signed agreement \"confirms\" (secures / verifies) the internship place.",
+          "commonMistake": "Confusing similar verbs: confine (restrict), conform (comply), confer (discuss/grant)."
+        },
+        {
+          "id": "TQB-P6-0004-Q04",
+          "blankLabel": "146",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "A member of our recruiting team will then email you orientation details."
+            },
+            {
+              "key": "B",
+              "text": "The printer on the third floor is out of toner again."
+            },
+            {
+              "key": "C",
+              "text": "Our warehouse ships orders within two business days."
+            },
+            {
+              "key": "D",
+              "text": "Please reserve the large conference room for next Tuesday."
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "A member of our recruiting team will then email you orientation details.",
+          "explanation": "After asking the candidate to return the agreement, A describes the logical next step (orientation info).",
+          "commonMistake": "Inserting an internal office sentence that does not belong in an offer letter."
+        }
+      ]
+    },
+    {
+      "id": "TQB-P6-0005",
+      "part": 6,
+      "type": "Text Completion",
+      "genre": "ad",
+      "title": "ErgoLift standing desk promotion",
+      "difficulty": 2,
+      "workplaceTopic": "Marketing / Office products",
+      "lote": "lote2",
+      "validated": true,
+      "text": [
+        {
+          "paragraph": 1,
+          "content": "ADVERTISEMENT\n\nUpgrade Your Workspace with ErgoLift Pro"
+        },
+        {
+          "paragraph": 2,
+          "content": "ErgoLift Pro is a height-adjustable desk designed for busy professionals. With a quiet motor and three memory presets, you can switch between sitting and standing [[147]]."
+        },
+        {
+          "paragraph": 3,
+          "content": "Through September 30, corporate buyers receive 15% off orders of five or more units. [[148]], free delivery is included for offices within 50 miles of our warehouse."
+        },
+        {
+          "paragraph": 4,
+          "content": "Visit www.ergolift-pro.example to request a [[149]] quote for your team. [[150]]\n\nErgoLift — furniture that works as hard as you do."
+        }
+      ],
+      "questions": [
+        {
+          "id": "TQB-P6-0005-Q01",
+          "blankLabel": "147",
+          "blankType": "word_form",
+          "skill": "Word Forms",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "easy"
+            },
+            {
+              "key": "B",
+              "text": "easily"
+            },
+            {
+              "key": "C",
+              "text": "easier"
+            },
+            {
+              "key": "D",
+              "text": "ease"
+            }
+          ],
+          "correctKey": "B",
+          "correctAnswer": "easily",
+          "explanation": "An adverb is needed to modify the verb phrase \"switch between sitting and standing.\" \"Easily\" is the adverb form.",
+          "commonMistake": "Choosing the adjective \"easy\" to modify a verb."
+        },
+        {
+          "id": "TQB-P6-0005-Q02",
+          "blankLabel": "148",
+          "blankType": "connector",
+          "skill": "Discourse Connectors",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "In addition"
+            },
+            {
+              "key": "B",
+              "text": "Nevertheless"
+            },
+            {
+              "key": "C",
+              "text": "On the contrary"
+            },
+            {
+              "key": "D",
+              "text": "Meanwhile"
+            }
+          ],
+          "correctKey": "A",
+          "correctAnswer": "In addition",
+          "explanation": "Free delivery is another benefit stacked on the discount. \"In addition\" marks that additive relationship.",
+          "commonMistake": "Using a contrast connector (Nevertheless / On the contrary) when the ad is listing extra perks."
+        },
+        {
+          "id": "TQB-P6-0005-Q03",
+          "blankLabel": "149",
+          "blankType": "vocabulary",
+          "skill": "Vocabulary",
+          "question": "",
+          "options": [
+            {
+              "key": "A",
+              "text": "customary"
+            },
+            {
+              "key": "B",
+              "text": "curious"
+            },
+            {
+              "key": "C",
+              "text": "cautious"
+            },
+            {
+              "key": "D",
+              "text": "customized"
+            }
+          ],
+          "correctKey": "D",
+          "correctAnswer": "customized",
+          "explanation": "A quote tailored to a team's size and options is \"customized\" — made for a specific buyer.",
+          "commonMistake": "Selecting a look-alike adjective (customary / curious) that does not mean tailored pricing."
+        },
+        {
+          "id": "TQB-P6-0005-Q04",
+          "blankLabel": "150",
+          "blankType": "sentence_insertion",
+          "skill": "Sentence Insertion",
+          "question": "Select the sentence that best fits the blank.",
+          "options": [
+            {
+              "key": "A",
+              "text": "The cafeteria will close early during the holiday week."
+            },
+            {
+              "key": "B",
+              "text": "Please submit timesheets by noon every Friday."
+            },
+            {
+              "key": "C",
+              "text": "Our sales specialists can also arrange a showroom demonstration."
+            },
+            {
+              "key": "D",
+              "text": "All interns must complete the safety quiz online."
+            }
+          ],
+          "correctKey": "C",
+          "correctAnswer": "Our sales specialists can also arrange a showroom demonstration.",
+          "explanation": "After inviting buyers to request a quote, A adds another sales next step (demo) that fits a product ad closing.",
+          "commonMistake": "Inserting an internal HR or facilities sentence that does not belong in a product advertisement."
+        }
+      ]
+    }
+  ]
+}
