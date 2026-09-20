@@ -1,36 +1,37 @@
 (() => {
   const teachHtml = `
 <div class="prose">
-  <p>In TOEIC Part 5, four options often look like vocabulary. They are not. They share the <em>same root</em> (<em>decide / decision / decisive / decisively</em>). First decide what the blank needs — noun, verb, adjective, or adverb. Then pick that form.</p>
-  <h3>The four jobs</h3>
+  <p>In TOEIC Part 5, many items look like vocabulary. They are not. The four options often share the <em>same root</em> (<em>decide / decision / decisive / decisively</em>). First name what the blank needs — noun, verb, adjective, or adverb — then pick that form.</p>
+  <h3>The four slots</h3>
   <div class="slot-grid">
-    <article><strong>Noun</strong><p>A person, thing, idea, or process.</p><code class="code-strip">the decision · her professionalism</code></article>
-    <article><strong>Verb</strong><p>The action or state.</p><code class="code-strip">will decide · to negotiate</code></article>
-    <article><strong>Adjective</strong><p>Describes a noun.</p><code class="code-strip">a comprehensive guide</code></article>
-    <article><strong>Adverb</strong><p>Describes a verb or an adjective.</p><code class="code-strip">work closely · highly useful</code></article>
+    <article><strong>Noun</strong><p>Names a person, thing, idea, or process. Often after <em>a / an / the / this / their</em>, or after a preposition.</p><code class="code-strip">the decision · her professionalism · for development</code></article>
+    <article><strong>Verb</strong><p>Shows the action or state. Follows a subject or a modal / <em>to</em>, and carries tense or agreement.</p><code class="code-strip">will decide · has decided · to develop</code></article>
+    <article><strong>Adjective</strong><p>Describes a noun. Sits before a noun or after linking verbs like <em>be / seem / remain</em>.</p><code class="code-strip">a decisive manager · the report is complete</code></article>
+    <article><strong>Adverb</strong><p>Describes a verb, an adjective, or a whole idea. Often ends in <em>-ly</em>, but not always.</p><code class="code-strip">answered promptly · highly successful · work efficiently</code></article>
   </div>
-  <h3>How to choose</h3>
+  <h3>Method</h3>
   <ol class="method">
-    <li><strong>Ignore A–D for three seconds.</strong> Look at the words before and after the blank.</li>
-    <li><strong>Ask:</strong> noun, verb, adjective, or adverb?</li>
-    <li><strong>Match the ending to that job</strong> (<em>-tion</em> noun, <em>-ive</em> adjective, <em>-ly</em> adverb, base verb).</li>
-    <li><strong>Drop a familiar word in the wrong job.</strong> If it does not fit the blank, it is wrong.</li>
+    <li><strong>Ignore A–D for three seconds.</strong> Look only at the words immediately before and after the blank.</li>
+    <li><strong>Ask: what job does this blank do?</strong> Naming (noun), doing (verb), describing a noun (adjective), or describing how / when / to what degree (adverb)?</li>
+    <li><strong>Match the ending to the job.</strong> Common patterns: <em>-tion / -ment / -ness / -ity</em> (noun); <em>-ive / -al / -able / -ous</em> (adjective); <em>-ly</em> (adverb); base / -s / -ed / -ing (verb forms).</li>
+    <li><strong>Eliminate by structure, not by “sounds nice.”</strong> A familiar word in the wrong slot is still wrong.</li>
   </ol>
-  <h3>Quick signals</h3>
+  <h3>Fast signals</h3>
   <ul class="signals">
-    <li><em>a / the / her</em> + blank + noun → often <strong>adjective</strong></li>
-    <li><em>her / your / the</em> + blank (nothing after) → often <strong>noun</strong></li>
-    <li><em>must / will / to</em> + blank → <strong>base verb</strong></li>
-    <li>The sentence already has a verb → often <strong>adverb</strong></li>
-    <li>Blank + adjective → <strong>adverb</strong> (<em>highly successful</em>)</li>
-    <li><em>for / of / on the</em> + blank → usually <strong>noun</strong></li>
+    <li><strong>Article / possessive + blank + noun?</strong> → often adjective (<em>a ____ proposal</em>).</li>
+    <li><strong>Article / possessive + blank (end of phrase)?</strong> → often noun (<em>show ____</em> / <em>her ____</em>).</li>
+    <li><strong>Modal / infinitive <em>to</em> + blank?</strong> → base verb (<em>must approve</em>, <em>hopes to negotiate</em>).</li>
+    <li><strong>Subject + blank + object / complement?</strong> → tensed verb.</li>
+    <li><strong>Verb already present, blank nearby?</strong> → often adverb (<em>spoke ____</em>).</li>
+    <li><strong>Blank + adjective?</strong> → adverb of degree (<em>highly successful</em>, <em>increasingly popular</em>).</li>
+    <li><strong>Preposition + <em>the</em> + blank?</strong> → usually a noun (<em>on the operation of</em>).</li>
   </ul>
-  <h3>Watch out</h3>
+  <h3>Common traps</h3>
   <ul>
-    <li>A noun can “sound serious” and still be wrong if the blank needs an adverb.</li>
-    <li>Some families have two nouns (<em>profession</em> vs <em>professionalism</em>; <em>negotiation</em> vs <em>negotiator</em>). Pick the meaning the sentence needs.</li>
-    <li>Do not pick <em>-ing</em> or <em>-ed</em> until you know whether the sentence already has a verb.</li>
-    <li>Do not translate from Spanish first. Check the blank first.</li>
+    <li>Choosing a noun because it “feels serious” when the blank needs an adverb.</li>
+    <li>Choosing the other noun in the same family (<em>profession</em> vs <em>professionalism</em>; <em>negotiation</em> vs <em>negotiator</em>).</li>
+    <li>Choosing <em>-ing / -ed</em> forms without checking whether a tensed verb is required.</li>
+    <li>Translating from Spanish first (that delays the slot check).</li>
   </ul>
 </div>
 `;
