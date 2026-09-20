@@ -174,10 +174,16 @@ button { cursor: pointer; }
   cursor: pointer; font: inherit; color: inherit;
 }
 .opt:hover { border-color: var(--teal); }
-.opt.selected { border-color: var(--teal); background: var(--wash); }
+.opt.selected {
+  border: 2px solid var(--teal);
+  background: var(--mint);
+  color: var(--navy);
+  padding: 9px 11px;
+}
+.opt.selected .key { background: var(--teal); }
 .opt.locked { cursor: default; }
-.opt.correct { border-color: #8fceaa; background: var(--good); }
-.opt.miss { border-color: #e8b4b4; background: var(--bad); }
+.opt.correct { border-color: #2a7d4f; background: var(--good); }
+.opt.miss { border-color: #c45c5c; background: var(--bad); }
 .opt:disabled { cursor: default; }
 .teach-box.ok { border-color: #cce7d5; background: var(--good); }
 .teach-box.bad { border-color: #efd0d0; background: var(--bad); }
