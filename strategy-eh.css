@@ -54,13 +54,13 @@ button { cursor: pointer; }
 .home:hover { background: #238d85; }
 .pill { border: 1px solid rgba(255, 255, 255, 0.2); color: #fff; }
 
-/* Hero — mint wash + logo watermark, tall enough for the class brief */
+/* Hero — paper card + a quiet teal glow behind the logo, not a mint fill */
 .hero {
   position: relative; overflow: hidden;
   background:
-    radial-gradient(ellipse at 100% 0%, rgba(91, 184, 176, 0.55), transparent 52%),
-    linear-gradient(135deg, #b6e4df 0%, #cfeeea 45%, #ddf3f1 100%);
-  border: 1px solid rgba(11, 31, 58, 0.08);
+    radial-gradient(ellipse 55% 80% at 100% 18%, rgba(91, 184, 176, 0.26), transparent 62%),
+    #f7fbfb;
+  border: 1px solid rgba(91, 184, 176, 0.22);
   border-radius: 20px;
   box-shadow: var(--shadow);
   padding: clamp(36px, 6vw, 56px) clamp(28px, 5vw, 48px) clamp(40px, 6.5vw, 64px);
@@ -78,7 +78,7 @@ button { cursor: pointer; }
   height: clamp(160px, 24vw, 280px);
   max-width: 34%;
   background: url("assets/logo.png") center / contain no-repeat;
-  opacity: 0.22;
+  opacity: 0.13;
   pointer-events: none;
 }
 .eyebrow {
