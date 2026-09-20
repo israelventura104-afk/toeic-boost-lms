@@ -73,15 +73,20 @@ button { cursor: pointer; }
   border: 1px solid rgba(30, 45, 90, 0.08); box-shadow: var(--shadow); margin-bottom: 22px;
 }
 .hero::after {
-  content: ""; position: absolute; right: clamp(0.75rem, 3vw, 1.75rem); top: 50%;
-  transform: translateY(-50%); width: clamp(140px, 20vw, 240px); max-width: 30%;
+  content: ""; position: absolute;
+  right: clamp(1.25rem, 4vw, 2.5rem); top: 50%;
+  transform: translateY(-50%);
+  width: clamp(160px, 24vw, 280px); max-width: 34%;
   aspect-ratio: 1 / 1; border-radius: 999px; background-image: var(--brand-logo);
   background-repeat: no-repeat; background-position: center; background-size: contain;
-  opacity: 0.14; pointer-events: none;
+  opacity: 0.16; pointer-events: none;
 }
 .hero-inner {
-  position: relative; z-index: 1; padding: clamp(24px, 5vw, 42px);
-  max-width: min(720px, calc(100% - clamp(100px, 22vw, 230px)));
+  position: relative; z-index: 1;
+  padding: clamp(36px, 6vw, 56px) clamp(28px, 5vw, 48px) clamp(40px, 6.5vw, 64px);
+  max-width: min(680px, calc(100% - clamp(130px, 26vw, 280px)));
+  min-height: clamp(200px, 28vw, 280px);
+  display: flex; flex-direction: column; justify-content: center;
 }
 .eyebrow {
   display: inline-flex; align-items: center; gap: 8px; margin-bottom: 12px;
@@ -90,7 +95,7 @@ button { cursor: pointer; }
 }
 .hero h2 { margin: 0; font-size: clamp(1.85rem, 4.5vw, 3.2rem); line-height: 1.02; letter-spacing: -0.02em; font-weight: 900; }
 .hero h2 span { color: var(--teal); }
-.hero-copy { color: var(--muted); margin: 16px 0 0; max-width: 640px; line-height: 1.65; font-size: 1.02rem; }
+.hero-copy { color: var(--muted); margin: 18px 0 0; max-width: 620px; line-height: 1.65; font-size: 1.02rem; }
 
 .lesson-card {
   background: var(--paper); border: 1px solid rgba(30, 45, 90, 0.08);
@@ -213,4 +218,16 @@ button { cursor: pointer; }
   background: #0B1F3A !important;
   color: #fff !important;
   border: 1px solid rgba(255,255,255,.45) !important;
+}
+
+
+@media (max-width: 720px) {
+  .hero-inner {
+    min-height: 220px;
+    padding: 32px 22px 36px;
+    max-width: 100%;
+  }
+  .hero::after {
+    width: 140px; right: 0.75rem; opacity: 0.1;
+  }
 }
