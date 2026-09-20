@@ -1,25 +1,25 @@
 (() => {
   const teachHtml = `
 <div class="prose">
-  <p>Tense items ask: <strong>Does this verb fit the timeline of this workplace sentence?</strong> The four options are usually real forms of the same verb. Circle the time marker first. Do not stop after one simple present — the same tense comes back in a new sentence.</p>
-  <h3>Timelines</h3>
+  <p>In TOEIC Part 5, many items look like four random verb forms. They are not. The options are usually the <em>same verb</em> on different timelines (<em>arrive / arrived / has arrived / is arriving</em>). First circle the time marker, then pick the form that fits.</p>
+  <h3>The timelines</h3>
   <div class="slot-grid">
     <article><strong>Simple present</strong><p>Habits, facts, timetables.</p><code class="code-strip">The office opens at 9. · usually / every hour</code></article>
     <article><strong>Present continuous</strong><p>In progress now or this week.</p><code class="code-strip">We are updating the site this week. · right now / at the moment</code></article>
     <article><strong>Simple past</strong><p>Finished time.</p><code class="code-strip">The shipment arrived yesterday. · last Monday / ago</code></article>
     <article><strong>Present perfect</strong><p>Past connected to now.</p><code class="code-strip">She has worked here since March. · already / yet / so far</code></article>
-    <article><strong>Past continuous</strong><p>Background past; an action in progress when something else happened.</p><code class="code-strip">While the team was traveling… · when the power failed</code></article>
+    <article><strong>Past continuous</strong><p>Background past; in progress when something else happened.</p><code class="code-strip">While the team was traveling… · when the power failed</code></article>
     <article><strong>Future</strong><p>A later time: tomorrow, next week, next quarter.</p><code class="code-strip">The bid will close on Friday.</code></article>
     <article><strong>Past perfect</strong><p>The earlier of two past times.</p><code class="code-strip">By the time the shuttle arrived, most visitors had left.</code></article>
     <article><strong>Future perfect</strong><p>Done before a future point.</p><code class="code-strip">By next Monday, the auditors will have completed the review.</code></article>
+    <article><strong>Present perfect continuous</strong><p>Started in the past and still in progress.</p><code class="code-strip">has been waiting since 8:00 a.m. and is still there</code></article>
   </div>
-  <p>If an action started in the past and is still in progress, use <strong>present perfect continuous</strong>: <em>has been working since 8:00 a.m. and is still there</em>.</p>
   <h3>Method</h3>
   <ol class="method">
-    <li>Circle the <strong>time marker</strong> first (<em>yesterday, since, yet, by the time, next Friday</em>).</li>
-    <li>Name the timeline — including <em>earlier past</em> and <em>done before a future time</em>, not only past / now / future.</li>
-    <li>Check that the verb agrees with the subject.</li>
-    <li>Drop any form that breaks the marker, even if the word looks familiar.</li>
+    <li><strong>Ignore A–D for three seconds.</strong> Circle the time marker (<em>yesterday, since, yet, by the time, next Friday</em>).</li>
+    <li><strong>Ask: which timeline?</strong> Habit, in progress, finished past, past-to-now, earlier past, future, or done before a future time?</li>
+    <li><strong>Match the form to that timeline.</strong> <em>ago</em> → simple past; <em>since / yet</em> → present perfect; <em>by next Monday</em> → future perfect.</li>
+    <li><strong>Eliminate by the marker, not by “sounds nice.”</strong> A familiar form on the wrong timeline is still wrong.</li>
   </ol>
   <h3>Fast signals</h3>
   <ul class="signals">
@@ -39,7 +39,7 @@
     <li><em>already / yet / so far</em> keep the door open to now — not simple past.</li>
     <li><em>by Friday</em> (future) is often <em>will have</em>, not just <em>will</em> and not simple present.</li>
     <li><em>this week</em> can be continuous or present perfect. Read the rest of the sentence.</li>
-    <li>One blank only. If you need two verbs, you are not looking at a Part 5 tense item.</li>
+    <li>Translating from Spanish first (that delays the marker check).</li>
   </ul>
 </div>
 `;
