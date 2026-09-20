@@ -26,7 +26,6 @@
     <li>Blank + adjective → <strong>adverb of degree</strong> (<em>highly successful</em>)</li>
     <li>Preposition + <em>the</em> + blank → usually <strong>noun</strong></li>
   </ul>
-  <div class="callout"><strong>Teacher move</strong><p>Ask only: <em>“Noun, verb, adjective, or adverb?”</em> — then open options.</p></div>
   <h3>Common traps</h3>
   <ul>
     <li>Noun because it “feels serious” when the blank needs an adverb</li>
@@ -48,7 +47,7 @@
       ],
       correctKey: "C",
       slot: "adjective",
-      teach: "Article + blank + noun (guide) → adjective comprehensive. Comprehend is a verb; comprehension is a noun; comprehensively is an adverb.",
+      teach: "The blank sits between a and guide, so it describes that noun. You need the adjective: comprehensive. Comprehend is a verb, comprehension a noun, comprehensively an adverb.",
     },
     {
       title: "Demo 2 · Noun after an adjective",
@@ -61,7 +60,7 @@
       ],
       correctKey: "B",
       slot: "noun",
-      teach: "Adjective careful + blank → noun consideration. Consider is a verb; considerable is an adjective (it needs a noun after it); considerably is an adverb.",
+      teach: "After the adjective careful, the blank is a noun: consideration. Consider is a verb. Considerable is an adjective (it would need a noun after it). Considerably is an adverb.",
     },
     {
       title: "Demo 3 · Verb after to",
@@ -74,7 +73,7 @@
       ],
       correctKey: "A",
       slot: "verb",
-      teach: "Infinitive to + blank → base verb negotiate. Watch the two nouns: negotiation is the process; negotiator is the person. Negotiable is an adjective.",
+      teach: "After to, use the base verb: negotiate. Negotiation is the process and negotiator is the person — both nouns. Negotiable is an adjective.",
     },
     {
       title: "Demo 4 · Adverb before an adjective",
@@ -87,7 +86,7 @@
       ],
       correctKey: "B",
       slot: "adverb",
-      teach: "Blank + adjective useful → adverb highly. High is an adjective; height is a noun; heighten is a verb. This pattern (highly / extremely / increasingly + adjective) is frequent in Part 5.",
+      teach: "The blank comes right before the adjective useful, so you need an adverb: highly. High is an adjective, height a noun, heighten a verb.",
     },
     {
       title: "Demo 5 · Noun after a preposition",
@@ -100,7 +99,7 @@
       ],
       correctKey: "B",
       slot: "noun",
-      teach: "Preposition + the + blank + of → noun operation. Operate is a verb; operational is an adjective; operationally is an adverb.",
+      teach: "After the and before of, the blank is a noun: the operation of the software. Operate is a verb, operational an adjective, operationally an adverb.",
     },
   ];
   
@@ -331,7 +330,8 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
   document.getElementById("panel-teach").innerHTML = teachHtml;
 
   let demoIndex = 0;
-  let demoRevealed = false;
+  const demoAnswers = new Map();
+  const demoOpened = new Set();
   const demoMeta = document.getElementById("demo-meta");
   const demoStage = document.getElementById("demo-stage");
   const demoProgress = document.getElementById("demo-progress");
@@ -341,24 +341,45 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
 
   function renderDemo() {
     const item = demos[demoIndex];
-    demoRevealed = false;
-    demoMeta.textContent = `Demo ${demoIndex + 1} of ${demos.length} · one screen`;
-    demoProgress.style.width = `${((demoIndex + 1) / demos.length) * 100}%`;
-    const options = item.options.map((opt) => `
-      <div class="opt locked"><span class="key">${escapeHtml(opt.key)}</span><span>${escapeHtml(opt.text)}</span></div>
-    `).join("");
+    const selected = demoAnswers.get(demoIndex);
+    const opened = demoOpened.has(demoIndex);
     const right = item.options.find((o) => o.key === item.correctKey);
+    const ok = selected === item.correctKey;
+    demoMeta.textContent = selected
+      ? `Demo ${demoIndex + 1} of ${demos.length} · selected`
+      : `Demo ${demoIndex + 1} of ${demos.length} · choose A–D`;
+    demoProgress.style.width = `${((demoIndex + 1) / demos.length) * 100}%`;
+    const options = item.options.map((opt) => {
+      const classes = ["opt"];
+      if (selected === opt.key) classes.push("selected");
+      if (opened && opt.key === item.correctKey) classes.push("correct");
+      if (opened && selected === opt.key && !ok) classes.push("miss");
+      return `
+      <button type="button" class="${classes.join(" ")}" data-key="${escapeHtml(opt.key)}" ${opened ? "disabled" : ""}>
+        <span class="key">${escapeHtml(opt.key)}</span><span>${escapeHtml(opt.text)}</span>
+      </button>`;
+    }).join("");
+    const verdict = ok
+      ? `Correct · ${item.correctKey}. ${right?.text || ""}`
+      : `Not this time · the answer is ${item.correctKey}. ${right?.text || ""}`;
     demoStage.innerHTML = `
-      <h3 style="margin:0 0 8px;color:var(--navy);font-size:1.05rem">${escapeHtml(item.title)}</h3>
       <p class="stem">${formatStem(item.stem)}</p>
       <div class="options">${options}</div>
-      <div class="teach-box" id="demo-teach" hidden>
-        <strong>${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)} · Answer ${escapeHtml(item.correctKey)}. ${escapeHtml(right?.text || "")}</strong>
+      <p class="status" id="demo-hint" hidden>Choose A, B, C, or D first.</p>
+      <div class="teach-box ${ok ? "ok" : "bad"}" id="demo-teach" ${opened ? "" : "hidden"}>
+        <strong>${escapeHtml(verdict)}</strong>
         <p style="margin:8px 0 0">${escapeHtml(item.teach)}</p>
       </div>`;
+    demoStage.querySelectorAll(".opt").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (demoOpened.has(demoIndex)) return;
+        demoAnswers.set(demoIndex, btn.getAttribute("data-key"));
+        renderDemo();
+      });
+    });
     demoPrev.disabled = demoIndex === 0;
     demoNext.textContent = demoIndex === demos.length - 1 ? "Go to Practice tab" : "Next demo";
-    demoReveal.textContent = "Reveal model answer";
+    demoReveal.textContent = opened ? "Hide feedback" : "See feedback";
   }
 
   demoPrev.addEventListener("click", () => { if (demoIndex > 0) { demoIndex -= 1; renderDemo(); } });
@@ -367,11 +388,14 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
     document.querySelector('.tab[data-tab="practice"]').click();
   });
   demoReveal.addEventListener("click", () => {
-    const box = document.getElementById("demo-teach");
-    if (!box) return;
-    demoRevealed = !demoRevealed;
-    box.hidden = !demoRevealed;
-    demoReveal.textContent = demoRevealed ? "Hide model answer" : "Reveal model answer";
+    const hint = document.getElementById("demo-hint");
+    if (!demoAnswers.has(demoIndex)) {
+      if (hint) hint.hidden = false;
+      return;
+    }
+    if (demoOpened.has(demoIndex)) demoOpened.delete(demoIndex);
+    else demoOpened.add(demoIndex);
+    renderDemo();
   });
   renderDemo();
 
