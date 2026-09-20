@@ -1,8 +1,444 @@
 (() => {
-  const teachHtml = "\n<div class=\"prose\">\n  <p>Tense items ask: <strong>Does this verb fit the timeline of this workplace sentence?</strong> Wrong options are often real forms of the same verb.</p>\n  <h3>Timelines</h3>\n  <div class=\"slot-grid\">\n    <article><strong>Simple present</strong><p>Habits, facts, schedules.</p><code class=\"code-strip\">The office opens at 9.</code></article>\n    <article><strong>Present continuous</strong><p>In progress now / this week.</p><code class=\"code-strip\">We are updating the site this week.</code></article>\n    <article><strong>Simple past</strong><p>Finished time (yesterday / last Monday).</p><code class=\"code-strip\">The shipment arrived yesterday.</code></article>\n    <article><strong>Present perfect</strong><p>Past\u2192now (since / already / yet / so far).</p><code class=\"code-strip\">She has worked here since March.</code></article>\n    <article><strong>Past continuous</strong><p>Background past (while / when).</p><code class=\"code-strip\">While the team was traveling\u2026</code></article>\n    <article><strong>Future</strong><p>Tomorrow / by Friday / next quarter.</p><code class=\"code-strip\">The bid will close on Friday.</code></article>\n  </div>\n  <h3>Method</h3>\n  <ol class=\"method\">\n    <li>Circle <strong>time markers</strong> first.</li>\n    <li>Name the timeline: finished past / past\u2192now / now / future.</li>\n    <li>Check subject agreement.</li>\n    <li>Eliminate forms that break the marker.</li>\n  </ol>\n  <div class=\"callout\"><strong>Teacher move</strong><p>Ask only: <em>\u201cFinished past, past-to-now, happening now, or future?\u201d</em></p></div>\n</div>\n";
-  const demos = [{"title": "Demo 1 · Finished past", "stem": "The courier ____ the package to the front desk yesterday afternoon.", "options": [{"key": "A", "text": "delivers"}, {"key": "B", "text": "delivered"}, {"key": "C", "text": "has delivered"}, {"key": "D", "text": "is delivering"}], "correctKey": "B", "slot": "simple past", "teach": "yesterday afternoon → simple past delivered."}, {"title": "Demo 2 · Since (past→now)", "stem": "Ms. Park ____ in the accounting department since she joined the firm in 2019.", "options": [{"key": "A", "text": "worked"}, {"key": "B", "text": "works"}, {"key": "C", "text": "has worked"}, {"key": "D", "text": "was working"}], "correctKey": "C", "slot": "present perfect", "teach": "since 2019 → has worked."}, {"title": "Demo 3 · This week in progress", "stem": "Our IT team ____ the new payroll system this week, so some reports may be delayed.", "options": [{"key": "A", "text": "installs"}, {"key": "B", "text": "installed"}, {"key": "C", "text": "has installed"}, {"key": "D", "text": "is installing"}], "correctKey": "D", "slot": "present continuous", "teach": "this week + delay now → is installing."}, {"title": "Demo 4 · While + background", "stem": "While the inspectors ____ the warehouse, the manager prepared the safety checklist.", "options": [{"key": "A", "text": "tour"}, {"key": "B", "text": "have toured"}, {"key": "C", "text": "were touring"}, {"key": "D", "text": "are touring"}], "correctKey": "C", "slot": "past continuous", "teach": "While + past background → were touring."}, {"title": "Demo 5 · Future obligation", "stem": "All vendors ____ their invoices by Friday if they want to be paid this month.", "options": [{"key": "A", "text": "submit"}, {"key": "B", "text": "submitted"}, {"key": "C", "text": "have submitted"}, {"key": "D", "text": "must submit"}], "correctKey": "D", "slot": "future obligation", "teach": "by Friday + condition → must submit."}];
-  const practice = [{"id": "Q01", "stem": "The board ____ the expansion plan at last Tuesday’s meeting.", "options": [{"key": "A", "text": "approves"}, {"key": "B", "text": "approved"}, {"key": "C", "text": "has approved"}, {"key": "D", "text": "is approving"}], "correctKey": "B", "slot": "simple past", "explain": "last Tuesday → approved."}, {"id": "Q02", "stem": "I ____ three training webinars so far this quarter.", "options": [{"key": "A", "text": "attend"}, {"key": "B", "text": "attended"}, {"key": "C", "text": "have attended"}, {"key": "D", "text": "was attending"}], "correctKey": "C", "slot": "present perfect", "explain": "so far → have attended."}, {"id": "Q03", "stem": "Right now, the receptionist ____ visitors for the product launch.", "options": [{"key": "A", "text": "registers"}, {"key": "B", "text": "registered"}, {"key": "C", "text": "has registered"}, {"key": "D", "text": "is registering"}], "correctKey": "D", "slot": "present continuous", "explain": "Right now → is registering."}, {"id": "Q04", "stem": "The contract ____ tomorrow morning in the main conference room.", "options": [{"key": "A", "text": "will be signed"}, {"key": "B", "text": "signed"}, {"key": "C", "text": "has signed"}, {"key": "D", "text": "was signed"}], "correctKey": "A", "slot": "future", "explain": "tomorrow → will be signed."}, {"id": "Q05", "stem": "When the power failed, the designers ____ on the final slides.", "options": [{"key": "A", "text": "work"}, {"key": "B", "text": "have worked"}, {"key": "C", "text": "were working"}, {"key": "D", "text": "are working"}], "correctKey": "C", "slot": "past continuous", "explain": "When + interrupt → were working."}, {"id": "Q06", "stem": "Our warehouse usually ____ orders before 3:00 p.m.", "options": [{"key": "A", "text": "ships"}, {"key": "B", "text": "shipped"}, {"key": "C", "text": "has shipped"}, {"key": "D", "text": "is shipping"}], "correctKey": "A", "slot": "simple present", "explain": "usually → ships."}, {"id": "Q07", "stem": "She ____ already ____ the revised brochure to the printer.", "options": [{"key": "A", "text": "has / sent"}, {"key": "B", "text": "is / sending"}, {"key": "C", "text": "was / sent"}, {"key": "D", "text": "will / send"}], "correctKey": "A", "slot": "present perfect", "explain": "already → has sent."}, {"id": "Q08", "stem": "Clients ____ the updated pricing list yet.", "options": [{"key": "A", "text": "did not receive"}, {"key": "B", "text": "have not received"}, {"key": "C", "text": "are not receiving"}, {"key": "D", "text": "will not receive"}], "correctKey": "B", "slot": "present perfect", "explain": "yet → have not received."}, {"id": "Q09", "stem": "The shuttle bus ____ every hour between the plant and the hotel.", "options": [{"key": "A", "text": "runs"}, {"key": "B", "text": "ran"}, {"key": "C", "text": "has run"}, {"key": "D", "text": "is run"}], "correctKey": "A", "slot": "simple present", "explain": "every hour → runs."}, {"id": "Q10", "stem": "By next Monday, the auditors ____ their on-site review.", "options": [{"key": "A", "text": "complete"}, {"key": "B", "text": "completed"}, {"key": "C", "text": "will have completed"}, {"key": "D", "text": "are completing"}], "correctKey": "C", "slot": "future perfect", "explain": "By next Monday → will have completed."}, {"id": "Q11", "stem": "Two years ago, the company ____ its first overseas branch.", "options": [{"key": "A", "text": "opens"}, {"key": "B", "text": "opened"}, {"key": "C", "text": "has opened"}, {"key": "D", "text": "is opening"}], "correctKey": "B", "slot": "simple past", "explain": "Two years ago → opened."}, {"id": "Q12", "stem": "Look — the CEO ____ into the lobby right now.", "options": [{"key": "A", "text": "walks"}, {"key": "B", "text": "walked"}, {"key": "C", "text": "has walked"}, {"key": "D", "text": "is walking"}], "correctKey": "D", "slot": "present continuous", "explain": "right now → is walking."}, {"id": "Q13", "stem": "The hiring manager ____ interviews for the analyst role next Wednesday.", "options": [{"key": "A", "text": "conducts"}, {"key": "B", "text": "conducted"}, {"key": "C", "text": "has conducted"}, {"key": "D", "text": "will conduct"}], "correctKey": "D", "slot": "future", "explain": "next Wednesday → will conduct."}, {"id": "Q14", "stem": "While rain ____ outside, the outdoor expo continued under the tents.", "options": [{"key": "A", "text": "falls"}, {"key": "B", "text": "has fallen"}, {"key": "C", "text": "was falling"}, {"key": "D", "text": "is falling"}], "correctKey": "C", "slot": "past continuous", "explain": "While + past → was falling."}, {"id": "Q15", "stem": "If you need parking, you ____ at the visitor desk before 8:30 a.m. tomorrow.", "options": [{"key": "A", "text": "check in"}, {"key": "B", "text": "should check in"}, {"key": "C", "text": "have checked in"}, {"key": "D", "text": "checked in"}], "correctKey": "B", "slot": "future advice", "explain": "tomorrow + advice → should check in."}];
-  const slotLabel = "Timeline";
+  const teachHtml = `
+<div class="prose">
+  <p>Tense items ask: <strong>Does this verb fit the timeline of this workplace sentence?</strong> The four options are usually real forms of the same verb. Circle the time marker first. Do not stop after one simple present — the same tense comes back in a new sentence.</p>
+  <h3>Timelines</h3>
+  <div class="slot-grid">
+    <article><strong>Simple present</strong><p>Habits, facts, timetables.</p><code class="code-strip">The office opens at 9. · usually / every hour</code></article>
+    <article><strong>Present continuous</strong><p>In progress now or this week.</p><code class="code-strip">We are updating the site this week. · right now / at the moment</code></article>
+    <article><strong>Simple past</strong><p>Finished time.</p><code class="code-strip">The shipment arrived yesterday. · last Monday / ago</code></article>
+    <article><strong>Present perfect</strong><p>Past connected to now.</p><code class="code-strip">She has worked here since March. · already / yet / so far</code></article>
+    <article><strong>Past continuous</strong><p>Background past; an action in progress when something else happened.</p><code class="code-strip">While the team was traveling… · when the power failed</code></article>
+    <article><strong>Future</strong><p>A later time: tomorrow, next week, next quarter.</p><code class="code-strip">The bid will close on Friday.</code></article>
+    <article><strong>Past perfect</strong><p>The earlier of two past times.</p><code class="code-strip">By the time the shuttle arrived, most visitors had left.</code></article>
+    <article><strong>Future perfect</strong><p>Done before a future point.</p><code class="code-strip">By next Monday, the auditors will have completed the review.</code></article>
+  </div>
+  <p>If an action started in the past and is still in progress, use <strong>present perfect continuous</strong>: <em>has been working since 8:00 a.m. and is still there</em>.</p>
+  <h3>Method</h3>
+  <ol class="method">
+    <li>Circle the <strong>time marker</strong> first (<em>yesterday, since, yet, by the time, next Friday</em>).</li>
+    <li>Name the timeline — including <em>earlier past</em> and <em>done before a future time</em>, not only past / now / future.</li>
+    <li>Check that the verb agrees with the subject.</li>
+    <li>Drop any form that breaks the marker, even if the word looks familiar.</li>
+  </ol>
+  <h3>Fast signals</h3>
+  <ul class="signals">
+    <li><strong>yesterday / last… / …ago</strong> → simple past. Not present perfect.</li>
+    <li><strong>since / for / already / yet / so far</strong> → present perfect.</li>
+    <li><strong>right now / at the moment / currently</strong> → present continuous.</li>
+    <li><strong>usually / every day / every hour</strong> → simple present.</li>
+    <li><strong>while / when</strong> + a past interruption → past continuous for the background action.</li>
+    <li><strong>tomorrow / next…</strong> → <em>will</em> + base verb.</li>
+    <li><strong>by the time</strong> + past → past perfect (<em>had</em> + past participle).</li>
+    <li><strong>by</strong> + a future day → future perfect (<em>will have</em> + past participle).</li>
+    <li><strong>since</strong> + still happening now → present perfect continuous (<em>has been -ing</em>).</li>
+  </ul>
+  <h3>Common traps</h3>
+  <ul>
+    <li><em>ago</em> is simple past. <em>since</em> is present perfect. Do not mix them.</li>
+    <li><em>already / yet / so far</em> keep the door open to now — not simple past.</li>
+    <li><em>by Friday</em> (future) is often <em>will have</em>, not just <em>will</em> and not simple present.</li>
+    <li><em>this week</em> can be continuous or present perfect. Read the rest of the sentence.</li>
+    <li>One blank only. If you need two verbs, you are not looking at a Part 5 tense item.</li>
+  </ul>
+</div>
+`;
+
+  const demos = [
+    {
+      title: "Demo 1",
+      stem: "The courier ____ the package to the front desk yesterday afternoon.",
+      options: [
+        { key: "A", text: "delivers" },
+        { key: "B", text: "delivered" },
+        { key: "C", text: "has delivered" },
+        { key: "D", text: "is delivering" },
+      ],
+      correctKey: "B",
+      slot: "simple past",
+      teach: "yesterday afternoon is finished time, so use simple past: delivered. has delivered needs a link to now (since / already / yet). delivers and is delivering are present.",
+    },
+    {
+      title: "Demo 2",
+      stem: "Ms. Park ____ in the accounting department since she joined the firm in 2019.",
+      options: [
+        { key: "A", text: "worked" },
+        { key: "B", text: "works" },
+        { key: "C", text: "has worked" },
+        { key: "D", text: "was working" },
+      ],
+      correctKey: "C",
+      slot: "present perfect",
+      teach: "since 2019 connects 2019 to now → has worked. worked would need a finished time (in 2019, last year). works is a habit. was working is background past.",
+    },
+    {
+      title: "Demo 3",
+      stem: "Technicians ____ new scanners on the third floor right now.",
+      options: [
+        { key: "A", text: "install" },
+        { key: "B", text: "installed" },
+        { key: "C", text: "have installed" },
+        { key: "D", text: "are installing" },
+      ],
+      correctKey: "D",
+      slot: "present continuous",
+      teach: "right now means the action is in progress → are installing. installed is finished. have installed would mean the job is already done.",
+    },
+    {
+      title: "Demo 4",
+      stem: "While the inspectors ____ the warehouse, the manager prepared the safety checklist.",
+      options: [
+        { key: "A", text: "tour" },
+        { key: "B", text: "have toured" },
+        { key: "C", text: "were touring" },
+        { key: "D", text: "are touring" },
+      ],
+      correctKey: "C",
+      slot: "past continuous",
+      teach: "While + a past main verb (prepared) → the background action is past continuous: were touring. are touring is present. have toured is present perfect.",
+    },
+    {
+      title: "Demo 5",
+      stem: "Ms. Ortega ____ the quarterly forecast at tomorrow's briefing.",
+      options: [
+        { key: "A", text: "will present" },
+        { key: "B", text: "presented" },
+        { key: "C", text: "has presented" },
+        { key: "D", text: "is presenting" },
+      ],
+      correctKey: "A",
+      slot: "future",
+      teach: "tomorrow's briefing is a later time → will present. presented and has presented are past. This is a tense item, not a modal (not must / should).",
+    },
+    {
+      title: "Demo 6",
+      stem: "The help desk usually ____ tickets in the order they arrive.",
+      options: [
+        { key: "A", text: "processes" },
+        { key: "B", text: "processed" },
+        { key: "C", text: "has processed" },
+        { key: "D", text: "is processing" },
+      ],
+      correctKey: "A",
+      slot: "simple present",
+      teach: "usually marks a habit → processes. The help desk is singular, so -s. processed is past. is processing would need right now.",
+    },
+    {
+      title: "Demo 7",
+      stem: "By the time the shuttle arrived, most visitors ____ the lobby.",
+      options: [
+        { key: "A", text: "leave" },
+        { key: "B", text: "had left" },
+        { key: "C", text: "have left" },
+        { key: "D", text: "were leaving" },
+      ],
+      correctKey: "B",
+      slot: "past perfect",
+      teach: "By the time + past (arrived) needs the earlier past: had left. have left is present perfect. were leaving would mean they were still in the middle of leaving.",
+    },
+    {
+      title: "Demo 8",
+      stem: "By next Monday, the auditors ____ their on-site review.",
+      options: [
+        { key: "A", text: "complete" },
+        { key: "B", text: "completed" },
+        { key: "C", text: "will have completed" },
+        { key: "D", text: "are completing" },
+      ],
+      correctKey: "C",
+      slot: "future perfect",
+      teach: "By + a future day means the action will be finished before that day → will have completed. complete and are completing do not mark 'already done by then.'",
+    },
+    {
+      title: "Demo 9",
+      stem: "Clients ____ the updated pricing list yet.",
+      options: [
+        { key: "A", text: "did not receive" },
+        { key: "B", text: "have not received" },
+        { key: "C", text: "are not receiving" },
+        { key: "D", text: "will not receive" },
+      ],
+      correctKey: "B",
+      slot: "present perfect",
+      teach: "yet belongs with present perfect: have not received. did not receive is simple past and does not pair with yet in Part 5.",
+    },
+    {
+      title: "Demo 10",
+      stem: "The intern ____ at the front desk since 8:00 a.m. and is still there.",
+      options: [
+        { key: "A", text: "waits" },
+        { key: "B", text: "waited" },
+        { key: "C", text: "has waited" },
+        { key: "D", text: "has been waiting" },
+      ],
+      correctKey: "D",
+      slot: "present perfect continuous",
+      teach: "since 8:00 a.m. + is still there → the wait is still in progress: has been waiting. has waited can mark a finished wait. waited is simple past.",
+    },
+  ];
+
+  const practice = [
+    {
+      id: "Q01",
+      stem: "The board ____ the expansion plan at last Tuesday's meeting.",
+      options: [
+        { key: "A", text: "approves" },
+        { key: "B", text: "approved" },
+        { key: "C", text: "has approved" },
+        { key: "D", text: "is approving" },
+      ],
+      correctKey: "B",
+      slot: "simple past",
+      explain: "last Tuesday is finished time → approved. has approved needs since / already / yet / so far.",
+    },
+    {
+      id: "Q02",
+      stem: "The sales team ____ three training webinars so far this quarter.",
+      options: [
+        { key: "A", text: "attends" },
+        { key: "B", text: "attended" },
+        { key: "C", text: "has attended" },
+        { key: "D", text: "was attending" },
+      ],
+      correctKey: "C",
+      slot: "present perfect",
+      explain: "so far this quarter links past to now → has attended. The sales team is singular. attended would need a finished date.",
+    },
+    {
+      id: "Q03",
+      stem: "Right now, the receptionist ____ visitors for the product launch.",
+      options: [
+        { key: "A", text: "registers" },
+        { key: "B", text: "registered" },
+        { key: "C", text: "has registered" },
+        { key: "D", text: "is registering" },
+      ],
+      correctKey: "D",
+      slot: "present continuous",
+      explain: "Right now → is registering. registers is a habit. registered is past.",
+    },
+    {
+      id: "Q04",
+      stem: "The director ____ the new safety rules at tomorrow morning's meeting.",
+      options: [
+        { key: "A", text: "will explain" },
+        { key: "B", text: "explained" },
+        { key: "C", text: "has explained" },
+        { key: "D", text: "was explaining" },
+      ],
+      correctKey: "A",
+      slot: "future",
+      explain: "tomorrow morning → will explain. explained / has explained / was explaining are all past.",
+    },
+    {
+      id: "Q05",
+      stem: "When the power failed, the designers ____ on the final slides.",
+      options: [
+        { key: "A", text: "work" },
+        { key: "B", text: "have worked" },
+        { key: "C", text: "were working" },
+        { key: "D", text: "are working" },
+      ],
+      correctKey: "C",
+      slot: "past continuous",
+      explain: "When the power failed interrupts a background past action → were working. are working is present.",
+    },
+    {
+      id: "Q06",
+      stem: "Our warehouse usually ____ orders before 3:00 p.m.",
+      options: [
+        { key: "A", text: "ships" },
+        { key: "B", text: "shipped" },
+        { key: "C", text: "has shipped" },
+        { key: "D", text: "is shipping" },
+      ],
+      correctKey: "A",
+      slot: "simple present",
+      explain: "usually marks a habit → ships. shipped is past. is shipping would need right now.",
+    },
+    {
+      id: "Q07",
+      stem: "Ms. Chen ____ the revised brochure to the printer already.",
+      options: [
+        { key: "A", text: "sends" },
+        { key: "B", text: "sent" },
+        { key: "C", text: "has sent" },
+        { key: "D", text: "is sending" },
+      ],
+      correctKey: "C",
+      slot: "present perfect",
+      explain: "already → has sent. One blank only. sent is simple past and does not pair with already here.",
+    },
+    {
+      id: "Q08",
+      stem: "Regional offices ____ the new travel policy yet.",
+      options: [
+        { key: "A", text: "did not download" },
+        { key: "B", text: "have not downloaded" },
+        { key: "C", text: "are not downloading" },
+        { key: "D", text: "will not download" },
+      ],
+      correctKey: "B",
+      slot: "present perfect",
+      explain: "yet → have not downloaded. did not download is simple past.",
+    },
+    {
+      id: "Q09",
+      stem: "The shuttle bus ____ every hour between the plant and the hotel.",
+      options: [
+        { key: "A", text: "runs" },
+        { key: "B", text: "ran" },
+        { key: "C", text: "has run" },
+        { key: "D", text: "is running" },
+      ],
+      correctKey: "A",
+      slot: "simple present",
+      explain: "every hour is a timetable → runs. is running would mean right now only.",
+    },
+    {
+      id: "Q10",
+      stem: "By next Friday, the warehouse ____ every back-order from March.",
+      options: [
+        { key: "A", text: "fills" },
+        { key: "B", text: "filled" },
+        { key: "C", text: "will have filled" },
+        { key: "D", text: "is filling" },
+      ],
+      correctKey: "C",
+      slot: "future perfect",
+      explain: "By next Friday = finished before that future day → will have filled. fills is a habit. filled is past.",
+    },
+    {
+      id: "Q11",
+      stem: "Two years ago, the company ____ its first overseas branch.",
+      options: [
+        { key: "A", text: "opens" },
+        { key: "B", text: "opened" },
+        { key: "C", text: "has opened" },
+        { key: "D", text: "is opening" },
+      ],
+      correctKey: "B",
+      slot: "simple past",
+      explain: "Two years ago is finished time → opened. Do not use has opened with ago.",
+    },
+    {
+      id: "Q12",
+      stem: "The CEO ____ with the legal team in conference room B at the moment.",
+      options: [
+        { key: "A", text: "meets" },
+        { key: "B", text: "met" },
+        { key: "C", text: "has met" },
+        { key: "D", text: "is meeting" },
+      ],
+      correctKey: "D",
+      slot: "present continuous",
+      explain: "at the moment → is meeting. meets is a habit. met is past.",
+    },
+    {
+      id: "Q13",
+      stem: "The hiring manager ____ interviews for the analyst role next Wednesday.",
+      options: [
+        { key: "A", text: "conducts" },
+        { key: "B", text: "conducted" },
+        { key: "C", text: "has conducted" },
+        { key: "D", text: "will conduct" },
+      ],
+      correctKey: "D",
+      slot: "future",
+      explain: "next Wednesday → will conduct. conducted / has conducted are past. conducts is a timetable habit, not one future date.",
+    },
+    {
+      id: "Q14",
+      stem: "While the crew ____ the loading dock, clerks continued processing orders upstairs.",
+      options: [
+        { key: "A", text: "repair" },
+        { key: "B", text: "have repaired" },
+        { key: "C", text: "were repairing" },
+        { key: "D", text: "are repairing" },
+      ],
+      correctKey: "C",
+      slot: "past continuous",
+      explain: "While + past (continued) → were repairing. are repairing is present.",
+    },
+    {
+      id: "Q15",
+      stem: "By the time security locked the doors, the last guest ____ the building.",
+      options: [
+        { key: "A", text: "leaves" },
+        { key: "B", text: "had left" },
+        { key: "C", text: "has left" },
+        { key: "D", text: "is leaving" },
+      ],
+      correctKey: "B",
+      slot: "past perfect",
+      explain: "By the time + past (locked) → the earlier action is had left. has left is present perfect.",
+    },
+    {
+      id: "Q16",
+      stem: "By the end of the month, the contractor ____ the roof repairs.",
+      options: [
+        { key: "A", text: "will have finished" },
+        { key: "B", text: "finished" },
+        { key: "C", text: "has finished" },
+        { key: "D", text: "is finishing" },
+      ],
+      correctKey: "A",
+      slot: "future perfect",
+      explain: "By the end of the month (still ahead) → will have finished. finished is past. has finished is present perfect.",
+    },
+    {
+      id: "Q17",
+      stem: "The editor ____ the newsletter to all subscribers yesterday evening.",
+      options: [
+        { key: "A", text: "sent" },
+        { key: "B", text: "has sent" },
+        { key: "C", text: "is sending" },
+        { key: "D", text: "sends" },
+      ],
+      correctKey: "A",
+      slot: "simple past",
+      explain: "yesterday evening → sent. has sent does not pair with yesterday.",
+    },
+    {
+      id: "Q18",
+      stem: "Mr. Alvarez ____ the night shift since January.",
+      options: [
+        { key: "A", text: "supervises" },
+        { key: "B", text: "supervised" },
+        { key: "C", text: "is supervising" },
+        { key: "D", text: "has supervised" },
+      ],
+      correctKey: "D",
+      slot: "present perfect",
+      explain: "since January → has supervised. supervised would need a finished time. supervises is a habit without since.",
+    },
+    {
+      id: "Q19",
+      stem: "Staff ____ overtime since the system outage began on Monday, and they are still catching up.",
+      options: [
+        { key: "A", text: "work" },
+        { key: "B", text: "worked" },
+        { key: "C", text: "have worked" },
+        { key: "D", text: "have been working" },
+      ],
+      correctKey: "D",
+      slot: "present perfect continuous",
+      explain: "since Monday + are still catching up → the overtime is still in progress: have been working. have worked can mark a finished amount of work.",
+    },
+    {
+      id: "Q20",
+      stem: "The train ____ by the time the late passengers reached the platform.",
+      options: [
+        { key: "A", text: "already leaves" },
+        { key: "B", text: "had already left" },
+        { key: "C", text: "has already left" },
+        { key: "D", text: "is already leaving" },
+      ],
+      correctKey: "B",
+      slot: "past perfect",
+      explain: "by the time + reached (past) → had already left. has already left is present perfect.",
+    },
+  ];
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -14,11 +450,8 @@ function escapeHtml(value) {
 function formatStem(stem) {
   return escapeHtml(stem).replace(/____/g, '<span class="blank">____</span>');
 }
-function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
-  const counts = { A: 0, B: 0, C: 0, D: 0 };
-  practice.forEach((q) => { counts[q.correctKey] += 1; });
-  console.info("[Strategy] balance", counts);
-
+function bootStrategyClass({ teachHtml, demos, practice }) {
+  const total = practice.length;
   const tabs = document.querySelectorAll(".tab");
   const panels = document.querySelectorAll(".panel");
   tabs.forEach((tab) => {
@@ -32,7 +465,8 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
   document.getElementById("panel-teach").innerHTML = teachHtml;
 
   let demoIndex = 0;
-  let demoRevealed = false;
+  const demoAnswers = new Map();
+  const demoOpened = new Set();
   const demoMeta = document.getElementById("demo-meta");
   const demoStage = document.getElementById("demo-stage");
   const demoProgress = document.getElementById("demo-progress");
@@ -42,24 +476,43 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
 
   function renderDemo() {
     const item = demos[demoIndex];
-    demoRevealed = false;
-    demoMeta.textContent = `Demo ${demoIndex + 1} of ${demos.length} · one screen`;
-    demoProgress.style.width = `${((demoIndex + 1) / demos.length) * 100}%`;
-    const options = item.options.map((opt) => `
-      <div class="opt locked"><span class="key">${escapeHtml(opt.key)}</span><span>${escapeHtml(opt.text)}</span></div>
-    `).join("");
+    const selected = demoAnswers.get(demoIndex);
+    const opened = demoOpened.has(demoIndex);
     const right = item.options.find((o) => o.key === item.correctKey);
+    const ok = selected === item.correctKey;
+    demoMeta.textContent = `${demoIndex + 1} of ${demos.length}`;
+    demoProgress.style.width = `${((demoIndex + 1) / demos.length) * 100}%`;
+    const options = item.options.map((opt) => {
+      const classes = ["opt"];
+      if (selected === opt.key) classes.push("selected");
+      if (opened && opt.key === item.correctKey) classes.push("correct");
+      if (opened && selected === opt.key && !ok) classes.push("miss");
+      return `
+      <button type="button" class="${classes.join(" ")}" data-key="${escapeHtml(opt.key)}" ${opened ? "disabled" : ""}>
+        <span class="key">${escapeHtml(opt.key)}</span><span>${escapeHtml(opt.text)}</span>
+      </button>`;
+    }).join("");
+    const verdict = ok
+      ? `Correct · ${item.correctKey}. ${right?.text || ""}`
+      : `Not this time · the answer is ${item.correctKey}. ${right?.text || ""}`;
     demoStage.innerHTML = `
-      <h3 style="margin:0 0 8px;color:var(--navy);font-size:1.05rem">${escapeHtml(item.title)}</h3>
       <p class="stem">${formatStem(item.stem)}</p>
       <div class="options">${options}</div>
-      <div class="teach-box" id="demo-teach" hidden>
-        <strong>${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)} · Answer ${escapeHtml(item.correctKey)}. ${escapeHtml(right?.text || "")}</strong>
+      <p class="status" id="demo-hint" hidden>Choose A, B, C, or D first.</p>
+      <div class="teach-box ${ok ? "ok" : "bad"}" id="demo-teach" ${opened ? "" : "hidden"}>
+        <strong>${escapeHtml(verdict)}</strong>
         <p style="margin:8px 0 0">${escapeHtml(item.teach)}</p>
       </div>`;
+    demoStage.querySelectorAll(".opt").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        if (demoOpened.has(demoIndex)) return;
+        demoAnswers.set(demoIndex, btn.getAttribute("data-key"));
+        renderDemo();
+      });
+    });
     demoPrev.disabled = demoIndex === 0;
-    demoNext.textContent = demoIndex === demos.length - 1 ? "Go to Practice tab" : "Next demo";
-    demoReveal.textContent = "Reveal model answer";
+    demoNext.textContent = demoIndex === demos.length - 1 ? "Continue to Practice" : "Next";
+    demoReveal.textContent = opened ? "Hide feedback" : "See feedback";
   }
 
   demoPrev.addEventListener("click", () => { if (demoIndex > 0) { demoIndex -= 1; renderDemo(); } });
@@ -68,11 +521,14 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
     document.querySelector('.tab[data-tab="practice"]').click();
   });
   demoReveal.addEventListener("click", () => {
-    const box = document.getElementById("demo-teach");
-    if (!box) return;
-    demoRevealed = !demoRevealed;
-    box.hidden = !demoRevealed;
-    demoReveal.textContent = demoRevealed ? "Hide model answer" : "Reveal model answer";
+    const hint = document.getElementById("demo-hint");
+    if (!demoAnswers.has(demoIndex)) {
+      if (hint) hint.hidden = false;
+      return;
+    }
+    if (demoOpened.has(demoIndex)) demoOpened.delete(demoIndex);
+    else demoOpened.add(demoIndex);
+    renderDemo();
   });
   renderDemo();
 
@@ -91,25 +547,25 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
   const resetBtn = document.getElementById("reset-btn");
   const results = document.getElementById("results");
   const scoreLine = document.getElementById("score-line");
-  const balanceNote = document.getElementById("balance-note");
   const reviewList = document.getElementById("review-list");
 
   function updatePracticeChrome() {
     const n = answers.size;
-    practiceStatus.hidden = false;
-    practiceStatus.textContent = n === 15
-      ? "All 15 answered. Submit when ready — no scores until then."
-      : `Answered ${n} of 15. One question per screen.`;
-    const answered = answers.has(practice[qIndex].id);
-    practiceProgress.style.width = `${((qIndex + 1) / practice.length) * 100}%`;
-    practiceMeta.textContent = `Question ${qIndex + 1} of ${practice.length}` + (answered ? " · selected" : "");
+    if (n === total && !submitted) {
+      practiceStatus.hidden = false;
+      practiceStatus.textContent = `All ${total} answered. Submit when you are ready.`;
+    } else {
+      practiceStatus.hidden = true;
+    }
+    practiceProgress.style.width = `${((qIndex + 1) / total) * 100}%`;
+    practiceMeta.textContent = `${qIndex + 1} of ${total}` + (n ? ` · ${n} answered` : "");
     practicePrev.disabled = qIndex === 0 || submitted;
-    if (qIndex === practice.length - 1) {
+    if (qIndex === total - 1) {
       practiceNext.hidden = true;
       submitRow.hidden = false;
     } else {
       practiceNext.hidden = false;
-      practiceNext.textContent = "Next question";
+      practiceNext.textContent = "Next";
       submitRow.hidden = submitted ? false : true;
     }
     if (submitted) {
@@ -139,12 +595,12 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
   }
 
   practicePrev.addEventListener("click", () => { if (qIndex > 0) { qIndex -= 1; renderPractice(); } });
-  practiceNext.addEventListener("click", () => { if (qIndex < practice.length - 1) { qIndex += 1; renderPractice(); } });
+  practiceNext.addEventListener("click", () => { if (qIndex < total - 1) { qIndex += 1; renderPractice(); } });
 
   submitBtn.addEventListener("click", () => {
-    if (answers.size < 15) {
+    if (answers.size < total) {
       practiceStatus.hidden = false;
-      practiceStatus.textContent = `Answer all 15 before submitting (${answers.size}/15).`;
+      practiceStatus.textContent = `Answer all ${total} before submitting (${answers.size}/${total}).`;
       return;
     }
     submitted = true;
@@ -161,14 +617,13 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
         rightText: item.options.find((o) => o.key === item.correctKey)?.text || "" };
     });
     results.hidden = false;
-    scoreLine.textContent = `Score: ${correct} / 15 (${Math.round((correct / 15) * 100)}%)`;
-    balanceNote.textContent = `Correct-letter balance: A×${counts.A} · B×${counts.B} · C×${counts.C} · D×${counts.D}.`;
+    scoreLine.textContent = `${correct} / ${total}`;
     reviewList.innerHTML = review.map(({ index, item, chosen, chosenText, rightText, ok }) => `
       <article class="review-item ${ok ? "ok" : "bad"}">
-        <h4>Q${index + 1} · ${ok ? "Correct" : "Incorrect"} · ${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)}</h4>
+        <h4>Q${index + 1} · ${ok ? "Correct" : "Incorrect"}</h4>
         <p class="stem">${formatStem(item.stem)}</p>
-        <p>Yours: <strong>${escapeHtml(chosen || "—")}. ${escapeHtml(chosenText)}</strong></p>
-        <p>Correct: <strong>${escapeHtml(item.correctKey)}. ${escapeHtml(rightText)}</strong></p>
+        <p>Your answer: <strong>${escapeHtml(chosen || "—")}. ${escapeHtml(chosenText)}</strong></p>
+        <p>Answer: <strong>${escapeHtml(item.correctKey)}. ${escapeHtml(rightText)}</strong></p>
         <p>${escapeHtml(item.explain)}</p>
       </article>`).join("");
     results.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -189,5 +644,5 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
   renderPractice();
 }
 
-  bootStrategyClass({ teachHtml, demos, practice, slotLabel });
+  bootStrategyClass({ teachHtml, demos, practice });
 })();
