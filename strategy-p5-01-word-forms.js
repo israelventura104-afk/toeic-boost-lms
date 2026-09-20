@@ -1,37 +1,36 @@
 (() => {
   const teachHtml = `
 <div class="prose">
-  <p>In TOEIC Part 5, many items look like vocabulary. They are not. Options often share the <em>same root</em> (<em>decide / decision / decisive / decisively</em>). Name the <strong>grammatical slot</strong>, then pick the matching form.</p>
-  <h3>The four slots</h3>
+  <p>In TOEIC Part 5, four options often look like vocabulary. They are not. They share the <em>same root</em> (<em>decide / decision / decisive / decisively</em>). First decide what the blank needs — noun, verb, adjective, or adverb. Then pick that form.</p>
+  <h3>The four jobs</h3>
   <div class="slot-grid">
-    <article><strong>Noun</strong><p>Names a person, thing, idea, or process.</p><code class="code-strip">the decision · her professionalism</code></article>
-    <article><strong>Verb</strong><p>Shows the action or state (tense / agreement).</p><code class="code-strip">will decide · to negotiate</code></article>
-    <article><strong>Adjective</strong><p>Describes a noun (before noun or after be).</p><code class="code-strip">a comprehensive guide</code></article>
-    <article><strong>Adverb</strong><p>Describes a verb, an adjective, or a whole idea.</p><code class="code-strip">work closely · highly useful</code></article>
+    <article><strong>Noun</strong><p>A person, thing, idea, or process.</p><code class="code-strip">the decision · her professionalism</code></article>
+    <article><strong>Verb</strong><p>The action or state.</p><code class="code-strip">will decide · to negotiate</code></article>
+    <article><strong>Adjective</strong><p>Describes a noun.</p><code class="code-strip">a comprehensive guide</code></article>
+    <article><strong>Adverb</strong><p>Describes a verb or an adjective.</p><code class="code-strip">work closely · highly useful</code></article>
   </div>
-  <h3>Method</h3>
+  <h3>How to choose</h3>
   <ol class="method">
-    <li><strong>Ignore A–D for three seconds.</strong> Look before and after the blank.</li>
+    <li><strong>Ignore A–D for three seconds.</strong> Look at the words before and after the blank.</li>
     <li><strong>Ask:</strong> noun, verb, adjective, or adverb?</li>
-    <li><strong>Match the ending to the job</strong> (-tion / -ive / -ly / base verb…).</li>
-    <li><strong>Eliminate by structure</strong>, not by “sounds nice.”</li>
+    <li><strong>Match the ending to that job</strong> (<em>-tion</em> noun, <em>-ive</em> adjective, <em>-ly</em> adverb, base verb).</li>
+    <li><strong>Drop a familiar word in the wrong job.</strong> If it does not fit the blank, it is wrong.</li>
   </ol>
-  <h3>Fast signals</h3>
+  <h3>Quick signals</h3>
   <ul class="signals">
-    <li>Article + blank + noun → often <strong>adjective</strong></li>
-    <li>Possessive + blank (end) → often <strong>noun</strong></li>
-    <li>Modal / infinitive <em>to</em> + blank → <strong>base verb</strong></li>
-    <li>Subject + blank + object → <strong>verb</strong></li>
-    <li>Verb present + blank nearby → often <strong>adverb</strong></li>
-    <li>Blank + adjective → <strong>adverb of degree</strong> (<em>highly successful</em>)</li>
-    <li>Preposition + <em>the</em> + blank → usually <strong>noun</strong></li>
+    <li><em>a / the / her</em> + blank + noun → often <strong>adjective</strong></li>
+    <li><em>her / your / the</em> + blank (nothing after) → often <strong>noun</strong></li>
+    <li><em>must / will / to</em> + blank → <strong>base verb</strong></li>
+    <li>The sentence already has a verb → often <strong>adverb</strong></li>
+    <li>Blank + adjective → <strong>adverb</strong> (<em>highly successful</em>)</li>
+    <li><em>for / of / on the</em> + blank → usually <strong>noun</strong></li>
   </ul>
-  <h3>Common traps</h3>
+  <h3>Watch out</h3>
   <ul>
-    <li>Noun because it “feels serious” when the blank needs an adverb</li>
-    <li>The other noun in the same family (<em>profession</em> vs <em>professionalism</em>; <em>negotiation</em> vs <em>negotiator</em>)</li>
-    <li>-ing / -ed without checking if a tensed verb is required</li>
-    <li>Translating from Spanish before the slot check</li>
+    <li>A noun can “sound serious” and still be wrong if the blank needs an adverb.</li>
+    <li>Some families have two nouns (<em>profession</em> vs <em>professionalism</em>; <em>negotiation</em> vs <em>negotiator</em>). Pick the meaning the sentence needs.</li>
+    <li>Do not pick <em>-ing</em> or <em>-ed</em> until you know whether the sentence already has a verb.</li>
+    <li>Do not translate from Spanish first. Check the blank first.</li>
   </ul>
 </div>
 `;
@@ -115,7 +114,7 @@
       ],
       correctKey: "A",
       slot: "verb",
-      explain: "After infinitive to, use the base verb submit. Submission is a noun; submitted and submitting cannot follow ask someone to.",
+      explain: "After to, use the base verb submit. Submission is a noun; submitted and submitting cannot follow ask someone to.",
     },
     {
       id: "Q02",
@@ -141,7 +140,7 @@
       ],
       correctKey: "C",
       slot: "noun",
-      explain: "The + blank + of needs a noun: the compilation of. Compiling would fit responsible for compiling (no the). Compile is a verb; compiled is a participle.",
+      explain: "The + blank + of needs a noun: the compilation of. Compiling would fit responsible for compiling (no the). Compile and compiled are verb forms.",
     },
     {
       id: "Q04",
@@ -167,7 +166,7 @@
       ],
       correctKey: "A",
       slot: "verb",
-      explain: "After the modal must, use the base verb approve. Approval is a noun; approved and approving are not used after a modal.",
+      explain: "After must, use the base verb approve. Approval is a noun; approved and approving cannot follow must.",
     },
     {
       id: "Q06",
@@ -206,7 +205,7 @@
       ],
       correctKey: "B",
       slot: "adverb",
-      explain: "Work closely with is the office collocation. The blank modifies the verb work → adverb closely. Close and closed are adjectives; closeness is a noun.",
+      explain: "The blank tells how they should work: closely. Close and closed are adjectives; closeness is a noun.",
     },
     {
       id: "Q09",
@@ -232,7 +231,7 @@
       ],
       correctKey: "C",
       slot: "adjective",
-      explain: "After the linking verb are, use an adjective: suitable. Suit is a verb; suitably is an adverb; suitability is a noun.",
+      explain: "After are, use an adjective: suitable. Suit is a verb; suitably is an adverb; suitability is a noun.",
     },
     {
       id: "Q11",
@@ -245,7 +244,7 @@
       ],
       correctKey: "D",
       slot: "noun",
-      explain: "The + blank + of needs a noun: the establishment of. Establish is a verb; established is a participle; establishing would drop the.",
+      explain: "The + blank + of needs a noun: the establishment of. Establish is a verb; established and establishing are verb forms.",
     },
     {
       id: "Q12",
@@ -258,7 +257,7 @@
       ],
       correctKey: "B",
       slot: "adverb",
-      explain: "The blank modifies the verb explains → adverb clearly. Clearer is an adjective comparative and cannot modify a verb. Clarity is a noun; clear is an adjective.",
+      explain: "The blank tells how the brochure explains, so you need the adverb clearly. Clearer describes a noun, not a verb. Clarity is a noun; clear is an adjective.",
     },
     {
       id: "Q13",
@@ -271,7 +270,7 @@
       ],
       correctKey: "A",
       slot: "verb",
-      explain: "The sentence is an imperative, so it needs the base verb attach. Attachment is a noun; attached and attaching are not used as the main verb here.",
+      explain: "Please + blank is a command, so use the base verb attach. Attachment is a noun; attached and attaching are not the main verb here.",
     },
     {
       id: "Q14",
@@ -284,7 +283,7 @@
       ],
       correctKey: "D",
       slot: "adjective",
-      explain: "Article + blank + noun estimate → adjective revised. Revise is a verb; revision is a noun; revising is a gerund.",
+      explain: "A + blank + estimate needs an adjective: revised. Revise is a verb; revision is a noun; revising is a verb form.",
     },
     {
       id: "Q15",
@@ -300,8 +299,6 @@
       explain: "The blank modifies the verb followed → adverb strictly. Strict and stricter are adjectives; strictness is a noun.",
     },
   ];
-    const slotLabel = "Slot";
-
 function escapeHtml(value) {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -312,11 +309,7 @@ function escapeHtml(value) {
 function formatStem(stem) {
   return escapeHtml(stem).replace(/____/g, '<span class="blank">____</span>');
 }
-function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
-  const counts = { A: 0, B: 0, C: 0, D: 0 };
-  practice.forEach((q) => { counts[q.correctKey] += 1; });
-  console.info("[Strategy] balance", counts);
-
+function bootStrategyClass({ teachHtml, demos, practice }) {
   const tabs = document.querySelectorAll(".tab");
   const panels = document.querySelectorAll(".panel");
   tabs.forEach((tab) => {
@@ -345,9 +338,7 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
     const opened = demoOpened.has(demoIndex);
     const right = item.options.find((o) => o.key === item.correctKey);
     const ok = selected === item.correctKey;
-    demoMeta.textContent = selected
-      ? `Demo ${demoIndex + 1} of ${demos.length} · selected`
-      : `Demo ${demoIndex + 1} of ${demos.length} · choose A–D`;
+    demoMeta.textContent = `${demoIndex + 1} of ${demos.length}`;
     demoProgress.style.width = `${((demoIndex + 1) / demos.length) * 100}%`;
     const options = item.options.map((opt) => {
       const classes = ["opt"];
@@ -378,7 +369,7 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
       });
     });
     demoPrev.disabled = demoIndex === 0;
-    demoNext.textContent = demoIndex === demos.length - 1 ? "Go to Practice tab" : "Next demo";
+    demoNext.textContent = demoIndex === demos.length - 1 ? "Continue to Practice" : "Next";
     demoReveal.textContent = opened ? "Hide feedback" : "See feedback";
   }
 
@@ -414,25 +405,27 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
   const resetBtn = document.getElementById("reset-btn");
   const results = document.getElementById("results");
   const scoreLine = document.getElementById("score-line");
-  const balanceNote = document.getElementById("balance-note");
   const reviewList = document.getElementById("review-list");
 
   function updatePracticeChrome() {
     const n = answers.size;
-    practiceStatus.hidden = false;
-    practiceStatus.textContent = n === 15
-      ? "All 15 answered. Submit when ready — no scores until then."
-      : `Answered ${n} of 15. One question per screen.`;
-    const answered = answers.has(practice[qIndex].id);
+    if (n === 15 && !submitted) {
+      practiceStatus.hidden = false;
+      practiceStatus.textContent = "All 15 answered. Submit when you are ready.";
+    } else if (submitted) {
+      practiceStatus.hidden = true;
+    } else {
+      practiceStatus.hidden = true;
+    }
     practiceProgress.style.width = `${((qIndex + 1) / practice.length) * 100}%`;
-    practiceMeta.textContent = `Question ${qIndex + 1} of ${practice.length}` + (answered ? " · selected" : "");
+    practiceMeta.textContent = `${qIndex + 1} of ${practice.length}` + (n ? ` · ${n} answered` : "");
     practicePrev.disabled = qIndex === 0 || submitted;
     if (qIndex === practice.length - 1) {
       practiceNext.hidden = true;
       submitRow.hidden = false;
     } else {
       practiceNext.hidden = false;
-      practiceNext.textContent = "Next question";
+      practiceNext.textContent = "Next";
       submitRow.hidden = submitted ? false : true;
     }
     if (submitted) {
@@ -484,14 +477,13 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
         rightText: item.options.find((o) => o.key === item.correctKey)?.text || "" };
     });
     results.hidden = false;
-    scoreLine.textContent = `Score: ${correct} / 15 (${Math.round((correct / 15) * 100)}%)`;
-    balanceNote.textContent = `Correct-letter balance: A×${counts.A} · B×${counts.B} · C×${counts.C} · D×${counts.D}.`;
+    scoreLine.textContent = `${correct} / 15`;
     reviewList.innerHTML = review.map(({ index, item, chosen, chosenText, rightText, ok }) => `
       <article class="review-item ${ok ? "ok" : "bad"}">
-        <h4>Q${index + 1} · ${ok ? "Correct" : "Incorrect"} · ${escapeHtml(slotLabel)}: ${escapeHtml(item.slot)}</h4>
+        <h4>Q${index + 1} · ${ok ? "Correct" : "Incorrect"}</h4>
         <p class="stem">${formatStem(item.stem)}</p>
-        <p>Yours: <strong>${escapeHtml(chosen || "—")}. ${escapeHtml(chosenText)}</strong></p>
-        <p>Correct: <strong>${escapeHtml(item.correctKey)}. ${escapeHtml(rightText)}</strong></p>
+        <p>Your answer: <strong>${escapeHtml(chosen || "—")}. ${escapeHtml(chosenText)}</strong></p>
+        <p>Answer: <strong>${escapeHtml(item.correctKey)}. ${escapeHtml(rightText)}</strong></p>
         <p>${escapeHtml(item.explain)}</p>
       </article>`).join("");
     results.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -512,5 +504,5 @@ function bootStrategyClass({ teachHtml, demos, practice, slotLabel }) {
   renderPractice();
 }
 
-  bootStrategyClass({ teachHtml, demos, practice, slotLabel });
+  bootStrategyClass({ teachHtml, demos, practice });
 })();
