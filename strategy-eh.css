@@ -23,8 +23,9 @@ body {
   font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at top right, rgba(91, 184, 176, 0.16), transparent 34rem),
-    linear-gradient(180deg, #f7fafc 0%, #eef4f7 100%);
+    radial-gradient(circle at top right, rgba(91, 184, 176, 0.28), transparent 34rem),
+    radial-gradient(circle at 12% 0%, rgba(91, 184, 176, 0.18), transparent 28rem),
+    linear-gradient(180deg, #edf8f7 0%, #f4fbfa 40%, #f6f8fb 100%);
   min-height: 100vh;
 }
 button, input { font: inherit; }
@@ -65,7 +66,10 @@ button { cursor: pointer; }
 
 .hero {
   position: relative; overflow: hidden; border-radius: 20px;
-  background: #f4fbfa; color: var(--navy);
+  background:
+    linear-gradient(135deg, rgba(91, 184, 176, 0.22) 0%, rgba(244, 251, 250, 0.95) 42%, #eef6f8 100%),
+    #f4fbfa;
+  color: var(--navy);
   border: 1px solid rgba(30, 45, 90, 0.08); box-shadow: var(--shadow); margin-bottom: 22px;
 }
 .hero::after {
@@ -194,3 +198,19 @@ button { cursor: pointer; }
 .foot { text-align: center; color: var(--muted); font-size: 0.82rem; margin-top: 22px; }
 .foot strong { color: var(--navy); }
 .foot a { color: var(--teal-dark); font-weight: 700; }
+
+
+/* Hub header actions — Home solid teal, level navy */
+.topbar-actions .home-btn {
+  background: #5bb8b0 !important;
+  color: #fff !important;
+  border: 0 !important;
+}
+.topbar-actions .home-btn:hover {
+  background: #238d85 !important;
+}
+.topbar-actions .mode-pill {
+  background: #0B1F3A !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,.45) !important;
+}
