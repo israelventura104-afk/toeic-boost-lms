@@ -65,7 +65,7 @@
         <a class="nav-mobile-only" href="dashboard.html#class-access">Enter class code</a>
       </nav>
       <div class="nav-actions">
-        <a class="button secondary" href="https://learning-development-studio.github.io/english-hub/TOEIC/">Inicio</a>
+        <a class="button secondary" href="https://learning-development-studio.github.io/english-hub/TOEIC/">Home</a>
         <a class="button secondary" href="dashboard.html#class-access">Enter class code</a>
         <a class="button primary" href="demo-test.html">Short demo test</a>
       </div>
