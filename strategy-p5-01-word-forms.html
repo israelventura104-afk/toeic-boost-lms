@@ -5,85 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/logo.png" />
-  <title>Strategy 01 · Word Forms | TOEIC | Learning &amp; Development Studio</title>
+  <title>Strategy 01 · Word Forms · TOEIC · English Hub</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="strategy-eh.css?v=20260920-hero" />
+  <link rel="stylesheet" href="strategy-eh.css?v=20260920-alphabet" />
 </head>
 <body>
-  <div class="shell">
-    <header class="topbar">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true"><img src="assets/logo.png" alt=""></div>
-        <div>
-          <h1>Strategy 01 · Word Forms</h1>
-          <p>Learning &amp; Development Studio · Israel Ventura</p>
-        </div>
+<div class="shell">
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="" />
+      <div>
+        <h1>Strategy 01 · Word Forms</h1>
+        <p>TOEIC Preparation · Part 5 · Reading</p>
       </div>
-      <div class="topbar-actions">
-        <a class="home-btn" href="https://learning-development-studio.github.io/english-hub/TOEIC/">Home</a>
-        <span class="mode-pill">TOEIC</span>
-      </div>
-    </header>
+    </div>
+    <div class="actions">
+      <a class="home" href="https://learning-development-studio.github.io/english-hub/TOEIC/">Home</a>
+      <span class="pill">TOEIC</span>
+    </div>
+  </header>
 
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="eyebrow">TOEIC · Part 5 · Reading</div>
-        <h2>Word Forms <span>Part 5</span></h2>
-        <p class="hero-copy">One skill for a full class: decide whether the blank needs a noun, verb, adjective, or adverb — then choose the matching form.</p>
+  <section class="hero">
+    <span class="eyebrow">TOEIC · Part 5 · Reading</span>
+    <h2>Word Forms <span>Part 5</span></h2>
+    <p>One skill for a full class: decide whether the blank needs a noun, verb, adjective, or adverb — then choose the matching form.</p>
+    <div class="path">
+      <span>1 Teach</span><span>2 Demo</span><span>3 Practice</span>
+    </div>
+  </section>
+
+  <article class="lesson">
+    <header class="lesson-head">
+      <h3>Class screens</h3>
+      <p>Same flow as other English Hub lessons — one screen at a time.</p>
+    </header>
+    <nav class="tabs" role="tablist" aria-label="Class screens">
+      <button class="tab active" type="button" data-tab="teach">1. Teach</button>
+      <button class="tab" type="button" data-tab="demo">2. Demo</button>
+      <button class="tab" type="button" data-tab="practice">3. Practice</button>
+    </nav>
+
+    <section class="panel active" id="panel-teach" data-panel="teach"></section>
+    <section class="panel" id="panel-demo" data-panel="demo">
+      <p class="demo-meta" id="demo-meta"></p>
+      <div class="progress-line"><span id="demo-progress"></span></div>
+      <div id="demo-stage"></div>
+      <div class="screen-nav">
+        <button type="button" class="btn ghost" id="demo-prev">Previous</button>
+        <button type="button" class="btn teal" id="demo-reveal">Reveal model answer</button>
+        <button type="button" class="btn primary" id="demo-next">Next demo</button>
       </div>
     </section>
-
-    <div class="lesson-card">
-      <header class="lesson-head">
-        <h3>Strategy 01 · Teach, demo, then practice</h3>
-        <p>One screen at a time — same flow as your other English Hub lessons.</p>
-      </header>
-      <nav class="tabs" role="tablist" aria-label="Class screens">
-        <button class="tab active" type="button" data-tab="teach">1. Teach</button>
-        <button class="tab" type="button" data-tab="demo">2. Demo</button>
-        <button class="tab" type="button" data-tab="practice">3. Practice</button>
-      </nav>
-
-      <section class="panel active" id="panel-teach" data-panel="teach"></section>
-      <section class="panel" id="panel-demo" data-panel="demo">
-        <p class="demo-meta" id="demo-meta"></p>
-        <div class="progress-line"><span id="demo-progress"></span></div>
-        <div id="demo-stage"></div>
-        <div class="screen-nav">
-          <button type="button" class="btn ghost" id="demo-prev">Previous</button>
-          <button type="button" class="btn teal" id="demo-reveal">Reveal model answer</button>
-          <button type="button" class="btn primary" id="demo-next">Next demo</button>
-        </div>
+    <section class="panel" id="panel-practice" data-panel="practice">
+      <p class="q-meta" id="practice-meta"></p>
+      <div class="progress-line"><span id="practice-progress"></span></div>
+      <div id="practice-status" class="status" hidden></div>
+      <div id="practice-stage"></div>
+      <div class="screen-nav" id="practice-nav">
+        <button type="button" class="btn ghost" id="practice-prev">Previous</button>
+        <button type="button" class="btn primary" id="practice-next">Next</button>
+      </div>
+      <div class="screen-nav" id="practice-submit-row" hidden>
+        <button type="button" class="btn primary" id="submit-btn">Submit practice (15)</button>
+        <button type="button" class="btn ghost" id="reset-btn" hidden>Try again</button>
+      </div>
+      <section id="results" class="results" hidden>
+        <h3>Results</h3>
+        <p id="score-line" class="score-line"></p>
+        <p id="balance-note" class="balance-note"></p>
+        <div id="review-list"></div>
       </section>
-      <section class="panel" id="panel-practice" data-panel="practice">
-        <p class="q-meta" id="practice-meta"></p>
-        <div class="progress-line"><span id="practice-progress"></span></div>
-        <div id="practice-status" class="status" hidden></div>
-        <div id="practice-stage"></div>
-        <div class="screen-nav" id="practice-nav">
-          <button type="button" class="btn ghost" id="practice-prev">Previous</button>
-          <button type="button" class="btn primary" id="practice-next">Next</button>
-        </div>
-        <div class="screen-nav" id="practice-submit-row" hidden>
-          <button type="button" class="btn primary" id="submit-btn">Submit practice (15)</button>
-          <button type="button" class="btn ghost" id="reset-btn" hidden>Try again</button>
-        </div>
-        <section id="results" class="results" hidden>
-          <h3>Results</h3>
-          <p id="score-line" class="score-line"></p>
-          <p id="balance-note" class="balance-note"></p>
-          <div id="review-list"></div>
-        </section>
-      </section>
-    </div>
+    </section>
+  </article>
 
-    <footer class="foot">
-      <p><strong>Learning &amp; Development Studio</strong> · Israel Ventura · TOEIC</p>
-      <p><a href="https://learning-development-studio.github.io/english-hub/TOEIC/">Back to TOEIC Preparation</a></p>
-    </footer>
-  </div>
-  <script src="strategy-p5-01-word-forms.js"></script>
+  <footer class="foot">
+    <p><strong>Learning &amp; Development Studio</strong> · Israel Ventura · TOEIC</p>
+    <p><a href="https://learning-development-studio.github.io/english-hub/TOEIC/">Back to TOEIC Preparation</a></p>
+  </footer>
+</div>
+<script src="strategy-p5-01-word-forms.js"></script>
 </body>
 </html>
